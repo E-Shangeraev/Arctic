@@ -1,0 +1,15 @@
+@import "variables.scss";
+@import "scaffolding.scss";
+@import "fonts.scss";
+@import "visually-hidden.scss";
+
+@import "./blocks/header.scss";
+@import "./blocks/nav.scss";
+
+body {
+    font-family: $font-montserrat; 
+} 
+
+* {
+    scroll-behavior: smooth;
+}
