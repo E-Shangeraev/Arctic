@@ -1,0 +1,33 @@
+.button {
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+    transition: all ease 0.2s;
+
+    & path {
+        transition: all ease 0.2s;
+    }
+}
+
+.button__left {
+    margin-right: 38px;
+
+    stroke-opacity: 0.4;
+
+    & path {
+        fill-opacity: 0.4;
+        transition: all ease 0.2s;
+    }
+}
+
+.button:hover {
+    stroke-opacity: 1;
+    filter: drop-shadow(0 0 1px #bdbcbc);
+
+    & path {
+        fill-opacity: 1;
+    }
+}

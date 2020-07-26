@@ -41,17 +41,10 @@
     align-items: center;
 
     padding-top: 257px;
-    padding-right: 80px;
-    padding-left: 70px;
+    padding-right: 340px;
+    padding-left: 310px;
 
-    width: 67%;
-    margin: 0 auto;
-
-}
-
-.main-header__slogan {
-    font-size: 69px;
-    line-height: 40px;
+    box-sizing: border-box;
 }
 
 .main-header__icon {
@@ -105,51 +98,6 @@
         opacity: 1;
         transform: translateX(0px);
     }
-}
-
-
-//Анимация кнопки
-.main-header__button path {
-    animation-name: main-header__button;
-    animation-duration: 2s;
-
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-}
-
-@keyframes main-header__button {
-	0% {
-		transform: translateX(-80px);
-    }
-
-    47% {
-		transform: translateX(-80px);
-    }
-
-	48% {
-		transform: translateX(-15px);
-	}
-
-	52% {
-		transform: translateX(0px);
-    }
-    
-    56% {
-		transform: translateX(-10px);
-    }
-    
-    60% {
-		transform: translateX(0px);
-    }
-    
-    85% {
-        transform: translateX(0px);
-    }
-
-	100% {
-		transform: translateX(80px);
-	}
-
 }
 
 //Анимация иконки мыши

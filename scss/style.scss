@@ -5,10 +5,19 @@
 
 @import "./blocks/header.scss";
 @import "./blocks/nav.scss";
+@import "./blocks/slogan.scss";
+@import "./blocks/pagination.scss";
+@import "./blocks/main-tours.scss";
+@import "./blocks/button.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/main-activities.scss";
+@import "./blocks/main-emotions";
+@import "./blocks/big-button.scss";
+
 
 body {
     font-family: $font-montserrat; 
-} 
+}  
 
 * {
     scroll-behavior: smooth;
