@@ -1,0 +1,43 @@
+.main-reviews {
+    margin-top: 250px;
+}
+
+.main-reviews__wrapper {
+    padding-left: 340px;
+    padding-right: 245px;
+}
+
+.main-reviews__list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 80px;
+
+    list-style: none;
+}
+
+.main-reviews__item {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 35px;
+
+    img {
+        margin-right: 95px;
+    }
+
+    p {
+        margin-bottom: 50px;
+    }
+
+    cite {
+        font-weight: 600;
+        font-style: normal;
+    }
+}
+
+.main-reviews__more {
+    position: relative;
+    left: 660px;
+
+    line-height: 80px;
+}

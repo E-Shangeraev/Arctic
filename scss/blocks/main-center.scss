@@ -1,0 +1,67 @@
+@import '../variables.scss';
+
+.main-center {
+    margin-top: 295px;
+}
+
+.main-center__wrapper {
+    padding-left: 340px;
+    padding-right: 230px;
+}
+
+.main-center__container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main-center__column-1 {
+    max-width: 620px;
+    margin-right: 90px;
+}
+
+.main-center__column-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-center__image {
+    margin-bottom: 115px;
+}
+
+.main-center__button {
+    margin-top: 60px;
+
+    span {
+        color: #000000;
+    }
+}
+
+.main-center__stats {
+    border-collapse: collapse;
+
+    td {
+        padding-top: 54px;
+        padding-bottom: 32px;
+    }
+}
+
+.main-center__stats tr:not(:last-of-type) {
+    td {
+        border-bottom: 2px solid #000000;
+    }
+}
+
+.main-center__stats-value {
+    font-family: $font-fyl;
+    font-size: 44px;
+    line-height: 80px;
+
+    width: 60%;
+}
+
+.main-center__stats-field {
+    font-size: 16px;
+    line-height: 26px;
+}

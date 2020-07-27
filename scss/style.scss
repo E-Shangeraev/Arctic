@@ -3,16 +3,26 @@
 @import "fonts.scss";
 @import "visually-hidden.scss";
 
-@import "./blocks/header.scss";
-@import "./blocks/nav.scss";
+
 @import "./blocks/slogan.scss";
+@import "./blocks/title.scss";
+@import "./blocks/more.scss";
 @import "./blocks/pagination.scss";
-@import "./blocks/main-tours.scss";
 @import "./blocks/button.scss";
 @import "./blocks/slider.scss";
+@import "./blocks/big-button.scss";
+
+@import "./blocks/header.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/main-tours.scss";
 @import "./blocks/main-activities.scss";
 @import "./blocks/main-emotions";
-@import "./blocks/big-button.scss";
+@import "./blocks/main-addition.scss";
+@import "./blocks/main-center.scss";
+@import "./blocks/main-nature.scss";
+@import "./blocks/main-norilsk.scss";
+@import "./blocks/main-reviews.scss";
+@import "./blocks/main-partners.scss";
 
 
 body {
