@@ -4,7 +4,7 @@
 @import "visually-hidden.scss";
 
 
-@import "./blocks/slogan.scss";
+@import "./blocks/white-title.scss";
 @import "./blocks/title.scss";
 @import "./blocks/more.scss";
 @import "./blocks/pagination.scss";
@@ -24,7 +24,8 @@
 @import "./blocks/main-page/norilsk.scss";
 @import "./blocks/main-page/reviews.scss";
 @import "./blocks/main-page/partners.scss";
-
+@import "./blocks/main-page/feedback.scss";
+@import "./blocks/footer/main-footer.scss";
 
 body {
     font-family: $font-montserrat; 

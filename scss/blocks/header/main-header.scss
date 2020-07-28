@@ -47,6 +47,14 @@
     box-sizing: border-box;
 }
 
+.main-header__title {
+    font-family: $font-fyl;
+    font-size: 69px;
+    line-height: 80px;
+
+    color: #ffffff;
+}
+
 .main-header__icon {
     margin-top: 207px;
 
