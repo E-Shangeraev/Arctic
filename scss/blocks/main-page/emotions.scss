@@ -1,30 +1,30 @@
-@import '../variables.scss';
+@import '../../variables.scss';
 
-.main-emotions {
+.emotions {
     margin-top: 295px;
 
-    background-image: url('../../img/main-emotions/1.jpg');
+    background-image: url('../../img/main-page/emotions/1.jpg');
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: contain;
     height: 687px;
 } 
 
-.main-emotions__wrapper {
+.emotions__wrapper {
     display: flex;
     justify-content: space-between;
     padding: 216px 340px;
 }
 
-.main-emotions__column-1 {
+.emotions__column-1 {
     flex-shrink: 0;
 }
 
-.main-emotions__column-2 {
+.emotions__column-2 {
     width: 525px;
 }
 
-.main-emotions__description {
+.emotions__description {
     font-size: 20px;
     color: #ffffff;
 

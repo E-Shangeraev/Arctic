@@ -1,17 +1,17 @@
-.main-partners {
+.partners {
     margin-top: 260px;
 }
 
-.main-partners__wrapper {
+.partners__wrapper {
     padding-left: 340px;
     padding-right: 340px;
 }
 
-.main-partners__container {
+.partners__container {
     display: flex;
 }
 
-.main-partners__list {
+.partners__list {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -28,10 +28,10 @@
     list-style: none;
 }
 
-.main-partners__description {
+.partners__description {
     margin-bottom: 80px;
 }
 
-.main-partners__button span {
+.partners__button span {
     color: #000000;
 }

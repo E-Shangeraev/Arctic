@@ -1,17 +1,17 @@
-.main-addition {
+.addition {
     margin-top: 295px;
 }
 
-.main-addition__wrapper {
+.addition__wrapper {
     padding-left: 340px;
 }
 
-.main-addition__container {
+.addition__container {
     display: flex;
     justify-content: space-between;
 }
 
-.main-addition__slider {
+.addition__slider {
     display: flex;
     padding: 0;
     margin: 0;
@@ -21,7 +21,7 @@
     overflow: hidden;
 }
 
-.main-addition__slide {
+.addition__slide {
     position: relative;
     z-index: 1;
 
@@ -31,7 +31,7 @@
     height: auto;
 }
 
-.main-addition__description {
+.addition__description {
     position: absolute;
     bottom: 0;
     z-index: 2;
@@ -51,12 +51,12 @@
     }
 }
 
-.main-addition__column-2 {
+.addition__column-2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
-.main-addition__buttons {
+.addition__buttons {
     margin-top: 88px;
 }

@@ -11,18 +11,19 @@
 @import "./blocks/button.scss";
 @import "./blocks/slider.scss";
 @import "./blocks/big-button.scss";
-
-@import "./blocks/header.scss";
 @import "./blocks/nav.scss";
-@import "./blocks/main-tours.scss";
-@import "./blocks/main-activities.scss";
-@import "./blocks/main-emotions";
-@import "./blocks/main-addition.scss";
-@import "./blocks/main-center.scss";
-@import "./blocks/main-nature.scss";
-@import "./blocks/main-norilsk.scss";
-@import "./blocks/main-reviews.scss";
-@import "./blocks/main-partners.scss";
+
+//main-page
+@import "./blocks/header/main-header.scss";
+@import "./blocks/main-page/tours.scss";
+@import "./blocks/main-page/activities.scss";
+@import "./blocks/main-page/emotions.scss";
+@import "./blocks/main-page/addition.scss";
+@import "./blocks/main-page/center.scss";
+@import "./blocks/main-page/nature.scss";
+@import "./blocks/main-page/norilsk.scss";
+@import "./blocks/main-page/reviews.scss";
+@import "./blocks/main-page/partners.scss";
 
 
 body {

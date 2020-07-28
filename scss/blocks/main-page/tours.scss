@@ -1,6 +1,6 @@
-@import '../variables.scss';
+@import '../../variables.scss';
 
-.main-tours__wrapper {
+.tours__wrapper {
     display: flex;
     justify-content: space-between;
 
@@ -8,12 +8,12 @@
     padding-left: 310px;
 }
 
-.main-tours__column-1 {
+.tours__column-1 {
     width: 415px;
     flex-shrink: 0;
 }
 
-.main-tours__title {
+.tours__title {
     font-family: $font-fyl;
     font-size: 52px;
     line-height: 80px;
@@ -21,11 +21,11 @@
     margin-bottom: 180px;
 }
 
-.main-tours__description {
+.tours__description {
     margin-bottom: 125px;
 }
 
-.main-tours__column-2 {
+.tours__column-2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -36,7 +36,7 @@
     overflow: hidden;
 }
 
-.main-tours__more {
+.tours__more {
     align-self: flex-end;
 
     font-size: 20px;

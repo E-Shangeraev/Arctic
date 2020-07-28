@@ -1,13 +1,13 @@
-.main-reviews {
+.reviews {
     margin-top: 250px;
 }
 
-.main-reviews__wrapper {
+.reviews__wrapper {
     padding-left: 340px;
     padding-right: 245px;
 }
 
-.main-reviews__list {
+.reviews__list {
     margin: 0;
     padding: 0;
     margin-bottom: 80px;
@@ -15,7 +15,7 @@
     list-style: none;
 }
 
-.main-reviews__item {
+.reviews__item {
     display: flex;
     justify-content: space-between;
 
@@ -35,7 +35,7 @@
     }
 }
 
-.main-reviews__more {
+.reviews__more {
     position: relative;
     left: 660px;
 
