@@ -6,14 +6,16 @@
     background-image: url('../../img/main-page/emotions/1.jpg');
     background-position: 0 0;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 687px;
+    background-size: 100% auto;
 } 
 
 .emotions__wrapper {
     display: flex;
     justify-content: space-between;
     padding: 216px 340px;
+
+    max-width: 1410px;
+    margin: 0 auto;
 }
 
 .emotions__column-1 {

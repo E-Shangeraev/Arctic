@@ -4,11 +4,16 @@
 
 .norilsk__wrapper {
     padding-left: 340px;
+
+    width: 1565px;
+    margin: 0 auto;
 }
 
 .norilsk__container {
     display: flex;
+    align-content: flex-end;
 
+    
 }
 
 .norilsk__column-1 {

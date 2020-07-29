@@ -1,5 +1,6 @@
 .button {
     padding: 0;
+    margin-right: 38px;
 
     background-color: transparent;
     border: none;
@@ -12,8 +13,8 @@
     }
 }
 
-.button__left {
-    margin-right: 38px;
+.button--disactive {
+    
 
     stroke-opacity: 0.4;
 
@@ -30,4 +31,8 @@
     & path {
         fill-opacity: 1;
     }
+}
+
+.button:focus {
+    outline: none;
 }

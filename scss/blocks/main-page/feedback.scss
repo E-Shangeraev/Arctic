@@ -6,9 +6,14 @@
     background-repeat: no-repeat;
     background-size: 100%;
     
-    height: 716px;
+    height: 710px;
 
     margin-top: 150px;
+}
+
+.feedback__filter {
+    backdrop-filter: brightness(0.65);
+    height: 100%;
 }
 
 .feedback__wrapper {
@@ -16,12 +21,9 @@
 
     padding: 100px 340px;
 
-    width: 100%;
-    height: 100%;
+    margin: 0 auto;
 
-    box-sizing: border-box;
-
-    backdrop-filter: brightness(0.65);
+    width: 1225px;
 }
 
 .feedback__column-2 {

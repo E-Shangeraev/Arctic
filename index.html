@@ -63,7 +63,7 @@
         </div>
     </header>
 
-    <main class="main-page">
+<main class="main-page">
         <section class="tours">
             <div class="tours__wrapper">
                 <div class="tours__column-1">
@@ -74,14 +74,14 @@
                         нетронутой окружающе среды. Выберите наиболее подходящий для вас тур.
                     </p>
                     <div class="tours__buttons">
-                        <button class="tours__button button button__left">
+                        <button class="tours__button button button__left button--disactive" id="left">
                             <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="33" cy="33" r="32" transform="rotate(-180 33 33)" stroke="black" stroke-width="2"/>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M29.8629 27.9689C29.9328 28.0385 29.9882 28.1213 30.026 28.2124C30.0638 28.3035 30.0832 28.4012 30.0832 28.4999C30.0832 28.5985 30.0638 28.6962 30.026 28.7873C29.9882 28.8784 29.9328 28.9612 29.8629 29.0309L25.8924 32.9999L29.8629 36.9689C29.9326 37.0386 29.988 37.1214 30.0257 37.2125C30.0634 37.3036 30.0829 37.4013 30.0829 37.4999C30.0829 37.5985 30.0634 37.6961 30.0257 37.7872C29.988 37.8784 29.9326 37.9611 29.8629 38.0309C29.7932 38.1006 29.7104 38.1559 29.6193 38.1937C29.5282 38.2314 29.4305 38.2508 29.3319 38.2508C29.2333 38.2508 29.1356 38.2314 29.0445 38.1937C28.9534 38.1559 28.8706 38.1006 28.8009 38.0309L24.3009 33.5309C24.2311 33.4612 24.1756 33.3784 24.1378 33.2873C24.1 33.1962 24.0806 33.0985 24.0806 32.9999C24.0806 32.9012 24.1 32.8035 24.1378 32.7124C24.1756 32.6213 24.2311 32.5385 24.3009 32.4689L28.8009 27.9689C28.8706 27.899 28.9533 27.8436 29.0445 27.8058C29.1356 27.768 29.2333 27.7485 29.3319 27.7485C29.4306 27.7485 29.5282 27.768 29.6194 27.8058C29.7105 27.8436 29.7932 27.899 29.8629 27.9689Z" fill="black"/>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M24.75 33C24.75 32.8011 24.829 32.6103 24.9697 32.4697C25.1103 32.329 25.3011 32.25 25.5 32.25L41.25 32.25C41.4489 32.25 41.6397 32.329 41.7803 32.4697C41.921 32.6103 42 32.8011 42 33C42 33.1989 41.921 33.3897 41.7803 33.5303C41.6397 33.671 41.4489 33.75 41.25 33.75L25.5 33.75C25.3011 33.75 25.1103 33.671 24.9697 33.5303C24.829 33.3897 24.75 33.1989 24.75 33Z" fill="black"/>
                             </svg>
                         </button>
-                        <button class="tours__button button button__right">
+                        <button class="tours__button button button__right" id="right">
                             <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="33" cy="33" r="32" stroke="black" stroke-width="2"/>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M36.1371 38.0311C36.0672 37.9615 36.0118 37.8787 35.974 37.7876C35.9362 37.6965 35.9168 37.5988 35.9168 37.5001C35.9168 37.4015 35.9362 37.3038 35.974 37.2127C36.0118 37.1216 36.0672 37.0388 36.1371 36.9691L40.1076 33.0001L36.1371 29.0311C36.0674 28.9614 36.012 28.8786 35.9743 28.7875C35.9366 28.6964 35.9171 28.5987 35.9171 28.5001C35.9171 28.4015 35.9366 28.3039 35.9743 28.2128C36.012 28.1216 36.0674 28.0389 36.1371 27.9691C36.2068 27.8994 36.2896 27.8441 36.3807 27.8063C36.4718 27.7686 36.5695 27.7492 36.6681 27.7492C36.7667 27.7492 36.8644 27.7686 36.9555 27.8063C37.0466 27.8441 37.1294 27.8994 37.1991 27.9691L41.6991 32.4691C41.7689 32.5388 41.8244 32.6216 41.8622 32.7127C41.9 32.8038 41.9194 32.9015 41.9194 33.0001C41.9194 33.0988 41.9 33.1965 41.8622 33.2876C41.8244 33.3787 41.7689 33.4615 41.6991 33.5311L37.1991 38.0311C37.1294 38.101 37.0467 38.1564 36.9555 38.1942C36.8644 38.232 36.7667 38.2515 36.6681 38.2515C36.5694 38.2515 36.4718 38.232 36.3806 38.1942C36.2895 38.1564 36.2068 38.101 36.1371 38.0311Z" fill="black"/>
@@ -92,44 +92,83 @@
                 </div>
                 <div class="tours__column-2">
                     <a href="#" class="tours__more more">Больше дополнений</a>
-                    <ul class="tours__slider slider">
-                        <li class="tours__slide">
-                            <figure class="slide">
-                                <p><img class="slide__image" src="./img/main-page/tours/1.jpg" alt="Тур 'В поисках прекрасного'. Стоимость 100000 рублей"></p>
-                                <figcaption class="slide__description">
-                                    <div>
-                                        <b class="slide__name">В поисках прекрасного</b><br>
-                                        <b class="slide__price">100 000 &#8381;</b>
-                                    </div>
-                                    <a href="#" class="slide__link">Подробнее</a>
-                                </figcaption>
-                            </figure>
-                        </li> 
-                        <li class="tours__slide">
-                            <figure class="slide">
-                                <p><img class="slide__image" src="./img/main-page/tours/2.jpg" alt="Тур 'В поисках прекрасного'. Стоимость 100000 рублей"></p>
-                                <figcaption class="slide__description">
-                                    <div>
-                                        <b class="slide__name">В поисках прекрасного</b><br>
-                                        <b class="slide__price">100 000 &#8381;</b>
-                                    </div>
-                                    <a href="#" class="slide__link">Подробнее</a>
-                                </figcaption>
-                            </figure>
-                        </li> 
-                        <li class="tours__slide">
-                            <figure class="slide">
-                                <p><img class="slide__image" src="./img/main-page/tours/3.jpg" alt="Тур 'В поисках прекрасного'. Стоимость 100000 рублей"></p>
-                                <figcaption class="slide__description">
-                                    <div>
-                                        <b class="slide__name">В поисках прекрасного</b><br>
-                                        <b class="slide__price">100 000 &#8381;</b>
-                                    </div>
-                                    <a href="#" class="slide__link">Подробнее</a>
-                                </figcaption>
-                            </figure>
-                        </li> 
-                    </ul>
+                    <div class="tours__slider slider">
+                        <ul class="slider-block">
+                            <li class="tours__slide slide slide--active">
+                                <figure>
+                                    <p><img class="slide__image" src="./img/main-page/tours/1.jpg" alt="Тур 'В поисках прекрасного'. Стоимость 100000 рублей"></p>
+                                    <figcaption class="slide__description">
+                                        <div>
+                                            <b class="slide__name">В поисках прекрасного</b><br>
+                                            <b class="slide__price">100 000 &#8381;</b>
+                                        </div>
+                                        <a href="#" class="slide__link">Подробнее</a>
+                                    </figcaption>
+                                </figure>
+                            </li> 
+                            <li class="tours__slide slide">
+                                <figure>
+                                    <p><img class="slide__image" src="./img/main-page/tours/2.jpg" alt="Тур 'В поисках прекрасного'. Стоимость 100000 рублей"></p>
+                                    <figcaption class="slide__description">
+                                        <div>
+                                            <b class="slide__name">В поисках прекрасного</b><br>
+                                            <b class="slide__price">100 000 &#8381;</b>
+                                        </div>
+                                        <a href="#" class="slide__link">Подробнее</a>
+                                    </figcaption>
+                                </figure>
+                            </li> 
+                            <li class="tours__slide slide">
+                                <figure>
+                                    <p><img class="slide__image" src="./img/main-page/tours/3.jpg" alt="Тур 'В поисках прекрасного'. Стоимость 100000 рублей"></p>
+                                    <figcaption class="slide__description">
+                                        <div>
+                                            <b class="slide__name">В поисках прекрасного</b><br>
+                                            <b class="slide__price">100 000 &#8381;</b>
+                                        </div>
+                                        <a href="#" class="slide__link">Подробнее</a>
+                                    </figcaption>
+                                </figure>
+                            </li> 
+                            <li class="tours__slide slide slide--active">
+                                <figure>
+                                    <p><img class="slide__image" src="./img/main-page/tours/1.jpg" alt="Тур 'В поисках прекрасного'. Стоимость 100000 рублей"></p>
+                                    <figcaption class="slide__description">
+                                        <div>
+                                            <b class="slide__name">В поисках прекрасного</b><br>
+                                            <b class="slide__price">100 000 &#8381;</b>
+                                        </div>
+                                        <a href="#" class="slide__link">Подробнее</a>
+                                    </figcaption>
+                                </figure>
+                            </li> 
+                            <li class="tours__slide slide">
+                                <figure>
+                                    <p><img class="slide__image" src="./img/main-page/tours/2.jpg" alt="Тур 'В поисках прекрасного'. Стоимость 100000 рублей"></p>
+                                    <figcaption class="slide__description">
+                                        <div>
+                                            <b class="slide__name">В поисках прекрасного</b><br>
+                                            <b class="slide__price">100 000 &#8381;</b>
+                                        </div>
+                                        <a href="#" class="slide__link">Подробнее</a>
+                                    </figcaption>
+                                </figure>
+                            </li> 
+                            <li class="tours__slide slide">
+                                <figure>
+                                    <p><img class="slide__image" src="./img/main-page/tours/3.jpg" alt="Тур 'В поисках прекрасного'. Стоимость 100000 рублей"></p>
+                                    <figcaption class="slide__description">
+                                        <div>
+                                            <b class="slide__name">В поисках прекрасного</b><br>
+                                            <b class="slide__price">100 000 &#8381;</b>
+                                        </div>
+                                        <a href="#" class="slide__link">Подробнее</a>
+                                    </figcaption>
+                                </figure>
+                            </li> 
+                        </ul>
+                        
+                    </div>
                 </div>
             </div> 
         </section>
@@ -141,25 +180,26 @@
                 
                 <div class="activities__container">
                     <div class="activities__column-1">
-                        <div class="activities__background"></div>
-                        <ul class="activities__slider slider">
-                            <li class="activities__slide slide">
-                                <p class="activities__slide-count">1/3</p>
-                                <img src="./img/main-page/activities/1.jpg" alt="">
-                            </li>
-                            <li class="activities__slide slide visually-hidden">
-                                <p class="activities__slide-count">2/3</p>
-                                <img src="./img/main-page/activities/2.jpg" alt="">
-                            </li>
-                            <li class="activities__slide slide visually-hidden">
-                                <p class="activities__slide-count">3/3</p>
-                                <img src="./img/main-page/activities/3.jpg" alt="">
-                            </li>
-                        </ul>
+                        <div class="activities__background">
+                            <ul class="activities__slider">
+                                <li class="activities__slide activities__slide--active">
+                                    <p class="activities__slide-count">1/3</p>
+                                    <img src="./img/main-page/activities/1.jpg" alt="">
+                                </li>
+                                <li class="activities__slide visually-hidden">
+                                    <p class="activities__slide-count">2/3</p>
+                                    <img src="./img/main-page/activities/2.jpg" alt="">
+                                </li>
+                                <li class="activities__slide visually-hidden">
+                                    <p class="activities__slide-count">3/3</p>
+                                    <img src="./img/main-page/activities/3.jpg" alt="">
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="activities__column-2">
                         <ul class="activities__slider-description">
-                            <li class="activities__slide-description">
+                            <li class="activities__slide-description activities__slide-description--active">
                                 <h3 class="activities__slide-name">Плато путорана</h3>
                                 <p>
                                     На северо-западе современного Красноярского края где-то двести миллионов лет 
@@ -171,31 +211,35 @@
                             <li class="activities__slide-description visually-hidden">
                                 <h3 class="activities__slide-name">Плато путорана</h3>
                                 <p>
-                                    На северо-западе современного Красноярского края где-то двести миллионов лет 
-                                    назад через разломы в земной коре на поверхность полилась базальтовая лава. 
-                                    Из нее и выросло – поднявшееся над окружающей действительностью плато Путорана.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore praesentium sequi 
+                                    libero asperiores eum accusamus saepe, magnam ab repellat minima fugiat nobis placeat, 
+                                    nostrum pariatur, quisquam exercitationem ipsam? Accusamus nesciunt, harum unde deleniti 
+                                    vel libero fuga commodi architecto rerum molestiae eos, esse similique hic molestias, sit 
+                                    necessitatibus! Fugit, quidem debitis.
                                 </p>
                                 <a href="#" class="slide__link">Подробнее</a>
                             </li>
                             <li class="activities__slide-description visually-hidden">
                                 <h3 class="main-activities__slide-name">Плато путорана</h3>
                                 <p>
-                                    На северо-западе современного Красноярского края где-то двести миллионов лет 
-                                    назад через разломы в земной коре на поверхность полилась базальтовая лава. 
-                                    Из нее и выросло – поднявшееся над окружающей действительностью плато Путорана.
+                                    Dolor sit amet consectetur adipisicing elit. Tempore praesentium sequi 
+                                    libero asperiores eum accusamus saepe, magnam ab repellat minima fugiat nobis placeat, 
+                                    nostrum pariatur, quisquam exercitationem ipsam? Accusamus nesciunt, harum unde deleniti 
+                                    vel libero fuga commodi architecto rerum molestiae eos, esse similique hic molestias, sit 
+                                    necessitatibus! Fugit, quidem debitis.
                                 </p>
                                 <a href="#" class="slide__link">Подробнее</a>
                             </li> 
                         </ul>
                         <div class="activities__buttons buttons">
-                            <button class="activities__button button button__left">
+                            <button class="activities__button button button__left" id="activities-left">
                                 <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="33" cy="33" r="32" transform="rotate(-180 33 33)" stroke="black" stroke-width="2"/>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M29.8629 27.9689C29.9328 28.0385 29.9882 28.1213 30.026 28.2124C30.0638 28.3035 30.0832 28.4012 30.0832 28.4999C30.0832 28.5985 30.0638 28.6962 30.026 28.7873C29.9882 28.8784 29.9328 28.9612 29.8629 29.0309L25.8924 32.9999L29.8629 36.9689C29.9326 37.0386 29.988 37.1214 30.0257 37.2125C30.0634 37.3036 30.0829 37.4013 30.0829 37.4999C30.0829 37.5985 30.0634 37.6961 30.0257 37.7872C29.988 37.8784 29.9326 37.9611 29.8629 38.0309C29.7932 38.1006 29.7104 38.1559 29.6193 38.1937C29.5282 38.2314 29.4305 38.2508 29.3319 38.2508C29.2333 38.2508 29.1356 38.2314 29.0445 38.1937C28.9534 38.1559 28.8706 38.1006 28.8009 38.0309L24.3009 33.5309C24.2311 33.4612 24.1756 33.3784 24.1378 33.2873C24.1 33.1962 24.0806 33.0985 24.0806 32.9999C24.0806 32.9012 24.1 32.8035 24.1378 32.7124C24.1756 32.6213 24.2311 32.5385 24.3009 32.4689L28.8009 27.9689C28.8706 27.899 28.9533 27.8436 29.0445 27.8058C29.1356 27.768 29.2333 27.7485 29.3319 27.7485C29.4306 27.7485 29.5282 27.768 29.6194 27.8058C29.7105 27.8436 29.7932 27.899 29.8629 27.9689Z" fill="black"/>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M24.75 33C24.75 32.8011 24.829 32.6103 24.9697 32.4697C25.1103 32.329 25.3011 32.25 25.5 32.25L41.25 32.25C41.4489 32.25 41.6397 32.329 41.7803 32.4697C41.921 32.6103 42 32.8011 42 33C42 33.1989 41.921 33.3897 41.7803 33.5303C41.6397 33.671 41.4489 33.75 41.25 33.75L25.5 33.75C25.3011 33.75 25.1103 33.671 24.9697 33.5303C24.829 33.3897 24.75 33.1989 24.75 33Z" fill="black"/>
                                 </svg>
                             </button>
-                            <button class="activities__button button button__right">
+                            <button class="activities__button button button__right"  id="activities-right">
                                 <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="33" cy="33" r="32" stroke="black" stroke-width="2"/>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M36.1371 38.0311C36.0672 37.9615 36.0118 37.8787 35.974 37.7876C35.9362 37.6965 35.9168 37.5988 35.9168 37.5001C35.9168 37.4015 35.9362 37.3038 35.974 37.2127C36.0118 37.1216 36.0672 37.0388 36.1371 36.9691L40.1076 33.0001L36.1371 29.0311C36.0674 28.9614 36.012 28.8786 35.9743 28.7875C35.9366 28.6964 35.9171 28.5987 35.9171 28.5001C35.9171 28.4015 35.9366 28.3039 35.9743 28.2128C36.012 28.1216 36.0674 28.0389 36.1371 27.9691C36.2068 27.8994 36.2896 27.8441 36.3807 27.8063C36.4718 27.7686 36.5695 27.7492 36.6681 27.7492C36.7667 27.7492 36.8644 27.7686 36.9555 27.8063C37.0466 27.8441 37.1294 27.8994 37.1991 27.9691L41.6991 32.4691C41.7689 32.5388 41.8244 32.6216 41.8622 32.7127C41.9 32.8038 41.9194 32.9015 41.9194 33.0001C41.9194 33.0988 41.9 33.1965 41.8622 33.2876C41.8244 33.3787 41.7689 33.4615 41.6991 33.5311L37.1991 38.0311C37.1294 38.101 37.0467 38.1564 36.9555 38.1942C36.8644 38.232 36.7667 38.2515 36.6681 38.2515C36.5694 38.2515 36.4718 38.232 36.3806 38.1942C36.2895 38.1564 36.2068 38.101 36.1371 38.0311Z" fill="black"/>
@@ -350,8 +394,6 @@
                             не видят солнца — полтора месяца длится полярная ночь. Но не смотря на лютый холод, люди 
                             здесть любят улыбаться. Норильск окружен природой удивительной красоты. 
                         </p>
-                        <img class="norilsk__photo-1" src="./img/main-page/norilsk/1.jpg" alt="Фотография Норильска">
-                        <img class="norilsk__photo-2" src="./img/main-page/norilsk/2.jpg" alt="Фотография Норильска">
                     </div>
                     <div class="norilsk__column-2">
                         <p class="norilsk__description">
@@ -360,6 +402,15 @@
                             с черных базальтовых скал. Панорама окружающего горного ландшафта просто грандиозна. Уникален 
                             богатый и разнообразный животный мир. Все это неизведанный мир красивейшей дикой природы Севера.
                         </p>
+                    </div>
+                </div>
+
+                <div class="norilsk__container">
+                    <div class="norilsk__column-1">
+                        <img class="norilsk__photo-1" src="./img/main-page/norilsk/1.jpg" alt="Фотография Норильска">
+                        <img class="norilsk__photo-2" src="./img/main-page/norilsk/2.jpg" alt="Фотография Норильска">
+                    </div>
+                    <div class="norilsk__column-2">
                         <img class="norilsk__photo-3" src="./img/main-page/norilsk/3.jpg" alt="Фотография Норильска">
                         <a href="#" class="norilsk__button big-button">
                             <span>Подробнее о Норильске</span>
@@ -463,68 +514,80 @@
         </section>
 
         <section class="feedback">
-            <div class="feedback__wrapper">
-                <div class="feedback__container">
-                    <div class="feedback__column-1">
-                        <h1 class="feedback__title white-title">У вас остались<br>вопросы?</h1>
+            <div class="feedback__filter">
+                <div class="feedback__wrapper">
+                    <div class="feedback__container">
+                        <div class="feedback__column-1">
+                            <h1 class="feedback__title white-title">У вас остались<br>вопросы?</h1>
+                        </div>
+                        <div class="feedback__column-2">
+                            <p class="feedback__text">
+                                Оставьте свои контактыне данные и наш менеджер свяжется с вами в ближайшее время 
+                                и ответит на все интересующие вас вопросы!
+                            </p>
+                        </div>
                     </div>
-                    <div class="feedback__column-2">
-                        <p class="feedback__text">
-                            Оставьте свои контактыне данные и наш менеджер свяжется с вами в ближайшее время 
-                            и ответит на все интересующие вас вопросы!
-                        </p>
-                    </div>
+                    <form class="feedback__form" action="#" method="POST">
+                        <input type="text" placeholder="Имя">
+                        <input type="tel" placeholder="Номер телефона">
+                        <input type="text" placeholder="Ваш комментарий">
+                        <button class="feedback__button">
+                            <span>Отправить</span>
+                            <svg width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M53.7056 56.5464C53.6008 56.4419 53.5177 56.3178 53.461 56.1811C53.4043 56.0444 53.3751 55.8979 53.3751 55.7499C53.3751 55.602 53.4043 55.4554 53.461 55.3188C53.5177 55.1821 53.6008 55.0579 53.7056 54.9534L59.6613 48.9999L53.7056 43.0464C53.601 42.9418 53.518 42.8177 53.4614 42.681C53.4048 42.5443 53.3757 42.3979 53.3757 42.2499C53.3757 42.102 53.4048 41.9555 53.4614 41.8189C53.518 41.6822 53.601 41.558 53.7056 41.4534C53.8102 41.3488 53.9344 41.2659 54.071 41.2093C54.2077 41.1527 54.3542 41.1235 54.5021 41.1235C54.65 41.1235 54.7965 41.1527 54.9331 41.2093C55.0698 41.2659 55.194 41.3488 55.2986 41.4534L62.0486 48.2034C62.1533 48.3079 62.2365 48.4321 62.2932 48.5688C62.3499 48.7054 62.3791 48.852 62.3791 48.9999C62.3791 49.1479 62.3499 49.2944 62.2932 49.4311C62.2365 49.5678 62.1533 49.6919 62.0486 49.7964L55.2986 56.5464C55.1941 56.6512 55.0699 56.7343 54.9333 56.791C54.7966 56.8478 54.6501 56.877 54.5021 56.877C54.3541 56.877 54.2076 56.8478 54.0709 56.791C53.9342 56.7343 53.8101 56.6512 53.7056 56.5464Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M61.375 49C61.375 49.2984 61.2565 49.5845 61.0455 49.7955C60.8345 50.0065 60.5484 50.125 60.25 50.125L36.625 50.125C36.3266 50.125 36.0405 50.0065 35.8295 49.7955C35.6185 49.5845 35.5 49.2984 35.5 49C35.5 48.7016 35.6185 48.4155 35.8295 48.2045C36.0405 47.9935 36.3266 47.875 36.625 47.875L60.25 47.875C60.5484 47.875 60.8345 47.9935 61.0455 48.2045C61.2565 48.4155 61.375 48.7016 61.375 49Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
-                <form class="feedback__form" action="#" method="POST">
-                    <input type="text" placeholder="Имя">
-                    <input type="tel" placeholder="Номер телефона">
-                    <input type="text" placeholder="Ваш комментарий">
-                    <button class="feedback__button">
-                        <span>Отправить</span>
-                        <svg width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M53.7056 56.5464C53.6008 56.4419 53.5177 56.3178 53.461 56.1811C53.4043 56.0444 53.3751 55.8979 53.3751 55.7499C53.3751 55.602 53.4043 55.4554 53.461 55.3188C53.5177 55.1821 53.6008 55.0579 53.7056 54.9534L59.6613 48.9999L53.7056 43.0464C53.601 42.9418 53.518 42.8177 53.4614 42.681C53.4048 42.5443 53.3757 42.3979 53.3757 42.2499C53.3757 42.102 53.4048 41.9555 53.4614 41.8189C53.518 41.6822 53.601 41.558 53.7056 41.4534C53.8102 41.3488 53.9344 41.2659 54.071 41.2093C54.2077 41.1527 54.3542 41.1235 54.5021 41.1235C54.65 41.1235 54.7965 41.1527 54.9331 41.2093C55.0698 41.2659 55.194 41.3488 55.2986 41.4534L62.0486 48.2034C62.1533 48.3079 62.2365 48.4321 62.2932 48.5688C62.3499 48.7054 62.3791 48.852 62.3791 48.9999C62.3791 49.1479 62.3499 49.2944 62.2932 49.4311C62.2365 49.5678 62.1533 49.6919 62.0486 49.7964L55.2986 56.5464C55.1941 56.6512 55.0699 56.7343 54.9333 56.791C54.7966 56.8478 54.6501 56.877 54.5021 56.877C54.3541 56.877 54.2076 56.8478 54.0709 56.791C53.9342 56.7343 53.8101 56.6512 53.7056 56.5464Z" fill="white"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M61.375 49C61.375 49.2984 61.2565 49.5845 61.0455 49.7955C60.8345 50.0065 60.5484 50.125 60.25 50.125L36.625 50.125C36.3266 50.125 36.0405 50.0065 35.8295 49.7955C35.6185 49.5845 35.5 49.2984 35.5 49C35.5 48.7016 35.6185 48.4155 35.8295 48.2045C36.0405 47.9935 36.3266 47.875 36.625 47.875L60.25 47.875C60.5484 47.875 60.8345 47.9935 61.0455 48.2045C61.2565 48.4155 61.375 48.7016 61.375 49Z" fill="white"/>
-                        </svg>
-                    </button>
-                </form>
             </div>
+            
         </section>
     </main>
 
     <footer class="main-footer">
         <div class="main-footer__wrapper">
-            <div class="main-footer__container">
+            <div class="main-footer__grid-container">
                 <div class="main-footer__column-1">
-                    <h2>Разделы</h2>
-                    <ul>
-                        <li><a>Туры</a></li>
-                        <li><a>Норильск</a></li>
-                        <li><a>Активности</a></li>
-                        <li><a>Центр развития Норильска</a></li>
-                        <li><a>FAQ</a></li>
-                        <li><a>Блог</a></li>
-                    </ul>
+                    <h2 class="main-footer__sections">Разделы</h2>
+                    <nav class="main-footer__nav">
+                        <ul class="main-footer__nav-list">
+                            <li class="main-footer__nav-item"><a href="#">Туры</a></li>
+                            <li class="main-footer__nav-item"><a href="#">Активности</a></li>
+                            <li class="main-footer__nav-item"><a href="#">FAQ</a></li>
+                        </ul>
+                        <ul class="main-footer__nav-list">
+                            <li class="main-footer__nav-item"><a href="#">Норильск</a></li>
+                            <li class="main-footer__nav-item"><a href="#">Центр развития туризма Норильска</a></li>
+                            <li class="main-footer__nav-item"><a href="#">Блог</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="main-footer__column-2">
-                    <h2>Контакты</h2>
-                    <ul>
-                        <li>+7 (999) 999-99-99</li>
-                        <li>info@arktika.ru</li>
-                        <li>Норильск, ул. Пушкина 32, оф. 506</li>
+                    <h2 class="main-footer__contacts">Контакты</h2>
+                    <ul class="main-footer__contacts-list">
+                        <li class="main-footer__contact">+7 (999) 999-99-99</li>
+                        <li class="main-footer__contact">info@arktika.ru</li>
+                        <li class="main-footer__contact">Норильск, ул. Пушкина 32, оф. 506</li>
                     </ul>
                 </div>
                 <div class="main-footer__column-3">
-                    <h2>Подписывайтесь</h2>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Instagram</li>
-                        <li>Youtube</li>
+                    <h2 class="main-footer__socials">Подписывайтесь</h2>
+                    <ul class="main-footer__socials-list">
+                        <li class="main-footer__socials-item">Facebook</li>
+                        <li class="main-footer__socials-item">Instagram</li>
+                        <li class="main-footer__socials-item">Youtube</li>
                     </ul>
-                </div>
+                </div>    
             </div>
-            <p>Арктика 2020. Все права защищены. Копирование материалов без активной ссылки на источник запрещено.</p>
-            <p>Политика конфиденциальности</p>
+
+            <div class="main-footer__flex-container">
+                <p class="main-footer__copyright">Арктика 2020. Все права защищены. Копирование материалов без активной ссылки на источник запрещено.</p>
+                <p class="main-footer__politics">Политика конфиденциальности</p>
+            </div>
         </div>
     </footer>
+
+    <script src="./js/slider.js"></script>
 </body>
 </html>

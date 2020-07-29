@@ -1,8 +1,15 @@
 @import '../../variables.scss';
 
+.activities {
+    max-width: 1905px;
+    margin: 0 auto;
+}
+
 .activities__wrapper {
     padding-top: 295px;
     padding-left: 310px;
+
+    
 }
 
 .activities__container {
@@ -28,24 +35,33 @@
 }
 
 .activities__slider {
-    display: flex;
-    position: absolute;
+    position: relative;
     transform-origin: 50% 50%;
     transform: translate(50%, 30%);
     
     width: auto;
+    min-height: 480px;
     
     z-index: 2;
 }
 
 .activities__slide {
+    position: absolute;
     width: 715px;
     margin: 0;
+
+    list-style: none;
+
+    z-index: 1;
+
+    &--active {
+        z-index: 3;
+    }
 }
 
 p.activities__slide-count {
     position: absolute;
-    top: -15px;
+    top: -65px;
     left: 45%;
 
     font-family: $font-fyl;
@@ -59,13 +75,26 @@ p.activities__slide-count {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    flex-grow: 1;
 }
 
 .activities__slider-description {
+    position: relative;
     padding: 0;
     margin: 0;
 
     list-style: none;
+}
+
+.activities__slide-description {
+    position: absolute;
+
+    z-index: 1;
+
+    &--active {
+        z-index: 3;
+    }
 }
 
 .activities__slide-name {

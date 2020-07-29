@@ -1,11 +1,18 @@
 @import '../../variables.scss';
 
+.tours {
+    overflow: hidden;
+}
+
 .tours__wrapper {
     display: flex;
     justify-content: space-between;
 
     padding-top: 200px;
     padding-left: 310px;
+
+    max-width: 1905px;
+    margin: 0 auto;
 }
 
 .tours__column-1 {
@@ -33,7 +40,7 @@
 
     width: 1055px;
 
-    overflow: hidden;
+    
 }
 
 .tours__more {
