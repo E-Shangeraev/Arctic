@@ -7,6 +7,8 @@
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100% auto;
+
+    overflow: hidden;
 } 
 
 .emotions__wrapper {
@@ -31,4 +33,50 @@
     color: #ffffff;
 
     margin-bottom: 27px;
+}
+
+
+//Анимация
+//Анимация первой колонки
+.emotions__title {
+    // animation-name: emotions__title;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-delay: 0.2s;
+    
+    opacity: 0;
+    transform: translateX(-70px);
+}
+
+@keyframes emotions__title {
+    100% {
+        opacity: 1.5;
+        transform: translateX(0px);
+    }
+}
+
+//Анимация второй колонки
+
+.emotions__description,
+.emotions__button {
+    opacity: 0;
+    transform: translateX(100%);
+
+    // animation-name: emotions__description;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.emotions__button {
+    transform: translateX(180%);
+    animation-delay: 0.5s;
+}
+
+@keyframes emotions__description {
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }

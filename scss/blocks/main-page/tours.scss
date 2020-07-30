@@ -55,3 +55,83 @@
     margin-right: 75px;
     margin-bottom: 67px;
 }
+
+
+// Анимация
+
+//Анимация первой колонки
+.tours__title,
+.tours__description,
+.tours__buttons {
+    // animation-name: tours;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    
+    opacity: 0;
+    transform: translateX(-70px);
+}
+
+.tours__description {
+    animation-delay: 1.5s;
+}
+
+.tours__buttons {
+    animation-delay: 2s;
+}
+
+@keyframes tours {
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.tours__pagination {
+    // animation-name: tours__pagination;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+
+    opacity: 0;
+}
+
+@keyframes tours__pagination {
+    50% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+
+//Анимация второй колонки
+.tours__slider-block{
+    opacity: 0;
+    transform: translateX(100%);
+
+    // animation-name: tours__slider-block;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes tours__slider-block {
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.tours__more {
+    opacity: 0;
+
+    // animation-name: tours__pagination;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-delay: 3s;
+}

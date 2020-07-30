@@ -56,7 +56,7 @@
 .main-header__title {
     font-family: $font-fyl;
     font-size: 69px;
-    line-height: 80px;
+    line-height: 40px;
 
     color: #ffffff;
 }
@@ -93,21 +93,21 @@
 // Анимация
 
 //Анимация слогана
-.main-header__slogan {
-    animation-name: main-header__slogan;
+.main-header__title {
+    animation-name: main-header__title;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
 
     opacity: 0;
-    transform: translateX(-70px);
+    transform: translateX(-150px);
 
     &:nth-child(2) {
-        animation-delay: 0.3s;
+        animation-delay: 1.0s;
     }
 }
 
-@keyframes main-header__slogan {
+@keyframes main-header__title {
     100% {
         opacity: 1;
         transform: translateX(0px);
@@ -120,15 +120,16 @@
     animation-duration: 4s;
     animation-fill-mode: forwards;
     animation-timing-function: ease;
+    animation-delay: 1.0s;
 
     opacity: 0;
-    transform: translateX(-70px);
+    // transform: translateX(-150px);
 }
 
 @keyframes main-header__icon {
     100% {
         opacity: 1;
-        transform: translateX(0px);
+        // transform: translateX(0px);
     }
 }
 

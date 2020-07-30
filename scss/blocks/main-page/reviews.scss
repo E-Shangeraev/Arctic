@@ -1,5 +1,6 @@
 .reviews {
     margin-top: 250px;
+    overflow: hidden;
 }
 
 .reviews__wrapper {
@@ -43,4 +44,124 @@
     left: 660px;
 
     line-height: 80px;
+}
+
+
+
+// Анимация
+
+//Анимация первой колонки
+.reviews__pagination {
+    // animation-name: reviews__pagination;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+
+    opacity: 0;
+}
+
+@keyframes reviews__pagination {
+    50% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+.reviews__title {
+    // animation-name: reviews__title;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    
+    opacity: 0;
+    transform: translateX(-70px);
+}
+
+@keyframes reviews__title {
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.reviews__photo--1,
+.reviews__photo--2,
+.reviews__photo--3 {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.reviews__photo--1 {
+    animation-delay: 1.5s;
+}
+
+.reviews__photo--2 {
+    animation-delay: 2s;
+}
+
+.reviews__photo--3 {
+    animation-delay: 2.5s;
+}
+
+@keyframes reviews__photo {
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+//Анимация второй колонки
+.reviews__blockquote--1,
+.reviews__blockquote--2,
+.reviews__blockquote--3 {
+    opacity: 0;
+    transform: translateX(100%);
+
+    // animation-name: reviews__blockquote;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.reviews__blockquote--1 {
+    animation-delay: 1.5s;
+}
+
+.reviews__blockquote--2 {
+    animation-delay: 2s;
+}
+
+.reviews__blockquote--3 {
+    animation-delay: 2.5s;
+}
+
+@keyframes reviews__blockquote {
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+.reviews__more {
+    animation-delay: 3s;
+    opacity: 0;
+
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes reviews__more {
+    100% {
+        opacity: 1;
+    }
 }

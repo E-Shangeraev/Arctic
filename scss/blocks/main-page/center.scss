@@ -2,6 +2,7 @@
 
 .center {
     margin-top: 295px;
+    overflow: hidden;
 }
 
 .center__wrapper {
@@ -67,4 +68,68 @@
 .center__stats-field {
     font-size: 16px;
     line-height: 26px;
+}
+
+
+
+// Анимация
+
+//Анимация первой колонки
+.center__pagination {
+    // animation-name: center__pagination;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+
+    opacity: 0;
+}
+
+@keyframes center__pagination {
+    50% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+.center__description--1,
+.center__button {
+    // animation-name: center__description--1;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.center__button {
+    animation-delay: 0.5s;
+}
+
+@keyframes center__description--1 {
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+//Анимация второй колонки
+.center__description--2 {
+    opacity: 0;
+    transform: translateX(100%);
+
+    // animation-name: center__description--2;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes center__description--2 {
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
