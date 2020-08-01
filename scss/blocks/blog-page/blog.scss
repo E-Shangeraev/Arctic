@@ -1,0 +1,131 @@
+@import '../../variables.scss';
+
+.blog {
+    margin-top: 212px;
+    margin-bottom: 187px;
+    overflow: hidden;
+}
+
+.blog__wrapper {
+    padding: 0 340px;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.blog__nav-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    padding-bottom: 27px;
+    margin: 0;
+    width: 100%;
+    
+    list-style: none;
+
+    border-bottom: 2px solid #cccccc;
+}
+
+.blog__nav-item a {
+    font-family: $font-fyl;
+    font-size: 18px;
+    line-height: 40px;
+    color: #000000;
+    text-decoration: none;
+
+    sup {
+        color: #E83B3B;
+    }
+}
+
+
+
+
+.blog__top {
+    display: flex;
+    margin-top: 116px;
+}
+
+.blog__calendar {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 45px;
+
+    max-width: 925px;
+
+    background-color: #EDEDED;
+}
+
+.blog__calendar-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 83px 50px;
+}
+
+.blog__calendar-title {
+    margin: 0;
+    width: 100%;
+
+    font-family: $font-fyl;
+    font-size: 22px;
+    line-height: 38px;
+    font-weight: normal;
+}
+
+.blog__calendar-appeal {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.blog__timetable {
+    margin-bottom: 50px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.35);
+}
+
+.blog__button span {
+    color: #000000;
+}
+
+.blog__articles {
+    margin-top: 115px;
+}
+
+.blog__articles-title {
+    font-family: $font-fyl;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.blog__articles-button {
+    width: 100%;
+    margin-top: 80px;
+    padding: 30px 540px;
+
+    font-family: $font-montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+
+    border: none;
+    background-color: #EDEDED;
+
+    cursor: pointer;
+}
+
+.blog__pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 27px;
+}

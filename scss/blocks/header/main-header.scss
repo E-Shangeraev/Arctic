@@ -57,8 +57,13 @@
     font-family: $font-fyl;
     font-size: 69px;
     line-height: 40px;
+    font-weight: normal;
 
     color: #ffffff;
+}
+
+.main-header__description {
+    max-width: 400px;
 }
 
 .main-header__icon {
@@ -90,10 +95,12 @@
 }
 
 
+
 // Анимация
 
 //Анимация слогана
-.main-header__title {
+.main-header__title,
+.main-header__description {
     animation-name: main-header__title;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -102,7 +109,8 @@
     opacity: 0;
     transform: translateX(-150px);
 
-    &:nth-child(2) {
+    &:nth-child(2),
+    .main-header__description {
         animation-delay: 1.0s;
     }
 }
@@ -113,6 +121,8 @@
         transform: translateX(0px);
     }
 }
+
+
 
 //Анимация иконки мыши
 .main-header__icon {

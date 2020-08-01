@@ -1,19 +1,18 @@
 @import '../variables.scss';
 
+
 .big-button {
-    display: inline-block;
-    position: relative;
-    height: 100px;
-    
-    text-decoration: none;
+  display: flex;
+  align-items: center;
 
-    span {
-        color: #ffffff;
-        vertical-align: 145%;
-        padding-right: 34px;
-    }
+  text-decoration: none;
+
+  span {
+    color: #ffffff;
+    vertical-align: 145%;
+    padding-right: 34px;
 }
-
+}
 
 //Анимация
 
