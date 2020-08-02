@@ -12,6 +12,7 @@
 @import "./blocks/slider.scss";
 @import "./blocks/big-button.scss";
 @import "./blocks/nav.scss";
+@import "./blocks/articles-section.scss";
 
 //main-page
 @import "./blocks/header/main-header.scss";
@@ -33,7 +34,9 @@
 
 //blog-page
 @import "./blocks/blog-page/blog.scss";
-@import "./blocks/blog-page/article-preview.scss";
+
+//article-page
+@import "./blocks/article-page/article.scss";
 
 body {
     font-family: $font-montserrat;

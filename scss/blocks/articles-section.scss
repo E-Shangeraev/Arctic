@@ -1,4 +1,12 @@
-@import '../../variables.scss';
+@import '../variables.scss';
+
+.articles-section__title {
+    font-family: $font-fyl;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 40px;
+}
 
 .article-preview {
     display: flex;
@@ -62,7 +70,7 @@
     border-top: 1px solid #cccccc;
 }
 
-.blog__articles-list {
+.articles-section__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
