@@ -1,5 +1,9 @@
 @import '../variables.scss';
 
+.articles-section__wrapper {
+    padding: 0 340px;
+}
+
 .articles-section__title {
     font-family: $font-fyl;
     font-style: normal;

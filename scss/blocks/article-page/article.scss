@@ -1,12 +1,82 @@
 @import '../../variables.scss';
 
-.article-page__wrapper {
-    padding: 0 340px;
-    max-width: 1240px;
-    margin: 0 auto;
+.article__wrapper {
+    padding-left: 340px;
     margin-top: 72px;
     margin-bottom: 187px;
     overflow: hidden;
+}
+
+.article {
+    width: 100%;
+}
+
+.article__link-back {
+    margin-bottom: 130px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 80px;
+    text-decoration: none;
+    color: #000000;
+    
+    .link-back__text,
+    path {
+        transition: ease 0.2s;
+    }
+
+    &:hover .link-back__text,
+    &:hover path {
+        color: #777777;
+        fill: #777777;
+    }
+}
+
+.article__link-back-arrow {
+    margin-right: 15px;
+}
+
+.article__container {
+    display: flex;
+}
+
+.article__column-1 {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    max-width: 466px;
+    
+    margin-right: 60px;
+}
+
+.article__author > span,
+.article__author > cite {
+    font-size: 14px;
+    line-height: 26px;
+    color: #777777;
+}
+
+.article address,
+.article cite {
+    font-style: normal;
+}
+
+.article__author-name {
+    display: flex;
+    align-items: center;
+    padding: 23px 0;
+    border-top: 1px solid #C1C1C1;
+    border-bottom: 1px solid #C1C1C1;
+
+    img {
+        margin-right: 25px;
+    }
+
+    span {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 80px;
+    }
 }
 
 .article__feedback {
@@ -15,15 +85,52 @@
 }
 
 .article__feedback-title {
+    margin-top: 140px;
+    margin-bottom: 0;
 
+    font-family: $font-fyl;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
 }
 
 .article__feedback-description {
+    margin-top: 32px;
 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 26px;
+    color: #777777;
 }
 
 .article__feedback-form {
+    margin-top: 45px;
 
+    input,
+    input::placeholder {
+        width: 100%;
+        margin-bottom: 70px;
+        padding: 10px;
+
+        font-family: $font-montserrat;
+        font-size: 18px;
+        line-height: 26px;
+        color: #777777;
+
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #777777;
+
+        box-sizing: border-box;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    input:focus::placeholder {
+        color: transparent;
+    }
 }
 
 .article__feedback-button {
@@ -31,8 +138,6 @@
     align-items: center;
     align-self: start;
 
-    position: relative;
-    right: 340px;
     bottom: 5px;
     padding: 0;
 
@@ -56,5 +161,126 @@
 
     &:hover path {
         fill: #cccccc;
+    }
+}
+
+
+
+
+.article__column-2 > :not(img) {
+    margin-right: 340px;
+}
+
+.bread-crumbs {
+    margin: 0;
+    margin-bottom: 32px;
+
+    color: #777777;
+    line-height: 80px;
+
+    a {
+        text-decoration: none;
+        color: #777777;
+       
+    }
+}
+
+.article__title {
+    font-family: $font-fyl;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 80px;
+    margin: 0;
+}
+
+.article__datetime {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #777777;
+}
+
+.article__column-2 img {
+    margin-top: 15px;
+}
+
+.article__text {
+    margin: 67px 0;
+
+    font-size: 14px;
+    line-height: 24px;
+    white-space: pre-line;
+}
+
+.article__panel {
+    display: flex;
+    justify-content: space-between;
+
+
+    border-top: 1px solid #C1C1C1;
+    border-bottom: 1px solid #C1C1C1;
+    border-width: 100%;
+
+    height: 73px;
+}
+
+.article__share,
+.article__stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button:focus {
+        outline: transparent;
+    }
+}
+
+.article__share {
+    p {
+        margin: 0;
+    }
+
+    button {
+        min-height: 50px;
+        
+        background-color: transparent;
+        border: none;
+
+        cursor: pointer;
+    }
+
+    span {
+        margin-right: 35px;
+
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+.article__stats {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+
+    p {
+        display: flex;
+        align-items: center;
+        width: 100px;
+    }
+
+    button {
+        margin-right: 10px;
+        float: left;
+        min-height: 50px;
+
+        background-color: transparent;
+        border: none;
+
+        cursor: pointer;
+        
+    }
+
+    span {
+        line-height: 30px;
     }
 }
