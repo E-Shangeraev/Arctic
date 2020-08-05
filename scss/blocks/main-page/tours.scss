@@ -109,17 +109,17 @@
 
 
 //Анимация второй колонки
-.tours__slider-block{
+.tours__slider {
     opacity: 0;
     transform: translateX(100%);
 
-    // animation-name: tours__slider-block;
+    // animation-name: tours__slider;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
 }
 
-@keyframes tours__slider-block {
+@keyframes tours__slider {
     100% {
         opacity: 1;
         transform: translateX(0px);

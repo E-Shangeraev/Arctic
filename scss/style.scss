@@ -34,9 +34,11 @@
 
 //blog-page
 @import "./blocks/blog-page/blog.scss";
+@import "./blocks/blog-page/calendar.scss";
 
 //article-page
 @import "./blocks/article-page/article.scss";
+
 
 body {
     font-family: $font-montserrat;

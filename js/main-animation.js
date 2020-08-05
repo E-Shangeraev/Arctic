@@ -21,7 +21,7 @@ window.addEventListener('scroll', function() {
     addAnimation('tours__description', 'tours');
     addAnimation('tours__buttons', 'tours');
     addAnimation('tours__pagination', 'tours__pagination');
-    addAnimation('tours__slider-block', 'tours__slider-block');
+    addAnimation('tours__slider', 'tours__slider');
     addAnimation('tours__more', 'tours__pagination');
 
     addAnimation('activities__title', 'activities');

@@ -38,8 +38,6 @@
 }
 
 
-
-
 .blog__top {
     display: flex;
     margin-top: 116px;
@@ -53,6 +51,22 @@
     max-width: 925px;
 
     background-color: #EDEDED;
+
+    transition: linear 0.3s;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.blog__popular {
+    color: #000000;
+    text-decoration: none;
+    transition: linear 0.3s;
+
+    &:hover {
+        transform: scale(1.02);
+    }
 }
 
 .blog__calendar-description {
@@ -95,14 +109,6 @@
 
 .blog__articles {
     margin-top: 115px;
-}
-
-.blog__articles-title {
-    font-family: $font-fyl;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 40px;
 }
 
 .blog__articles-button {

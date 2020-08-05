@@ -2,7 +2,7 @@ let toursBtnRight = document.getElementById('tours-right');
 let toursBtnLeft = document.getElementById('tours-left');
 
 let slideCollection = document.querySelectorAll('.tours__slide');
-let slides = document.querySelector('.tours__slider .slider-block');
+let slides = document.querySelector('.tours__slider-block');
 
 let percent = 0;
 let minPercent = 100 / slideCollection.length;
