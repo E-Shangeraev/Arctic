@@ -193,12 +193,17 @@
     margin-top: 64px;
     text-align: center;
 
-    span {
-        padding-top: 3px;
+    input {
         width: 35px;
         height: 35px;
+        border: transparent;
         border-radius: 50%;
         box-sizing: border-box;
+
+        font-family: $font-montserrat;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 30px;
     }
 }
 
@@ -228,4 +233,10 @@
 
 #Sun {
     grid-area: Sun;
+}
+
+
+input:focus {
+    outline: none;
+    border: 2px solid #E83B3B;
 }

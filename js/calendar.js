@@ -5,74 +5,74 @@ let monthObject = [
     {
         num: '0',
         mon: 'января',
-        monRight: 'Январь'
+        monTop: 'Январь'
     },
     {
         num: '1',
         mon: 'февраля',
-        monRight: 'Февраль'
+        monTop: 'Февраль'
     },
     {
         num: '2',
         mon: 'марта',
-        monRight: 'Март'
+        monTop: 'Март'
     },
     {
         num: '3',
         mon: 'апреля',
-        monRight: 'Апрель'
+        monTop: 'Апрель'
     },
     {
         num: '4',
         mon: 'мая',
-        monRight: 'Май'
+        monTop: 'Май'
     },
     {
         num: '5',
         mon: 'июня',
-        monRight: 'Июнь'
+        monTop: 'Июнь'
     },
     {
         num: '6',
         mon: 'июля',
-        monRight: 'Июль'
+        monTop: 'Июль'
     },
     {
         num: '7',
         mon: 'августа',
-        monRight: 'Август'
+        monTop: 'Август'
     },
     {
         num: '8',
         mon: 'сентября',
-        monRight: 'Сентябрь'
+        monTop: 'Сентябрь'
     },
     {
         num: '9',
         mon: 'октября',
-        monRight: 'Октябрь'
+        monTop: 'Октябрь'
     },
     {
         num: '10',
         mon: 'ноября',
-        monRight: 'Ноябрь'
+        monTop: 'Ноябрь'
     },
     {
         num: '11',
         mon: 'декабря',
-        monRight: 'Декабрь'
+        monTop: 'Декабрь'
     }
 ];
 
 let date = new Date();
 day.textContent = date.getDate();
+month.textContent = monthObject[date.getMonth()].mon;
 year.textContent = date.getFullYear();
 
 function getFirstDayOfMonth() {
     let y = date.getFullYear();
     let m = date.getMonth();
     let firstDay = new Date(y, m, 1);
-
     return firstDay.getDay();
 }
 
@@ -85,14 +85,16 @@ if ( getFirstDayOfMonth() == 0 ) {
 
 
 for (let j = 1; j <= 31; j++) {
-    let element = document.createElement('span');
-    element.textContent = j;
+    let element = document.createElement('input');
+    element.setAttribute('type', 'button');
+    element.setAttribute('value', j);
     element.style.gridArea = 'd' + k;
     element.style.cursor = 'pointer';
+    element.classList.add('calendar__element');
     calendarMain.appendChild(element);
     k++;
-    
-    if (element.textContent == date.getDate()) {
+
+    if (element.getAttribute('value', j) == date.getDate()) {
         element.style.backgroundColor = '#E83B3B';
         element.style.color = '#ffffff';
     }
@@ -101,25 +103,32 @@ for (let j = 1; j <= 31; j++) {
 
 let calendarTopItemActive = document.querySelector('.calendar__top-item--active');
 
-for (let i = 0; i < 12; i++) {
-    if (date.getMonth() == monthObject[i].num) {
-        month.textContent = monthObject[i].mon;
+let thisMonthIndex = date.getMonth();
+let nextMonthIndex = thisMonthIndex + 1;
+let prevMonthIndex = thisMonthIndex - 1;
 
-        calendarTopItemActive.previousElementSibling.children[0].textContent = monthObject[i-1].monRight;
-        calendarTopItemActive.previousElementSibling.children[1].textContent = date.getFullYear();
-        calendarTopItemActive.children[0].textContent = monthObject[i].monRight;
-        calendarTopItemActive.children[1].textContent = date.getFullYear();
-        alendarTopItemActive.nextElementSibling.children[0].textContent = monthObject[i-1].monRight;
-        calendarTopItemActive.nextElementSibling.children[1].textContent = date.getFullYear();
-    }
 
-    //Если предыдущий месяц декабрь - отобразить прошлый год
-    if (date.getMonth() - 1 == 11) {
-        calendarTopItemActive.previousElementSibling.children[1].textContent = date.getFullYear() - 1;
-    }
+if (thisMonthIndex >= 12) {
+    thisMonthIndex -= 12;
+}
 
-    //Если следующий месяц январь - отобразить следующий год
-    if (date.getMonth() + 1 == 0) {
-        calendarTopItemActive.previousElementSibling.children[1].textContent = date.getFullYear() + 1;
-    }
+if (nextMonthIndex >= 12) {
+    nextMonthIndex -= 12;
+}
+
+calendarTopItemActive.nextElementSibling.children[1].textContent = date.getFullYear();
+calendarTopItemActive.children[1].textContent = date.getFullYear();
+calendarTopItemActive.previousElementSibling.children[1].textContent = date.getFullYear();
+
+
+calendarTopItemActive.previousElementSibling.children[0].textContent = monthObject[prevMonthIndex].monTop;
+calendarTopItemActive.children[0].textContent = monthObject[thisMonthIndex].monTop;
+calendarTopItemActive.nextElementSibling.children[0].textContent = monthObject[nextMonthIndex].monTop;
+
+if (nextMonthIndex == 0) {
+    calendarTopItemActive.nextElementSibling.children[1].textContent = date.getFullYear() + 1;
+}
+
+if (thisMonthIndex == 0) {
+    calendarTopItemActive.previousElementSibling.children[1].textContent = date.getFullYear() - 1;
 }
