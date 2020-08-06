@@ -13,6 +13,10 @@
 @import "./blocks/big-button.scss";
 @import "./blocks/nav.scss";
 @import "./blocks/articles-section.scss";
+@import "./blocks/show-more-button.scss";
+
+//header
+@import "./blocks/header/header.scss";
 
 //main-page
 @import "./blocks/header/main-header.scss";
@@ -29,16 +33,22 @@
 @import "./blocks/footer/main-footer.scss";
 
 //faq-page
+@import "./blocks/header/faq-header.scss";
 @import "./blocks/faq-page/faq.scss";
 @import "./blocks/faq-page/faq-feedback.scss";
 
 //blog-page
+@import "./blocks/header/blog-header.scss";
 @import "./blocks/blog-page/blog.scss";
 @import "./blocks/blog-page/calendar.scss";
 
 //article-page
 @import "./blocks/article-page/article.scss";
 
+//activities-page
+@import "./blocks/header/activities-header.scss";
+@import "./blocks/activities-page/activities-page.scss";
+@import "./blocks/activities-page/natural.scss";
 
 body {
     font-family: $font-montserrat;

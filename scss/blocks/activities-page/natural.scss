@@ -1,0 +1,28 @@
+@import "../../variables.scss";
+
+.natural__tabs {
+    max-width: 835px;
+}
+
+.natural__tabs-nav {
+    border-bottom: 1px solid #000000;
+}
+
+.natural__tab {
+    margin-right: 80px;
+
+    font-family: $font-montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 80px;
+    color: rgba(0, 0, 0, 0.5);
+
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.natural__tab--active {
+    color: rgba(0, 0, 0, 1);
+}
