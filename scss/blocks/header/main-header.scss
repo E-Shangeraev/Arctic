@@ -1,24 +1,22 @@
 @import '../../variables.scss';
 
 .main-header {
-    overflow: hidden;
-    max-height: 100vh;
-
     font-family: $font-fyl;
     color: #ffffff;
+    height: 100vh;
 }
 
 .main-header__video {
     position: relative;
-    padding-bottom: 56.25%;
-    height: 941px;
+    // padding-bottom: 56.25%;
+    height: 100%;
 
+    overflow: hidden;
     .video {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: auto;
         z-index: 1;
     }
 }
@@ -26,9 +24,11 @@
 .main-header__content {
     position: absolute;
     width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     z-index: 3;
+
 }
 
 .main-header__wrapper {

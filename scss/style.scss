@@ -50,6 +50,12 @@
 @import "./blocks/activities-page/activities-page.scss";
 @import "./blocks/activities-page/natural.scss";
 
+//norilsk-page
+@import "./blocks/header/norilsk-header.scss";
+@import "./blocks/norilsk-page/norilsk.scss";
+@import "./blocks/norilsk-page/about.scss";
+@import "./blocks/norilsk-page/tourist.scss";
+
 body {
     font-family: $font-montserrat;
 }  

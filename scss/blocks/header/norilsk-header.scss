@@ -1,0 +1,10 @@
+@import '../../variables.scss';
+
+.norilsk-header {
+    background-image: url("../../../img/norilsk-page/bg-header.jpg");
+
+    .header__wrapper {
+        padding-top: 200px;
+        padding-bottom: 175px;
+    }
+}

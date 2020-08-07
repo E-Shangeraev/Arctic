@@ -1,14 +1,14 @@
 @import '../../variables.scss';
 
 .tours {
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .tours__wrapper {
     display: flex;
     justify-content: space-between;
 
-    padding-top: 200px;
+    padding-top: 8%;
     padding-left: 310px;
 
     max-width: 1905px;
@@ -40,7 +40,7 @@
 
     width: 1055px;
 
-    
+    overflow: hidden;
 }
 
 .tours__more {
@@ -135,3 +135,10 @@
     animation-timing-function: ease-out;
     animation-delay: 3s;
 }
+
+
+// @media (width: 1366px) {
+//     .tours__wrapper {
+//         padding-top: 0;
+//     }
+// }
