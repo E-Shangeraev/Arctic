@@ -36,16 +36,15 @@ window.addEventListener('scroll', function() {
     addAnimation('emotions__button', 'emotions__description');
 
     addAnimation('center__pagination', 'center__pagination');
-    addAnimation('center__description--1', 'center__description--1');
-    addAnimation('center__button', 'center__description--1');
-    addAnimation('center__description--2', 'center__description--2');
+    addAnimation('center__button', 'center__button');
+    addAnimation('center__description', 'center__pagination');
 
     addAnimation('norilsk__pagination', 'norilsk__pagination');
     addAnimation('norilsk__title', 'norilsk__title');
-    addAnimation('norilsk__description--1', 'norilsk__description--1');
+    // addAnimation('norilsk__description--1', 'norilsk__description--1');
     addAnimation('norilsk__photo-1', 'norilsk__description--1');
     addAnimation('norilsk__photo-2', 'norilsk__description--1');
-    addAnimation('norilsk__description--2', 'norilsk__description--2');
+    // addAnimation('norilsk__description--2', 'norilsk__description--2');
     addAnimation('norilsk__photo-3', 'norilsk__description--2');
     addAnimation('norilsk__button', 'norilsk__description--2');
 

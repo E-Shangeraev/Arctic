@@ -1,37 +1,19 @@
 @import '../../variables.scss';
 
 .center {
-    margin-top: 295px;
     overflow: hidden;
-}
-
-.center__wrapper {
-    padding-left: 340px;
-    padding-right: 230px;
-
-    max-width: 1335px;
-    margin: 0 auto;
 }
 
 .center__container {
     display: flex;
     justify-content: space-between;
-
-}
-
-.center__column-1 {
-    max-width: 620px;
-    margin-right: 90px;
-}
-
-.center__column-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin-bottom: 115px;
 }
 
 .center__image {
-    margin-bottom: 115px;
+    max-width: 48%;
+    height: auto;
+    margin-right: 90px;
 }
 
 .center__button {
@@ -70,18 +52,32 @@
     line-height: 26px;
 }
 
+.center__description {
+    margin: 0;
 
+    column-count: 2;
+    column-gap: 70px;
+}
+
+.center__button {
+    display: inline-block;
+}
 
 // Анимация
 
 //Анимация первой колонки
-.center__pagination {
+.center__pagination,
+.center__description {
     // animation-name: center__pagination;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
 
     opacity: 0;
+}
+
+.center__description {
+    animation-delay: 0.5s;
 }
 
 @keyframes center__pagination {
@@ -94,9 +90,8 @@
     }
 }
 
-.center__description--1,
 .center__button {
-    // animation-name: center__description--1;
+    // animation-name: center__button;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
@@ -109,7 +104,7 @@
     animation-delay: 0.5s;
 }
 
-@keyframes center__description--1 {
+@keyframes center__button {
     100% {
         opacity: 1;
         transform: translateX(0px);
@@ -133,3 +128,34 @@
         transform: translateX(0px);
     }
 }
+
+@media (max-width: 1440px) {
+    .center__container {
+        margin-bottom: 85px;
+    }
+
+    .center__stats td {
+        padding-top: 54px;
+        padding-bottom: 32px;
+
+        padding-top: 28px;
+        padding-bottom: 20px;
+    }
+
+    .center__stats-value {
+        font-family: $font-fyl;
+
+        font-size: 44px;
+        line-height: 80px;
+
+        font-size: 38px;
+        line-height: 80px;
+    
+        width: 60%;
+    }
+
+    .center__description {
+        column-gap: 40px;
+    }
+}
+

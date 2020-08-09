@@ -1,13 +1,9 @@
 .addition {
-    margin-top: 295px;
     overflow: hidden;
 }
 
 .addition__wrapper {
-    padding-left: 340px;
-
-    max-width: 1565px;
-    margin: 0 auto;
+    padding-right: 0;
 }
 
 .addition__container {
@@ -67,4 +63,11 @@
 
 .addition__buttons {
     margin-top: 88px;
+}
+
+
+@media (max-width: 1440px) {
+    .addition__slide {
+        min-width: 30%;
+    }
 }

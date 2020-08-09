@@ -1,14 +1,13 @@
 .reviews {
-    margin-top: 250px;
     overflow: hidden;
 }
 
 .reviews__wrapper {
-    padding-left: 340px;
+    // padding-left: 340px;
     padding-right: 245px;
 
-    max-width: 1320px;
-    margin: 0 auto;
+    // max-width: 1320px;
+    // margin: 0 auto;
 }
 
 .reviews__list {
@@ -41,7 +40,9 @@
 
 .reviews__more {
     position: relative;
+    margin: 0;
     left: 660px;
+    left: 50%;
 
     line-height: 80px;
 }
@@ -164,4 +165,19 @@
     100% {
         opacity: 1;
     }
+}
+
+
+@media (max-width: 1440px) {
+    .reviews__item img {
+        margin: 0;
+    }
+
+    .reviews__wrapper {
+        padding-right: 80px;
+    }
+
+    .reviews__more {
+        left: 54%;
+    }    
 }

@@ -63,3 +63,17 @@
 	}
 
 }
+
+
+@media (max-width: 1366px) {
+  .big-button {
+    span {
+      font-size: 14px;
+    }
+
+    svg {
+      width: 75px;
+      height: 75px;
+    }
+  }
+}

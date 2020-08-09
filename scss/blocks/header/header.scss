@@ -18,10 +18,7 @@
     max-width: 1905px;
 
     margin: 0 auto;
-    padding-top: 148px;
-    padding-bottom: 150px;
-    padding-right: 340px;
-    padding-left: 310px;
+    padding: 8% 18%;
 
     box-sizing: border-box;
 }
@@ -58,7 +55,7 @@
 
 .header__column-2 {
     align-self: start;
-    padding-top: 140px;
+    padding-top: 11%;
 }
 
 .header__button {
@@ -147,4 +144,13 @@
     100% {
         transform: translateY(5px);
     }
-} 
+}
+
+
+
+@media (max-width: 1440px) {
+    .header__title {
+        font-size: 59px;
+        line-height: 40px;
+    }
+}

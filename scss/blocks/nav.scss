@@ -73,3 +73,10 @@
 .nav__phone {
     text-shadow: 0 0 5px black;
 }
+
+
+@media (max-width: 1440px) {
+    .nav {
+        flex-wrap: wrap;
+    }
+}

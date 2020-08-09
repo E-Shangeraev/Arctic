@@ -1,17 +1,17 @@
 @import '../../variables.scss';
 
 .main-footer {
-    height: 865px;
+    // height: 865px;
 
     background: #EDEDED;
 }
 
 .main-footer__wrapper {
-    width: 1240px;
-    height: 100%;
-    margin: 0 auto;
-    padding-top: 188px;
-    padding-bottom: 248px;
+    // width: 1240px;
+    // height: 100%;
+    // margin: 0 auto;
+    // padding-top: 188px;
+    // padding-bottom: 248px;
 
     box-sizing: border-box;
 }
@@ -42,6 +42,8 @@
     "sec con soc"
     "nav c3 c4";
     gap: 100px;
+    grid-template-columns: 40% 20% 20%;
+
 }
 
 .main-footer__nav {
@@ -96,4 +98,33 @@
 
 .main-footer__politics {
     margin-right: 20px;
+}
+
+
+@media (max-width: 1440px) {
+    .main-footer__grid-container {
+        column-gap: 20px;
+        margin-bottom: 30px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-footer__nav-list:first-child {
+        margin-right: 20px;
+    }
+
+    .main-footer__copyright {
+        width: 70%;
+    }
+
+    .main-footer__nav-item,
+    .main-footer__contact,
+    .main-footer__socials-item {
+    line-height: 40px;
+
+    a {
+        font-size: 14px;
+    }
+}
 }

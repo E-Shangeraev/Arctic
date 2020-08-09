@@ -1,15 +1,10 @@
 @import '../../variables.scss';
 
-.tours {
-    // overflow: hidden;
-}
-
 .tours__wrapper {
     display: flex;
     justify-content: space-between;
 
-    padding-top: 8%;
-    padding-left: 310px;
+    padding-right: 0;
 
     max-width: 1905px;
     margin: 0 auto;
@@ -139,6 +134,6 @@
 
 // @media (width: 1366px) {
 //     .tours__wrapper {
-//         padding-top: 0;
+//         padding: 8% 0 8% 18%;
 //     }
 // }

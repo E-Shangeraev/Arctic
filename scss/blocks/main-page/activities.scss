@@ -3,15 +3,14 @@
 .activities {
     max-width: 1905px;
     margin: 0 auto;
+    // margin-top: 15%;
 
     overflow: hidden;
 }
 
 .activities__wrapper {
-    padding-top: 295px;
-    padding-left: 310px;
-
-    
+    // padding-left: 310px;
+    padding-right: 0;
 }
 
 .activities__container {
@@ -29,7 +28,7 @@
 .activities__background {
     position: relative;
 
-    width: 865px;
+    width: 45vw;
     height: 761px;
 
     background-color: #213434;
@@ -53,7 +52,6 @@
 
 .activities__slide {
     position: absolute;
-    width: 715px;
     width: 100%;
     height: 100%;
     left: 0;
@@ -64,7 +62,8 @@
     transition: all ease-out 0.2s;
 
     img {
-        width: 715px;
+        min-height: 85%;
+        width: 85%;
     }
 }
 
