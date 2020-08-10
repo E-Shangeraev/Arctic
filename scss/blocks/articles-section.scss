@@ -70,7 +70,7 @@
 
     width: 100%;
 
-    padding-top: 25px;
+    padding-top: 2%;
     border-top: 1px solid #cccccc;
 }
 
@@ -88,9 +88,10 @@
 
 .article-preview--last {
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
     flex-wrap: nowrap;
     max-width: 580px;
+    max-width: 45%;
 
     margin-bottom: 85px;
     padding-top: 40px;
@@ -98,10 +99,13 @@
     border-top: 1px solid #cccccc;
 
     img {
-        margin-right: 50px;
+        width: 50%;
+        margin-right: 8%;
     }
 }
 
 .article-preview_text {
     position: relative;
+
+    width: 40%;
 }

@@ -4,7 +4,7 @@
     padding-top: 50px;
 
     a {
-        text-shadow: 0 0 5px black;
+        text-shadow: 0 0 2px black;
     }
 }
 
@@ -71,7 +71,13 @@
 }
 
 .nav__phone {
-    text-shadow: 0 0 5px black;
+    text-shadow: 0 0 2px black;
+}
+
+.nav__logo {
+    svg {
+        filter: drop-shadow(0 0 2px black);
+    }
 }
 
 

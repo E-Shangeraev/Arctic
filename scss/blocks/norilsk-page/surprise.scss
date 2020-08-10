@@ -1,0 +1,54 @@
+@import '../../variables.scss';
+
+.surprise {
+    margin-top: 8%;
+}
+
+.surprise__articles {
+    padding: 0;
+    margin: 0;
+
+}
+
+.surprise__article {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        width: 50%;
+    }
+
+    &:nth-child(odd) img {
+        margin-right: 8%;
+    }
+
+    &:nth-child(even) img {
+        margin-left: 8%;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.surprise__article:not(:last-of-type) {
+    margin-bottom: 11%;
+}
+
+.surprise__article-button {
+    display: flex;
+    align-items: center;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    span {
+        font-family: $font-montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+    }
+}

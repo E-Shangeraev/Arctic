@@ -1,1 +1,1 @@
-.about{margin-top:185px}.about__wrapper{padding:0 340px}
+.about__container{display:flex;justify-content:space-between;position:relative;margin-bottom:100px}.about__container svg{position:absolute;bottom:-15%;right:0;width:30%}.about__description{margin:0;width:50%}.about__wrapper{position:relative}.about__wrapper img:first-of-type{position:relative;z-index:1;min-width:128%}.about__wrapper img:last-of-type{position:absolute;bottom:-5%;left:3%;z-index:2;width:40%}
