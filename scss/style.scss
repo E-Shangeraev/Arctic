@@ -59,6 +59,9 @@
 @import "./blocks/norilsk-page/surprise.scss";
 @import "./blocks/norilsk-page/tourist.scss";
 
+//tours-page
+@import "./blocks/header/tours-header.scss";
+
 * {
     scroll-behavior: smooth;
 }
