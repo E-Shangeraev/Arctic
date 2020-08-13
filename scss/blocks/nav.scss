@@ -76,13 +76,19 @@
 
 .nav__logo {
     svg {
-        filter: drop-shadow(0 0 2px black);
+        filter: drop-shadow(0 0 1px black);
     }
 }
 
 
-@media (max-width: 1440px) {
+@media (max-width: 1366px) {
     .nav {
         flex-wrap: wrap;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .nav__items {
+        margin-right: 100px;
     }
 }

@@ -1,4 +1,11 @@
 .faq-feedback {
     background-image: url('../../../img/faq-page/faq-feedback/1.jpg');
-    height: 100%;
+    // height: 100%;
+}
+
+
+@media (max-width: 1366px) {
+    .faq-feedback {
+        margin: 0;
+    }
 }

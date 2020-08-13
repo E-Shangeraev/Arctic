@@ -17,6 +17,7 @@
 }
 
 .center__button {
+    width: 40%;
     margin-top: 60px;
 
     span {
@@ -57,10 +58,6 @@
 
     column-count: 2;
     column-gap: 70px;
-}
-
-.center__button {
-    display: inline-block;
 }
 
 // Анимация

@@ -24,6 +24,7 @@
 .norilsk__column-2 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .norilsk__description {
@@ -39,7 +40,11 @@
 }
 
 .norilsk__photo-3 {
-    margin-bottom: 193px;
+    // margin-bottom: 193px;
+}
+
+.norilsk__button {
+    margin-bottom: 23%;
 }
 
 .norilsk__button span {

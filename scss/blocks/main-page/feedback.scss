@@ -24,16 +24,20 @@
     display: flex;
     justify-content: space-between;
     column-gap: 16%;
+
+    margin-bottom: 5%;
 }
 
 .feedback__column-1 {
     width: 50%;
     margin: 0;
-    box-sizing: border-box;
+    flex-grow: 1;
+    // box-sizing: border-box;
 }
 
 .feedback__column-2 {
     width: 50%;
+    flex-grow: 1;
 }
 
 .feedback__column-2 {
@@ -41,6 +45,7 @@
 }
 
 .feedback__text {
+    margin: 0;
     color: #ffffff;
 }
 
@@ -103,6 +108,10 @@
 
     &:hover path {
         fill: #cccccc;
+    }
+
+    &:focus {
+        outline: none;
     }
 }
 
