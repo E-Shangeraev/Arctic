@@ -4,7 +4,11 @@
     background-image: url("../../../img/activities-page/bg-header.jpg");
 }
 
-.activities-page__nav-button {
+.activities-header__nav {
+
+}
+
+.activities-header__nav-button {
     margin-right: 85px;
     padding: 0;
 
@@ -18,6 +22,16 @@
     border: none;
 }
 
-.activities-page__nav-button--active {
+.activities-header__nav-button--active {
     border-bottom: 2px solid #FFFFFF;
+}
+
+
+
+@media (max-width: 1366px) {
+    .activities-header__nav-button {
+        margin-right: 50px;
+
+        font-size: 20px;
+    }
 }

@@ -11,7 +11,7 @@
 <body>
     <main class="article-page">
         <article class="article">
-            <div class="article__wrapper">
+            <div class="article__wrapper wrapper">
                 <div class="article__container">
                     <div class="article__column-1">
                         <a href="./blog-page.html" class="article__link-back">
@@ -79,14 +79,14 @@
                                 </p>
                                 <p class="article__share-facebook">
                                     <button>
-                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="19" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2.73891 0C1.22167 0 0 1.22167 0 2.73891V12.2611C0 13.7783 1.22167 15 2.73891 15H7.89985V9.13595H6.34923V7.02469H7.89985V5.22094C7.89985 3.80382 8.81604 2.50266 10.9266 2.50266C11.7811 2.50266 12.413 2.5847 12.413 2.5847L12.3633 4.55627C12.3633 4.55627 11.7188 4.55018 11.0156 4.55018C10.2545 4.55018 10.1325 4.90085 10.1325 5.483V7.02471H12.4237L12.3239 9.13596H10.1325V15H12.2611C13.7783 15 15 13.7784 15 12.2611V2.73893C15 1.22169 13.7783 1.5e-05 12.2611 1.5e-05H2.73889L2.73891 0Z" fill="black"/>
                                         </svg>
                                     </button>
                                 </p>
                                 <p class="article__share-twitter">
                                     <button>
-                                        <svg width="15" height="15" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="19" height="15" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M14.999 1.42144C14.5813 2.03333 14.0689 2.55494 13.4617 2.98627C13.4676 3.10195 13.4706 3.2327 13.4706 3.37852C13.4706 4.1887 13.3507 4.99986 13.1108 5.81201C12.871 6.62416 12.5045 7.40153 12.0116 8.14412C11.5186 8.88672 10.9314 9.54459 10.25 10.1177C9.56855 10.6909 8.74943 11.1479 7.79262 11.4887C6.83581 11.8296 5.81037 12 4.7163 12C3.00881 12 1.43639 11.546 -0.000976562 10.6381C0.254139 10.6661 0.498816 10.68 0.733055 10.68C2.15952 10.68 3.43358 10.2473 4.55524 9.38191C3.89014 9.3699 3.2945 9.16827 2.7683 8.777C2.24211 8.38575 1.88 7.8858 1.68196 7.27715C1.87771 7.31387 2.0709 7.33223 2.26154 7.33223C2.53596 7.33223 2.80598 7.29698 3.07161 7.22648C2.36182 7.08648 1.773 6.73832 1.30513 6.182C0.837275 5.62569 0.603348 4.9836 0.603348 4.25573V4.21822C1.03902 4.45578 1.50373 4.58215 1.99747 4.59732C1.577 4.32126 1.24363 3.96126 0.997365 3.51733C0.75108 3.0734 0.627937 2.593 0.627937 2.07611C0.627937 1.53096 0.766644 1.02333 1.04406 0.553212C1.81593 1.48607 2.75122 2.23164 3.84993 2.78992C4.94865 3.3482 6.12736 3.65826 7.38608 3.72008C7.33239 3.49974 7.3055 3.2698 7.3054 3.03026C7.3054 2.1939 7.60593 1.47976 8.207 0.887856C8.80807 0.295952 9.53323 0 10.3825 0C11.2716 0 12.0205 0.318844 12.6292 0.956532C13.3247 0.82086 13.9759 0.575464 14.5828 0.220344C14.349 0.945064 13.8985 1.50414 13.2312 1.89756C13.8445 1.82578 14.4338 1.66708 14.999 1.42144H14.999Z" fill="black"/>
                                         </svg> 
                                     </button>
@@ -126,44 +126,52 @@
         
                 
         <section class="articles-section">
-            <div class="articles-section__wrapper">
+            <div class="articles-section__wrapper wrapper">
                 <h2 class="articles-section__title">Похожие разделы</h2>
                 <ul class="articles-section__list">
-                    <li class="article-preview article-preview--last">
-                        <img src="./img/blog-page/3.jpg" alt="Новость Норильска">
-                        <div class="article-preview_text">
-                            <span class="article-preview__class">Новость Норильска</span>
-                            <span class="article-preview__appeal">Знаете ли вы?</span>
-                            <p class="article-preview__new">В нашем городе до сих пор действует режим самоизоляции...</p>
-                            <time class="article-preview__datetime" datetime="2020-05-12T09:01">12 мая, 2020 09:01</time>
-                        </div>
+                    <li>
+                        <a href="#" class="article-preview article-preview--last">
+                            <img src="./img/blog-page/3.jpg" alt="Новость Норильска">
+                            <div class="article-preview__text">
+                                <span class="article-preview__class">Новость Норильска</span>
+                                <span class="article-preview__appeal">Знаете ли вы?</span>
+                                <p class="article-preview__new">В нашем городе до сих пор действует режим самоизоляции...</p>
+                                <time class="article-preview__datetime" datetime="2020-05-12T09:01">12 мая, 2020 09:01</time>
+                            </div>
+                        </a>
                     </li>
-                    <li class="article-preview article-preview--last">
-                        <img src="./img/blog-page/4.jpg" alt="Новость Норильска">
-                        <div class="article-preview_text">
-                            <span class="article-preview__class">Новость Норильска</span>
-                            <span class="article-preview__appeal">Знаете ли вы?</span>
-                            <p class="article-preview__new">В нашем городе до сих пор действует режим самоизоляции...</p>
-                            <time class="article-preview__datetime" datetime="2020-05-12T09:01">12 мая, 2020 09:01</time>
-                        </div>
+                    <li>
+                        <a href="#" class="article-preview article-preview--last">
+                            <img src="./img/blog-page/4.jpg" alt="Новость Норильска">
+                            <div class="article-preview__text">
+                                <span class="article-preview__class">Новость Норильска</span>
+                                <span class="article-preview__appeal">Знаете ли вы?</span>
+                                <p class="article-preview__new">В нашем городе до сих пор действует режим самоизоляции...</p>
+                                <time class="article-preview__datetime" datetime="2020-05-12T09:01">12 мая, 2020 09:01</time>
+                            </div>
+                        </a>
                     </li>
-                    <li class="article-preview article-preview--last">
-                        <img src="./img/blog-page/5.jpg" alt="Новость Норильска">
-                        <div class="article-preview_text">
-                            <span class="article-preview__class">Новость Норильска</span>
-                            <span class="article-preview__appeal">Знаете ли вы?</span>
-                            <p class="article-preview__new">В нашем городе до сих пор действует режим самоизоляции...</p>
-                            <time class="article-preview__datetime" datetime="2020-05-12T09:01">12 мая, 2020 09:01</time>
-                        </div>
+                    <li>
+                        <a href="#" class="article-preview article-preview--last">
+                            <img src="./img/blog-page/5.jpg" alt="Новость Норильска">
+                            <div class="article-preview__text">
+                                <span class="article-preview__class">Новость Норильска</span>
+                                <span class="article-preview__appeal">Знаете ли вы?</span>
+                                <p class="article-preview__new">В нашем городе до сих пор действует режим самоизоляции...</p>
+                                <time class="article-preview__datetime" datetime="2020-05-12T09:01">12 мая, 2020 09:01</time>
+                            </div>
+                        </a>
                     </li>
-                    <li class="article-preview article-preview--last">
-                        <img src="./img/blog-page/6.jpg" alt="Новость Норильска">
-                        <div class="article-preview_text">
-                            <span class="article-preview__class">Новость Норильска</span>
-                            <span class="article-preview__appeal">Знаете ли вы?</span>
-                            <p class="article-preview__new">В нашем городе до сих пор действует режим самоизоляции...</p>
-                            <time class="article-preview__datetime" datetime="2020-05-12T09:01">12 мая, 2020 09:01</time>
-                        </div>
+                    <li>
+                        <a href="#" class="article-preview article-preview--last">
+                            <img src="./img/blog-page/6.jpg" alt="Новость Норильска">
+                            <div class="article-preview__text">
+                                <span class="article-preview__class">Новость Норильска</span>
+                                <span class="article-preview__appeal">Знаете ли вы?</span>
+                                <p class="article-preview__new">В нашем городе до сих пор действует режим самоизоляции...</p>
+                                <time class="article-preview__datetime" datetime="2020-05-12T09:01">12 мая, 2020 09:01</time>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -171,7 +179,7 @@
     </main>
 
     <footer class="main-footer">
-        <div class="main-footer__wrapper">
+        <div class="main-footer__wrapper wrapper">
             <div class="main-footer__grid-container">
                 <div class="main-footer__column-1">
                     <h2 class="main-footer__sections">Разделы</h2>

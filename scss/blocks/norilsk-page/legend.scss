@@ -4,6 +4,8 @@
 
 .legend__button {
     span {
+        width: 100%;
+        
         color: #000000;
     }
 }
@@ -33,4 +35,14 @@
     min-width: 130%;
 
     margin-bottom: 5.5%;
+}
+
+
+@media (max-width:1366px) {
+    .legend__button {
+        svg {
+            width: 75px;
+            height: 75px;
+        }
+    }
 }
