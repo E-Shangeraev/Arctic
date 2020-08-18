@@ -62,6 +62,8 @@
 //tours-page
 @import "./blocks/header/tours-header.scss";
 @import "./blocks/tours-page/tours-page.scss";
+@import "./blocks/tours-page/help.scss";
+@import "./blocks/tours-page/steps.scss";
 
 * {
     scroll-behavior: smooth;

@@ -1,0 +1,184 @@
+@import '../../variables.scss';
+
+.help__title {
+    margin: 0;
+
+    font-size: 40px;
+}
+
+.help {
+    height: 1000px;
+}
+
+.help__description {
+    margin: 0;
+
+    width: 40%;
+}
+
+.help__steps {
+    display: flex;
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+
+    background-color: #EDEDED;
+
+    z-index: 1;
+}
+
+.help__container {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.help__interview {
+    position: relative;
+    margin-top: 70px;
+}
+
+.help__steps .help__container {
+    padding-top: 78px;
+    padding-bottom: 78px;
+    padding-left: 67px;
+    padding-right: 130px;
+}
+
+.help__column-1,
+.help__column-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.help__column-2 {
+    width: 30%;
+    text-align: right;
+}
+
+.help__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-grow: 1;
+
+    // padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    input {
+        display: none;
+    }
+
+    label {
+        position: relative;
+        user-select: none;  
+    }
+
+    input ~ label::before {
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: -30px;
+        height: 10px;
+        width: 10px;
+
+        border-radius: 50%;
+        border: solid 1px #000000;
+    }
+
+    input:checked ~ label::before,
+    input:checked ~ label::after {
+        position: absolute;
+        content: "";
+        height: 2px;
+
+        background-color: #5ED733;
+    }
+
+    input:checked ~ label::before {
+        top: 10px;
+        left: -30px;
+        width: 0;
+        height: 2px;
+
+        border: none;
+
+        transform: rotate(45deg);
+    }
+
+    input:checked ~ label::after {
+        top: 8px;
+        
+        width: 0;
+
+        transform: rotate(-45deg);
+    }
+}
+
+
+.help__button {
+    margin: 0;
+    text-align: right;
+
+    span {
+        margin-right: 10%;
+
+        font-family: $font-montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+
+        color: #E83B3B;
+    }
+}
+
+
+
+//Анимация
+.help__list {
+    input:checked ~ label::before,
+    input:checked ~ label::after {
+        animation-duration: 0.1s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+    }
+
+    input:checked ~ label::before {
+        animation-name: label-before;
+    }
+
+    input:checked ~ label::after {
+        animation-name: label-after;
+        animation-delay: 0.1s;
+    }
+}
+
+
+@keyframes label-before {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 5px;
+    }
+}
+
+@keyframes label-after {
+    from {
+        width: 0;
+        left: -23px;
+    }
+
+    to {
+        width: 15px;
+        left: -28px;
+    }
+}
