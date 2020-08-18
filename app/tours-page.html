@@ -41,17 +41,10 @@
                 </ul>
             </nav>
             
-            <div class="header__wrapper wrapper">
+            <div class="header__wrapper">
                 <div class="header__column-1">
                     <h1 class="header__title">Норильск.</h1>
                     <h1 class="header__title">Полярный. Твой</h1>
-                    <p class="header__icon">
-                        <svg width="21" height="33" viewBox="0 0 21 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.4743 0C5.12194 0 0.767578 4.35436 0.767578 9.70674V23.2933C0.767578 28.6456 5.12194 33 10.4743 33C15.8267 33 20.1811 28.6456 20.1811 23.2933V9.70674C20.1811 4.35436 15.8267 0 10.4743 0ZM18.2011 23.2933C18.2011 27.5537 14.7348 31.0201 10.4743 31.0201C6.21387 31.0201 2.7475 27.5537 2.7475 23.2933V9.70674C2.7475 5.44629 6.21387 1.97992 10.4743 1.97992C14.7348 1.97992 18.2011 5.44629 18.2011 9.70674V23.2933Z" fill="white"/>
-                            <path class="header__icon-wheel" d="M10.4746 6.56445C9.92773 6.56445 9.48462 7.00757 9.48462 7.55441V12.1109C9.48462 12.6575 9.92773 13.1009 10.4746 13.1009C11.0212 13.1009 11.4645 12.6575 11.4645 12.1109V7.55441C11.4645 7.00757 11.0214 6.56445 10.4746 6.56445Z" fill="white"/>
-                        </svg>
-                        <span>Листайте вниз</span>
-                    </p>
                 </div>
                 
                 <div class="header__column-2">
@@ -65,11 +58,38 @@
                     </a>
                 </div>
             </div>
+            <form class="tours-header__fields wrapper">
+                <div>
+                    <label for="date-start">Дата начала путешествия</label>
+                    <input type="date" class="tours-header__input tours-header__date" id="date-start" name="date-start">
+                </div>
+                <div>
+                    <label for="date-end">Дата окончания путешествия</label>
+                    <input type="date" class="tours-header__input tours-header__date" id="date-end" name="date-end">
+                </div>
+                <div>
+                    <label for="passengers">Количество человек</label>
+                    <input type="text" list="passengers" class="tours-header__input tours-header__passenger">
+                    <datalist id="passengers" id="passengers" name="passengers">
+                        <option value="1 взрослый"></option>
+                        <option value="2 взрослых"></option>
+                        <option value="1 взрослый 1 ребенок"></option>
+                        <option value="2 взрослых 1 ребенок"></option>
+                    </datalist>
+                </div>
+                
+                <button class="tours-header__search">
+                    <span>Поиск</span>
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.7504 21.9163L19.3588 17.5375C20.7757 15.7323 21.5445 13.5032 21.5417 11.2083C21.5417 9.1646 20.9356 7.16675 19.8002 5.46745C18.6647 3.76814 17.0509 2.44369 15.1627 1.66158C13.2746 0.879477 11.1969 0.674843 9.1924 1.07356C7.18793 1.47227 5.34671 2.45643 3.90157 3.90157C2.45643 5.34671 1.47227 7.18793 1.07356 9.1924C0.674843 11.1969 0.879477 13.2746 1.66158 15.1627C2.44369 17.0509 3.76814 18.6647 5.46745 19.8002C7.16675 20.9356 9.1646 21.5417 11.2083 21.5417C13.5032 21.5445 15.7323 20.7757 17.5375 19.3588L21.9163 23.7504C22.0363 23.8715 22.1792 23.9676 22.3366 24.0332C22.494 24.0987 22.6628 24.1325 22.8333 24.1325C23.0039 24.1325 23.1727 24.0987 23.3301 24.0332C23.4875 23.9676 23.6303 23.8715 23.7504 23.7504C23.8715 23.6303 23.9676 23.4875 24.0332 23.3301C24.0987 23.1727 24.1325 23.0039 24.1325 22.8333C24.1325 22.6628 24.0987 22.494 24.0332 22.3366C23.9676 22.1792 23.8715 22.0363 23.7504 21.9163ZM3.45834 11.2083C3.45834 9.67553 3.91287 8.17715 4.76445 6.90267C5.61603 5.62819 6.82641 4.63485 8.24254 4.04827C9.65867 3.46169 11.2169 3.30822 12.7203 3.60725C14.2236 3.90629 15.6046 4.6444 16.6884 5.72826C17.7723 6.81212 18.5104 8.19304 18.8094 9.69639C19.1085 11.1997 18.955 12.758 18.3684 14.1741C17.7818 15.5903 16.7885 16.8006 15.514 17.6522C14.2395 18.5038 12.7411 18.9583 11.2083 18.9583C9.15291 18.9583 7.18167 18.1418 5.72826 16.6884C4.27485 15.235 3.45834 13.2638 3.45834 11.2083Z" fill="white"/>
+                    </svg>
+                </button>
+            </form>
         </div>
     </header>
 
     <main class="tours-page">
-        <section class="tours choose">
+        <section class="tours choose-section">
             <div class="tours__wrapper wrapper">
                 <div class="tours__column-1">
                     <span class="tours__pagination pagination">01</span>
@@ -178,12 +198,12 @@
             </div> 
         </section>
 
-        <section class="tours events">
+        <section class="tours events-section">
             <div class="tours__wrapper wrapper">
                 <div class="tours__column-1">
                     <span class="tours__pagination pagination">02</span>
                     <h1 class="tours__title title">События</h1>
-                    <p class="tours__description">
+                    <p class="tours__description description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Adipiscing neque dictum leo bibendum. Dui cras id id quis dictum. 
                         Porttitor suspendisse ac tellus quis.
@@ -259,7 +279,7 @@
             </div> 
         </section>
 
-        <section class="tours emotionss">
+        <section class="tours emotions-section">
             <div class="tours__wrapper wrapper">
                 <div class="tours__column-1">
                     <span class="tours__pagination pagination">03</span>
@@ -340,7 +360,7 @@
             </div> 
         </section>
 
-        <section class="tours emotionss">
+        <section class="tours addition-section">
             <div class="tours__wrapper wrapper">
                 <div class="tours__column-1">
                     <span class="tours__pagination pagination">04</span>
@@ -464,7 +484,8 @@
         </div>
     </footer>
 
-    <!-- <script src="./js/tours-animation.js"></script> -->
+    <script type="module" src="./js/tours-animation.js"></script>
+    <script src="./js/tours-sliders.js"></script>
 
 </body>
 </html>
