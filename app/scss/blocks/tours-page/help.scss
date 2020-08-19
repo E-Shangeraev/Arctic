@@ -26,6 +26,10 @@
     background-color: #EDEDED;
 
     z-index: 1;
+
+    img {
+        min-height: 100%;
+    }
 }
 
 .help__container {
@@ -41,9 +45,15 @@
 
 .help__steps .help__container {
     padding-top: 78px;
-    padding-bottom: 78px;
+    padding-bottom: 67px;
     padding-left: 67px;
     padding-right: 130px;
+
+    box-sizing: border-box;
+}
+
+.help__column-1 {
+    flex-grow: 1;
 }
 
 .help__column-1,
@@ -54,7 +64,7 @@
 }
 
 .help__column-2 {
-    width: 30%;
+    flex-shrink: 0;
     text-align: right;
 }
 

@@ -263,7 +263,7 @@
 .article__stats {
     display: flex;
     justify-content: space-between;
-    width: 46%;
+    // width: 46%;
 
     p {
         display: flex;
@@ -290,4 +290,33 @@
 
 .article__stats-view {
     margin-right: 15%; 
+}
+
+.article__stats-likes {
+    path {
+        transition: ease-out 0.15s;
+    }
+    svg {
+        stroke: #777777;
+    }
+}
+
+.article__stats-likes:hover,
+.article__stats-likes:focus {
+    svg {
+        stroke: #E83B3B;
+        stroke-width: 2;
+    }
+    path {
+        fill: transparent;
+    }   
+}
+
+.stats-likes--added {
+    svg {
+        stroke: #E83B3B;
+    }
+    path {
+        fill: #E83B3B;
+    }
 }

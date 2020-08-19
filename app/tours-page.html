@@ -58,7 +58,7 @@
                     </a>
                 </div>
             </div>
-            <form class="tours-header__fields wrapper">
+            <form class="tours-header__fields wrapper" method="POST">
                 <div>
                     <label for="date-start">Дата начала путешествия</label>
                     <input type="date" class="tours-header__input tours-header__date" id="date-start" name="date-start">
@@ -496,10 +496,14 @@
                                 <p>
                                     Укажите примерную цену, на которую вы рассчитываете при планировании тура
                                 </p>
-                                <span>от</span>
-                                <input type="text">
-                                <span>до</span>
-                                <input type="text">
+                                <p>
+                                    <label class="step__label" for="range-from">от</label>
+                                    <input class="step__input" class="step__range range__from" id="range-from" type="text">
+                                </p>
+                                <p>
+                                    <label class="step__label" for="range-to">до</label>
+                                    <input class="step__input" class="step__range range__to" id="range-to" type="text">
+                                </p>
                             </div>
                             <div class="help__column-2">
                                 <p class="step__number">Шаг 2 из 4</p>
@@ -556,16 +560,20 @@
                         <div class="help__container">
                             <div class="help__column-1">
                                 <h3 class="step__title">Оставьте свои контакты</h3>
-                                <div class="step__content">
-                                    <label for="name">Имя</label>
-                                    <input type="name" id="name" placeholder="Иван">
-
-                                    <label for="phone">Телефон</label>
-                                    <input type="phone" id="phone" placeholder="+7 999 999 99 99">
-
-                                    <label for="email">Почта</label>
-                                    <input type="email" id="email">
-                                </div>
+                                <p>
+                                    <label class="step__label" for="name">Имя</label>
+                                    <input class="step__input" type="name" id="name" placeholder="Иван">
+                                </p>
+                                
+                                <p>
+                                    <label class="step__label" for="phone">Телефон</label>
+                                    <input class="step__input" type="phone" id="phone" placeholder="+7 999 999 99 99">
+                                </p>
+                                
+                                <p>
+                                    <label class="step__label" for="email">Почта</label>
+                                    <input class="step__input" type="email" id="email">
+                                </p>
                             </div>
                             <div class="help__column-2">
                                 <p class="step__number">Шаг 4 из 4</p>
@@ -580,7 +588,7 @@
                         </div>
                     </div>
 
-                    <div class="help__steps step-5">
+                    <div class="help__steps step-final">
                         <img src="./img/tours-page/help/5.jpg" alt="Природа Норильска">
                         <div class="help__container">
                             <div class="help__column-1">

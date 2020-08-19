@@ -34,8 +34,8 @@
                             <h3 class="article__feedback-title">Подписывайтесь на наши новости!</h3>
                             <p class="article__feedback-description">Получайте интересные новости, статьи и истории о туризме на севере Красноярского Края.</p>
                             <form class="article__feedback-form" action="#" method="POST">
-                                <input type="text" placeholder="Имя">
-                                <input type="email" placeholder="Ваш e-mail">
+                                <input type="name" name="name" placeholder="Имя" required>
+                                <input type="email" name="email" placeholder="Ваш e-mail" required>
                                 <button class="article__feedback-button">
                                     <span>Подписаться</span>
                                     <svg width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,7 +95,7 @@
                             <div class="article__stats">
                                 <p class="article__stats-likes">
                                     <button>
-                                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="20" height="20" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M9.47209 2.85161C6.56419 -1.64008 0.678711 0.806851 0.678711 5.6998C0.678711 9.37404 8.74738 15.1215 9.47209 15.8689C10.2018 15.1215 17.8692 9.37404 17.8692 5.6998C17.8692 0.843946 12.3854 -1.64008 9.47209 2.85161Z" fill="#777777"/>
                                         </svg>
                                     </button>
@@ -221,6 +221,6 @@
         </div>
     </footer>
 
-    <script src="./js/faq-animation.js"></script>
+    <script src="./js/article.js"></script>
 </body>
 </html>
