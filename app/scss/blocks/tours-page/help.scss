@@ -35,7 +35,6 @@
 .help__container {
     display: flex;
     justify-content: space-between;
-    flex-grow: 1;
 }
 
 .help__interview {
@@ -43,17 +42,25 @@
     margin-top: 70px;
 }
 
-.help__steps .help__container {
-    padding-top: 78px;
-    padding-bottom: 67px;
-    padding-left: 67px;
-    padding-right: 130px;
+.help__wrapper {
+    max-height: 483px;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    padding-left: 6%;
+    padding-right: 11%;
 
     box-sizing: border-box;
+
+    flex-grow: 1;
+}
+
+.help__steps .help__container {
+    width: 100%;
+   height: 100%;
 }
 
 .help__column-1 {
-    flex-grow: 1;
+    height: 100%;
 }
 
 .help__column-1,
@@ -190,5 +197,12 @@
     to {
         width: 15px;
         left: -28px;
+    }
+}
+
+
+@media (max-width: 1366px) {
+    .help__wrapper {
+        padding-right: 6%;
     }
 }

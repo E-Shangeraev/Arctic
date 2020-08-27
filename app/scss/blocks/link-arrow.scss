@@ -1,0 +1,17 @@
+@import '../variables.scss';
+
+.link-arrow {
+    display: flex;
+    align-items: center;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    span {
+        font-family: $font-montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+    }
+}

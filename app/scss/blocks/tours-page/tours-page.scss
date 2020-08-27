@@ -1,2 +1,16 @@
 @import '../../variables.scss';
 
+.events-section,
+.emotions-section,
+.addition-section {
+    .slide__description {
+        span {
+            display: inline-block;
+            line-height: 40px;
+        }
+    }
+
+    .slide__name {
+        margin-bottom: 0;
+    }
+}

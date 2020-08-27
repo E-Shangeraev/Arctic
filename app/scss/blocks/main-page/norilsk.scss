@@ -52,109 +52,123 @@
 }
 
 
-
-// Анимация
-
-//Анимация первой колонки
-.norilsk__pagination {
-    // animation-name: norilsk__pagination;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-
-    opacity: 0;
+.norilsk__description {
+    animation: fadeInUp 1.5s;
 }
 
-@keyframes norilsk__pagination {
-    50% {
-        opacity: 0;
-    }
-    
-    100% {
-        opacity: 1;
-    }
-}
-
-.norilsk__title {
-    // animation-name: norilsk__title;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    
-    opacity: 0;
-    transform: translateX(-70px);
-}
-
-@keyframes norilsk__title {
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.norilsk__description--1,
 .norilsk__photo-1,
 .norilsk__photo-2 {
-    // animation-name: norilsk__title;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-
-    opacity: 0;
-    transform: translateX(-100%);
+    animation: fadeInLeft 1.5s;
 }
 
-.norilsk__photo-1 {
-    animation-delay: 1.5s;
+.norilsk__photo-3,
+.norilsk__button {
+    animation: fadeInRight 1.5s;
 }
 
-.norilsk__photo-2 {
-    animation-delay: 2.5s;
-}
 
-@keyframes norilsk__description--1 {
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
+// // Анимация
+
+// //Анимация первой колонки
+// .norilsk__pagination {
+//     // animation-name: norilsk__pagination;
+//     animation-duration: 1s;
+//     animation-fill-mode: forwards;
+//     animation-timing-function: ease-out;
+
+//     opacity: 0;
+// }
+
+// @keyframes norilsk__pagination {
+//     50% {
+//         opacity: 0;
+//     }
+    
+//     100% {
+//         opacity: 1;
+//     }
+// }
+
+// .norilsk__title {
+//     // animation-name: norilsk__title;
+//     animation-duration: 1s;
+//     animation-fill-mode: forwards;
+//     animation-timing-function: ease-out;
+    
+//     opacity: 0;
+//     transform: translateX(-70px);
+// }
+
+// @keyframes norilsk__title {
+//     100% {
+//         opacity: 1;
+//         transform: translateX(0px);
+//     }
+// }
+
+// .norilsk__description--1,
+// .norilsk__photo-1,
+// .norilsk__photo-2 {
+//     // animation-name: norilsk__title;
+//     animation-duration: 1s;
+//     animation-fill-mode: forwards;
+//     animation-timing-function: ease-out;
+
+//     opacity: 0;
+//     transform: translateX(-100%);
+// }
+
+// .norilsk__photo-1 {
+//     animation-delay: 1.5s;
+// }
+
+// .norilsk__photo-2 {
+//     animation-delay: 2.5s;
+// }
+
+// @keyframes norilsk__description--1 {
+//     100% {
+//         opacity: 1;
+//         transform: translateX(0px);
+//     }
+// }
 
 
 //Анимация второй колонки
-.norilsk__description--2,
-.norilsk__photo-3,
-.norilsk__button {
-    opacity: 0;
-    transform: translateX(100%);
+// .norilsk__description--2,
+// .norilsk__photo-3,
+// .norilsk__button {
+//     opacity: 0;
+//     transform: translateX(100%);
 
-    // animation-name: norilsk__description--2;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-}
+//     // animation-name: norilsk__description--2;
+//     animation-duration: 1s;
+//     animation-fill-mode: forwards;
+//     animation-timing-function: ease-out;
+// }
 
-.norilsk__photo-3 {
-    animation-delay: 1.5s;
-}
+// .norilsk__photo-3 {
+//     animation-delay: 1.5s;
+// }
 
-.norilsk__button {
-    animation-delay: 2.5s;
-}
+// .norilsk__button {
+//     animation-delay: 2.5s;
+// }
 
-@keyframes norilsk__description--2 {
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
+// @keyframes norilsk__description--2 {
+//     100% {
+//         opacity: 1;
+//         transform: translateX(0px);
+//     }
+// }
 
 
-@media (max-width: 1440px) {
-    .norilsk__description {
-        column-gap: 50px;
-    }
+// @media (max-width: 1440px) {
+//     .norilsk__description {
+//         column-gap: 50px;
+//     }
 
-    .norilsk__column-1 {
-        margin-right: 50px;
-    }
-}
+//     .norilsk__column-1 {
+//         margin-right: 50px;
+//     }
+// }

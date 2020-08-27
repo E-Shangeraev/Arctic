@@ -4,7 +4,7 @@
     margin-top: 8%;
     margin-bottom: 8%;
 
-    background-image: url('../../img/main-page/emotions/1.jpg');
+    background-image: url('../img/main-page/emotions/1.jpg'); 
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -33,55 +33,62 @@
     margin-bottom: 27px;
 }
 
+.emotions__description {
+    animation: fadeInRight 1.5s;
+}
+
+.emotions__button {
+    animation: fadeInRight 2s;
+}
 
 //Анимация
 //Анимация первой колонки
-.emotions__title {
-    // animation-name: emotions__title;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    animation-delay: 0.2s;
+// .emotions__title {
+//     // animation-name: emotions__title;
+//     animation-duration: 1s;
+//     animation-fill-mode: forwards;
+//     animation-timing-function: ease-out;
+//     animation-delay: 0.2s;
     
-    opacity: 0;
-    transform: translateX(-70px);
-}
+//     opacity: 0;
+//     transform: translateX(-70px);
+// }
 
-@keyframes emotions__title {
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
+// @keyframes emotions__title {
+//     100% {
+//         opacity: 1;
+//         transform: translateX(0px);
+//     }
+// }
 
-//Анимация второй колонки
+// //Анимация второй колонки
 
-.emotions__description,
-.emotions__button {
-    opacity: 0;
-    transform: translateX(100%);
+// .emotions__description,
+// .emotions__button {
+//     opacity: 0;
+//     transform: translateX(100%);
 
-    // animation-name: emotions__description;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-}
+//     // animation-name: emotions__description;
+//     animation-duration: 1.5s;
+//     animation-fill-mode: forwards;
+//     animation-timing-function: ease-out;
+// }
 
-.emotions__button {
-    transform: translateX(180%);
-    animation-delay: 0.5s;
-}
+// .emotions__button {
+//     transform: translateX(180%);
+//     animation-delay: 0.5s;
+// }
 
-@keyframes emotions__description {
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
+// @keyframes emotions__description {
+//     100% {
+//         opacity: 1;
+//         transform: translateX(0px);
+//     }
+// }
 
 
-@media (max-width: 1366px) {
-    .emotions__description {
-        font-size: 16px;
-    }
-}
+// @media (max-width: 1366px) {
+//     .emotions__description {
+//         font-size: 16px;
+//     }
+// }

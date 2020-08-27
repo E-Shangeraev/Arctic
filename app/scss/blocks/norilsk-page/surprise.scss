@@ -52,3 +52,27 @@
         font-size: 18px;
     }
 }
+
+.surprise__article:nth-child(odd) {
+    .surprise__img {
+        animation: fadeInLeft 1.5s;
+    }
+
+    .surprise__article-title,
+    .surprise__article-text,
+    .surprise__article-button {
+        animation: fadeInRight 1.5s;
+    }
+}
+
+.surprise__article:nth-child(even) {
+    .surprise__img {
+        animation: fadeInRight 1.5s;
+    }
+
+    .surprise__article-title,
+    .surprise__article-text,
+    .surprise__article-button {
+        animation: fadeInLeft 1.5s;
+    }
+}

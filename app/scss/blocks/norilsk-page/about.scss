@@ -4,7 +4,6 @@
     position: relative;
 
     margin-bottom: 100px;
-
     svg {
         position: absolute;
         bottom: -15%;
@@ -20,6 +19,7 @@
 
 .about__wrapper {
     position: relative;
+    overflow: hidden;
 }
 
 .about__wrapper img:first-of-type {
@@ -35,4 +35,14 @@
     z-index: 2;
 
     width: 40%;
+}
+
+.about__description,
+.about__image-small {
+    animation: fadeInLeft 1.5s;
+}
+
+.about__svg,
+.about__image-big {
+    animation: fadeInRight 1.5s;
 }

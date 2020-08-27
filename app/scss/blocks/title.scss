@@ -1,13 +1,16 @@
 @import '../variables.scss';
 
 .title {
+    margin-top: 15px;
+    margin-bottom: 56px;
+
     font-family: $font-fyl;
     font-size: 52px;
     font-weight: normal;
     line-height: 80px;
+    white-space: nowrap;
 
-    margin-top: 15px;
-    margin-bottom: 56px;
+    animation: fadeInLeft 1.5s;
 }
 
 

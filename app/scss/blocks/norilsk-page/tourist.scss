@@ -59,20 +59,37 @@
 
 #eat {
     background: #FF8A49;
+
+    animation: bounceIn 1.5s;
 }
 
 #housing {
     background: #F4B922;
+
+    animation: bounceIn 1.5s;
 }
 
 #health {
     background: #01988F;
+
+    animation: bounceIn 1.5s;
 }
 
 #other {
     background: #4394FF;
+
+    animation: bounceIn 1.5s;
 }
 
 .tourist__container {
     margin-bottom: 8%;
+}
+
+
+.tourist__description {
+    animation: fadeInLeft 1.5s;
+}
+
+.tourist__label {
+    animation: fadeIn 3.5s;
 }

@@ -31,11 +31,23 @@
     width: 52%;
 }
 
-.legend img {
+.legend__img {
     min-width: 130%;
 
     margin-bottom: 5.5%;
 }
+
+.legend__text,
+.legend__button,
+.legend__img {
+    animation: fadeInRight 1.5s;
+}
+
+
+.legend__subtitle {
+    animation: fadeInLeft 1.5s;
+}
+
 
 
 @media (max-width:1366px) {

@@ -3,7 +3,9 @@
 .header {
     background-repeat: no-repeat;
     background-position: 0 0;
-    background-size: 100vw 100%;
+    background-size: 100% 100%;
+
+    min-height: 100vh;
 
     font-family: $font-fyl;
     color: #ffffff;
@@ -12,16 +14,16 @@
 }
 
 .header__content {
-    height: 100vh;
+    height: 100%;
 }
 
 .header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1905px;
+    // max-width: 1905px;
 
-    margin: 0 auto;
+    // margin: 0 auto;
     padding: 8% 18%;
 
     box-sizing: border-box;
@@ -83,8 +85,6 @@
         // padding-right: 34px;
     }
 }
-
-
 
 // Анимация
 

@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Арктика</title>
-    <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 <body>
     <header class="main-header">
@@ -30,12 +35,12 @@
                     </svg>   
                 </a>
                 <ul class="nav__items">
-                    <li><a href="#">Туры</a></li>
-                    <li><a href="#">Активности</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Норильск</a></li>
+                    <li><a href="tours-page.html">Туры</a></li>
+                    <li><a href="activities-page.html">Активности</a></li>
+                    <li><a href="faq-page.html">FAQ</a></li>
+                    <li><a href="norilsk-page.html">Норильск</a></li>
                     <li><a href="#">Центр развития туризма Норильска</a></li>
-                    <li><a href="#">Блог</a></li>
+                    <li><a href="blog-page.html">Блог</a></li>
                     <li><a href="#">Для слабовидящих</a></li>
                 </ul>
                 <ul class="nav__lang">
@@ -78,13 +83,13 @@
         <section class="tours">
             <div class="tours__wrapper wrapper">
                 <div class="tours__column-1">
-                    <span class="tours__pagination pagination">01</span>
-                    <h1 class="tours__title title">Туры</h1>
-                    <p class="tours__description">
+                    <span class="tours__pagination pagination wow">01</span>
+                    <h1 class="tours__title title wow">Туры</h1>
+                    <p class="tours__description wow">
                         Исследуйте красоты северной природы. Рассмотритре все уголки 
                         нетронутой окружающе среды. Выберите наиболее подходящий для вас тур.
                     </p>
-                    <div class="tours__buttons">
+                    <div class="tours__buttons wow">
                         <button class="tours__button button button__left button--disactive" id="tours-left">
                             <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="33" cy="33" r="32" transform="rotate(-180 33 33)" stroke="black" stroke-width="2"/>
@@ -102,8 +107,8 @@
                     </div>
                 </div>
                 <div class="tours__column-2">
-                    <a href="#" class="tours__more more">Больше дополнений</a>
-                    <div class="tours__slider slider">
+                    <a href="#" class="tours__more more wow">Больше дополнений</a>
+                    <div class="tours__slider slider wow">
                         <ul class="tours__slider-block slider-block">
                             <li class="tours__slide slide slide--active">
                                 <figure>
@@ -186,14 +191,14 @@
 
         <section class="activities">
             <div class="activities__wrapper wrapper">
-                <span class="activities__pagination pagination">02</span>
-                <h1 class="activities__title title">Активности</h1>
+                <span class="activities__pagination pagination wow">02</span>
+                <h1 class="activities__title title wow">Активности</h1>
                 
                 <div class="activities__container">
                     <div class="activities__column-1">
                         <div class="activities__background">
-                            <p class="activities__slide-count">1/3</p>
-                            <ul class="activities__slider">
+                            <p class="activities__slide-count wow">1/3</p>
+                            <ul class="activities__slider wow">
                                 <li class="activities__slide activities__slide--active">
                                     <img src="./img/main-page/activities/1.jpg" alt="">
                                 </li>
@@ -209,38 +214,38 @@
                     <div class="activities__column-2">
                         <ul class="activities__slider-description">
                             <li class="activities__slide-description activities__slide-description--active">
-                                <h3 class="activities__slide-name">Плато путорана</h3>
-                                <p class="activities__slide-text">
+                                <h3 class="activities__slide-name wow">Плато путорана</h3>
+                                <p class="activities__slide-text wow">
                                     На северо-западе современного Красноярского края где-то двести миллионов лет 
                                     назад через разломы в земной коре на поверхность полилась базальтовая лава. 
                                     Из нее и выросло – поднявшееся над окружающей действительностью плато Путорана.
                                 </p>
-                                <a href="#" class="activities__link slide__link">Подробнее</a>
+                                <a href="#" class="activities__link slide__link wow">Подробнее</a>
                             </li>
                             <li class="activities__slide-description">
-                                <h3 class="activities__slide-name">Lorem ipsum dolor</h3>
-                                <p class="activities__slide-text">
+                                <h3 class="activities__slide-name wow">Lorem ipsum dolor</h3>
+                                <p class="activities__slide-text wow">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore praesentium sequi 
                                     libero asperiores eum accusamus saepe, magnam ab repellat minima fugiat nobis placeat, 
                                     nostrum pariatur, quisquam exercitationem ipsam? Accusamus nesciunt, harum unde deleniti 
                                     vel libero fuga commodi architecto rerum molestiae eos, esse similique hic molestias, sit 
                                     necessitatibus! Fugit, quidem debitis.
                                 </p>
-                                <a href="#" class="activities__link slide__link">Подробнее</a>
+                                <a href="#" class="activities__link slide__link wow">Подробнее</a>
                             </li>
                             <li class="activities__slide-description">
-                                <h3 class="activities__slide-name">Dolor sit amet</h3>
-                                <p class="activities__slide-text">
+                                <h3 class="activities__slide-name wow">Dolor sit amet</h3>
+                                <p class="activities__slide-text wow">
                                     Dolor sit amet consectetur adipisicing elit. Tempore praesentium sequi 
                                     libero asperiores eum accusamus saepe, magnam ab repellat minima fugiat nobis placeat, 
                                     nostrum pariatur, quisquam exercitationem ipsam? Accusamus nesciunt, harum unde deleniti 
                                     vel libero fuga commodi architecto rerum molestiae eos, esse similique hic molestias, sit 
                                     necessitatibus! Fugit, quidem debitis.
                                 </p>
-                                <a href="#" class="activities__link slide__link">Подробнее</a>
+                                <a href="#" class="activities__link slide__link wow">Подробнее</a>
                             </li> 
                         </ul>
-                        <div class="activities__buttons buttons">
+                        <div class="activities__buttons buttons wow">
                             <button class="activities__button button button__left button--disactive" id="activities-left">
                                 <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="33" cy="33" r="32" transform="rotate(-180 33 33)" stroke="black" stroke-width="2"/>
@@ -264,14 +269,14 @@
         <section class="emotions">
             <div class="emotions__wrapper wrapper">
                 <div class="emotions__column-1">
-                    <h1 class="emotions__title white-title">Выбери<br>набор эмоций</h1>
+                    <h1 class="emotions__title white-title wow">Выбери<br>набор эмоций</h1>
                 </div>
                 <div class="emotions__column-2">
-                    <p class="emotions__description">
+                    <p class="emotions__description wow">
                         Возможность выбрать места и развлечения, которые сделают тур 
                         более запоминающимся и подарят дополнительные эмоции
                     </p>
-                    <a href="#" class="emotions__button big-button">
+                    <a href="#" class="emotions__button big-button wow">
                         <span>Эмоции ждут</span>
                         <svg width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="49" cy="49" r="48" stroke="white" stroke-width="2"/>
@@ -287,15 +292,15 @@
             <div class="addition__wrapper wrapper">
                 <div class="addition__container">
                     <div class="addition__column-1">
-                        <span class="pagination">03</span>
-                        <h1 class="addition__title title">Дополнительно к турам</h1>
+                        <span class="pagination wow">03</span>
+                        <h1 class="addition__title title wow">Дополнительно к турам</h1>
                     </div>
                     <div class="addition__column-2">
-                        <a href="#" class="addition__more more">Больше дополнений</a>
+                        <a href="#" class="addition__more more wow">Больше дополнений</a>
                     </div>
                 </div>
                 
-                <div class="addition__slider slider">
+                <div class="addition__slider slider wow">
                     <ul class="slider-block">
                         <li class="addition__slide slide slide--active">
                             <img src="./img/main-page/addition/1.jpg" alt="Вертолет">
@@ -344,7 +349,7 @@
                     </ul>
                 </div>
 
-                <div class="addition__buttons buttons">
+                <div class="addition__buttons buttons wow">
                     <button class="main-addition__button button button__left button--disactive" id="addition-left">
                         <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="33" cy="33" r="32" transform="rotate(-180 33 33)" stroke="black" stroke-width="2"/>
@@ -365,27 +370,27 @@
 
         <section class="center">
             <div class="center__wrapper wrapper">
-                <span class="center__pagination pagination">04</span>
-                <h1 class="center__title title">Центр развития туризма Норильска</h1>
+                <span class="center__pagination pagination wow">04</span>
+                <h1 class="center__title title wow">Центр развития туризма Норильска</h1>
                 <div class="center__container">
-                    <img class="center__image" src="./img/main-page/center/1.jpg" alt="Природа Норильска">
+                    <img class="center__image wow" src="./img/main-page/center/1.jpg" alt="Природа Норильска">
                     <table class="center__stats">
-                        <tr>
+                        <tr class="center__table-row wow">
                             <td class="center__stats-value">5 лет</td>
                             <td class="center__stats-field">в сфере туризма 
                                 и отдыха</td>
                         </tr>
-                        <tr>
+                        <tr class="center__table-row wow">
                             <td class="center__stats-value">>1000</td>
                             <td class="center__stats-field">положительных отзывов о нашей деятельности</td>
                         </tr>
-                        <tr>
+                        <tr class="center__table-row wow">
                             <td class="center__stats-value">Большой</td>
                             <td class="center__stats-field">выбор туров и возможность создания индивидуальных</td>
                         </tr>
                     </table>
                 </div>
-                <p class="center__description">
+                <p class="center__description wow">
                     Муниципальное образование города Норильска располагается на 69-й параллели, за Северным Полярным кругом. 
                     От Северного полюса Норильск отделяют 2 223 км, от крайней северной точки Евразии (мыс Челюскина) - 1 000 км. 
                     Расстояние до Красноярска – 1 500 км воздушным путем и 2 000 км водным путем, до Москвы – 2 950 км.
@@ -393,7 +398,7 @@
                     времени составляет лишь пару часов в сутки. В Полярную ночь солнечный свет норильчанам заменяет искусственное 
                     освещение, главным украшением города становятся уличные огни.
                 </p>
-                <a href="#" class="center__button big-button">
+                <a href="#" class="center__button big-button wow">
                     <span>Подробнее о центре</span>
                     <svg width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="49" cy="49" r="48" stroke="black" stroke-width="2"/>
@@ -405,14 +410,14 @@
         </section>
         
         <section class="nature">
-            <img src="./img/main-page/nature/1.jpg" alt="Природа Норильска">
+            <img class="wow" src="./img/main-page/nature/1.jpg" alt="Природа Норильска">
         </section>
 
         <section class="norilsk">
             <div class="norilsk__wrapper wrapper">
-                <span class="norilsk__pagination pagination">05</span>
-                <h1 class="norilsk__title title">Норильск</h1>
-                <p class="norilsk__description">
+                <span class="norilsk__pagination pagination wow">05</span>
+                <h1 class="norilsk__title title wow">Норильск</h1>
+                <p class="norilsk__description wow">
                     За полярным кругом, далеко от других городов и железных дорог, стоит в снегах город. 
                     Самый северный город Росии — Норильск. Здесь холодно 267 дней в году, мороз иногда доходит 
                     до —55° С; 6 дней в году здесь жарко, +25° С. Зимой 45 дней подряд жители Норильска совсем 
@@ -426,12 +431,12 @@
 
                 <div class="norilsk__container">
                     <div class="norilsk__column-1">
-                        <img class="norilsk__photo-1" src="./img/main-page/norilsk/1.jpg" alt="Фотография Норильска">
-                        <img class="norilsk__photo-2" src="./img/main-page/norilsk/2.jpg" alt="Фотография Норильска">
+                        <img class="norilsk__photo-1 wow" src="./img/main-page/norilsk/1.jpg" alt="Фотография Норильска">
+                        <img class="norilsk__photo-2 wow" src="./img/main-page/norilsk/2.jpg" alt="Фотография Норильска">
                     </div>
                     <div class="norilsk__column-2">
-                        <img class="norilsk__photo-3" src="./img/main-page/norilsk/3.jpg" alt="Фотография Норильска">
-                        <a href="#" class="norilsk__button big-button">
+                        <img class="norilsk__photo-3 wow" src="./img/main-page/norilsk/3.jpg" alt="Фотография Норильска">
+                        <a href="#" class="norilsk__button big-button wow">
                             <span>Подробнее о Норильске</span>
                             <svg width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="49" cy="49" r="48" stroke="black" stroke-width="2"/>
@@ -446,12 +451,12 @@
 
         <section class="reviews">
             <div class="reviews__wrapper wrapper">
-                <span class="reviews__pagination pagination">06</span>
-                <h1 class="reviews__title title">Как проходят наши туры</h1>
+                <span class="reviews__pagination pagination wow">06</span>
+                <h1 class="reviews__title title wow">Как проходят наши туры</h1>
                     <ul class="reviews__list">
                         <li class="reviews__item">
-                            <img class="reviews__photo reviews__photo--1"src="./img/main-page/reviews/1.jpg" alt="Фотография с тура">
-                            <blockquote class="reviews__blockquote reviews__blockquote--1">
+                            <img class="reviews__photo reviews__photo--1 wow"src="./img/main-page/reviews/1.jpg" alt="Фотография с тура">
+                            <blockquote class="reviews__blockquote reviews__blockquote--1 wow">
                                 <p>
                                     “Поездка прошла просто волшебно. Редкая возможность не просто посмотреть на достопримечательности,
                                      а буквально исследовать их с разных сторон. Гиды, которые уверенно ведут тебя днём по горам и 
@@ -461,8 +466,8 @@
                             </blockquote>
                         </li>
                         <li class="reviews__item">
-                            <img class="reviews__photo reviews__photo--2" src="./img/main-page/reviews/2.jpg" alt="Фотография с тура">
-                            <blockquote class="reviews__blockquote reviews__blockquote--2">
+                            <img class="reviews__photo reviews__photo--2 wow" src="./img/main-page/reviews/2.jpg" alt="Фотография с тура">
+                            <blockquote class="reviews__blockquote reviews__blockquote--2 wow">
                                 <p>
                                     “Поездка прошла просто волшебно. Редкая возможность не просто посмотреть на достопримечательности,
                                      а буквально исследовать их с разных сторон. Гиды, которые уверенно ведут тебя днём по горам и 
@@ -472,8 +477,8 @@
                             </blockquote>
                         </li>
                         <li class="reviews__item">
-                            <img class="reviews__photo reviews__photo--3" src="./img/main-page/reviews/3.jpg" alt="Фотография с тура">
-                            <blockquote class="reviews__blockquote reviews__blockquote--3">
+                            <img class="reviews__photo reviews__photo--3 wow" src="./img/main-page/reviews/3.jpg" alt="Фотография с тура">
+                            <blockquote class="reviews__blockquote reviews__blockquote--3 wow">
                                 <p>
                                     “Поездка прошла просто волшебно. Редкая возможность не просто посмотреть на достопримечательности,
                                      а буквально исследовать их с разных сторон. Гиды, которые уверенно ведут тебя днём по горам и 
@@ -483,43 +488,43 @@
                             </blockquote>
                         </li>
                     </ul>
-                    <a href="#" class="reviews__more more">Читайте больше в блоге</a>
+                    <a href="#" class="reviews__more more wow">Читайте больше в блоге</a>
                 </div>
             </div>
         </section>
 
         <section class="partners">
             <div class="partners__wrapper wrapper">
-                <span class="pagination">07</span>
-                <h1 class="partners__title title">Наши партнеры</h1>
+                <span class="pagination wow">07</span>
+                <h1 class="partners__title title wow">Наши партнеры</h1>
                 <div class="partners__container">
                     <ul class="partners__list">
-                        <li class="partners__item">
+                        <li class="partners__item wow">
                             <img src="./img/main-page/partners/1.png" alt="Открытая Сибирь">
                         </li>
-                        <li class="partners__item">
+                        <li class="partners__item wow">
                             <img src="./img/main-page/partners/2.png" alt="Слетать.ру">
                         </li>
-                        <li class="partners__item">
+                        <li class="partners__item wow">
                             <img src="./img/main-page/partners/3.png" alt="Coral travel">
                         </li>
-                        <li class="partners__item">
+                        <li class="partners__item wow">
                             <img src="./img/main-page/partners/4.png" alt="anex tour">
                         </li>
-                        <li class="partners__item">
+                        <li class="partners__item wow">
                             <img src="./img/main-page/partners/5.png" alt="TOP travel">
                         </li>
-                        <li class="partners__item">
+                        <li class="partners__item wow">
                             <img src="./img/main-page/partners/6.png" alt="PEGAS touristik">
                         </li>
                     </ul>
 
                     <div>
-                        <p class="partners__description">
+                        <p class="partners__description wow">
                             Мы гордимся нашими партнерами и делаем все для того, чтобы наше плодотворное сотрудничество помогло реализовать
                              все ваши желания в наших турах!
                         </p>
-                        <a href="#" class="partners__button big-button">
+                        <a href="#" class="partners__button big-button wow">
                             <span>Сотрудничать с нами</span>
                             <svg width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="49" cy="49" r="48" stroke="black" stroke-width="2"/>
@@ -571,14 +576,14 @@
                     <h2 class="main-footer__sections">Разделы</h2>
                     <nav class="main-footer__nav">
                         <ul class="main-footer__nav-list">
-                            <li class="main-footer__nav-item"><a href="#">Туры</a></li>
-                            <li class="main-footer__nav-item"><a href="#">Активности</a></li>
-                            <li class="main-footer__nav-item"><a href="#">FAQ</a></li>
+                            <li class="main-footer__nav-item"><a href="tours-page.html">Туры</a></li>
+                            <li class="main-footer__nav-item"><a href="activities-page.html">Активности</a></li>
+                            <li class="main-footer__nav-item"><a href="faq-page.html">FAQ</a></li>
                         </ul>
                         <ul class="main-footer__nav-list">
-                            <li class="main-footer__nav-item"><a href="#">Норильск</a></li>
+                            <li class="main-footer__nav-item"><a href="norilsk-page.html">Норильск</a></li>
                             <li class="main-footer__nav-item"><a href="#">Центр развития туризма Норильска</a></li>
-                            <li class="main-footer__nav-item"><a href="#">Блог</a></li>
+                            <li class="main-footer__nav-item"><a href="blog-page.html">Блог</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -607,8 +612,8 @@
         </div>
     </footer>
 
-    <script type="module" src="./js/addAnimation.module.js"></script>
-    <script type="module" src="./js/main-animation.js"></script>
+    
+    
     <script src="./js/slider.js"></script>
     <script src="./js/activities-slider.js"></script>
     <script src="./js/addition-slider.js"></script>

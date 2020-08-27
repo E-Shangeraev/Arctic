@@ -24,7 +24,10 @@
 }
 
 .tours__description {
+    padding-right: 15%;
     margin-bottom: 125px;
+
+    animation: fadeInLeft 1.5s;
 }
 
 .tours__column-2 {
@@ -49,6 +52,16 @@
 
     margin-right: 75px;
     margin-bottom: 67px;
+
+    animation: fadeInUp 1.5s;
+}
+
+.tours__buttons {
+    animation: fadeInLeft 1.5s;
+}
+
+.tours__slider {
+    animation: fadeInRight 1.5s;
 }
 
 /*

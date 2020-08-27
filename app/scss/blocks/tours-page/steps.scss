@@ -3,12 +3,13 @@
 .step__title,
 .step__number {
     margin: 0;
+    margin-bottom: 5%;
 
     font-family: $font-fyl;
     font-style: normal;
     font-weight: normal;
     font-size: 28px;
-    line-height: 80px;
+    line-height: 34px;
 }
 
 .step__number {
@@ -29,7 +30,7 @@
 }
 
 .step-4 .step__label{
-    width: 20%;
+    width: 28%;
 }
 
 .step__input {

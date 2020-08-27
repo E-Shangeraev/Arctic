@@ -24,6 +24,19 @@
     color: #000000;
 }
 
+.partners__item:nth-child(odd) {
+    animation: fadeInLeft 1.5s;
+}
+
+.partners__item:nth-child(even) {
+    animation: fadeInRight 1.5s;
+}
+
+.partners__description,
+.partners__button {
+    animation: fadeInRight 1.5s;
+}
+
 
 @media (max-width: 1440px) {
     .partners__wrapper {
