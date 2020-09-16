@@ -10,7 +10,7 @@ let additionMaxPercent = 100 - 100 / additionSlideCollection.length;
 let slideWidth = additionSlideCollection[0].clientWidth + 40;
 
 var additionTranslate = 0;
-var additionMaxTranslate = slideWidth * additionSlideCollection.length;
+var additionMaxTranslate = slideWidth * (additionSlideCollection.length - 1);
 
 additionBtnRight.onclick = function () {
     if (additionTranslate < additionMaxTranslate - slideWidth) {

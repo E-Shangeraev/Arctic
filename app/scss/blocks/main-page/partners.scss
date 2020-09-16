@@ -1,3 +1,7 @@
+.partners {
+    overflow: hidden;
+}
+
 .partners__container {
     display: flex;
 }
@@ -30,6 +34,27 @@
 
 .partners__item:nth-child(even) {
     animation: fadeInRight 1.5s;
+}
+
+.partners__item:last-child {
+    grid-column: 1 / -1;
+}
+
+.partners__item:nth-child(n) {
+    filter: grayscale(100%) opacity(0.6);
+    transition: filter 0.4s ease-out;
+}
+
+.partners__item:hover {
+    filter: none;
+}
+
+.partners__item img {
+    // display: inline;
+    // width: 10em;
+    // vertical-align: middle;
+    // height: auto;
+    // background-size: cover;
 }
 
 .partners__description,

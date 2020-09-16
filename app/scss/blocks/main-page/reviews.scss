@@ -3,9 +3,9 @@
 }
 
 .reviews__wrapper {
+    position: relative;
     // padding-left: 340px;
     padding-right: 245px;
-
     // max-width: 1320px;
     // margin: 0 auto;
 }
@@ -21,11 +21,15 @@
 .reviews__item {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    // column-count: 2;
+    // page-break-inside: avoid;
 
     margin-bottom: 35px;
 
     img {
-        margin-right: 95px;
+        // align-self: start;
+        width: 42%;
     }
 
     p {
@@ -39,12 +43,11 @@
 }
 
 .reviews__more {
-    position: relative;
+    position: absolute;
     margin: 0;
-    left: 660px;
-    left: 50%;
-
-    line-height: 80px;
+    bottom: 5%;
+    left: 48%;
+    // line-height: 80px;
 }
 
 .reviews__photo {

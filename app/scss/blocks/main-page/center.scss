@@ -30,14 +30,27 @@
     border-collapse: collapse;
 
     td {
-        padding-top: 54px;
-        padding-bottom: 32px;
+        padding-top: 43px;
+        padding-bottom: 43px;
     }
 }
 
 .center__table-row:not(:last-of-type) {
     td {
-        border-bottom: 2px solid #000000;
+        position: relative;
+        // border-bottom: 2px solid #000000;
+        &::after {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #000000;
+            opacity: 0;
+            animation: fadeIn 1.2s 2.5s;
+            animation-fill-mode: forwards;
+        }
     }
     // border-bottom: 2px solid #000000;
 }
@@ -47,7 +60,7 @@
     font-size: 44px;
     line-height: 80px;
 
-    width: 60%;
+    width: 55%;
 }
 
 .center__stats-field {

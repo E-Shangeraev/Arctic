@@ -9,11 +9,18 @@ let count = 1;
 for (let i = 0; i < activitiesSlide.length; i++) {
     activitiesSlide[i].style.zIndex = activitiesSlide.length - i;
     activitiesSlideDescr[i].style.zIndex = activitiesSlide.length - i;
+    activitiesSlideDescr[i].style.opacity = 0;
+    activitiesSlideDescr[0].style.opacity = 1;
 }
 
 activitiesBtnRight.onclick = function () {
     let activeSlide = document.querySelector('.activities__slide--active');
     let activeSlideDescr = document.querySelector('.activities__slide-description--active');
+    
+    activitiesSlideDescr.forEach(item => {
+        item.style.opacity = 1;
+    });
+
     if (activeSlide.nextElementSibling) {
         activeSlide.style.left = '-100%';
         activeSlideDescr.nextElementSibling.style.zIndex = activitiesSlide.length + 1;
@@ -38,6 +45,7 @@ activitiesBtnRight.onclick = function () {
 activitiesBtnLeft.onclick = function () {
     let activeSlide = document.querySelector('.activities__slide--active');
     let activeSlideDescr = document.querySelector('.activities__slide-description--active');
+    
     if (activeSlide.previousElementSibling) {
         activeSlide.previousElementSibling.style.left = '0%';
         activeSlideDescr.style.zIndex = activitiesSlide.length - 1;

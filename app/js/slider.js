@@ -9,7 +9,7 @@ let minPercent = 100 / slideCollection.length;
 let maxPercent = 100 - 100 / slideCollection.length;
 
 var translate = 0;
-var maxTranslate = 460 * slideCollection.length;
+var maxTranslate = 460 * (slideCollection.length - 1);
 
 toursBtnRight.onclick = function () {
     if (translate < maxTranslate - 460) {

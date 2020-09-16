@@ -10,7 +10,7 @@ const monumContainer = document.querySelector('.monuments__container');
 actHeaderNavBtn.forEach((btn, i, arr) => {
     arr[0].classList.add('activities-header__nav-button--active');
 
-    const removeClass = (array) => {
+    const removeClass = array => {
         for (let item of array) {
             item.classList.remove('activities-header__nav-button--active');
         }
@@ -21,10 +21,14 @@ actHeaderNavBtn.forEach((btn, i, arr) => {
 
     const showContainer = (cont, containers) => {
         for (let item of containers) {
-            item.classList.add('visually-hidden');
+            // item.classList.add('visually-hidden');
+            item.style.display = 'none';
         }
-        cont.classList.remove('visually-hidden');
+        // cont.classList.remove('visually-hidden');
+        cont.style.display = '';
     };
+
+    showContainer(natContainer, actPageContainer);
 
     btn.addEventListener('click', () => {
         removeClass(arr);
