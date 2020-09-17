@@ -6,6 +6,7 @@
     function hideTabContent() {
         tabsContent.forEach(item => {
             item.classList.add('visually-hidden');
+            item.style.display = 'none';
             item.classList.remove('show', 'fade');
         });
 
@@ -17,6 +18,7 @@
     function showTabContent(i = 0) {
         tabsContent[i].classList.add('show', 'fade');
         tabsContent[i].classList.remove('visually-hidden');
+        tabsContent[i].style.display = '';
         tabs[i].classList.add('faq__item--active');
     }
 
@@ -33,6 +35,8 @@
                     showTabContent(i); 
                 }
             });
+        } else {
+            hideTabContent();
         }
     });
 // });

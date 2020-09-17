@@ -9,7 +9,7 @@ class Slider {
         this.btnLeft = sectionName.querySelector('.button__left');
         this.slideCollection = sectionName.querySelectorAll('.tours__slide');
         this.slideWidth = this.slideCollection[0].clientWidth;
-        this.maxTranslate = this.slideWidth * this.slideCollection.length;
+        this.maxTranslate = this.slideWidth * (this.slideCollection.length - 1);
         this.slides = sectionName.querySelector('.tours__slider-block');
     }
     log() {
@@ -58,7 +58,7 @@ function activateSliders(slider, section) {
         if (translate < slider.maxTranslate - slider.slideWidth) {
             translate += slider.slideWidth;
         }
-        if (translate ==  slider.maxTranslate - slider.slideWidth) {
+        if (translate ==  slider.maxTranslate  - slider.slideWidth) {
             slider.btnRight.classList.add('button--disactive');
         }
 
@@ -66,7 +66,7 @@ function activateSliders(slider, section) {
         slider.btnLeft.classList.remove('button--disactive');
 
         if (activeElement.nextElementSibling) {
-            slider.slides.style.transform = 'translateX(-' + translate + 'px)';
+            slider.slides.style.transform = `translateX(-${translate}px)`;
             activeElement.classList.remove('slide--active');
             activeElement.nextElementSibling.classList.add('slide--active');
         }

@@ -4,6 +4,7 @@ const actPageContainer = document.querySelectorAll('.activities-page__container'
 const natContainer = document.querySelector('.natural__container');
 const animContainer = document.querySelector('.animals__container');
 const monumContainer = document.querySelector('.monuments__container');
+const btnText = document.querySelector('.button-text--activities');
 
 
 
@@ -36,12 +37,15 @@ actHeaderNavBtn.forEach((btn, i, arr) => {
 
         if (btn.classList.contains('nav-button--natural')) {
             showContainer(natContainer, actPageContainer);
+            btnText.textContent = 'Подробнее о природе';
         }
         if (btn.classList.contains('nav-button--animals')) {
             showContainer(animContainer, actPageContainer);
+            btnText.textContent = 'Подробнее о животных';
         }
         if (btn.classList.contains('nav-button--monuments')) {
             showContainer(monumContainer, actPageContainer);
+            btnText.textContent = 'Подробнее о памятниках';
         }
     });
 });
