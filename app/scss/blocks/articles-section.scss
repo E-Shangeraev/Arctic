@@ -1,9 +1,5 @@
 @import '../variables.scss';
 
-.articles-section__wrapper {
-    // padding: 0 340px;
-}
-
 .articles-section__title {
     font-family: $font-fyl;
     font-style: normal;
@@ -27,6 +23,7 @@
 
     overflow: hidden;
     transition: linear 0.3s;
+    // box-sizing: border-box;
 
     &:hover {
         transform: scale(1.02);
@@ -104,12 +101,15 @@
     border-top: 1px solid #cccccc;
 }
 
-.article-preview--last {
+.article-preview--list {
     flex-direction: row;
     flex-wrap: nowrap;
 
     padding-top: 40px;
     max-width: 100%;
+    max-height: 320px;
+
+    box-sizing: border-box;
    
     img {
         width: 50%;

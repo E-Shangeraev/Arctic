@@ -132,3 +132,19 @@ if (nextMonthIndex == 0) {
 if (thisMonthIndex == 0) {
     calendarTopItemActive.previousElementSibling.children[1].textContent = date.getFullYear() - 1;
 }
+
+
+const blogButton = document.querySelector('.blog__button');
+const blogCalendar = document.querySelector('.blog__calendar');
+const calendar = document.querySelector('.calendar');
+
+blogButton.addEventListener('click', () => {
+    blogCalendar.style.cssText = 'animation: fadeOutDown 0.5s; animation-fill-mode: forwards;';
+    calendar.style.cssText = 'animation: fadeInDown 0.5s; animation-fill-mode: forwards;';
+    setTimeout(() => {
+        calendar.style.display = 'block';
+        calendar.classList.remove('visually-hidden');
+        blogCalendar.style.display = 'none';
+        blogCalendar.classList.add('visually-hidden');
+    }, 500);
+});

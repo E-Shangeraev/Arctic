@@ -1,8 +1,8 @@
 @import '../../variables.scss';
 
 .emotions {
-    margin-top: 8%;
-    margin-bottom: 8%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 
     background-image: url('../img/main-page/emotions/1.jpg'); 
     background-position: 0 0;
@@ -15,6 +15,8 @@
 .emotions__wrapper {
     display: flex;
     justify-content: space-between;
+    padding-top: 8%;
+    padding-bottom: 8%;
 }
 
 .emotions__column-1 {
