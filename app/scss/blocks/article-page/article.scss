@@ -3,10 +3,13 @@
 .article__wrapper {
     // margin-top: 72px;
     overflow: hidden;
+    display: flex;
 }
 
 .article {
     width: 100%;
+    height: 100%;
+    display: flex;
 }
 
 .article__link-back {
@@ -165,9 +168,16 @@
 
 
 
-.article__column-2 img {
-    position: relative;
-    min-width: 150%;
+// .article__column-2 img {
+//     position: relative;
+//     min-width: 150%;
+//     max-height: 50%;
+// }
+
+.article__image {
+    width: 150%;
+    min-height: 20%;
+    min-height: 500px;
 }
 
 .bread-crumbs {
