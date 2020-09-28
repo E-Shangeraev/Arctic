@@ -42,7 +42,7 @@
     transform: scaleX(1);
 }
 
-.activities-header__nav-button--active::after {
+.activities-header__nav-button.active::after {
     transform: scaleX(1);
 }
 

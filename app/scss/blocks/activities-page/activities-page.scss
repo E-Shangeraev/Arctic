@@ -5,11 +5,13 @@
 }
 
 .activities-page__container {
+    // position: relative;
     display: flex;
     justify-content: space-between;
 }
 
 .activities-page__nav {
+    position: relative;
     width: 50%;
     padding-right: 5%;
     box-sizing: border-box;
@@ -24,6 +26,9 @@
 }
 
 .activities-page__nav-list {
+    // position: fixed;
+    // top: 0;
+    // left: 340px;
     padding-top: 20px;
 }
 

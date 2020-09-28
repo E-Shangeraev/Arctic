@@ -1,4 +1,16 @@
-<?php require_once 'includes/config.php'; ?>
+<?php 
+require 'includes/config.php';
+require 'functions.php'; 
+error_reporting(0);
+// require 'show_more.php';
+
+if ($_POST['param']) {
+    $param = json_decode($_POST['param']);
+    $array = get_more($param->offset, $param->limit);
+    echo json_encode($array);
+    exit();
+}
+?>
 
 <!DOCTYPE html>
 <html lang="ru">
@@ -122,6 +134,9 @@
                                                 <li class="calendar__events-item">
                                                     <a href="./article-page.html">Поездка на плато Путорна на снегоходах</a> 
                                                 </li>
+                                                <li class="calendar__events-item">
+                                                    <a href="./article-page.html">Поездка на плато Путорна на снегоходах</a> 
+                                                </li>
                                             </ul>
                                         </div>
                                         <div class="calendar__column-2">
@@ -153,14 +168,29 @@
                                 </div>
                             </div>
                             <div class="blog__column-2">
-                                <a href="#" class="blog__popular article-preview">
-                                    <h2 class="article-preview-title">Популярные статьи</h2>
-                                    <img src="./img/blog-page/2.jpg" alt="Новость Норильска">
-                                    <span class="article-preview__class">Новость Норильска</span>
-                                    <span class="article-preview__appeal">Знаете ли вы?</span>
-                                    <p class="article-preview__new">В нашем городе до сих пор действует режим самоизоляции...</p>
-                                    <time class="article-preview__datetime" datetime="2020-05-12T09:01">12 мая, 2020 09:01</time>
-                                </a>
+                                <?php
+                                    $categories = mysqli_query($connection, "SELECT * FROM `article_categories`");
+                                    $articles = mysqli_query($connection, "SELECT * FROM `articles` ORDER BY `views` DESC LIMIT 1");
+                                    
+                                    while( $art = mysqli_fetch_assoc($articles) ): ?>
+                                    <a href="#" class="blog__popular article-preview">
+                                        <?php
+                                            $art_cat = false;
+                                            foreach( $categories as $cat) {
+                                            if ( $cat['id'] == $art['categorie_id'] ) {
+                                                $art_cat = $cat;
+                                                break;
+                                            }
+                                            }
+                                        ?>
+                                        <h2 class="article-preview-title">Популярные статьи</h2>
+                                        <img src="./img/blog-page/<?= $art['image']; ?>" alt="<?= $art_cat['title']; ?>">
+                                        <span class="article-preview__class"><?= $art_cat['title']; ?></span>
+                                        <span class="article-preview__appeal">Знаете ли вы?</span>
+                                        <p class="article-preview__new"><?= $art['title']; ?></p>
+                                        <time class="article-preview__datetime" datetime="<?= $art['pubdate']; ?>"><?= $art['pubdate']; ?></time>
+                                    </a>
+                                <?php endwhile; ?>
                             </div>
                         </div>
                     </div>
@@ -175,17 +205,18 @@
                                 while( $art = mysqli_fetch_assoc($articles) ): ?>
                                 <li>
                                     <a href="/article.php?id=<?= $art['id']; ?>" class="article-preview article-preview--list">
+                                        <?php
+                                            $art_cat = false;
+                                            foreach( $categories as $cat) {
+                                            if ( $cat['id'] == $art['categorie_id'] ) {
+                                                $art_cat = $cat;
+                                                break;
+                                            }
+                                            }
+                                        ?>
                                         <img src="./img/blog-page/<?= $art['image']; ?>" alt="<?= $art_cat['title']; ?>">
                                         <div class="article-preview__text">
-                                            <?php
-                                                $art_cat = false;
-                                                foreach( $categories as $cat) {
-                                                if ( $cat['id'] == $art['categorie_id'] ) {
-                                                    $art_cat = $cat;
-                                                    break;
-                                                }
-                                                }
-                                            ?>
+                                            
                                             <span class="article-preview__class"><?= $art_cat['title'] ?></span>
                                             <span class="article-preview__appeal">Знаете ли вы?</span>
                                             <p class="article-preview__new"><?= $art['title']; ?></p>
@@ -238,36 +269,39 @@
 
                 <section class="articles-section blog__articles">
                     <h2 class="articles-section__title blog__articles-title">Последние статьи</h2>
-                    <ul class="articles-section__list blog__articles-list">
-                        <?php 
-                            $categories = mysqli_query($connection, "SELECT * FROM `article_categories`");
-                            $articles = mysqli_query($connection, "SELECT * FROM `articles` ORDER BY `id` DESC LIMIT 4");
-
-                            while( $art = mysqli_fetch_assoc($articles) ): ?>
-                            <li>
-                                <a href="/article.php?id=<?= $art['id']; ?>" class="article-preview article-preview--list">
-                                    <img src="./img/blog-page/<?= $art['image']; ?>" alt="<?= $art_cat['title']; ?>">
-                                    <div class="article-preview__text">
-                                        <?php
-                                            $art_cat = false;
-                                            foreach( $categories as $cat) {
-                                            if ( $cat['id'] == $art['categorie_id'] ) {
-                                                $art_cat = $cat;
-                                                break;
-                                            }
-                                            }
-                                        ?>
-                                        <span class="article-preview__class"><?= $art_cat['title'] ?></span>
-                                        <span class="article-preview__appeal">Знаете ли вы?</span>
-                                        <p class="article-preview__new"><?= $art['title']; ?></p>
-                                        <time class="article-preview__datetime" datetime="2020-05-12T09:01"><?= $art['pubdate']; ?></time>
-                                    </div>
-                                </a>
-                            </li>
-                        <?php endwhile; ?>
-                    </ul>
                     
-                    <button class="show-more-button">Показать еще</button>
+                    <ul class="articles-section__list articles-section__list--last blog__articles-list">
+                    <?php                  
+                        require 'get_article.php';
+                        while( $art = mysqli_fetch_assoc($articles) ): ?>
+                        <li>
+                            <a href="/article.php?id=<?= $art['id']; ?>" class="article-preview article-preview--list">
+                                <?php
+                                    $art_cat = false;
+                                    foreach( $categories as $cat) {
+                                    if ( $cat['id'] == $art['categorie_id'] ) {
+                                        $art_cat = $cat;
+                                        break;
+                                    }
+                                    }
+                                ?>
+                                <img src="./img/blog-page/<?= $art['image']; ?>" alt="<?= $art_cat['title']; ?>">
+                                <div class="article-preview__text">
+                                    
+                                    <span class="article-preview__class"><?= $art_cat['title'] ?></span>
+                                    <span class="article-preview__appeal">Знаете ли вы?</span>
+                                    <p class="article-preview__new"><?= $art['title']; ?></p>
+                                    <time class="article-preview__datetime" datetime="2020-05-12T09:01"><?= $art['pubdate']; ?></time>
+                                </div>
+                            </a>
+                        </li>
+                        <div id="articles-more"></div>
+                    <?php endwhile; ?>
+                    </ul>
+
+                    <?php ?>
+                    <button class="show-more-button" name="more">Показать еще</button>
+                    <?php?>
                 </section>
             </div>
         </section>
@@ -320,5 +354,7 @@
     <script type="module" src="./js/Tabs.js"></script>
     <script type="module" src="./js/blog-rubrics.js"></script>
     <script src="./js/calendar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="./js/show-more-button.js"></script>
 </body>
 </html>

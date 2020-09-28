@@ -10,3 +10,4 @@ $config = array(
 );
 
 require 'db.php';
+// require 'functions.php';

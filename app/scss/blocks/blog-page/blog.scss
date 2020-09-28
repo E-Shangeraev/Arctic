@@ -1,7 +1,16 @@
 @import '../../variables.scss';
 
+.blog-page {
+    scroll-behavior: auto;
+}
+
 .blog {
+    scroll-behavior: auto;
     overflow: hidden;
+}
+
+.blog__wrapper {
+    scroll-behavior: auto;
 }
 
 .blog__nav-list {
