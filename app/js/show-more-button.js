@@ -132,14 +132,13 @@ let ob = {
   'limit': 4
 };
 
-const arts = document.querySelector('.articles-section__list--last');
+$(".show-more-button").click(function() {
+  let coord = window.pageYOffset;
+  window.scrollBy(0, coord);
 
-$(".show-more-button").click(function(e) {
-  e.preventDefault();
-  let coord = arts.getBoundingClientRect().y;
-  window.scroll(0, coord);
-  // console.log(coord);
-  // arts.scrollIntoView();
+  if (ob.limit >= +limit - 4) {
+    this.style.display = 'none';
+  }
 
   ob.offset += 4;
   ob.limit += 4;

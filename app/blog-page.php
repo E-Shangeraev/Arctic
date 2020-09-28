@@ -1,8 +1,7 @@
 <?php 
 require 'includes/config.php';
 require 'functions.php'; 
-error_reporting(0);
-// require 'show_more.php';
+// error_reporting(0);
 
 if ($_POST['param']) {
     $param = json_decode($_POST['param']);
@@ -298,10 +297,7 @@ if ($_POST['param']) {
                         <div id="articles-more"></div>
                     <?php endwhile; ?>
                     </ul>
-
-                    <?php ?>
                     <button class="show-more-button" name="more">Показать еще</button>
-                    <?php?>
                 </section>
             </div>
         </section>
@@ -350,6 +346,14 @@ if ($_POST['param']) {
             </div>
         </div>
     </footer>
+    <?php 
+            $total_count_q =  mysqli_query($connection, "SELECT COUNT(id) AS `total_count` FROM `articles`");
+            $total_count = mysqli_fetch_assoc($total_count_q);
+            $total_count = $total_count['total_count'];
+    ?>
+    <script>
+        const limit = "<?php echo $total_count ?>";
+    </script>
 
     <script type="module" src="./js/Tabs.js"></script>
     <script type="module" src="./js/blog-rubrics.js"></script>
