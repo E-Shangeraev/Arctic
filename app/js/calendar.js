@@ -148,3 +148,5 @@ blogButton.addEventListener('click', () => {
         blogCalendar.classList.add('visually-hidden');
     }, 500);
 });
+
+document.querySelector('.blog__timetable').textContent = 'Расписание на ' + monthObject[date.getMonth()].monTop.toLowerCase();

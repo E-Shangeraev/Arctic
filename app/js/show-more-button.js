@@ -136,10 +136,6 @@ $(".show-more-button").click(function() {
   let coord = window.pageYOffset;
   window.scrollBy(0, coord);
 
-  if (ob.limit >= +limit - 4) {
-    this.style.display = 'none';
-  }
-
   ob.offset += 4;
   ob.limit += 4;
   
@@ -180,9 +176,15 @@ $(".show-more-button").click(function() {
         $(".articles-section__list--last").append(article)
         // .hide()
         .fadeIn(500);
+
+        
       });
     }
   });
+  
+  if (ob.limit >= +limit ) {
+    this.style.display = 'none';
+  }
 });
 
 
