@@ -141,7 +141,7 @@ $(".show-more-button").click(function() {
   
   $.ajax({
     type: 'POST',
-    url: '../blog-page.php',
+    url: 'blog-page.php',
     dataType: 'json',
     data:'param='+JSON.stringify(ob),
     success: function(html) {
@@ -166,8 +166,8 @@ $(".show-more-button").click(function() {
               <div class="article-preview__text">
                   
                   <span class="article-preview__class">${item['categorie_id']}</span>
-                  <span class="article-preview__appeal">Знаете ли вы?</span>
                   <p class="article-preview__new">${item['title']}</p>
+                  <span class="article-preview__appeal">Знаете ли вы?</span>
                   <time class="article-preview__datetime" datetime="2020-05-12T09:01">${item['pubdate']}</time>
               </div>
           </a>

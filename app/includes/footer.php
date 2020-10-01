@@ -5,14 +5,14 @@
                 <h2 class="main-footer__sections">Разделы</h2>
                 <nav class="main-footer__nav">
                     <ul class="main-footer__nav-list">
-                        <li class="main-footer__nav-item"><a href="#">Туры</a></li>
-                        <li class="main-footer__nav-item"><a href="#">Активности</a></li>
-                        <li class="main-footer__nav-item"><a href="#">FAQ</a></li>
+                        <li class="main-footer__nav-item"><a href="tours-page.php">Туры</a></li>
+                        <li class="main-footer__nav-item"><a href="activities-page.php">Активности</a></li>
+                        <li class="main-footer__nav-item"><a href="faq-page.php">FAQ</a></li>
                     </ul>
                     <ul class="main-footer__nav-list">
-                        <li class="main-footer__nav-item"><a href="#">Норильск</a></li>
+                        <li class="main-footer__nav-item"><a href="norilsk-page.php">Норильск</a></li>
                         <li class="main-footer__nav-item"><a href="#">Центр развития туризма Норильска</a></li>
-                        <li class="main-footer__nav-item"><a href="#">Блог</a></li>
+                        <li class="main-footer__nav-item"><a href="blog-page.php">Блог</a></li>
                     </ul>
                 </nav>
             </div>

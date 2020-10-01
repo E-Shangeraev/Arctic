@@ -198,8 +198,10 @@
     font-family: $font-fyl;
     font-weight: normal;
     font-size: 36px;
-    line-height: 80px;
+    // line-height: 80px;
+    line-height: 40px;
     margin: 0;
+    margin-bottom: 40px;
 }
 
 .article__datetime {

@@ -9,9 +9,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const activitiesContent = new Tabs(activitiesNav, activitiesTabsContent, 'button');
 
     const activitiesPageNavList = document.querySelectorAll('.activities-page__nav-list');
+    const btnActHeader = document.querySelector('.button-text--activities');
+    const footer = document.querySelector('footer');
+    const header = document.querySelector('header');
+
+    activitiesNav.addEventListener('click', (e) => {
+        const target = e.target;
+        if (target == activitiesNav.children[0] && target.classList.contains('active')) {
+            btnActHeader.textContent = 'Подробнее о природе';
+        }
+        if (target == activitiesNav.children[1] && target.classList.contains('active')) {
+            btnActHeader.textContent = 'Подробнее о животных';
+        }
+        if (target == activitiesNav.children[2] && target.classList.contains('active')) {
+            btnActHeader.textContent = 'Подробнее о памятниках';
+        }
+    });
+    
 
     window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 1100) {
+        if (window.pageYOffset > header.clientHeight + 50) {
             activitiesPageNavList.forEach(item => {
                 item.style.cssText = `
                     position: fixed;
@@ -22,14 +39,15 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             activitiesPageNavList.forEach(item => item.style.position = '');
         }
-        if (window.pageYOffset > 2000) {
-            activitiesPageNavList.forEach(item => {
-                item.style.cssText = `
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
-                `;
-            });
+
+        if (window.pageYOffset > document.body.clientHeight - footer.clientHeight - 600) {     
+        activitiesPageNavList.forEach(item => {
+            item.style.cssText = `
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            `;
+        });
         }
     });
 });

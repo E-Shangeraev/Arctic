@@ -150,3 +150,4 @@ blogButton.addEventListener('click', () => {
 });
 
 document.querySelector('.blog__timetable').textContent = 'Расписание на ' + monthObject[date.getMonth()].monTop.toLowerCase();
+

@@ -54,17 +54,20 @@
 
 }
 
-.article-preview__appeal {
+.article-preview__new {
     font-family: $font-fyl;
     font-weight: normal;
     font-size: 18px;
-    line-height: 40px;
+    line-height: 24px;
 
     margin-bottom: 5px;
 
 }
 
-.article-preview__new {
+.article-preview__appeal {
+    // position: absolute;
+    // top: 70%;
+    display: block;
     font-size: 14px;
     line-height: 24px;
     margin: 0;
@@ -93,6 +96,7 @@
 }
 
 .articles-section__list li {
+    // position: relative;
     margin-bottom: 85px;
     max-width: 48%;
 

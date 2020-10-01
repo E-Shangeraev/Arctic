@@ -32,24 +32,27 @@
 
 .nav__items {
     width: 1010px;
-
-    & a::after {
-        position: absolute;
-        content: "";
-        bottom: -1px;
-        left: 0;
-        
-        width: 100%;
-        height: 2px;
-        background-color: #ffffff;
-        
-        transform: scaleX(0);
-        transition: 0.2s;
+    
+    li:not(:last-child) {
+        a::after {
+            position: absolute;
+            content: "";
+            bottom: -1px;
+            left: 0;
+            
+            width: 100%;
+            height: 2px;
+            background-color: #ffffff;
+            
+            transform: scaleX(0);
+            transition: 0.2s;
+        }
+    
+        a:hover::after {
+            transform: scaleX(1);
+        }
     }
-
-    & a:hover::after {
-        transform: scaleX(1);
-    }
+    
 }
 
 .nav__lang {
@@ -79,6 +82,12 @@
         filter: drop-shadow(0 0 1px black);
     }
 }
+
+.eye {
+    width: 4%;
+} 
+
+
 
 
 @media (max-width: 1366px) {
