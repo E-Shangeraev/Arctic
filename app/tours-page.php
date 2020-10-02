@@ -368,20 +368,20 @@
                                 </li>
                                 <li class="tours__slide slide slide--active">
                                     <figure>
-                                        <p><img class="slide__image" src="./img/tours-page/addition/1.jpg" alt="Вертолет"></p>
+                                        <p><img class="slide__image" src="./img/tours-page/addition/3.jpg" alt="Внедорожник"></p>
                                         <figcaption class="slide__description">
                                             <div>
-                                                <b class="slide__name">Вертолет</b><br>
+                                                <b class="slide__name">Внедорожник</b><br>
                                             </div>
                                         </figcaption>
                                     </figure>
                                 </li> 
                                 <li class="tours__slide slide slide--active">
                                     <figure>
-                                        <p><img class="slide__image" src="./img/tours-page/addition/2.jpg" alt="Катер"></p>
+                                        <p><img class="slide__image" src="./img/tours-page/addition/4.jpg" alt="Снегоход"></p>
                                         <figcaption class="slide__description">
                                             <div>
-                                                <b class="slide__name">Катер</b><br>
+                                                <b class="slide__name">Снегоход</b><br>
                                             </div>
                                         </figcaption>
                                     </figure>

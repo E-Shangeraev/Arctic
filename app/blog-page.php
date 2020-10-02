@@ -10,6 +10,29 @@ if ($_POST['param']) {
     echo json_encode($array);
     exit();
 }
+
+// if ($_POST['oninput']) {
+//     $oninput = json_decode($_POST['oninput']);
+//     // $arr = get_more($oninput->day, $oninput->month, $oninput->year);
+//     // echo json_encode($arr);
+//     echo $oninput;
+//     exit();
+// }
+
+if ($_POST['events']) {
+    $events = json_decode($_POST['events']);
+    $events_arr = get_events($events->month, $events->year);
+    echo json_encode($events_arr);
+    exit();
+}
+
+
+// $events = mysqli_query($connection, "SELECT * FROM `events` ORDER BY `id` DESC");
+
+// while($evt = mysqli_fetch_assoc($events)) {
+//     $events_arr[] = json_encode($evt);
+// }
+
 ?>
 
 <!DOCTYPE html>
@@ -69,6 +92,21 @@ if ($_POST['param']) {
                     </ul>
                 </nav>
 
+                <?php     
+                            // require 'includes/config.php';
+                        // $date = $year . '-' . $month . '-' . '18';
+                            // $date = '2020-10-18';
+                        // $date = strval($date);
+                            // $year = 2020;
+                            // $month = 10;
+                            // $result = mysqli_query($connection, "SELECT * FROM `events` WHERE `year` = $year AND `month` = $month");
+                            // $result = mysqli_query($connection, "SELECT * FROM `events` WHERE `date` = '{$date}'");
+                            // print_r(mysqli_fetch_assoc($result));
+                            // die();
+                            // $result = mysqli_query($connection, "SELECT * FROM `events` WHERE (`year` = '{$year}' AND `month` = '{$month}')");
+                            ?>
+
+
                 <section class="tabs blog__top">
                     <div class="tab tab--calendar active ">
                         <div class="blog__container">
@@ -100,7 +138,7 @@ if ($_POST['param']) {
                                             </p>
                                             <h2 class="calendar__events-title">События в этот день</h2>
                                             <ul class="calendar__events-list">
-                                                <li class="calendar__events-item">
+                                                <!-- <li class="calendar__events-item">
                                                     <a href="./article-page.html">Фестиваль подледной рыблки на Енисее</a> 
                                                 </li>
                                                 <li class="calendar__events-item">
@@ -108,7 +146,7 @@ if ($_POST['param']) {
                                                 </li>
                                                 <li class="calendar__events-item">
                                                     <a href="./article-page.html">Поездка на плато Путорана на снегоходах</a> 
-                                                </li>
+                                                </li> -->
                                             </ul>
                                         </div>
                                         <div class="calendar__column-2">
@@ -187,8 +225,6 @@ if ($_POST['param']) {
                         <h2 class="articles-section__title blog__articles-title">Отчеты</h2>
                     </div>
                 </section>
-
-                
 
                 <section class="articles-section blog__articles">
                     <h2 class="articles-section__title blog__articles-title">Последние статьи</h2>
