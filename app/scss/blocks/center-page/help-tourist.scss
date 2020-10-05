@@ -1,0 +1,37 @@
+.help-tourist__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  // column-count: 2;
+
+  a {
+    width: 50%;
+    padding-top: 3%;
+  }
+}
+
+.help-tourist__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.help-tourist__item {
+  background-image: url('../img/center-page/help-tourist.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  // background-size: 100% 100%;
+
+  padding: 10%;
+  padding-left: 0;
+  // width: 40%;
+
+  a {
+    color: #000000;
+  }
+ 
+}
+
+.help-tourist__item {
+  animation: slideInLeft 1.5s;
+}

@@ -11,14 +11,6 @@ if ($_POST['param']) {
     exit();
 }
 
-// if ($_POST['oninput']) {
-//     $oninput = json_decode($_POST['oninput']);
-//     // $arr = get_more($oninput->day, $oninput->month, $oninput->year);
-//     // echo json_encode($arr);
-//     echo $oninput;
-//     exit();
-// }
-
 if ($_POST['events']) {
     $events = json_decode($_POST['events']);
     $events_arr = get_events($events->month, $events->year);
@@ -138,20 +130,11 @@ if ($_POST['events']) {
                                             </p>
                                             <h2 class="calendar__events-title">События в этот день</h2>
                                             <ul class="calendar__events-list">
-                                                <!-- <li class="calendar__events-item">
-                                                    <a href="./article-page.html">Фестиваль подледной рыблки на Енисее</a> 
-                                                </li>
-                                                <li class="calendar__events-item">
-                                                    <a href="./article-page.html">Поездка на плато Путорана на снегоходах</a> 
-                                                </li>
-                                                <li class="calendar__events-item">
-                                                    <a href="./article-page.html">Поездка на плато Путорана на снегоходах</a> 
-                                                </li> -->
                                             </ul>
                                         </div>
                                         <div class="calendar__column-2">
                                             <ul class="calendar__top-list">
-                                                <li class="calendar__top-item">
+                                                <li class="calendar__top-item calendar__top-item--prev">
                                                     <span class="calendar__top-month"></span>
                                                     <span class="calendar__top-year"></span>
                                                 </li>
@@ -159,7 +142,7 @@ if ($_POST['events']) {
                                                     <span class="calendar__top-month"></span>
                                                     <span class="calendar__top-year"></span>
                                                 </li>
-                                                <li class="calendar__top-item">
+                                                <li class="calendar__top-item calendar__top-item--next">
                                                     <span class="calendar__top-month"></span>
                                                     <span class="calendar__top-year"></span>
                                                 </li>

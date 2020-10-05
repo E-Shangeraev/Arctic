@@ -11,7 +11,7 @@
                     </ul>
                     <ul class="main-footer__nav-list">
                         <li class="main-footer__nav-item"><a href="norilsk-page.php">Норильск</a></li>
-                        <li class="main-footer__nav-item"><a href="#">Центр развития туризма Норильска</a></li>
+                        <li class="main-footer__nav-item"><a href="center-page.php">Центр развития туризма Норильска</a></li>
                         <li class="main-footer__nav-item"><a href="blog-page.php">Блог</a></li>
                     </ul>
                 </nav>

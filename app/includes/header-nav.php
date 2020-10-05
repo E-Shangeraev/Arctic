@@ -15,7 +15,7 @@
         <li><a href="activities-page.php">Активности</a></li>
         <li><a href="faq-page.php">FAQ</a></li>
         <li><a href="norilsk-page.php">Норильск</a></li>
-        <li><a href="#">Центр развития туризма Норильска</a></li>
+        <li><a href="center-page.php">Центр развития туризма Норильска</a></li>
         <li><a href="blog-page.php">Блог</a></li>
         <li class="eye"><a href="#"><img src="img/Slabovid.png" alt=""></a></li>
     </ul>

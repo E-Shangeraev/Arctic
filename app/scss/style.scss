@@ -67,6 +67,14 @@
 @import "./blocks/tours-page/help.scss";
 @import "./blocks/tours-page/steps.scss";
 
+//center-page
+@import "./blocks/header/center-header.scss";
+@import "./blocks/center-page/mun.scss";
+@import "./blocks/center-page/proj.scss";
+@import "./blocks/center-page/director.scss";
+@import "./blocks/center-page/docs.scss";
+@import "./blocks/center-page/help-tourist.scss";
+
 * {
     scroll-behavior: smooth;
 }

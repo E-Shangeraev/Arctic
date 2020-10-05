@@ -232,15 +232,20 @@
 
         <section class="addition"> 
             <div class="addition__wrapper wrapper">
-                <div class="addition__container">
-                    <div class="addition__column-1">
-                        <span class="pagination wow">03</span>
-                        <h1 class="addition__title title wow">Дополнительно к турам</h1>
+            <span class="pagination wow">03</span>
+            <div class="cols">
+                <h1 class="addition__title title wow">Дополнительно к турам</h1>
+                <a href="tours-page.php" class="addition__more more wow">Подробнее о турах</a>
+            </div>
+                <!-- <div class="addition__container">
+                    <div class="addition__column-1 cols">
+                        
+                        
                     </div>
                     <div class="addition__column-2">
-                        <a href="tours-page.php" class="addition__more more wow">Подробнее о турах</a>
+                        
                     </div>
-                </div>
+                </div> -->
                 
                 <div class="addition__slider slider wow">
                     <ul class="slider-block">

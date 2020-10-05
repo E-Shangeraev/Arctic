@@ -3,13 +3,8 @@
 .activities {
     max-width: 1905px;
     margin: 0 auto;
-    // margin-top: 15%;
 
     overflow: hidden;
-}
-
-.activities__wrapper {
-    // padding-right: 0;
 }
 
 .activities__title {
@@ -19,7 +14,6 @@
 .activities__container {
     display: flex;
     justify-content: space-between;
-    // padding-right: 160px;
 }
 
 .activities__column-1 {
@@ -32,32 +26,15 @@
     justify-content: center;
 }
 
-// .activities__background {
-//     position: absolute;
-//     margin-left: -500px;
-//     width: 45vw;
-//     width: 750px;
-//     height: 100%;
-
-//     background-color: #213434;
-//     z-index: 1;
-// }
-
 .activities__slider {
     position: relative;
     display: flex;
-    // transform-origin: 50% 50%;
-    // transform: translate(50%, 30%);
-    // top: 50%;
-    // left: 50%;
-
     padding: 0;
     margin: 0;
     
     width: 100%;
     width: 715px;
     min-height: 478px;
-    // height: 478px;
     
     box-shadow: -20em 0 0 8em #213434;
     overflow: hidden;
@@ -68,8 +45,6 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    // height: 478px;
-    // width: 715px;
     left: 0;
     margin: 0;
 
@@ -98,13 +73,11 @@
 
 .activities__column-2 {
     position: relative;
-    // right: 10%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 45%;
 
-    // flex-grow: 1;
     flex-shrink: 0;
 }
 
@@ -125,8 +98,6 @@
     height: 100%;
 
     background-color: #fff;
-
-    // overflow: hidden;
 }
 
 .activities__slide-name {
@@ -134,14 +105,6 @@
 
     font-size: 26px;
     line-height: 26px;
-}
-
-.activities__slide-text {
-    // margin-bottom: 19%;
-}
-
-.activities__buttons {
-    // margin-bottom: 100px;
 }
 
 .activities__link  {

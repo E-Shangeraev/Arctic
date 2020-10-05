@@ -4,20 +4,20 @@
             require 'includes/config.php';
 
             $categories = mysqli_query($connection, "SELECT * FROM `activities_categories`");
-            $articles = mysqli_query($connection, "SELECT * FROM `activities` WHERE `categorie_id` = $id ORDER BY `id`");
+            $activities = mysqli_query($connection, "SELECT * FROM `activities` WHERE `categorie_id` = $id ORDER BY `id`");
             
-            while( $art = mysqli_fetch_assoc($articles) ): ?>
+            while( $act = mysqli_fetch_assoc($activities) ): ?>
             <li class="activities-page__nav-item">
                 <?php
-                    $art_cat = false;
+                    $act_cat = false;
                     foreach( $categories as $cat) {
                     if ( $cat['id'] == $art['categorie_id'] ) {
-                        $art_cat = $cat;
+                        $act_cat = $cat;
                         break;
                     }
                     }
                 ?>
-                <a href="/article.php?id=<?= $art['id']; ?>&activities_cat=<?= $art_cat['id']; ?>"><?= $art['title']; ?></a>
+                <a href="/activitie.php?id=<?= $act['id']; ?>&activities_cat=<?= $act_cat['id']; ?>"><?= $act['title']; ?></a>
             </li>
         <?php endwhile; ?>
     </ul>
@@ -28,30 +28,30 @@
             require 'includes/config.php';
 
             $categories = mysqli_query($connection, "SELECT * FROM `activities_categories`");
-            $articles = mysqli_query($connection, "SELECT * FROM `activities` WHERE `categorie_id` = $id ORDER BY `id` LIMIT 3");
+            $activities = mysqli_query($connection, "SELECT * FROM `activities` WHERE `categorie_id` = $id ORDER BY `id` LIMIT 3");
 
-            while( $art = mysqli_fetch_assoc($articles) ): ?>
+            while( $act = mysqli_fetch_assoc($activities) ): ?>
             <li class="activities-page__item">
             <div class="activities-page__item-description">
-                <h3><?= $art['title']; ?></h3>
-                <p><?= $art['text']; ?></p>
+                <h3><?= $act['title']; ?></h3>
+                <p><?= $act['preview_text']; ?></p>
                 <?php
-                    $art_cat = false;
+                    $act_cat = false;
                     foreach( $categories as $cat) {
-                    if ( $cat['id'] == $art['categorie_id'] ) {
-                        $art_cat = $cat;
+                    if ( $cat['id'] == $act['categorie_id'] ) {
+                        $act_cat = $cat;
                         break;
                     }
                     }
                 ?>
-                <a href="/article.php?id=<?= $art['id']; ?>&activities_cat=<?= $art_cat['id']; ?>"  class="activities-page__item-button">
-                    <?php if ($art_cat['id'] == 1): ?>
+                <a href="/activitie.php?id=<?= $act['id']; ?>&activities_cat=<?= $act_cat['id']; ?>"  class="activities-page__item-button">
+                    <?php if ($act_cat['id'] == 1): ?>
                     <span>Посмотреть активность</span>
                     <?php endif; ?>
-                    <?php if ($art_cat['id'] == 2): ?>
+                    <?php if ($act_cat['id'] == 2): ?>
                     <span>Посмотреть животное</span>
                     <?php endif; ?>
-                    <?php if ($art_cat['id'] == 3): ?>
+                    <?php if ($act_cat['id'] == 3): ?>
                     <span>Посмотреть памятник</span>
                     <?php endif; ?>
                     <svg width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +60,7 @@
                     </svg>
                 </a>
             </div>
-            <img class="activities-page__item-image" src="./img/activities-page/<?= $art['image']; ?>" alt="<?= $art['title']; ?>">
+            <img class="activities-page__item-image" src="./img/activities-page/<?= $act['image']; ?>" alt="<?= $act['title']; ?>">
             </li>
         <?php endwhile; ?>
     </ul>

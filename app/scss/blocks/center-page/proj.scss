@@ -1,0 +1,58 @@
+.proj:not(:last-child) {
+  padding-bottom: 10%;
+}
+
+.proj__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.proj__col-1,
+.proj__col-2 {
+  width: 50vw;
+}
+
+.proj {
+  h3 {
+    margin-bottom: 15%;
+  }
+
+  a {
+    color: #000000;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 7%;
+  }
+
+  img {
+    margin-bottom: 7%;
+  }
+
+  li {
+    margin-bottom: 4%;
+  }
+
+  ul {
+    margin-bottom: 8%;
+  }
+}
+
+.proj__col-1 {
+  h3 {
+    animation: slideInLeft 1.5s;
+  }
+  a {
+    animation: fadeIn 1.5s;
+  }
+}
+
+.proj__col-2 {
+  p,
+  img,
+  b,
+  li {
+    animation: slideInRight 1.5s;
+  }
+}

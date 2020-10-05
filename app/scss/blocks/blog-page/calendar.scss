@@ -126,6 +126,11 @@
     }
 }
 
+.calendar__top-item--prev,
+.calendar__top-item--next {
+    cursor: pointer;
+}
+
 // .calendar__button {
 //     display: flex;
 //     align-items: center;
