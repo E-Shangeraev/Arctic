@@ -1,0 +1,17 @@
+.tour__list {
+  padding: 0;
+  margin: 0;
+  margin: 10% 0;
+
+  list-style: none;
+}
+
+.tour__item {
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 5%;
+    width: 285px;
+  }
+}

@@ -1,7 +1,7 @@
 <?php require_once 'includes/config.php'; ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
     <title>Арктика</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+    <!-- <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script> -->
 </head>
 <body>
     <main class="article-page">
@@ -24,13 +24,18 @@
                             </svg>
                             <span class="link-back__text">Назад</span>
                         </a>
+                        <?php
+                            $article = mysqli_query($connection, "SELECT * FROM `articles` WHERE `id` = " . (int) $_GET['id']);
+                            $categories = mysqli_query($connection, "SELECT * FROM `article_categories`");
+                            $art = mysqli_fetch_assoc($article);
+                        ?>
                         <address class="article__author">
                             <span>Автор статьи</span>
                             <p class="article__author-name">
-                                <img src="./img/article-page/3.jpg" alt="Сергей Иванов, 24 года" class="article__author-photo">
-                                <span>Сергей Иванов, 24 года</span> 
+                                <img src="./img/article-page/<?= $art['author_photo'] ?>" alt="<?= $art['author_name'] ?>" class="article__author-photo">
+                                <span><?= $art['author_name'] ?></span> 
                             </p>
-                            <cite>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris amet amet massa quis eu, auctor potenti bibendum.</cite>
+                            <cite>Статьи размещенные на данном ресурсе могут цитировать авторов из различных источников, но авторское право нами не нарушается, мы указываем первоисточник (автора) статьи.</cite>
                         </address>
                         
                         <div class="article__feedback">
@@ -51,15 +56,12 @@
                     </div>
                     <div class="article__column-2">
                         <?php
-                            $article = mysqli_query($connection, "SELECT * FROM `articles` WHERE `id` = " . (int) $_GET['id']);
-                            $categories = mysqli_query($connection, "SELECT * FROM `article_categories`");
                             if ( mysqli_num_rows($article) <= 0): 
                         ?>
                         <h2 class="article__title">Ошибка</h2>
                         <p class="article__text">Статья не найдена</p>
 
                         <?php else: 
-                            $art = mysqli_fetch_assoc($article);
                             mysqli_query($connection, "UPDATE `articles` SET `views` = `views` + 1 WHERE `id` = " . (int) $art['id']);
                             $art_cat = false;
                             foreach( $categories as $cat) {
@@ -177,11 +179,11 @@
     <?php require_once 'includes/footer.php'; ?>
 
     <script src="./js/article.js"></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         VK.init({apiId: vk_comments, onlyWidgets: true});
     </script>
     <script type="text/javascript">
         VK.Widgets.Comments("vk_comments", {limit: 5, attach: "*"});
-    </script>
+    </script> -->
 </body>
 </html>

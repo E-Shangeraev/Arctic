@@ -1,3 +1,5 @@
+<?php require_once 'includes/config.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,6 +67,10 @@
                     <div class="tours__column-2">
                         <div></div>
                         <div class="tours__slider slider">
+                            <?php
+                                $tours = mysqli_query($connection, "SELECT * FROM `tours`");
+                                $tour = mysqli_fetch_assoc($tours);
+                            ?>
                             <ul class="tours__slider-block slider-block">
                                 <li class="tours__slide slide slide--active">
                                     <figure>
@@ -74,7 +80,7 @@
                                                 <b class="slide__name">В поисках прекрасного</b><br>
                                                 <b class="slide__price">100 000 &#8381;</b>
                                             </div>
-                                            <a href="#" class="slide__link">Подробнее</a>
+                                            <a href="tour.php?id=1" class="slide__link">Подробнее</a>
                                         </figcaption>
                                     </figure>
                                 </li> 
@@ -86,7 +92,7 @@
                                                 <b class="slide__name">В мире традиций</b><br>
                                                 <b class="slide__price">100 000 &#8381;</b>
                                             </div>
-                                            <a href="#" class="slide__link">Подробнее</a>
+                                            <a href="tour.php?id=2" class="slide__link">Подробнее</a>
                                         </figcaption>
                                     </figure>
                                 </li> 
@@ -98,7 +104,7 @@
                                                 <b class="slide__name">От первобытного к будущему</b><br>
                                                 <b class="slide__price">100 000 &#8381;</b>
                                             </div>
-                                            <a href="#" class="slide__link">Подробнее</a>
+                                            <a href="tour.php?id=3" class="slide__link">Подробнее</a>
                                         </figcaption>
                                     </figure>
                                 </li> 
@@ -110,10 +116,10 @@
                                                 <b class="slide__name">Настоящая Сибирь</b><br>
                                                 <b class="slide__price">100 000 &#8381;</b>
                                             </div>
-                                            <a href="#" class="slide__link">Подробнее</a>
+                                            <a href="tour.php?id=4" class="slide__link">Подробнее</a>
                                         </figcaption>
                                     </figure>
-                                </li> 
+                                </li>  
                             </ul>
                         </div>
                     </div>
@@ -154,53 +160,7 @@
                     </div>
                     <div class="tours__column-2">
                         <div class="tours__slider slider">
-                            <ul class="tours__slider-block slider-block">
-                                <li class="tours__slide slide slide--active">
-                                    <figure>
-                                        <p><img class="slide__image" src="./img/tours-page/events/1.jpg" alt="Праздник ко дню шахтера"></p>
-                                        <figcaption class="slide__description">
-                                            <div>
-                                                <span>28 Августа</span><br>
-                                                <b class="slide__name">Праздник ко дню шахтера</b>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </li> 
-                                <li class="tours__slide slide slide--active">
-                                    <figure>
-                                        <p><img class="slide__image" src="./img/tours-page/events/2.jpg" alt="День и Ночь кино “Кинолужайка”"></p>
-                                        <figcaption class="slide__description">
-                                            <div>
-                                                <span>29 Августа</span><br>
-                                                <b class="slide__name">День&Ночь кино “Кинолужайка”</b>
-                                            </div>
-                                            
-                                        </figcaption>
-                                    </figure>
-                                </li>  
-                                <li class="tours__slide slide slide--active">
-                                    <figure>
-                                        <p><img class="slide__image" src="./img/tours-page/events/1.jpg" alt="Праздник ко дню шахтера"></p>
-                                        <figcaption class="slide__description">
-                                            <div>
-                                                <span>29 Августа</span><br>
-                                                <b class="slide__name">Праздник ко дню шахтера</b><br>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </li> 
-                                <li class="tours__slide slide slide--active">
-                                    <figure>
-                                        <p><img class="slide__image" src="./img/tours-page/events/2.jpg" alt="День и Ночь кино “Кинолужайка”"></p>
-                                        <figcaption class="slide__description">
-                                            <div>
-                                                <span>31 Августа</span><br>
-                                                <b class="slide__name">День&Ночь кино “Кинолужайка”</b>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </li>  
-                            </ul>
+                            <?php require_once './includes/events.php'; ?>
                         </div>
                     </div>
                 </div>
