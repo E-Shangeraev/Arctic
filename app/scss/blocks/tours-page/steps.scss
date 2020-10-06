@@ -4,6 +4,7 @@
 .step__number {
     margin: 0;
     margin-bottom: 5%;
+    margin-bottom: 15%;
 
     font-family: $font-fyl;
     font-style: normal;
@@ -45,8 +46,10 @@
 
     background-color: transparent;
     border: solid 1px #B4B4B4;
-
     // box-sizing: border-box;
+    &:focus {
+        border: solid 2px#8d8b8b;
+    }
 }
 
 .step-final {

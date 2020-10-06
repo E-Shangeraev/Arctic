@@ -445,19 +445,19 @@
                                     <h3 class="step__title">Какие эмоции вы хотите получить?</h3>
                                     <ul class="help__list">
                                         <li>
-                                            <input type="checkbox" value="насладиться видами" id="help-5">
+                                            <input type="checkbox" value="хочу максимально экстремальный отдых" id="help-5">
                                             <label for="help-5">хочу максимально экстремальный отдых</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" value="побывать в местах где не бывала нога человека" id="help-6">
+                                            <input type="checkbox" value="хочу уединения" id="help-6">
                                             <label for="help-6">хочу уединения</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" value="узнать, чем живут народы севера" id="help-7">
+                                            <input type="checkbox" value="хочу видеть как можно больше красивых мест" id="help-7">
                                             <label for="help-7">хочу видеть как можно больше красивых мест</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" value="посмотреть на промышленность северного города" id="help-8">
+                                            <input type="checkbox" value="хочу попробовать на себе условия настоящего Севера" id="help-8">
                                             <label for="help-8">хочу попробовать на себе условия настоящего Севера</label>
                                         </li>
                                     </ul>
@@ -521,7 +521,7 @@
                                     <h3 class="step__title">Ваш ответ записан!</h3>
                                     <p>
                                         В течение 1 дня наш менеджер обработает всю информацию, 
-                                        которыую вы указали, подбереь для Вас наиболее подходящие 
+                                        которую Вы указали, подберет для Вас наиболее подходящие 
                                         варианты туров и свяжется с Вами.
                                     </p>
                                 </div>
@@ -544,6 +544,7 @@
 
     <script type="module" src="./js/tours-animation.js"></script>
     <script src="./js/tours-sliders.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="./js/help.js"></script>
 
 </body>

@@ -37,10 +37,112 @@ const helpBtn = helpInterview.querySelectorAll('.help__button');
 
 // // const step2 = helpSteps.cloneNode(true);
 
-for (let i = 0; i < helpSteps.length; i++) {
-    helpBtn[i].addEventListener('click', () => {
-        helpSteps[i].classList.remove('step--active');
-        helpSteps[i+1].classList.add('step--active');
+let object = {
+    'step1': [],
+    'step2': [],
+    'step3': [],
+    'step4': [],
+    'id': 5
+};
+
+let array = Object.keys(object);
+
+// helpSteps.forEach(step => {
+//     step.addEventListener('click', (e) => {
+//         if (e.target.closest('input') && e.target.value) {
+//             object[array[0]].push(e.target.value);
+//             if (object[array[0]]) {
+//                 activateButton(step);
+//             }
+//             console.log(object);
+//         }
+//     });
+// });
+
+const postData = async (data) => {
+    let result = await fetch('../help.php', {
+    method: 'POST',
+    headers: {
+        'Content-type': 'application/json'
+    },
+    body: 'help=' + JSON.stringify(data)
+    });
+
+    return await result;
+};
+
+
+helpSteps[0].addEventListener('click', (e) => {
+    if (e.target.closest('input') && e.target.value) {
+        object[array[0]].push(e.target.value);
+        if (object[array[0]]) {
+            activateButton(helpSteps[0]);
+            const form = document.createElement('form');
+            form.setAttribute('method', 'POST');
+            form.setAttribute('name', 'help');
+            const input = `<input>${object['step1']}</input>`;
+            form.insertAdjacentHTML('beforeend', input);
+            postData(form)
+                // .then(response => response.json())
+                .then(response => console.log(`Сообщение отправлено: ${response}`))
+                .catch(error => console.error(error));
+        }
+        console.log(object);
+    }
+});
+
+helpSteps[1].addEventListener('change', (e) => {
+    const from = document.querySelector('input[id="range-from"]');
+    console.log(from);
+    if (e.target.closest('input') && e.target.value) {
+        object[array[1]].push(e.target.value.match(/\d/g).join(''));
+        object[array[1]].sort((a, b) => a - b);
+        
+        if (object[array[1]].indexOf(from.value.match(/\d/g).join('')) != -1) {
+            activateButton(helpSteps[1]);
+        }
+        console.log(object);
+    }
+});
+
+helpSteps[2].addEventListener('click', (e) => {
+    if (e.target.closest('input') && e.target.value) {
+        object[array[2]].push(e.target.value);
+        if (object[array[2]]) {
+            activateButton(helpSteps[2]);
+        }
+        console.log(object);
+    }
+});
+
+helpSteps[3].addEventListener('change', (e) => {
+    if (e.target.closest('input') && e.target.value) {
+        object[array[3]].push(e.target.value);
+        if (object[array[3]].length === 3) {
+            activateButton(helpSteps[3]);
+            postData(JSON.stringify(object))
+                // .then(response => response.json())
+                .then(response => console.log(`Сообщение отправлено: ${response}`))
+                .catch(error => console.error(error));
+        }
+        console.log(object);
+    }
+});
+
+function activateButton(step) {
+    const btn = step.querySelector('.help__button');
+    btn.addEventListener('click', () => {
+        step.classList.remove('step--active');
+        step.nextElementSibling.classList.add('step--active');
     });
 }
+
+
+
+// for (let i = 0; i < helpSteps.length - 1; i++) {
+//     helpBtn[i].addEventListener('click', () => {
+//         helpSteps[i].classList.remove('step--active');
+//         helpSteps[i+1].classList.add('step--active');
+//     });
+// }
 
