@@ -1,0 +1,41 @@
+@import '../../variables.scss';
+
+.slide {
+  position: relative;
+}
+.slide__title {
+  display: flex;
+  position: absolute;
+  bottom: 50%;
+  left: 20%;
+  z-index: 1;
+}
+.slide__it {
+  margin: 0;
+  font-family: $bebas-bold;
+  font-size: 80px;
+  line-height: 75px;
+}
+.slide__definition {
+  margin: 0;
+  font-family: $bebas-thin;
+  font-size: 80px;
+  line-height: 80px;
+}
+.slide__floating {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  font-family: $bebas-bold;
+  font-size: 110px;
+  opacity: 0.15;
+  z-index: 2;
+}
+
+.slider__footer {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  z-index: 100;
+}

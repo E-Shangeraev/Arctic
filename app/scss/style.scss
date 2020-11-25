@@ -1,81 +1,86 @@
-@import "variables.scss";
-@import "scaffolding.scss";
-@import "fonts.scss";
-@import "visually-hidden.scss";
+@import 'variables.scss';
+@import 'scaffolding.scss';
+@import 'fonts.scss';
+@import 'visually-hidden.scss';
 
-
-@import "./blocks/white-title.scss";
-@import "./blocks/title.scss";
-@import "./blocks/more.scss";
-@import "./blocks/pagination.scss";
-@import "./blocks/button.scss";
-@import "./blocks/slider.scss";
-@import "./blocks/big-button.scss";
-@import "./blocks/nav.scss";
-@import "./blocks/articles-section.scss";
-@import "./blocks/show-more-button.scss";
-@import "./blocks/wrapper.scss";
-@import "./blocks/link-arrow.scss";
-@import "./blocks/tab.scss";
-@import "./blocks/tour.scss";
+@import './blocks/wrapper.scss';
+@import './blocks/nav.scss';
+@import './blocks/aside.scss';
+@import './blocks/button.scss';
+// @import "./blocks/title.scss";
+// @import "./blocks/more.scss";
+// @import "./blocks/pagination.scss";
+// @import "./blocks/button.scss";
+// @import "./blocks/slider.scss";
+// @import "./blocks/big-button.scss";
+// @import "./blocks/nav.scss";
+// @import "./blocks/articles-section.scss";
+// @import "./blocks/show-more-button.scss";
+// @import "./blocks/wrapper.scss";
+// @import "./blocks/link-arrow.scss";
+// @import "./blocks/tab.scss";
+// @import "./blocks/tour.scss";
 
 //header
-@import "./blocks/header/header.scss";
+@import './blocks/header/header.scss';
+@import './blocks/header/slider.scss';
 
-//main-page
-@import "./blocks/header/main-header.scss";
-@import "./blocks/main-page/tours.scss";
-@import "./blocks/main-page/activities.scss";
-@import "./blocks/main-page/emotions.scss";
-@import "./blocks/main-page/addition.scss";
-@import "./blocks/main-page/center.scss";
-@import "./blocks/main-page/nature.scss";
-@import "./blocks/main-page/norilsk.scss";
-@import "./blocks/main-page/reviews.scss";
-@import "./blocks/main-page/partners.scss";
-@import "./blocks/main-page/feedback.scss";
-@import "./blocks/footer/main-footer.scss";
+// //main-page
+// @import "./blocks/header/main-header.scss";
+// @import "./blocks/main-page/tours.scss";
+// @import "./blocks/main-page/activities.scss";
+// @import "./blocks/main-page/emotions.scss";
+// @import "./blocks/main-page/addition.scss";
+// @import "./blocks/main-page/center.scss";
+// @import "./blocks/main-page/nature.scss";
+// @import "./blocks/main-page/norilsk.scss";
+// @import "./blocks/main-page/reviews.scss";
+// @import "./blocks/main-page/partners.scss";
+// @import "./blocks/main-page/feedback.scss";
+// @import "./blocks/footer/main-footer.scss";
 
-//faq-page
-@import "./blocks/header/faq-header.scss";
-@import "./blocks/faq-page/faq.scss";
-@import "./blocks/faq-page/faq-feedback.scss";
+// //faq-page
+// @import "./blocks/header/faq-header.scss";
+// @import "./blocks/faq-page/faq.scss";
+// @import "./blocks/faq-page/faq-feedback.scss";
 
-//blog-page
-@import "./blocks/header/blog-header.scss";
-@import "./blocks/blog-page/blog.scss";
-@import "./blocks/blog-page/calendar.scss";
+// //blog-page
+// @import "./blocks/header/blog-header.scss";
+// @import "./blocks/blog-page/blog.scss";
+// @import "./blocks/blog-page/calendar.scss";
 
-//article-page
-@import "./blocks/article-page/article.scss";
+// //article-page
+// @import "./blocks/article-page/article.scss";
 
-//activities-page
-@import "./blocks/header/activities-header.scss";
-@import "./blocks/activities-page/activities-page.scss";
-@import "./blocks/activities-page/natural.scss";
+// //activities-page
+// @import "./blocks/header/activities-header.scss";
+// @import "./blocks/activities-page/activities-page.scss";
+// @import "./blocks/activities-page/natural.scss";
 
-//norilsk-page
-@import "./blocks/header/norilsk-header.scss";
-@import "./blocks/norilsk-page/norilsk.scss";
-@import "./blocks/norilsk-page/about.scss";
-@import "./blocks/norilsk-page/legend.scss";
-@import "./blocks/norilsk-page/surprise.scss";
-@import "./blocks/norilsk-page/tourist.scss";
+// //norilsk-page
+// @import "./blocks/header/norilsk-header.scss";
+// @import "./blocks/norilsk-page/norilsk.scss";
+// @import "./blocks/norilsk-page/about.scss";
+// @import "./blocks/norilsk-page/legend.scss";
+// @import "./blocks/norilsk-page/surprise.scss";
+// @import "./blocks/norilsk-page/tourist.scss";
 
-//tours-page
-@import "./blocks/header/tours-header.scss";
-@import "./blocks/tours-page/tours-page.scss";
-@import "./blocks/tours-page/help.scss";
-@import "./blocks/tours-page/steps.scss";
+// //tours-page
+// @import "./blocks/header/tours-header.scss";
+// @import "./blocks/tours-page/tours-page.scss";
+// @import "./blocks/tours-page/help.scss";
+// @import "./blocks/tours-page/steps.scss";
 
-//center-page
-@import "./blocks/header/center-header.scss";
-@import "./blocks/center-page/mun.scss";
-@import "./blocks/center-page/proj.scss";
-@import "./blocks/center-page/director.scss";
-@import "./blocks/center-page/docs.scss";
-@import "./blocks/center-page/help-tourist.scss";
+// //center-page
+// @import "./blocks/header/center-header.scss";
+// @import "./blocks/center-page/mun.scss";
+// @import "./blocks/center-page/proj.scss";
+// @import "./blocks/center-page/director.scss";
+// @import "./blocks/center-page/docs.scss";
+// @import "./blocks/center-page/help-tourist.scss";
+
+@import 'colors.scss';
 
 * {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
