@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  flex-shrink: 0;
 
   padding-top: 37px;
   padding-bottom: 96px;
@@ -29,7 +30,6 @@
   .scroll-indicator__line {
     height: 170px;
     width: 2px;
-    background-color: rgba(#fff, 0.4);
   }
 }
 

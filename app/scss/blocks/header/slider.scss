@@ -3,18 +3,26 @@
 .slide {
   position: relative;
 }
+.slide__img {
+  height: 1009px;
+}
 .slide__title {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
-  bottom: 50%;
-  left: 20%;
+  bottom: 48%;
+  left: 436px;
+  right: 158px;
+  // width: 100%;
+
   z-index: 1;
 }
 .slide__it {
   margin: 0;
   font-family: $bebas-bold;
   font-size: 80px;
-  line-height: 75px;
+  line-height: 80px;
 }
 .slide__definition {
   margin: 0;
@@ -24,7 +32,9 @@
 }
 .slide__floating {
   position: absolute;
-  top: 30%;
+  padding: 58px 0;
+  margin-top: 280px;
+  top: 0;
   left: 50%;
   font-family: $bebas-bold;
   font-size: 110px;
@@ -35,7 +45,31 @@
 .slider__footer {
   position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   z-index: 100;
+}
+
+.slider__count {
+  justify-self: center;
+}
+
+.slider__arrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 18px;
+  width: 100px;
+}
+
+.slider__count--current {
+  font-size: 28px;
+}
+
+.slick-prev::before {
+  content: url('../../../img/main/main-header/arrow-left.svg');
+}
+.slick-next::before {
+  content: url('../../../img/main/main-header/arrow-right.svg');
 }

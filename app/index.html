@@ -28,23 +28,23 @@
             <a href="">Inst</a>
           </p>
         </aside>
-        <div class="header__nav">
-          <nav class="nav">
+        <div class="header__content content">
+          <nav class="content__nav nav">
             <ul class="nav__items">
-              <li><a href="tours-page.php">Туры</a></li>
-              <li><a href="activities-page.php">Активности</a></li>
-              <li><a href="faq-page.php">FAQ</a></li>
-              <li><a href="norilsk-page.php">Норильск</a></li>
-              <li><a href="center-page.php">Центр развития туризма Норильска</a></li>
-              <li><a href="blog-page.php">Блог</a></li>
-              <li class="eye">
-                <a href="#"><img src="img/Slabovid.png" alt="" /></a>
-              </li>
+              <li><a href="#">Норильск</a></li>
+              <li><a href="#">Достопримечательности</a></li>
+              <li><a href="#">Центр развития туризма Норильска</a></li>
+              <li><a href="#">Туристу</a></li>
+              <li><a href="#">Новости</a></li>
             </ul>
-            <ul class="nav__lang">
-              <li><a href="#" class="active">RUS</a> /</li>
-              <li><a href="#">ENG</a></li>
-            </ul>
+
+            <div class="nav__col">
+              <a class="eye" href="#"><img src="img/header/eye.svg" alt="" /></a>
+              <ul class="nav__lang">
+                <li><a href="#" class="active">RUS</a> /</li>
+                <li><a href="#">ENG</a></li>
+              </ul>
+            </div>
             <ul class="nav__phone">
               <li><a href="tel:+7 999 123-45-67">+7 999 123-45-67</a></li>
             </ul>
@@ -53,16 +53,17 @@
           <footer class="slider__footer">
             <a class="button" href="#">Подробнее</a>
             <p class="slider__count">
-              <span>01</span>
-              <span>/05</span>
+              <span class="slider__count--current">01</span>
+              <span>05</span>
             </p>
+            <p class="slider__arrows"></p>
           </footer>
         </div>
       </div>
 
       <section class="slider white">
         <div class="slider__block">
-          <div class="slide">
+          <div class="slide" data-index="1">
             <img src="img/main/main-header/1.jpg" alt="" class="slide__img" />
             <p class="slide__floating">край горячих сердец</p>
             <div class="slide__title">
@@ -70,7 +71,7 @@
               <h2 class="slide__definition">край горячих сердец</h2>
             </div>
           </div>
-          <div class="slide">
+          <div class="slide" data-index="2">
             <img src="img/main/main-header/2.jpg" alt="" class="slide__img" />
             <p class="slide__floating">северное сияние</p>
             <div class="slide__title">
@@ -78,7 +79,7 @@
               <h2 class="slide__definition">северное сияние</h2>
             </div>
           </div>
-          <div class="slide">
+          <div class="slide" data-index="3">
             <img src="img/main/main-header/3.jpg" alt="" class="slide__img" />
             <p class="slide__floating">сильные духом люди</p>
             <div class="slide__title">
@@ -86,7 +87,7 @@
               <h2 class="slide__definition">сильные духом люди</h2>
             </div>
           </div>
-          <div class="slide">
+          <div class="slide" data-index="4">
             <img src="img/main/main-header/4.jpg" alt="" class="slide__img" />
             <p class="slide__floating">самый северный город</p>
             <div class="slide__title">
@@ -94,7 +95,7 @@
               <h2 class="slide__definition">самый северный город</h2>
             </div>
           </div>
-          <div class="slide">
+          <div class="slide" data-index="5">
             <img src="img/main/main-header/5.jpg" alt="" class="slide__img" />
             <p class="slide__floating">культурный шок</p>
             <div class="slide__title">
@@ -105,11 +106,201 @@
         </div>
       </section>
     </header>
-    <main></main>
+
+    <main>
+      <section class="limit">
+        <div class="wrapper black">
+          <aside class="aside">
+            <a href="index.php" class="logo">
+              <object type="image/svg+xml" data="./img/header/logo-black.svg"></object>
+            </a>
+            <p class="aside__scroll-indicator scroll-indicator">
+              <span class="scroll-indicator__number scroll-indicator__number--current">01</span>
+              <span class="scroll-indicator__line"></span>
+              <span class="scroll-indicator__number">08</span>
+            </p>
+            <p class="aside__socials">
+              <a href="">Fb</a>
+              <a href="">Vk</a>
+              <a href="">Inst</a>
+            </p>
+          </aside>
+          <div class="content">
+            <nav class="content__nav nav">
+              <ul class="nav__items">
+                <li><a href="#">Норильск</a></li>
+                <li><a href="#">Достопримечательности</a></li>
+                <li><a href="#">Центр развития туризма Норильска</a></li>
+                <li><a href="#">Туристу</a></li>
+                <li><a href="#">Новости</a></li>
+              </ul>
+              <p class="nav__col">
+                <a class="eye" href="#"><img src="img/header/eye-black.svg" alt="" /></a>
+                <ul class="nav__lang">
+                  <li><a href="#" class="active">RUS</a> /</li>
+                  <li><a href="#">ENG</a></li>
+                </ul>
+              </p>
+              <ul class="nav__phone">
+                <li><a href="tel:+7 999 123-45-67">+7 999 123-45-67</a></li>
+              </ul>
+            </nav>
+
+            <div class="content__container">
+              <div class="limit__col col-1">
+                <h2 class="limit__title title">
+                  <span>Норильск- это </span>
+                  <span>возможность проверить</span>
+                  <span>свои пределы</span>
+                </h2>
+                <p class="limit__text">
+                  Далеко не каждый сможет легко перенести суровый арктический климат, который царит в этих краях зимой.<br><br>
+                  Поэтому с турами в Норильск для Вас открывается уникальная возможность испытать себя и познакомиться с людьми, которые по-настоящему сильны духом.<br><br>
+                  Они живут в этих условиях десятилетиями и смогут показать Вам места от красоты которых захватывает дух.
+                </p>
+                <a href="#" class="button">О Норильске</a>
+              </div>
+              <div class="limit__col col-2">
+                <img class="limit__img" src="img/main/limit/1.jpg" alt="Фотография норильчан">
+                <img class="limit__img" src="img/main/limit/2.png" alt="Фотография норильчан">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="calendar">
+        <div class="wrapper">
+          <aside class="aside black">
+            <a href="index.php" class="logo">
+              <object type="image/svg+xml" data="./img/header/logo-black.svg"></object>
+            </a>
+            <p class="aside__scroll-indicator scroll-indicator">
+              <span class="scroll-indicator__number scroll-indicator__number--current">01</span>
+              <span class="scroll-indicator__line"></span>
+              <span class="scroll-indicator__number">08</span>
+            </p>
+            <p class="aside__socials">
+              <a href="">Fb</a>
+              <a href="">Vk</a>
+              <a href="">Inst</a>
+            </p>
+          </aside>
+          <div class="content">
+            <nav class="content__nav nav black">
+              <ul class="nav__items">
+                <li><a href="#">Норильск</a></li>
+                <li><a href="#">Достопримечательности</a></li>
+                <li><a href="#">Центр развития туризма Норильска</a></li>
+                <li><a href="#">Туристу</a></li>
+                <li><a href="#">Новости</a></li>
+              </ul>
+              <p class="nav__col">
+                <a class="eye" href="#"><img src="img/header/eye-black.svg" alt="" /></a>
+                <ul class="nav__lang">
+                  <li><a href="#" class="active">RUS</a> /</li>
+                  <li><a href="#">ENG</a></li>
+                </ul>
+              </p>
+              <ul class="nav__phone">
+                <li><a href="tel:+7 999 123-45-67">+7 999 123-45-67</a></li>
+              </ul>
+            </nav>
+            
+            <h2 class="calendar__title title">Календарь событий</h2>
+            <div class="calendar__container">
+              <div class="calendar__column-1">
+                  <p class="calendar__date">
+                    <span class="calendar__day"></span>
+                    <span class="calendar__month"></span>
+                    <span class="calendar__year"></span>
+                  </p>
+                  <h2 class="calendar__events-title">События в этот день</h2>
+                  <ul class="calendar__events-list"></ul>
+              </div>
+              <div class="calendar__column-2">
+                  <ul class="calendar__top-list">
+                    <li class="calendar__top-item calendar__top-item--prev">
+                      <span class="calendar__top-month"></span>
+                      <span class="calendar__top-year"></span>
+                    </li>
+                    <li class="calendar__top-item calendar__top-item--active">
+                      <span class="calendar__top-month"></span>
+                      <span class="calendar__top-year"></span>
+                    </li>
+                    <li class="calendar__top-item calendar__top-item--next">
+                      <span class="calendar__top-month"></span>
+                      <span class="calendar__top-year"></span>
+                    </li>
+                  </ul>
+                  <p class="calendar__main">
+                    <span id="Mon">Пн</span>
+                    <span id="Tue">Вт</span>
+                    <span id="Wed">Ср</span>
+                    <span id="Thu">Чт</span>
+                    <span id="Fri">Пт</span>
+                    <span id="Sat">Сб</span>
+                    <span id="Sun">Вс</span>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="attractions">
+        <div class="wrapper">
+          <aside class="aside black">
+            <a href="index.php" class="logo">
+              <object type="image/svg+xml" data="./img/header/logo-black.svg"></object>
+            </a>
+            <p class="aside__scroll-indicator scroll-indicator">
+              <span class="scroll-indicator__number scroll-indicator__number--current">01</span>
+              <span class="scroll-indicator__line"></span>
+              <span class="scroll-indicator__number">08</span>
+            </p>
+            <p class="aside__socials">
+              <a href="">Fb</a>
+              <a href="">Vk</a>
+              <a href="">Inst</a>
+            </p>
+          </aside>
+          <div class="content">
+            <nav class="content__nav nav black">
+              <ul class="nav__items">
+                <li><a href="#">Норильск</a></li>
+                <li><a href="#">Достопримечательности</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Центр развития туризма Норильска</a></li>
+                <li><a href="#">Туристу</a></li>
+              </ul>
+              <p class="nav__col">
+                <a class="eye" href="#"><img src="img/header/eye-black.svg" alt="" /></a>
+                <ul class="nav__lang">
+                  <li><a href="#" class="active">RUS</a> /</li>
+                  <li><a href="#">ENG</a></li>
+                </ul>
+              </p>
+              <ul class="nav__phone">
+                <li><a href="tel:+7 999 123-45-67">+7 999 123-45-67</a></li>
+              </ul>
+            </nav>
+            
+            <div class="attractions__container">
+              <div class="row">
+                <h2 class="attractions__title title">Достопримечательности</h2>
+                <a href="#" class="outline-button">Смотреть все</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/calendar.js"></script>
   </body>
 </html>

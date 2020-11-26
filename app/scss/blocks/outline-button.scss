@@ -1,0 +1,16 @@
+@import '../variables.scss';
+
+.outline-button {
+  display: block;
+  padding: 18px 45px;
+
+  font-family: $manrope-semibold;
+  font-size: 16px;
+  line-height: 100%;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid #000000;
+  border-radius: 30px;
+}

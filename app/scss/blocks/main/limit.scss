@@ -1,0 +1,32 @@
+@import '../../variables.scss';
+
+.limit__title {
+  span:not(:last-child) {
+    display: block;
+    margin-bottom: 60px;
+  }
+
+  span:nth-child(2) {
+    color: $blue;
+  }
+  margin-bottom: 60px;
+}
+
+.limit__col {
+  position: relative;
+  width: 50%;
+}
+
+.limit__text {
+  margin-bottom: 118px;
+  width: 450px;
+  font-family: $manrope-regular;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.limit__img:nth-child(2) {
+  position: absolute;
+  top: 55%;
+  left: -20%;
+}

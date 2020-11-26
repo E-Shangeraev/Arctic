@@ -1,3 +1,19 @@
 .white * {
   color: #fff;
+
+  .scroll-indicator__line {
+    background-color: rgba(#fff, 0.4);
+  }
+}
+
+.black * {
+  color: #000;
+
+  .scroll-indicator__line {
+    background-color: rgba(#000, 0.2);
+  }
+
+  .nav__items a::after {
+    background-color: #000000;
+  }
 }

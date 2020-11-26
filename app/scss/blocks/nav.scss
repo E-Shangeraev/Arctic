@@ -2,7 +2,7 @@
 
 .nav {
   position: relative;
-
+  margin-bottom: 150px;
   display: flex;
   align-self: start;
   justify-content: space-between;
@@ -13,7 +13,8 @@
 
 .nav__items,
 .nav__lang,
-.nav__phone {
+.nav__phone,
+.nav__col {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,10 +34,14 @@
   }
 }
 
-.nav__items {
-  width: 1010px;
+.eye {
+  margin-right: 20px;
+}
 
-  li:not(:last-child) {
+.nav__items {
+  width: 770px;
+
+  li {
     a::after {
       position: absolute;
       content: '';
@@ -77,10 +82,6 @@
 
 .nav__phone {
   text-shadow: 0 0 2px black;
-}
-
-.eye {
-  width: 4%;
 }
 
 @media (max-width: 1366px) {
