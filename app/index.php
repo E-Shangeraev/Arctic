@@ -29,7 +29,6 @@ if ($_POST['events']) {
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="css/style.min.css" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <header class="header">
@@ -230,11 +229,35 @@ if ($_POST['events']) {
           </div>
         </div> 
       </section>
+
+      <section class="documents">
+        <div class="wrapper white">
+          <?php require './includes/aside.php' ?>
+
+          <div class="documents__content content">
+            <?php require './includes/nav.php' ?>
+
+            <div class="row">
+              <h2 class="documents__title title">В помощь туристам</h2>
+              <a href="#" class="outline-button outline-button--white">Подробнее</a>
+            </div>
+            <ul class="documents__list">
+              <li class="documents__item"><a href="#">Паспорт безопасности туриста</a></li>
+              <li class="documents__item"><a href="#">Памятка туристу по безопасности путешествий на территории Красноярского края</a></li>
+              <li class="documents__item"><a href="#">Паспорт безопасности туриста</a></li>
+              <li class="documents__item"><a href="#">Памятка туристу по безопасности путешествий на территории Красноярского края</a></li>
+              <li class="documents__item"><a href="#">Паспорт безопасности туриста</a></li>
+              <li class="documents__item"><a href="#">Памятка туристу по безопасности путешествий на территории Красноярского края</a></li>
+            </ul>
+            <a class="documents__archive" href="#">Скачать одним архивом</a>
+          </div>
+        </div> 
+      </section>
     </main>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/index.js"></script>
     <script src="js/calendar.js"></script>
   </body>

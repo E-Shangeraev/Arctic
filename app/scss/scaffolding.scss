@@ -16,8 +16,16 @@ img {
   height: auto;
 }
 
+header {
+  display: flex;
+  overflow-x: hidden;
+}
+
 section {
+  display: flex;
+  overflow-x: hidden;
   width: 100%;
   position: relative;
-  height: 1009px;
+  min-height: 1009px;
+  // min-height: 100vh;
 }

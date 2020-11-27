@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function () {
   $('.slider__block').slick({
     arrows: true,
     appendArrows: $('.slider__arrows'),
