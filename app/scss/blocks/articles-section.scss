@@ -1,0 +1,138 @@
+@import '../variables.scss';
+
+.articles-section__title {
+  font-family: $manrope-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 40px;
+}
+
+.article-preview {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  max-width: 262px;
+  height: 100%;
+
+  color: #000000;
+  text-decoration: none;
+
+  overflow: hidden;
+  transition: linear 0.3s;
+  // box-sizing: border-box;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.article-preview-title {
+  margin-bottom: 30px;
+
+  font-family: $manrope-regular;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 22px;
+  color: #e83b3b;
+}
+
+.article-preview__class {
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.35);
+
+  margin-top: 10px;
+}
+
+.article-preview__new {
+  font-family: $manrope-regular;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+
+  margin-bottom: 5px;
+}
+
+.article-preview__appeal {
+  // position: absolute;
+  // top: 70%;
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.article-preview__datetime {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+
+  padding-top: 2%;
+  border-top: 1px solid #cccccc;
+}
+
+.articles-section__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+
+  padding: 0;
+  margin: 0;
+
+  max-height: 1900px;
+}
+
+.articles-section__list li {
+  // position: relative;
+  margin-bottom: 85px;
+  max-width: 48%;
+
+  list-style: none;
+
+  border-top: 1px solid #cccccc;
+}
+
+.article-preview--list {
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  padding-top: 40px;
+  max-width: 100%;
+  max-height: 320px;
+
+  box-sizing: border-box;
+
+  img {
+    width: 50%;
+    margin-right: 8%;
+  }
+}
+
+.article-preview_text {
+  position: relative;
+}
+
+@media (max-width: 1366px) {
+  .article-preview__class {
+    margin: 0;
+    font-size: 13px;
+  }
+
+  .article-preview__text {
+    // padding-bottom: 60px;
+  }
+
+  .article-preview-title {
+    font-size: 18px;
+  }
+}

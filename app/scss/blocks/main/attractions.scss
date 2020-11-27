@@ -1,4 +1,45 @@
+@import '../../variables.scss';
+
 .attractions {
-  // position: relative;
-  // height: 1009px;
+  // height: fit-content;
+  height: 1300px;
+}
+
+.attractions__cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.attractions__card {
+  display: flex;
+  flex-direction: column;
+  width: 427px;
+}
+
+.attractions__card:not(:last-child) {
+  // margin-right: 20px;
+}
+
+.attractions__img {
+  margin-bottom: 20px;
+}
+
+.attractions__card-title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: $manrope-semibold;
+  font-size: 22px;
+}
+
+.attractions__desc {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: $manrope-regular;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.attractions__button {
+  margin-top: auto;
 }

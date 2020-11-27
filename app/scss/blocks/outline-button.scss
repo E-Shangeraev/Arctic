@@ -4,13 +4,18 @@
   display: block;
   padding: 18px 45px;
 
-  font-family: $manrope-semibold;
+  font-family: $manrope-regular;
   font-size: 16px;
   line-height: 100%;
   text-decoration: none;
   text-align: center;
-  text-transform: uppercase;
+  color: #000;
   cursor: pointer;
-  border: 1px solid #000000;
+  border: 1px solid #000;
   border-radius: 30px;
+  transition: ease 0.4s;
+
+  &:hover {
+    border-color: $blue;
+  }
 }

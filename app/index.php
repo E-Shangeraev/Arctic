@@ -1,3 +1,24 @@
+<?php
+header("Content-type:text/html; charset=UTF-8");
+require 'config/config.php';
+require 'functions.php'; 
+error_reporting(0);
+
+if ($_POST['param']) {
+    $param = json_decode($_POST['param']);
+    $array = get_more($param->offset, $param->limit);
+    echo json_encode($array);
+    exit();
+}
+
+if ($_POST['events']) {
+    $events = json_decode($_POST['events']);
+    $events_arr = get_events($events->month, $events->year);
+    echo json_encode($events_arr);
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -13,42 +34,10 @@
   <body>
     <header class="header">
       <div class="wrapper white">
-        <aside class="aside aside--header">
-          <a href="index.php" class="logo">
-            <object type="image/svg+xml" data="./img/header/logo.svg"></object>
-          </a>
-          <p class="aside__scroll-indicator scroll-indicator">
-            <span class="scroll-indicator__number scroll-indicator__number--current">01</span>
-            <span class="scroll-indicator__line"></span>
-            <span class="scroll-indicator__number">08</span>
-          </p>
-          <p class="aside__socials">
-            <a href="">Fb</a>
-            <a href="">Vk</a>
-            <a href="">Inst</a>
-          </p>
-        </aside>
-        <div class="header__content content">
-          <nav class="content__nav nav">
-            <ul class="nav__items">
-              <li><a href="#">Норильск</a></li>
-              <li><a href="#">Достопримечательности</a></li>
-              <li><a href="#">Центр развития туризма Норильска</a></li>
-              <li><a href="#">Туристу</a></li>
-              <li><a href="#">Новости</a></li>
-            </ul>
+        <?php require './includes/aside.php' ?>
 
-            <div class="nav__col">
-              <a class="eye" href="#"><img src="img/header/eye.svg" alt="" /></a>
-              <ul class="nav__lang">
-                <li><a href="#" class="active">RUS</a> /</li>
-                <li><a href="#">ENG</a></li>
-              </ul>
-            </div>
-            <ul class="nav__phone">
-              <li><a href="tel:+7 999 123-45-67">+7 999 123-45-67</a></li>
-            </ul>
-          </nav>
+        <div class="header__content content">
+          <?php require './includes/nav.php' ?>
 
           <footer class="slider__footer">
             <a class="button" href="#">Подробнее</a>
@@ -110,41 +99,10 @@
     <main>
       <section class="limit">
         <div class="wrapper black">
-          <aside class="aside">
-            <a href="index.php" class="logo">
-              <object type="image/svg+xml" data="./img/header/logo-black.svg"></object>
-            </a>
-            <p class="aside__scroll-indicator scroll-indicator">
-              <span class="scroll-indicator__number scroll-indicator__number--current">01</span>
-              <span class="scroll-indicator__line"></span>
-              <span class="scroll-indicator__number">08</span>
-            </p>
-            <p class="aside__socials">
-              <a href="">Fb</a>
-              <a href="">Vk</a>
-              <a href="">Inst</a>
-            </p>
-          </aside>
+          <?php require './includes/aside-black.php' ?>
+
           <div class="content">
-            <nav class="content__nav nav">
-              <ul class="nav__items">
-                <li><a href="#">Норильск</a></li>
-                <li><a href="#">Достопримечательности</a></li>
-                <li><a href="#">Центр развития туризма Норильска</a></li>
-                <li><a href="#">Туристу</a></li>
-                <li><a href="#">Новости</a></li>
-              </ul>
-              <p class="nav__col">
-                <a class="eye" href="#"><img src="img/header/eye-black.svg" alt="" /></a>
-                <ul class="nav__lang">
-                  <li><a href="#" class="active">RUS</a> /</li>
-                  <li><a href="#">ENG</a></li>
-                </ul>
-              </p>
-              <ul class="nav__phone">
-                <li><a href="tel:+7 999 123-45-67">+7 999 123-45-67</a></li>
-              </ul>
-            </nav>
+            <?php require './includes/nav-black.php' ?>
 
             <div class="content__container">
               <div class="limit__col col-1">
@@ -171,41 +129,10 @@
 
       <section class="calendar">
         <div class="wrapper">
-          <aside class="aside black">
-            <a href="index.php" class="logo">
-              <object type="image/svg+xml" data="./img/header/logo-black.svg"></object>
-            </a>
-            <p class="aside__scroll-indicator scroll-indicator">
-              <span class="scroll-indicator__number scroll-indicator__number--current">01</span>
-              <span class="scroll-indicator__line"></span>
-              <span class="scroll-indicator__number">08</span>
-            </p>
-            <p class="aside__socials">
-              <a href="">Fb</a>
-              <a href="">Vk</a>
-              <a href="">Inst</a>
-            </p>
-          </aside>
+          <?php require './includes/aside-black.php' ?>
+
           <div class="content">
-            <nav class="content__nav nav black">
-              <ul class="nav__items">
-                <li><a href="#">Норильск</a></li>
-                <li><a href="#">Достопримечательности</a></li>
-                <li><a href="#">Центр развития туризма Норильска</a></li>
-                <li><a href="#">Туристу</a></li>
-                <li><a href="#">Новости</a></li>
-              </ul>
-              <p class="nav__col">
-                <a class="eye" href="#"><img src="img/header/eye-black.svg" alt="" /></a>
-                <ul class="nav__lang">
-                  <li><a href="#" class="active">RUS</a> /</li>
-                  <li><a href="#">ENG</a></li>
-                </ul>
-              </p>
-              <ul class="nav__phone">
-                <li><a href="tel:+7 999 123-45-67">+7 999 123-45-67</a></li>
-              </ul>
-            </nav>
+            <?php require './includes/nav-black.php' ?>
             
             <h2 class="calendar__title title">Календарь событий</h2>
             <div class="calendar__container">
@@ -250,50 +177,58 @@
 
       <section class="attractions">
         <div class="wrapper">
-          <aside class="aside black">
-            <a href="index.php" class="logo">
-              <object type="image/svg+xml" data="./img/header/logo-black.svg"></object>
-            </a>
-            <p class="aside__scroll-indicator scroll-indicator">
-              <span class="scroll-indicator__number scroll-indicator__number--current">01</span>
-              <span class="scroll-indicator__line"></span>
-              <span class="scroll-indicator__number">08</span>
-            </p>
-            <p class="aside__socials">
-              <a href="">Fb</a>
-              <a href="">Vk</a>
-              <a href="">Inst</a>
-            </p>
-          </aside>
+          <?php require './includes/aside-black.php' ?>
+
           <div class="content">
-            <nav class="content__nav nav black">
-              <ul class="nav__items">
-                <li><a href="#">Норильск</a></li>
-                <li><a href="#">Достопримечательности</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Центр развития туризма Норильска</a></li>
-                <li><a href="#">Туристу</a></li>
-              </ul>
-              <p class="nav__col">
-                <a class="eye" href="#"><img src="img/header/eye-black.svg" alt="" /></a>
-                <ul class="nav__lang">
-                  <li><a href="#" class="active">RUS</a> /</li>
-                  <li><a href="#">ENG</a></li>
-                </ul>
-              </p>
-              <ul class="nav__phone">
-                <li><a href="tel:+7 999 123-45-67">+7 999 123-45-67</a></li>
-              </ul>
-            </nav>
+            <?php require './includes/nav-black.php' ?>
             
-            <div class="attractions__container">
+            <div class="attractions__container black">
               <div class="row">
                 <h2 class="attractions__title title">Достопримечательности</h2>
                 <a href="#" class="outline-button">Смотреть все</a>
               </div>
+              <div class="attractions__cards">
+                <div class="attractions__card">
+                  <img class="attractions__img" src="./img/main/attractions/1.jpg" alt="Плато Путорана">
+                  <h4 class="attractions__card-title">Плато Путорана</h4>
+                  <p class="attractions__desc">Неизвестная загадочная страна. Хрустальные воды рек, мириады водопадов, падающие со склонов, “столовых” гор, яркие краски северных цветов на фоне камней и снега.</p>
+                  <a href="#" class="attractions__button button">Узнать больше</a>
+                </div>
+                <div class="attractions__card">
+                  <img class="attractions__img" src="./img/main/attractions/2.jpg" alt="Северное Сияние">
+                  <h4 class="attractions__card-title">Северное Сияние</h4>
+                  <p class="attractions__desc">В Норильске можно увидеть фантастические сполохи северного сияния. Каждую зиму над городом возникают мерцающие полосы самых невероятных оттенков.</p>
+                  <a href="#" class="attractions__button button">Узнать больше</a>
+                </div>
+                <div class="attractions__card">
+                  <img class="attractions__img" src="./img/main/attractions/3.jpg" alt="Норильский Никель">
+                  <h4 class="attractions__card-title">Норильский Никель</h4>
+                  <p class="attractions__desc">Норильский Никель - крупнейший в мире производитель никеля и палладия, лидер горно-металлургической промышленности России.</p>
+                  <a href="#" class="attractions__button button">Узнать больше</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <section class="news">
+        <div class="wrapper">
+          <?php require './includes/aside-black.php' ?>
+
+          <div class="news__content content">
+            <?php require './includes/nav-black.php' ?>
+
+            <div class="row">
+              <h2 class="news__title title">Новости</h2>
+              <a href="#" class="outline-button">Смотреть все</a>
+            </div>
+              <?php
+                $articles = tpl_render('articles.php', ['id' => 1]);
+                print ($articles);
+              ?>
+          </div>
+        </div> 
       </section>
     </main>
 
