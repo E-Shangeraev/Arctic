@@ -1,0 +1,36 @@
+@import '../../variables.scss';
+
+.partners__title {
+  margin-bottom: 50px;
+}
+
+.partners__desc {
+  flex-shrink: 0;
+  width: 40%;
+  margin-right: 120px;
+
+  font-family: $manrope-regular;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.partners__list {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr auto;
+  column-gap: 55px;
+  row-gap: 100px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.partners__item {
+  vertical-align: middle;
+}
+
+.partners__item:last-child {
+  grid-column: 1 / -1;
+}

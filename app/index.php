@@ -253,6 +253,61 @@ if ($_POST['events']) {
           </div>
         </div> 
       </section>
+
+      <section class="partners">
+        <div class="wrapper">
+          <?php require './includes/aside-black.php' ?>
+
+          <div class="partners__content content">
+            <?php require './includes/nav-black.php' ?>
+
+            <h2 class="partners__title title">Партнеры</h2>
+            <div class="row">
+              <p class="partners__desc">
+              Мы гордимся нашими партнерами и делаем все для того, чтобы наше плодотворное сотрудничество помогло реализовать все ваши желания в наших турах!<br><br> Стать наши партнером можете и вы! Просто нажмите кнопку ниже и выполните все необходимые условия.
+              </p>
+              <ul class="partners__list">
+                <li class="partners__item">
+                  <a href="https://www.russiadiscovery.ru/" target="_blank">
+                    <img src="./img/main/partners/1.png" alt="Russia Discovery">
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a href="https://naito-russia.ru/">
+                    <img src="./img/main/partners/2.png" alt="Некомерческое партнёрство НАИТО">
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a href="https://www.tui.ru/" target="_blank">
+                    <img src="./img/main/partners/5.png" alt="TUI">
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a href="https://travelsterritory.com/" target="_blank">
+                    <img src="./img/main/partners/3.png" alt="Travels territory">
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a href="http://usadbajarptica.ru/" target="_blank">
+                    <img src="./img/main/partners/4.png" alt="Усадьба Жар-Птица">
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a href="https://visitsiberia.info/" target="_blank">
+                    <img src="./img/main/partners/6.png" alt="Красноярский край. Туристический информационный центр">
+                  </a>
+                </li>
+                <li class="partners__item">
+                  <a href="http://turizm.krskstate.ru/" target="_blank">
+                    <img src="./img/main/partners/7.png" alt="Красноярский край. Агенство по туризму Красноярского края">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
