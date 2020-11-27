@@ -304,7 +304,42 @@ if ($_POST['events']) {
                 </li>
               </ul>
             </div>
-            
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback">
+        <div class="wrapper white">
+          <?php require './includes/aside.php' ?>
+
+          <div class="documents__content content">
+            <?php require './includes/nav.php' ?>
+
+            <div class="row">
+              <h2 class="feedback__title title">У вас остались вопросы?</h2>
+              <p class="feedback__desc">Оставьте свои контактыне данные и наш специалист свяжется с вами в ближайшее время и ответит на все интересующие вас вопросы!</p>
+            </div>
+            <form class="feedback__form" action="mail.php" method="POST">
+              <div class="col-1">
+                <span>Введите ваш вопрос здесь...</span>
+                <input type="text" name="text">
+              </div>
+              <div class="col-2">
+                <input type="name" name="name" placeholder="Имя">
+                <input type="tel" name="tel" placeholder="Номер телефона">
+              </div>
+              <footer class="feedback__footer row">
+                <button type="submit" class="feedback__button button">Отправить</button>
+                <ul class="feedback__address address">
+                  <li class="address__item">
+                    <a href="#">turizm@norilsk-city.ru</a>
+                  </li>
+                  <li class="address__item">
+                    <a href="#">г. Норильск, пр-т Ленинский д1, офис 523</a>
+                  </li>
+                </ul>
+              </footer>
+            </form>
           </div>
         </div>
       </section>
