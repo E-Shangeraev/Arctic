@@ -4,7 +4,7 @@ $(function () {
     appendArrows: $('.slider__arrows'),
     autoplay: false,
     autoplaySpeed: 4000,
-    speed: 1000,
+    speed: 1400,
     cssEase: 'ease-in-out',
     pauseOnHover: false,
   });
@@ -22,4 +22,10 @@ $(function () {
   };
 
   sliderArrows.addEventListener('click', setCurrentSlideCount);
+
+  $.scrollify({
+    section: '.scrollify',
+    offset: 0,
+    scrollSpeed: 600,
+  });
 });

@@ -31,10 +31,10 @@ if ($_POST['events']) {
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <header class="header">
+    <?php require './includes/aside.php' ?>
+    
+    <header class="header scrollify">
       <div class="wrapper white">
-        <?php require './includes/aside.php' ?>
-
         <div class="header__content content">
           <?php require './includes/nav.php' ?>
 
@@ -96,10 +96,8 @@ if ($_POST['events']) {
     </header>
 
     <main>
-      <section class="limit">
+      <section class="limit scrollify">
         <div class="wrapper black">
-          <?php require './includes/aside-black.php' ?>
-
           <div class="content">
             <?php require './includes/nav-black.php' ?>
 
@@ -126,10 +124,8 @@ if ($_POST['events']) {
         </div>
       </section>
 
-      <section class="calendar">
+      <section class="calendar scrollify">
         <div class="wrapper">
-          <?php require './includes/aside-black.php' ?>
-
           <div class="content">
             <?php require './includes/nav-black.php' ?>
             
@@ -174,10 +170,8 @@ if ($_POST['events']) {
         </div>
       </section>
 
-      <section class="attractions">
+      <section class="attractions scrollify">
         <div class="wrapper">
-          <?php require './includes/aside-black.php' ?>
-
           <div class="content">
             <?php require './includes/nav-black.php' ?>
             
@@ -211,10 +205,8 @@ if ($_POST['events']) {
         </div>
       </section>
 
-      <section class="news">
+      <section class="news scrollify">
         <div class="wrapper">
-          <?php require './includes/aside-black.php' ?>
-
           <div class="news__content content">
             <?php require './includes/nav-black.php' ?>
 
@@ -230,10 +222,8 @@ if ($_POST['events']) {
         </div> 
       </section>
 
-      <section class="documents">
+      <section class="documents scrollify">
         <div class="wrapper white">
-          <?php require './includes/aside.php' ?>
-
           <div class="documents__content content">
             <?php require './includes/nav.php' ?>
 
@@ -254,10 +244,8 @@ if ($_POST['events']) {
         </div> 
       </section>
 
-      <section class="partners">
+      <section class="partners scrollify">
         <div class="wrapper">
-          <?php require './includes/aside-black.php' ?>
-
           <div class="partners__content content">
             <?php require './includes/nav-black.php' ?>
 
@@ -308,10 +296,8 @@ if ($_POST['events']) {
         </div>
       </section>
 
-      <section class="feedback">
+      <section class="feedback scrollify">
         <div class="wrapper white">
-          <?php require './includes/aside.php' ?>
-
           <div class="documents__content content">
             <?php require './includes/nav.php' ?>
 
@@ -346,8 +332,11 @@ if ($_POST['events']) {
     </main>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="./js/jquery.scrollify.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+
     <script src="js/index.js"></script>
     <script src="js/calendar.js"></script>
   </body>

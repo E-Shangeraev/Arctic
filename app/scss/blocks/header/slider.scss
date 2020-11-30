@@ -1,6 +1,7 @@
 @import '../../variables.scss';
 
 .slider {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -10,6 +11,7 @@
 
 .slide {
   position: relative;
+  // width: 100%;
 }
 .slide__img {
   height: 1009px;
@@ -51,7 +53,6 @@
 }
 
 .slider__footer {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;

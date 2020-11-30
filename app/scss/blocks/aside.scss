@@ -1,15 +1,19 @@
 @import '../variables.scss';
 
 .aside {
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
 
+  float: left;
+
   padding-top: 37px;
   padding-bottom: 96px;
   width: 280px;
+  height: 100vh;
   box-sizing: border-box;
 
   border-right: 1px solid rgba(36, 36, 36, 0.2);
@@ -18,7 +22,7 @@
     border-right: 2px solid rgba(#ffffff, 0.4);
   }
 
-  z-index: 100;
+  z-index: 999;
 }
 
 .aside__scroll-indicator {
@@ -27,10 +31,12 @@
   justify-content: space-between;
   align-items: center;
   height: 255px;
+  color: #ffffff;
 
   .scroll-indicator__line {
     height: 170px;
     width: 2px;
+    background-color: #ffffff;
   }
 }
 
@@ -38,6 +44,7 @@
   font-family: $manrope-regular;
   font-size: 18px;
   text-decoration: none;
+  color: #ffffff;
 
   &:not(:last-of-type) {
     margin-right: 10px;
