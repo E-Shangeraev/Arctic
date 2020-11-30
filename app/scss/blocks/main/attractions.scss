@@ -1,5 +1,9 @@
 @import '../../variables.scss';
 
+.attractions {
+  height: 1009px !important;
+}
+
 .attractions__cards {
   display: flex;
   justify-content: space-between;
@@ -9,7 +13,8 @@
 .attractions__card {
   display: flex;
   flex-direction: column;
-  width: 427px;
+  width: 250px;
+  // margin-right: 20px;
 }
 
 .attractions__card:not(:last-child) {
@@ -31,7 +36,7 @@
   margin: 0;
   margin-bottom: 30px;
   font-family: $manrope-regular;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 150%;
 }
 

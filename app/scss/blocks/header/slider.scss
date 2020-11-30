@@ -41,15 +41,38 @@
   line-height: 80px;
 }
 .slide__floating {
+  display: none;
   position: absolute;
   padding: 58px 0;
   margin-top: 280px;
   top: 0;
-  left: 50%;
   font-family: $bebas-bold;
   font-size: 110px;
   opacity: 0.15;
   z-index: 2;
+
+  transition: ease 0.5s;
+  opacity: 0;
+}
+
+.slide__floating--animate {
+  display: block;
+  animation-name: slide__floating;
+  animation-duration: 7s;
+  // animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes slide__floating {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
 }
 
 .slider__footer {

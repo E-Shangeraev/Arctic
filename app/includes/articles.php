@@ -21,7 +21,7 @@
                     
                     <span class="article-preview__class"><?= $art_cat['title'] ?></span>
                     <p class="article-preview__new"><?= $art['title']; ?></p>
-                    <span class="article-preview__appeal">Знаете ли вы?</span>
+                    <!-- <span class="article-preview__appeal">Знаете ли вы?</span> -->
                     <time class="article-preview__datetime" datetime="2020-05-12T09:01"><?= $art['pubdate']; ?></time>
                 </div>
             </a>

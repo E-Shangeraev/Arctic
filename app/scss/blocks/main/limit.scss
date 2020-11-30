@@ -15,6 +15,7 @@
 .limit__col {
   position: relative;
   width: 50%;
+  height: auto;
 }
 
 .limit__text {
@@ -27,6 +28,6 @@
 
 .limit__img:nth-child(2) {
   position: absolute;
-  top: 55%;
+  bottom: 0;
   left: -20%;
 }

@@ -1,31 +1,27 @@
 $(function () {
-  $('.slider__block').slick({
-    arrows: true,
-    appendArrows: $('.slider__arrows'),
-    autoplay: false,
-    autoplaySpeed: 4000,
-    speed: 1400,
-    cssEase: 'ease-in-out',
-    pauseOnHover: false,
-  });
-
-  const slides = document.querySelectorAll('.slide');
-  const sliderCountCurrent = document.querySelector('.slider__count--current');
-  const sliderArrows = document.querySelector('.slider__arrows');
-
-  const setCurrentSlideCount = () => {
-    slides.forEach((slide) =>
-      slide.classList.contains('slick-current')
-        ? (sliderCountCurrent.textContent = '0' + slide.dataset.index)
-        : null,
-    );
-  };
-
-  sliderArrows.addEventListener('click', setCurrentSlideCount);
+  const aside = document.querySelector('.aside');
 
   $.scrollify({
     section: '.scrollify',
-    offset: 0,
-    scrollSpeed: 600,
+    scrollSpeed: 50,
+  });
+
+  document.addEventListener('scroll', () => {
+    const curSection = $.scrollify.current().data('section');
+    if (
+      curSection === 2 ||
+      curSection === 3 ||
+      curSection === 4 ||
+      curSection === 5 ||
+      curSection === 7
+    ) {
+      setTimeout(() => {
+        aside.classList.add('aside--black');
+      }, 300);
+    } else {
+      setTimeout(() => {
+        aside.classList.remove('aside--black');
+      }, 300);
+    }
   });
 });
