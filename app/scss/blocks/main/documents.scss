@@ -1,6 +1,7 @@
 @import '../../variables.scss';
 
 .documents {
+  position: relative;
   background-image: url('../../../img/main/documents/1.jpg');
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -38,6 +39,8 @@
   &::before {
     position: absolute;
     content: url('../../../img/main/documents/2.svg');
+    width: 22px;
+    height: 26px;
     top: 0;
     left: -40px;
   }
@@ -50,4 +53,41 @@
   line-height: 120%;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (max-width: 400px) {
+  .documents {
+    .outline-button {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  .documents__list {
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+  }
+  .documents__item {
+    padding-left: 25px;
+    width: auto;
+    font-size: 12px;
+    line-height: 150%;
+
+    &::before {
+      width: 12px;
+      left: 0px;
+    }
+  }
+  .documents__item:nth-last-child(1),
+  .documents__item:nth-last-child(2) {
+    display: none;
+  }
+  .documents__archive {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    left: 60%;
+    font-size: 12px;
+    line-height: 120%;
+  }
 }

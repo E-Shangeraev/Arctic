@@ -34,3 +34,29 @@
 .partners__item:last-child {
   grid-column: 1 / -1;
 }
+
+@media (max-width: 400px) {
+  .partners {
+    .row {
+      margin-bottom: 0;
+      display: block;
+    }
+  }
+  .partners__content {
+    height: fit-content;
+  }
+  .partners__desc {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .partners__list {
+    column-gap: 10px;
+    row-gap: 0px;
+  }
+  .partners__item:last-child {
+    grid-column: 1 / -2;
+  }
+}
