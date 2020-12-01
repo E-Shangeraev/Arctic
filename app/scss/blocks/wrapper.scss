@@ -11,3 +11,9 @@
 
   box-sizing: border-box;
 }
+
+@media (max-width: 400px) {
+  .wrapper {
+    padding: 52px 16px;
+  }
+}

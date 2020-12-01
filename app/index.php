@@ -51,7 +51,9 @@ if ($_POST['events']) {
       </a>
       <p class="aside__scroll-indicator scroll-indicator">
         <span class="scroll-indicator__number scroll-indicator__number--current">01</span>
-        <span class="scroll-indicator__line"></span>
+        <span class="scroll-indicator__line">
+          <span class="scroll-indicator__line--fill"></span>
+        </span>
         <span class="scroll-indicator__number">08</span>
       </p>
       <p class="aside__socials">
@@ -80,7 +82,7 @@ if ($_POST['events']) {
       <section class="slider white">
         <div class="slider__block">
           <div class="slide" data-index="1">
-            <img src="img/main/main-header/1.jpg" alt="" class="slide__img" />
+            <p class="slide__img" style="background-image: url('img/main/main-header/1.jpg')"></p>
             <p class="slide__floating">край горячих сердец</p>
             <div class="slide__title">
               <h3 class="slide__it">Норильск - это...</h3>
@@ -88,7 +90,7 @@ if ($_POST['events']) {
             </div>
           </div>
           <div class="slide" data-index="2">
-            <img src="img/main/main-header/2.jpg" alt="" class="slide__img" />
+            <p class="slide__img" style="background-image: url('img/main/main-header/2.jpg')"></p>
             <p class="slide__floating">северное сияние</p>
             <div class="slide__title">
               <h3 class="slide__it">Норильск - это...</h3>
@@ -96,7 +98,7 @@ if ($_POST['events']) {
             </div>
           </div>
           <div class="slide" data-index="3">
-            <img src="img/main/main-header/3.jpg" alt="" class="slide__img" />
+            <p class="slide__img" style="background-image: url('img/main/main-header/3.jpg')"></p>
             <p class="slide__floating">сильные духом люди</p>
             <div class="slide__title">
               <h3 class="slide__it">Норильск - это...</h3>
@@ -104,7 +106,7 @@ if ($_POST['events']) {
             </div>
           </div>
           <div class="slide" data-index="4">
-            <img src="img/main/main-header/4.jpg" alt="" class="slide__img" />
+            <p class="slide__img" style="background-image: url('img/main/main-header/4.jpg')"></p>
             <p class="slide__floating">самый северный город</p>
             <div class="slide__title">
               <h3 class="slide__it">Норильск - это...</h3>
@@ -112,7 +114,7 @@ if ($_POST['events']) {
             </div>
           </div>
           <div class="slide" data-index="5">
-            <img src="img/main/main-header/5.jpg" alt="" class="slide__img" />
+            <p class="slide__img" style="background-image: url('img/main/main-header/5.jpg')"></p>
             <p class="slide__floating">культурный шок</p>
             <div class="slide__title">
               <h3 class="slide__it">Норильск - это...</h3>
@@ -130,7 +132,7 @@ if ($_POST['events']) {
             <?php require './includes/nav-black.php' ?>
 
             <div class="content__container">
-              <div class="limit__col col-1">
+              <div class="limit__col">
                 <h2 class="limit__title title">
                   <span>Норильск- это </span>
                   <span>возможность проверить</span>
@@ -143,7 +145,7 @@ if ($_POST['events']) {
                 </p>
                 <a href="#" class="button">О Норильске</a>
               </div>
-              <div class="limit__col col-2">
+              <div class="limit__col">
                 <img class="limit__img" src="img/main/limit/1.jpg" alt="Фотография норильчан">
                 <img class="limit__img" src="img/main/limit/2.png" alt="Фотография норильчан">
               </div>
@@ -210,31 +212,31 @@ if ($_POST['events']) {
               </div>
               <div class="attractions__cards">
                 <div class="attractions__card">
-                  <img class="attractions__img" src="./img/main/attractions/1.jpg" alt="Плато Путорана">
+                  <p class="attractions__img" style="background-image: url('./img/main/attractions/1.jpg')"></p>
                   <h4 class="attractions__card-title">Плато Путорана</h4>
                   <p class="attractions__desc">Неизвестная загадочная страна. Хрустальные воды рек, мириады водопадов, падающие со склонов, “столовых” гор, яркие краски северных цветов на фоне камней и снега.</p>
                   <a href="#" class="attractions__button button">Узнать больше</a>
                 </div>
                 <div class="attractions__card">
-                  <img class="attractions__img" src="./img/main/attractions/2.jpg" alt="Северное Сияние">
+                  <p class="attractions__img" style="background-image: url('./img/main/attractions/2.jpg')"></p>
                   <h4 class="attractions__card-title">Северное Сияние</h4>
                   <p class="attractions__desc">В Норильске можно увидеть фантастические сполохи северного сияния. Каждую зиму над городом возникают мерцающие полосы самых невероятных оттенков.</p>
                   <a href="#" class="attractions__button button">Узнать больше</a>
                 </div>
                 <div class="attractions__card">
-                  <img class="attractions__img" src="./img/main/attractions/3.jpg" alt="Норильский Никель">
+                  <p class="attractions__img" style="background-image: url('./img/main/attractions/3.jpg')"></p>
                   <h4 class="attractions__card-title">Норильский Никель</h4>
                   <p class="attractions__desc">Норильский Никель - крупнейший в мире производитель никеля и палладия, лидер горно-металлургической промышленности России.</p>
                   <a href="#" class="attractions__button button">Узнать больше</a>
                 </div>
                 <div class="attractions__card">
-                  <img class="attractions__img" src="./img/main/attractions/2.jpg" alt="Северное Сияние">
+                  <p class="attractions__img" style="background-image: url('./img/main/attractions/2.jpg')"></p>
                   <h4 class="attractions__card-title">Северное Сияние</h4>
                   <p class="attractions__desc">В Норильске можно увидеть фантастические сполохи северного сияния. Каждую зиму над городом возникают мерцающие полосы самых невероятных оттенков.</p>
                   <a href="#" class="attractions__button button">Узнать больше</a>
                 </div>
                 <div class="attractions__card">
-                  <img class="attractions__img" src="./img/main/attractions/1.jpg" alt="Плато Путорана">
+                  <p class="attractions__img" style="background-image: url('./img/main/attractions/1.jpg')"></p>
                   <h4 class="attractions__card-title">Плато Путорана</h4>
                   <p class="attractions__desc">Неизвестная загадочная страна. Хрустальные воды рек, мириады водопадов, падающие со склонов, “столовых” гор, яркие краски северных цветов на фоне камней и снега.</p>
                   <a href="#" class="attractions__button button">Узнать больше</a>

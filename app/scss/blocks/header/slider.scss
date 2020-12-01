@@ -14,7 +14,11 @@
   // width: 100%;
 }
 .slide__img {
-  height: 1009px;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .slide__title {
   display: flex;
@@ -48,6 +52,7 @@
   top: 0;
   font-family: $bebas-bold;
   font-size: 110px;
+  white-space: nowrap;
   opacity: 0.15;
   z-index: 2;
 
@@ -59,7 +64,6 @@
   display: block;
   animation-name: slide__floating;
   animation-duration: 7s;
-  // animation-delay: 1s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   animation-timing-function: linear;
@@ -104,4 +108,44 @@
 }
 .slick-next::before {
   content: url('../../../img/main/main-header/arrow-right.svg');
+}
+
+@media (max-width: 400px) {
+  .slide__title {
+    display: block;
+    width: 100%;
+    left: 0;
+    padding: 0 16px;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+  }
+  .slide__it {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .slide__definition {
+    font-size: 22px;
+    line-height: 140%;
+  }
+  .slide__floating {
+    top: -30%;
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+  .slide__img {
+    background-position: 50% 0;
+  }
+  .slider__footer {
+    flex-wrap: wrap;
+    margin-top: auto;
+    align-content: space-between;
+
+    & .button {
+      margin-bottom: 46px;
+    }
+  }
+  .slider__count {
+    flex-shrink: 0;
+    float: left;
+  }
 }

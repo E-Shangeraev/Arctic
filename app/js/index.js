@@ -1,5 +1,7 @@
 $(function () {
   const aside = document.querySelector('.aside');
+  const scrollIndicatorFill = document.querySelector('.scroll-indicator__line--fill');
+  const scrollIndicatorNumber = document.querySelector('.scroll-indicator__number');
 
   $.scrollify({
     section: '.scrollify',
@@ -8,6 +10,10 @@ $(function () {
 
   document.addEventListener('scroll', () => {
     const curSection = $.scrollify.current().data('section');
+
+    scrollIndicatorFill.style.height = `${12.5 * curSection}%`;
+    scrollIndicatorNumber.textContent = `0${curSection}`;
+
     if (
       curSection === 2 ||
       curSection === 3 ||

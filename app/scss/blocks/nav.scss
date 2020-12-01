@@ -94,3 +94,11 @@
     margin-right: 100px;
   }
 }
+
+@media (max-width: 400px) {
+  .nav {
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+}

@@ -258,3 +258,76 @@ input:focus {
     }
   }
 }
+
+@media (max-width: 400px) {
+  .calendar__top-item span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .calendar__container {
+    padding: 0;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .calendar__main {
+    margin-top: 20px;
+    height: fit-content;
+    gap: 7px;
+    span {
+      font-size: 14px;
+      width: 20px;
+      height: 20px;
+    }
+    input {
+      width: 30px;
+      height: 30px;
+      font-size: 14px;
+      line-height: 100%;
+    }
+  }
+  .calendar__column-2 {
+    padding: 0;
+    flex-grow: 0;
+    margin-bottom: 20px;
+  }
+  .calendar__column-1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-shrink: 0;
+    font-size: 16px;
+    line-height: 34px;
+    border: none;
+  }
+  .calendar__date {
+    display: flex;
+    width: 50%;
+  }
+  .calendar__day {
+    margin-right: 5px;
+    float: left;
+  }
+  .calendar__day,
+  .calendar__month {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .calendar__year {
+    display: none;
+  }
+  .calendar__events-title {
+    margin: 0;
+    width: 50%;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .calendar__events-list {
+    margin: 0;
+    li {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+  .calendar__events-item {
+  }
+}

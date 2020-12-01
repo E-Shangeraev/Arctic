@@ -12,6 +12,7 @@
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+  white-space: nowrap;
   cursor: pointer;
 
   &::before {
@@ -31,5 +32,13 @@
 
   &:hover::before {
     width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .button {
+    padding: 11px 30px;
+    margin-right: 100%;
+    font-size: 12px;
   }
 }

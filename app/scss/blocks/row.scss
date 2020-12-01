@@ -4,3 +4,9 @@
   width: 100%;
   margin-bottom: 60px;
 }
+
+@media (max-width: 400px) {
+  .row {
+    margin-bottom: 40px;
+  }
+}
