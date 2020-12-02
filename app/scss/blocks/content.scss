@@ -19,6 +19,8 @@
 @media (max-width: 400px) {
   .content {
     padding: 0;
+    height: fit-content;
+    height: 100%;
   }
   .content__container {
     display: block;

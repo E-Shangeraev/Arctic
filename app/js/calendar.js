@@ -105,6 +105,17 @@ document.addEventListener('DOMContentLoaded', () => {
       year: y,
     };
 
+    function setColorToCurrentDay(element, j, m, y) {
+      if (
+        element.getAttribute('value', j) == date.getDate() &&
+        m == date.getMonth() + 1 &&
+        y == date.getFullYear()
+      ) {
+        element.style.backgroundColor = '#26c9c9';
+        element.style.color = '#ffffff';
+      }
+    }
+
     //Запрос на сервер
     $.ajax({
       type: 'POST',
@@ -142,14 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             eventsArray.push(arr);
 
-            if (
-              element.getAttribute('value', j) == date.getDate() &&
-              m == date.getMonth() + 1 &&
-              y == date.getFullYear()
-            ) {
-              element.style.backgroundColor = '#26c9c9';
-              element.style.color = '#ffffff';
-            }
+            setColorToCurrentDay(element, j, m, y);
           }
 
           const calendar = document.querySelector('.calendar');
@@ -164,8 +168,8 @@ document.addEventListener('DOMContentLoaded', () => {
               const li = document.createElement('li');
               li.classList.add('calendar__events-item');
               li.innerHTML = `
-                                <a href="./article.php?id=${item['id']}">${item['text']}</a> 
-                            `;
+                <a href="./article.php?id=${item['id']}">${item['text']}</a> 
+              `;
 
               if (eventsArray[num]) {
                 eventsList.append(li);
@@ -200,6 +204,8 @@ document.addEventListener('DOMContentLoaded', () => {
             element.classList.add('calendar__element');
             calendarMain.appendChild(element);
             k++;
+
+            setColorToCurrentDay(element, j, m, y);
           }
         }
       },

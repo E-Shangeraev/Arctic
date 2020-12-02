@@ -2,7 +2,7 @@ $(function () {
   $('.slider__block').slick({
     arrows: true,
     appendArrows: $('.slider__arrows'),
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 8000,
     speed: 1400,
     cssEase: 'ease-in-out',
@@ -35,13 +35,6 @@ $(function () {
   $('.slider__block').on('afterChange', function (slick, slide) {
     setCurrentSlideCount();
   });
-
-  // slides.forEach((slide) => {
-  //   slide.addEventListener('afterChange', setCurrentSlideCount);
-  // });
-
-  // $('.slider > .slide').on('afterChange', setCurrentSlideCount);
-  // setInterval(() => setCurrentSlideCount(), 10000);
 
   sliderArrows.addEventListener('click', setCurrentSlideCount);
 });

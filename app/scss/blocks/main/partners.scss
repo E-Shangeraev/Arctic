@@ -56,6 +56,9 @@
     column-gap: 10px;
     row-gap: 0px;
   }
+  .partners__title {
+    margin-bottom: 20px;
+  }
   .partners__item:last-child {
     grid-column: 1 / -2;
   }
