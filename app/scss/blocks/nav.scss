@@ -95,7 +95,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 460px) {
   .nav {
     margin: 0;
     padding: 0;
@@ -111,7 +111,7 @@
     background-color: #ededed;
     box-sizing: border-box;
     filter: drop-shadow(-15px 0 50px #000);
-    transform: translateX(100%);
+    transform: translateX(150%);
     transition: ease 0.2s;
 
     .nav__close {
@@ -164,6 +164,7 @@
       font-size: 14px;
       line-height: 19px;
       text-decoration: underline;
+      color: #000000;
     }
     .nav__phone {
       margin: 0;

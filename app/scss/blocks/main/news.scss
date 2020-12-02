@@ -2,16 +2,10 @@
   position: relative;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 460px) {
   .news {
     .content {
       height: 100%;
-    }
-    .outline-button {
-      position: absolute;
-      bottom: 0;
-      right: 25%;
-      left: 25%;
     }
   }
 }

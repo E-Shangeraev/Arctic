@@ -91,7 +91,7 @@ if ($_POST['events']) {
 
       <div>
         <a class="eye" href="#">
-          <img src="img/header/eye-black.svg" alt="" />
+          <img src="img/header/eye-black.svg" alt="Для слабовидящих" loading="lazy"/>
           <span>Для слабовидящих</span>
         </a>
         <ul class="nav__lang">
@@ -184,8 +184,8 @@ if ($_POST['events']) {
                 <a href="#" class="button">О Норильске</a>
               </div>
               <div class="limit__col">
-                <img class="limit__img" src="img/main/limit/1.jpg" alt="Фотография норильчан">
-                <img class="limit__img" src="img/main/limit/2.png" alt="Фотография норильчан">
+                <img class="limit__img" src="img/main/limit/1.jpg" alt="Фотография норильчан" loading="lazy">
+                <img class="limit__img" src="img/main/limit/2.png" alt="Фотография норильчан" loading="lazy">
               </div>
             </div>
           </div>
@@ -282,6 +282,7 @@ if ($_POST['events']) {
               </div>
             </div>
           </div>
+          <a href="#" class="outline-button outline-button--mobile">Смотреть все</a>
         </div>
       </section>
 
@@ -299,6 +300,7 @@ if ($_POST['events']) {
                 print ($articles);
               ?>
           </div>
+          <a href="#" class="outline-button outline-button--mobile">Смотреть все</a>
         </div> 
       </section>
 
@@ -321,6 +323,11 @@ if ($_POST['events']) {
             </ul>
             <a class="documents__archive" href="#">Скачать одним архивом</a>
           </div>
+          <a href="#" 
+            class="documents__outline-button outline-button outline-button--mobile outline-button--white">
+            Подробнее
+          </a>
+          <a class="documents__archive documents__archive--mobile" href="#">Скачать одним архивом</a>
         </div> 
       </section>
 
@@ -337,37 +344,37 @@ if ($_POST['events']) {
               <ul class="partners__list">
                 <li class="partners__item">
                   <a href="https://www.russiadiscovery.ru/" target="_blank">
-                    <img src="./img/main/partners/1.png" alt="Russia Discovery">
+                    <img src="./img/main/partners/1.png" alt="Russia Discovery" loading="lazy">
                   </a>
                 </li>
                 <li class="partners__item">
                   <a href="https://naito-russia.ru/">
-                    <img src="./img/main/partners/2.png" alt="Некомерческое партнёрство НАИТО">
+                    <img src="./img/main/partners/2.png" alt="Некомерческое партнёрство НАИТО" loading="lazy">
                   </a>
                 </li>
                 <li class="partners__item">
                   <a href="https://www.tui.ru/" target="_blank">
-                    <img src="./img/main/partners/5.png" alt="TUI">
+                    <img src="./img/main/partners/5.png" alt="TUI" loading="lazy">
                   </a>
                 </li>
                 <li class="partners__item">
                   <a href="https://travelsterritory.com/" target="_blank">
-                    <img src="./img/main/partners/3.png" alt="Travels territory">
+                    <img src="./img/main/partners/3.png" alt="Travels territory" loading="lazy">
                   </a>
                 </li>
                 <li class="partners__item">
                   <a href="http://usadbajarptica.ru/" target="_blank">
-                    <img src="./img/main/partners/4.png" alt="Усадьба Жар-Птица">
+                    <img src="./img/main/partners/4.png" alt="Усадьба Жар-Птица" loading="lazy">
                   </a>
                 </li>
                 <li class="partners__item">
                   <a href="https://visitsiberia.info/" target="_blank">
-                    <img src="./img/main/partners/6.png" alt="Красноярский край. Туристический информационный центр">
+                    <img src="./img/main/partners/6.png" alt="Красноярский край. Туристический информационный центр" loading="lazy">
                   </a>
                 </li>
                 <li class="partners__item">
                   <a href="http://turizm.krskstate.ru/" target="_blank">
-                    <img src="./img/main/partners/7.png" alt="Красноярский край. Агенство по туризму Красноярского края">
+                    <img src="./img/main/partners/7.png" alt="Красноярский край. Агенство по туризму Красноярского края" loading="lazy">
                   </a>
                 </li>
               </ul>

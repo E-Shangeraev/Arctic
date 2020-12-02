@@ -1,7 +1,7 @@
 @import '../../variables.scss';
 
 .feedback {
-  background-image: url('../../../img/main/feedback/1.jpg');
+  background-image: url('../img/main/feedback/1.jpg');
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -11,6 +11,7 @@
   width: 60%;
   flex-shrink: 0;
   white-space: nowrap;
+  line-height: 120%;
 }
 
 .feedback__text {
@@ -83,18 +84,18 @@
   align-items: flex-end;
 }
 
-@media (max-width: 400px) {
+.feedback__desc {
+  margin: 0;
+}
+
+@media (max-width: 460px) {
   .feedback {
     .row {
       margin-bottom: 20px;
       display: block;
     }
   }
-  .feedback__title {
-    // margin-bottom: 50px;
-  }
   .feedback__desc {
-    margin: 0;
     font-size: 12px;
     line-height: 150%;
   }

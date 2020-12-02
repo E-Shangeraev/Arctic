@@ -41,11 +41,22 @@
     border-color: #fff;
   }
 }
+.outline-button--mobile {
+  display: none;
+}
 
-@media (max-width: 400px) {
+@media (max-width: 460px) {
   .outline-button {
+    display: none;
+  }
+  .outline-button--mobile {
+    display: block;
     padding: 10px 25px;
     font-size: 12px;
     white-space: nowrap;
+    position: absolute;
+    bottom: 52px;
+    right: 25%;
+    left: 25%;
   }
 }

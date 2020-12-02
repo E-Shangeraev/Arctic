@@ -104,13 +104,13 @@
 }
 
 .slick-prev::before {
-  content: url('../../../img/main/main-header/arrow-left.svg');
+  content: url('../img/main/main-header/arrow-left.svg');
 }
 .slick-next::before {
-  content: url('../../../img/main/main-header/arrow-right.svg');
+  content: url('../img/main/main-header/arrow-right.svg');
 }
 
-@media (max-width: 400px) {
+@media (max-width: 460px) {
   .slide__title {
     display: block;
     width: 100%;

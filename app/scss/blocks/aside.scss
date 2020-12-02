@@ -74,7 +74,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 460px) {
   .aside {
     flex-direction: row;
     align-items: center;
@@ -102,6 +102,7 @@
     background-color: transparent;
     border: none;
     transition: ease 0.2s;
+    outline: none;
     span {
       display: inline-block;
       width: 35px;

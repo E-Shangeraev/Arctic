@@ -56,7 +56,7 @@ $(function () {
   }
 
   document.addEventListener('scroll', () => {
-    if (document.documentElement.clientWidth <= 400) {
+    if (document.documentElement.clientWidth <= 460) {
       sections.forEach((section) => {
         if (elementInViewport(section)) {
           const dif = window.pageYOffset - section.offsetTop;
@@ -76,7 +76,7 @@ $(function () {
     navMobile.classList.add('nav-mobile--opened');
     document.body.style.cssText = `
       overflow-y: hidden;
-      position: fixed;
+
     `;
     setTimeout(() => {
       close.style.transform = 'scale(1)';
