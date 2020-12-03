@@ -1,17 +1,20 @@
 @import '../variables.scss';
 
 .nav {
-  position: relative;
-  margin-bottom: 120px;
+  position: fixed;
+  left: 438px;
+  margin: 20px 0;
   display: flex;
   align-self: start;
   justify-content: space-between;
   width: 100%;
+  width: 68vw;
   z-index: 999;
 }
 
 .nav-mobile {
   display: none;
+  z-index: 1000;
 }
 
 .nav__items,
@@ -65,6 +68,12 @@
   }
 }
 
+.nav.black {
+  li a::after {
+    background-color: #000000;
+  }
+}
+
 .nav__lang {
   width: 80px;
 
@@ -79,7 +88,6 @@
 
   a.active {
     opacity: 1;
-    // border-bottom: #ffffff solid 2px;
   }
 }
 
@@ -112,7 +120,7 @@
     box-sizing: border-box;
     filter: drop-shadow(-15px 0 50px #000);
     transform: translateX(150%);
-    transition: ease 0.2s;
+    transition: ease 0.4s;
 
     .nav__close {
       display: flex;

@@ -66,6 +66,29 @@ if ($_POST['events']) {
       </button>
     </aside>
 
+    <nav class="nav white">
+      <ul class="nav__items">
+        <li><a href="#">Норильск</a></li>
+        <li><a href="#">Достопримечательности</a></li>
+        <li><a href="#">Центр развития туризма Норильска</a></li>
+        <li><a href="#">Туристу</a></li>
+        <li><a href="#">Новости</a></li>
+      </ul>
+
+      <div class="nav__col">
+        <a class="eye" href="#"><img src="img/header/eye.svg" alt="" /></a>
+        <ul class="nav__lang">
+          <li><a href="#" class="active">RUS</a></li>
+          <span>/</span>
+          <li><a href="#">ENG</a></li>
+        </ul>
+      </div>
+      <ul class="nav__phone">
+        <li><a href="tel:+7 999 123-45-67">+7 999 123-45-67</a></li>
+      </ul>
+    </nav>
+    
+
     <nav class="nav nav-mobile black">
       <button class="nav__close">
         <span></span>
@@ -95,7 +118,7 @@ if ($_POST['events']) {
           <span>Для слабовидящих</span>
         </a>
         <ul class="nav__lang">
-          <li><a href="#" class="active">RUS</a> /</li>
+          <li><a href="#" class="active">RUS</a></li>
           <li><a href="#">ENG</a></li>
         </ul>
       </div>
@@ -104,8 +127,6 @@ if ($_POST['events']) {
     <header class="header scrollify" data-section="1">
       <div class="wrapper white">
         <div class="header__content content">
-          <?php require './includes/nav.php' ?>
-
           <footer class="slider__footer">
             <a class="button" href="#">Подробнее</a>
             <p class="slider__count">
@@ -167,19 +188,17 @@ if ($_POST['events']) {
       <section class="limit scrollify" data-section="2">
         <div class="wrapper black">
           <div class="content">
-            <?php require './includes/nav-black.php' ?>
-
             <div class="content__container">
               <div class="limit__col">
                 <h2 class="limit__title title">
-                  <span>Норильск- это </span>
-                  <span>возможность проверить</span>
-                  <span>свои пределы</span>
+                  <span>Путешествие</span>
+                  <span>по таинственной территории</span>
+                  <span>крайнего Севера</span>
                 </h2>
                 <p class="limit__text">
-                  Далеко не каждый сможет легко перенести суровый арктический климат, который царит в этих краях зимой.<br><br>
-                  Поэтому с турами в Норильск для Вас открывается уникальная возможность испытать себя и познакомиться с людьми, которые по-настоящему сильны духом.<br><br>
-                  Они живут в этих условиях десятилетиями и смогут показать Вам места от красоты которых захватывает дух.
+                  С турами в Норильск для Вас открывается уникальная возможность испытать себя и познакомиться с людьми, которые по-настоящему сильны духом.<br><br>
+                  Они живут в условиях крайнего Севера десятилетиями и смогут показать Вам места от красоты которых захватывает дух.<br><br>
+                  Уникальная, живописная и нетронутая природа. Современный и гостеприимный моногород Норильск. Все это, и многое другое ждет Вас.
                 </p>
                 <a href="#" class="button">О Норильске</a>
               </div>
@@ -195,8 +214,6 @@ if ($_POST['events']) {
       <section class="calendar scrollify" data-section="3">
         <div class="wrapper">
           <div class="content">
-            <?php require './includes/nav-black.php' ?>
-            
             <h2 class="calendar__title title">Календарь событий</h2>
             <div class="calendar__container">
               <div class="calendar__column-1">
@@ -241,8 +258,6 @@ if ($_POST['events']) {
       <section class="attractions scrollify" data-section="4">
         <div class="wrapper">
           <div class="content">
-            <?php require './includes/nav-black.php' ?>
-            
             <div class="attractions__container black">
               <div class="row">
                 <h2 class="attractions__title title">Достопримечательности</h2>
@@ -289,8 +304,6 @@ if ($_POST['events']) {
       <section class="news scrollify" data-section="5">
         <div class="wrapper">
           <div class="content">
-            <?php require './includes/nav-black.php' ?>
-
             <div class="row">
               <h2 class="news__title title">Новости</h2>
               <a href="#" class="outline-button">Смотреть все</a>
@@ -307,19 +320,31 @@ if ($_POST['events']) {
       <section class="documents scrollify" data-section="6">
         <div class="wrapper white">
           <div class="documents__content content">
-            <?php require './includes/nav.php' ?>
-
             <div class="row">
               <h2 class="documents__title title">В помощь туристам</h2>
               <a href="#" class="outline-button outline-button--white">Подробнее</a>
             </div>
             <ul class="documents__list">
-              <li class="documents__item"><a href="#">Паспорт безопасности туриста</a></li>
-              <li class="documents__item"><a href="#">Памятка туристу по безопасности путешествий на территории Красноярского края</a></li>
-              <li class="documents__item"><a href="#">Паспорт безопасности туриста</a></li>
-              <li class="documents__item"><a href="#">Памятка туристу по безопасности путешествий на территории Красноярского края</a></li>
-              <li class="documents__item"><a href="#">Паспорт безопасности туриста</a></li>
-              <li class="documents__item"><a href="#">Памятка туристу по безопасности путешествий на территории Красноярского края</a></li>
+              <li class="documents__item">
+                <a href="#">
+                  <img src="./img/main/documents/2.svg" alt="Паспорт безопасности туриста">
+                  <span>Паспорт безопасности туриста</span>
+                </a>
+              </li>
+              <li class="documents__item">
+                <a href="#">
+                  <img src="./img/main/documents/2.svg" 
+                      alt="Памятка туристу по безопасности путешествий на территории Красноярского края">
+                  <span>Памятка туристу по безопасности путешествий на территории Красноярского края</span>
+                </a>
+              </li>
+              <li class="documents__item">
+                <a href="#">
+                  <img src="./img/main/documents/2.svg" 
+                      alt="Унифицированный туристский паспорт муниципального образования город Норильск">
+                  <span>Унифицированный туристский паспорт муниципального образования город Норильск</span>
+                </a>
+              </li>
             </ul>
             <a class="documents__archive" href="#">Скачать одним архивом</a>
           </div>
@@ -334,8 +359,6 @@ if ($_POST['events']) {
       <section class="partners scrollify" data-section="7">
         <div class="wrapper">
           <div class="partners__content content">
-            <?php require './includes/nav-black.php' ?>
-
             <h2 class="partners__title title">Партнеры</h2>
             <div class="row">
               <p class="partners__desc">
@@ -386,14 +409,10 @@ if ($_POST['events']) {
       <section class="feedback scrollify" data-section="8">
         <div class="wrapper white">
           <div class="documents__content content">
-            <?php require './includes/nav.php' ?>
-
-            <div class="row">
-              <h2 class="feedback__title title">У вас остались вопросы?</h2>
-              <p class="feedback__desc">Оставьте свои контактыне данные и наш специалист свяжется с вами в ближайшее время и ответит на все интересующие вас вопросы!</p>
-            </div>
+            <h2 class="feedback__title title">У вас остались вопросы?</h2>
             <form class="feedback__form" action="mail.php" method="POST">
               <div class="col-1">
+                <p class="feedback__desc">Оставьте свои контактыне данные и наш специалист свяжется с вами в ближайшее время и ответит на все интересующие вас вопросы!</p>
                 <span>Введите ваш вопрос здесь...</span>
                 <input type="text" name="text">
               </div>

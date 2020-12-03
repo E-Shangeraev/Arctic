@@ -3,13 +3,14 @@
 .limit__title {
   span:not(:last-child) {
     display: block;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
   }
 
   span:nth-child(2) {
     color: $blue;
   }
   margin-bottom: 60px;
+  line-height: 100%;
 }
 
 .limit__col {
@@ -19,12 +20,10 @@
 }
 
 .limit__text {
+  @include text-mobile;
   margin-top: 0;
-  margin-bottom: 118px;
+  margin-bottom: 80px;
   width: 450px;
-  font-family: $manrope-regular;
-  font-size: 16px;
-  line-height: 24px;
 }
 
 .limit__img:nth-child(2) {
@@ -51,8 +50,6 @@
     }
   }
   .limit__text {
-    font-size: 12px;
-    line-height: 150%;
     margin-bottom: 40px;
     width: 100%;
   }
@@ -71,7 +68,6 @@
   .limit__img:nth-child(2) {
     width: 30%;
     left: 20%;
-    // bottom: -30%;
     bottom: 0;
   }
 }

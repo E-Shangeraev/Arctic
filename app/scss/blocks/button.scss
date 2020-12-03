@@ -39,6 +39,6 @@
   .button {
     padding: 11px 30px;
     margin-right: 100%;
-    font-size: 12px;
+    @include text-mobile;
   }
 }

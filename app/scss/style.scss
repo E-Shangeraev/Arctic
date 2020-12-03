@@ -1,7 +1,9 @@
 @import 'variables.scss';
+@import 'mixins.scss';
 @import 'scaffolding.scss';
 @import 'fonts.scss';
 @import 'visually-hidden.scss';
+@import 'scrollbar.scss';
 
 @import './blocks/wrapper.scss';
 @import './blocks/nav.scss';
@@ -14,8 +16,6 @@
 @import './blocks/address.scss';
 @import './blocks/articles-section.scss';
 @import './blocks/socials.scss';
-// @import "./blocks/wrapper.scss";
-// @import "./blocks/link-arrow.scss";
 // @import "./blocks/tab.scss";
 // @import "./blocks/tour.scss";
 

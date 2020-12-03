@@ -15,7 +15,6 @@
   display: flex;
   flex-direction: column;
   width: 250px;
-  // margin-right: 20px;
 }
 
 .attractions__card:not(:last-child) {
@@ -69,17 +68,16 @@
   }
   .attractions__card-title {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 120%;
   }
   .attractions__desc {
     margin-bottom: 20px;
-    font-size: 12px;
-    line-height: 150%;
+    @include text-mobile;
   }
   .attractions__cards {
     // margin-bottom: 55px;
-    // padding-bottom: 10px;
+    padding-bottom: 20px;
     max-width: 100vw;
     overflow-x: auto;
   }

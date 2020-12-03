@@ -6,6 +6,8 @@ $(function () {
   const burger = document.querySelector('.aside__burger');
   const close = document.querySelector('.nav__close');
   const navMobile = document.querySelector('.nav-mobile');
+  const nav = document.querySelector('nav');
+  const eye = document.querySelector('.eye img');
 
   $.scrollify({
     section: '.scrollify',
@@ -27,10 +29,16 @@ $(function () {
     ) {
       setTimeout(() => {
         aside.classList.add('aside--black');
+        nav.classList.remove('white');
+        nav.classList.add('black');
+        eye.src = 'img/header/eye-black.svg';
       }, 300);
     } else {
       setTimeout(() => {
         aside.classList.remove('aside--black');
+        nav.classList.add('white');
+        nav.classList.remove('black');
+        eye.src = 'img/header/eye.svg';
       }, 300);
     }
   });

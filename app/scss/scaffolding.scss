@@ -9,6 +9,10 @@ body {
   font-family: $manrope-regular;
   color: #000000;
   font-style: normal;
+
+  & *::selection {
+    background-color: $blue;
+  }
 }
 
 img {

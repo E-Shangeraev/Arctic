@@ -12,6 +12,7 @@
   flex-shrink: 0;
   white-space: nowrap;
   line-height: 120%;
+  margin-bottom: 60px;
 }
 
 .feedback__text {
@@ -48,9 +49,11 @@
     border-bottom: 1px solid #ffffff;
   }
 
-  input:focus {
+  input:focus,
+  input:active {
     outline: none;
     border: none;
+    background-color: transparent;
     border-bottom: 1px solid #ffffff;
   }
 
@@ -67,7 +70,7 @@
 }
 
 .col-1 {
-  width: calc(60% - 20px);
+  width: calc(60% - 60px);
 }
 
 .col-2 {
@@ -85,6 +88,7 @@
 }
 
 .feedback__desc {
+  @include text;
   margin: 0;
 }
 
@@ -105,8 +109,7 @@
     span,
     input,
     input::placeholder {
-      font-size: 12px;
-      line-height: 26px;
+      @include text-mobile;
     }
     input {
       padding-left: 0;

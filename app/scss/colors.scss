@@ -4,6 +4,9 @@
   .scroll-indicator__line {
     background-color: rgba(#fff, 0.4);
   }
+  .nav__items li a::after {
+    background-color: #ffffff;
+  }
 }
 
 .black * {
@@ -13,7 +16,7 @@
     background-color: rgba(#000, 0.2);
   }
 
-  .nav__items a::after {
+  .nav__items > li > a::after {
     background-color: #000000;
   }
 }
