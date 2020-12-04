@@ -1,5 +1,12 @@
 @import 'variables.scss';
 
+@media screen and (min-width: 960px) {
+  html {
+    margin-left: calc(100vw - 100%);
+    margin-left: 0;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -31,4 +38,6 @@ section {
   width: 100%;
   position: relative;
   // min-height: 1009px;
+  min-height: 100vh !important;
+  // background-color: #ffffff;
 }

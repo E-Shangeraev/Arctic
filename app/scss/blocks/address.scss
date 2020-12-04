@@ -39,7 +39,6 @@
 @media (max-width: 460px) {
   .address__item {
     padding-left: 30px;
-    font-size: 12px;
-    line-height: 26px;
+    @include text-mobile;
   }
 }

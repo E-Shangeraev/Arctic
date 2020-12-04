@@ -44,8 +44,10 @@
 .slide__floating {
   display: none;
   position: absolute;
-  margin-top: 280px;
+  // margin-top: 280px;
+  // margin: 0;
   top: -5%;
+  top: 15%;
   font-family: $bebas-bold;
   font-size: 110px;
   white-space: nowrap;
@@ -117,15 +119,15 @@
     box-sizing: border-box;
   }
   .slide__it {
-    font-size: 42px;
-    line-height: 24px;
+    font-size: 36px;
+    line-height: 40px;
   }
   .slide__definition {
-    font-size: 42px;
-    line-height: 140%;
+    font-size: 36px;
+    line-height: 100%;
   }
   .slide__floating {
-    top: -30%;
+    // top: -30%;
     font-size: 40px;
     letter-spacing: 2px;
   }

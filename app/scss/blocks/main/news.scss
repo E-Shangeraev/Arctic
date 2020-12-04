@@ -4,8 +4,8 @@
 
 @media (max-width: 460px) {
   .news {
-    .content {
-      height: 100%;
+    .wrapper {
+      justify-content: space-between;
     }
   }
 }

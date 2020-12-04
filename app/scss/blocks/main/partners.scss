@@ -5,13 +5,14 @@
 }
 
 .partners__desc {
+  @include text;
   flex-shrink: 0;
   width: 40%;
   margin-right: 120px;
 
-  font-family: $manrope-regular;
-  font-size: 18px;
-  line-height: 27px;
+  // font-family: $manrope-regular;
+  // font-size: 18px;
+  // line-height: 27px;
 }
 
 .partners__list {
@@ -39,22 +40,32 @@
   .partners {
     .row {
       margin-bottom: 0;
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .row:nth-child(2) {
+      flex-grow: 1;
+      justify-content: start;
+    }
+    .wrapper {
+      // justify-content: space-between;
     }
   }
   .partners__content {
     height: fit-content;
   }
   .partners__desc {
+    @include text-mobile;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10%;
     width: 100%;
-    font-size: 12px;
-    line-height: 150%;
   }
   .partners__list {
     column-gap: 10px;
-    row-gap: 0px;
+    row-gap: 5px;
+    // flex-grow: 1;
+    align-items: stretch;
   }
   .partners__title {
     margin-bottom: 20px;

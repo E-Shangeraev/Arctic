@@ -4,13 +4,19 @@ let gulp = require('gulp'),
   uglify = require('gulp-uglify'),
   concat = require('gulp-concat'),
   rename = require('gulp-rename'),
-  babel = require('gulp-babel');
+  babel = require('gulp-babel'),
+  autoprefixer = require('gulp-autoprefixer');
 
 gulp.task(function scss() {
   return gulp
     .src('app/scss/**/style.scss')
     .pipe(sass({ outputStyle: 'compressed' }))
     .pipe(rename({ suffix: '.min' }))
+    .pipe(
+      autoprefixer({
+        overrideBrowserslist: ['last 8 versions'],
+      }),
+    )
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({ stream: true }));
 });
@@ -20,7 +26,6 @@ gulp.task('css', function () {
     .src([
       // 'node_modules/normalize.css/normalize.css',
       'node_modules/slick-carousel/slick/slick.css',
-      // 'node_modules/magnific-popup/dist/magnific-popup.css',
     ])
     .pipe(concat(libs.scss));
 });

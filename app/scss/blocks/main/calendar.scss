@@ -1,18 +1,16 @@
 @import '../../variables.scss';
 
-.calendar__title {
-  margin-bottom: 40px;
-}
-
 .calendar__container {
   display: flex;
   margin: 0 auto;
-  padding: 7% 5% 7%;
+  padding: 0 5%;
 
   max-height: 556px;
   height: 556px;
   height: 100%;
   width: 100%;
+
+  box-sizing: border-box;
 }
 
 .calendar__column-1 {
@@ -261,10 +259,20 @@ input:focus {
   .calendar__top-item span {
     @include text-mobile;
   }
+  .calendar {
+    height: fit-content !important;
+    .wrapper {
+      height: fit-content;
+      justify-content: start;
+    }
+  }
   .calendar__container {
     padding: 0;
     flex-direction: column-reverse;
     justify-content: flex-end;
+    // justify-content: center;
+    height: fit-content;
+    // flex-grow: 1;
   }
   .calendar__main {
     margin-top: 20px;
@@ -280,6 +288,7 @@ input:focus {
       height: 30px;
       font-size: 14px;
       line-height: 100%;
+      -webkit-appearance: none;
     }
   }
   .calendar__column-2 {

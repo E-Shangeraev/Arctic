@@ -1,4 +1,5 @@
 @import '../../variables.scss';
+@import '../../mixins.scss';
 
 .feedback {
   background-image: url('../img/main/feedback/1.jpg');
@@ -100,11 +101,14 @@
     }
   }
   .feedback__desc {
-    font-size: 12px;
-    line-height: 150%;
+    @include text-mobile;
+    margin-bottom: 20px;
   }
   .feedback__form {
-    display: block;
+    flex-direction: column;
+    justify-content: start;
+    height: auto;
+    flex-grow: 1;
 
     span,
     input,
@@ -113,13 +117,16 @@
     }
     input {
       padding-left: 0;
+      margin-bottom: 5vh;
     }
     .col-1,
     .col-2 {
+      justify-content: start;
       width: 100%;
+      margin-bottom: 0;
     }
     .col-2 {
-      margin-bottom: 30px;
+      margin-bottom: 39px;
     }
   }
   .feedback__footer.row {

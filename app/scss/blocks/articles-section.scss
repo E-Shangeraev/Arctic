@@ -138,7 +138,12 @@
     padding-bottom: 18px;
   }
   .articles-section__list {
-    margin-bottom: 58px;
+    display: block;
+    // overflow-y: scroll;
+    flex-grow: 0;
+    margin: 5vh 0;
+    // max-height: 60vh;
+    // margin-bottom: 58px;
 
     li {
       margin-bottom: 10px;
