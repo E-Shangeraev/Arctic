@@ -20,6 +20,10 @@
   justify-content: start;
 }
 
+.wrapper--center {
+  justify-content: center;
+}
+
 @media (max-width: 460px) {
   .wrapper {
     flex-direction: column;

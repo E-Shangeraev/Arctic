@@ -1,0 +1,15 @@
+.tab {
+  display: none;
+  // position: absolute;
+  // background-color: #fff;
+  // z-index: -100;
+  // display: inline-block;
+  // transform: translateX(200%);
+}
+
+.active-tab {
+  display: block;
+  // z-index: 100;
+  // display: inline-block;
+  // transform: translateX(0);
+}

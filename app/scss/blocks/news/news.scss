@@ -1,0 +1,16 @@
+.news__nav {
+  width: 40%;
+}
+
+.news__nav-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+  list-style: none;
+}
+
+.news__rubric {
+  cursor: pointer;
+}

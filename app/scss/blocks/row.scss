@@ -5,6 +5,11 @@
   margin-bottom: 60px;
 }
 
+.row--header {
+  align-items: center;
+  height: 100%;
+}
+
 @media (max-width: 460px) {
   .row {
     // margin-bottom: 40px;

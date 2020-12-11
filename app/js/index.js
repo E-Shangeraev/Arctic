@@ -3,10 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const aside = document.querySelector('.aside');
     const scrollIndicatorFill = document.querySelector('.scroll-indicator__line--fill');
     const scrollIndicatorNumber = document.querySelector('.scroll-indicator__number');
+    const scrollIndicatorTotal = document.querySelector('.scroll-indicator__number--total');
     const sections = document.querySelectorAll('section');
-    const burger = document.querySelector('.aside__burger');
-    const close = document.querySelector('.nav__close');
-    const navMobile = document.querySelector('.nav-mobile');
+
     const nav = document.querySelector('nav');
     const eye = document.querySelector('.eye img');
 
@@ -15,10 +14,21 @@ document.addEventListener('DOMContentLoaded', () => {
       scrollSpeed: 50,
     });
 
-    document.addEventListener('scroll', () => {
-      const curSection = $.scrollify.current().data('section');
+    // Определение имени текущей страницы
 
-      scrollIndicatorFill.style.height = `${12.5 * curSection}%`;
+    const path = (pathName) => pathName.split('/').pop().split('#');
+    const fileName = path(window.location.href)[0];
+    let curSection = path(window.location.href)[1];
+
+    // ==================================
+
+    const fill = 100 / scrollIndicatorTotal.textContent;
+    scrollIndicatorFill.style.height = `${fill * 1}%`;
+
+    document.addEventListener('scroll', () => {
+      curSection = $.scrollify.current().data('section');
+
+      scrollIndicatorFill.style.height = `${fill * curSection}%`;
       scrollIndicatorNumber.textContent = `0${curSection}`;
 
       if (
@@ -65,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (document.documentElement.clientWidth <= 460) {
-      $.scrollify.disable();
+      // $.scrollify.disable();
     }
 
     document.addEventListener('scroll', () => {
@@ -83,25 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         });
       }
-    });
-
-    burger.addEventListener('click', () => {
-      navMobile.classList.add('nav-mobile--opened');
-      document.body.style.cssText = `
-        overflow-y: hidden;
-  
-      `;
-      setTimeout(() => {
-        close.style.transform = 'scale(1)';
-      }, 300);
-    });
-    close.addEventListener('click', () => {
-      close.style.transform = 'scale(0)';
-      setTimeout(() => {
-        navMobile.classList.remove('nav-mobile--opened');
-      }, 500);
-      document.body.style.overflowY = '';
-      document.body.style.position = '';
     });
   });
 });

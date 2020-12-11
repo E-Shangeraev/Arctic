@@ -16,7 +16,7 @@
 @import './blocks/address.scss';
 @import './blocks/articles-section.scss';
 @import './blocks/socials.scss';
-// @import "./blocks/tab.scss";
+@import './blocks/tabs.scss';
 // @import "./blocks/tour.scss";
 
 //header
@@ -47,10 +47,8 @@
 // @import "./blocks/faq-page/faq.scss";
 // @import "./blocks/faq-page/faq-feedback.scss";
 
-// //blog-page
-// @import "./blocks/header/blog-header.scss";
-// @import "./blocks/blog-page/blog.scss";
-// @import "./blocks/blog-page/calendar.scss";
+//blog-page
+@import './blocks/news/news.scss';
 
 // //article-page
 // @import "./blocks/article-page/article.scss";

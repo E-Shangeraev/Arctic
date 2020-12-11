@@ -1,13 +1,5 @@
 @import '../variables.scss';
 
-// .articles-section__title {
-//   font-family: $manrope-regular;
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 22px;
-//   line-height: 40px;
-// }
-
 .article-preview {
   display: flex;
   flex-direction: column;
@@ -58,8 +50,6 @@
 }
 
 .article-preview__appeal {
-  // position: absolute;
-  // top: 70%;
   display: block;
   font-size: 14px;
   line-height: 24px;
@@ -80,7 +70,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  // align-content: space-between;
   flex-grow: 1;
   padding: 0;
   margin: 0;
@@ -95,11 +84,6 @@
 
   border-top: 1px solid #cccccc;
 }
-
-// .articles-section__list li:last-child,
-// .articles-section__list li:nth-child(3) {
-//   margin-bottom: 0;
-// }
 
 .article-preview--list {
   flex-direction: row;

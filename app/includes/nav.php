@@ -1,4 +1,4 @@
-<nav class="nav">
+<nav class="nav white">
   <ul class="nav__items">
     <li><a href="#">Норильск</a></li>
     <li><a href="#">Достопримечательности</a></li>
@@ -10,7 +10,8 @@
   <div class="nav__col">
     <a class="eye" href="#"><img src="img/header/eye.svg" alt="" /></a>
     <ul class="nav__lang">
-      <li><a href="#" class="active">RUS</a> /</li>
+      <li><a href="#" class="active">RUS</a></li>
+      <span>/</span>
       <li><a href="#">ENG</a></li>
     </ul>
   </div>

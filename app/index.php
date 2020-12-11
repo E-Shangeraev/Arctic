@@ -72,7 +72,7 @@ if ($_POST['events']) {
         <li><a href="#">Достопримечательности</a></li>
         <li><a href="#">Центр развития туризма Норильска</a></li>
         <li><a href="#">Туристу</a></li>
-        <li><a href="#">Новости</a></li>
+        <li><a href="news.php">Новости</a></li>
       </ul>
 
       <div class="nav__col">
@@ -125,17 +125,17 @@ if ($_POST['events']) {
     </nav>
     
     <header class="header scrollify" data-section="1">
-    <div class="wrapper white">
-      <footer class="slider__footer">
-        <a class="button" href="#">Подробнее</a>
-        <p class="slider__count">
-          <span class="slider__count--current">01</span>
-          <span>/</span>
-          <span>05</span>
-        </p>
-        <p class="slider__arrows"></p>
-      </footer>
-    </div>
+      <div class="wrapper white">
+        <footer class="slider__footer">
+          <a class="button" href="#">Подробнее</a>
+          <p class="slider__count">
+            <span class="slider__count--current">01</span>
+            <span>/</span>
+            <span>05</span>
+          </p>
+          <p class="slider__arrows"></p>
+        </footer>
+      </div>
 
     <section class="slider white">
       <div class="slider__block">
@@ -442,6 +442,7 @@ if ($_POST['events']) {
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="js/index.js"></script>
+    <script src="js/nav-mobile.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/calendar.js"></script>
   </body>
