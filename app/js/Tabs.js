@@ -11,7 +11,6 @@ export default class Tabs {
         for (let item of this.buttonsContainer.children) {
           item.classList.remove('active-tab');
         }
-        e.target.classList.add('active-tab');
         const index = e.target.closest(this.target).dataset.value;
 
         this.openTab(index);
@@ -19,6 +18,9 @@ export default class Tabs {
     });
   }
   openTab(index) {
+    document.querySelectorAll('.news__rubric').forEach((item) => {
+      item.classList.toggle('active-rubric');
+    });
     this.tabs
       .querySelectorAll('.active-tab')
       .forEach((item) => item.classList.remove('active-tab'));

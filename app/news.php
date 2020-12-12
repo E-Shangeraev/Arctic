@@ -50,18 +50,15 @@ if ($_POST['events']) {
       <section class="news tabs scrollify" data-section="2">
         <div class="wrapper wrapper--column">
           <nav class="news__nav">
-            <ul class="news__nav-list">
-                <li class="news__rubric news__rubric-1" data-value="tourist">Туристам</li>
-                <li class="news__rubric news__rubric-2" data-value="prof">Профессионалам</li>
-            </ul>
+            <div class="news__nav-list">
+                <li class="title news__rubric active-rubric" data-value="tourist">Туристам</li>
+                <li class="title news__rubric" data-value="prof">Профессионалам</li>
+            </div>
+            <div class="news__arrows"></div>
           </nav>
 
           <div class="tabs__container">
             <div class="news__tourist tab tab--tourist active-tab">
-              <div class="row">
-                <h2 class="news__title title">Туристам</h2>
-                <div class="news__arrows news__arrows--tourist"></div>
-              </div>
               <div class="news__slider--tourist">
                 <?php
                   $articles = tpl_render('articles.php', ['id' => 2]);
@@ -73,10 +70,6 @@ if ($_POST['events']) {
             </div>
 
             <div class="news__prof tab tab--prof">
-              <div class="row">
-                <h2 class="news__title title">Профессионалам</h2>
-                <!-- <div class="news__arrows news__arrows--prof"></div> -->
-              </div>
               <div class="news__slider--prof">
                 <?php
                   $articles = tpl_render('articles.php', ['id' => 1]);

@@ -1,8 +1,6 @@
 $(function () {
   $('.articles-section__list').slick({
     arrows: true,
-    // appendArrows: [$('.news__arrows--tourist'), $('.news__arrows--prof')],
-    // appendArrows: $('.news__arrows'),
     autoplay: false,
     rows: 2,
     slidesPerRow: 2,

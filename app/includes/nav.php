@@ -4,7 +4,7 @@
     <li><a href="#">Достопримечательности</a></li>
     <li><a href="#">Центр развития туризма Норильска</a></li>
     <li><a href="#">Туристу</a></li>
-    <li><a href="#">Новости</a></li>
+    <li><a href="news.php">Новости</a></li>
   </ul>
 
   <div class="nav__col">

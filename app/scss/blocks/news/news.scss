@@ -21,7 +21,13 @@
 }
 
 .news__rubric {
+  margin-right: 50px;
   cursor: pointer;
+  transition: ease 0.2s;
+
+  &:hover {
+    font-weight: bold;
+  }
 }
 
 .news .articles-section__list {
