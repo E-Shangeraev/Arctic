@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  height: 100em;
+  padding: 150px 158px 50px 438px;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+.content__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 460px) {
+  .content {
+    padding: 0;
+    height: fit-content;
+    // height: 100%;
+  }
+  .content__container {
+    display: block;
+  }
+}

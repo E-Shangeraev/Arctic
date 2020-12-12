@@ -1,0 +1,72 @@
+@import '../../variables.scss';
+
+.attractions__cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.attractions__card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.attractions__img {
+  margin: 0;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+.attractions__card-title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: $manrope-semibold;
+  font-size: 22px;
+}
+
+.attractions__desc {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: $manrope-regular;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.attractions__button {
+  margin-top: auto;
+}
+
+@media (max-width: 460px) {
+  .attractions__container {
+    position: relative;
+    height: 100%;
+  }
+  .attractions__card {
+    flex-shrink: 0;
+    margin-right: 16px;
+    width: 75vw;
+  }
+  .attractions__img {
+    height: 140px;
+    height: 30vh;
+  }
+  .attractions__card-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 120%;
+  }
+  .attractions__desc {
+    margin-bottom: 20px;
+    @include text-mobile;
+  }
+  .attractions__cards {
+    // margin-bottom: 55px;
+    padding-bottom: 20px;
+    max-width: 100vw;
+    overflow-x: auto;
+  }
+}

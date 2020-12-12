@@ -1,0 +1,39 @@
+.header {
+  position: relative;
+  height: 1009px;
+  height: 100vh;
+
+  background-position: 0 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.header__text {
+  margin: 0;
+  width: 45%;
+  font-family: $manrope-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.header__news {
+  background-image: url('../img/news/1.jpg');
+}
+
+@media (max-width: 460px) {
+  .header {
+    // display: none;
+    height: 100vh;
+  }
+}

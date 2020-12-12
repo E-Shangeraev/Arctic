@@ -1,0 +1,78 @@
+@import '../../variables.scss';
+
+.limit__title {
+  span:not(:last-child) {
+    display: block;
+    margin-bottom: 0px;
+  }
+
+  span:nth-child(2) {
+    color: $blue;
+  }
+  margin-bottom: 60px;
+  line-height: 100%;
+}
+
+.limit__col {
+  position: relative;
+  width: 50%;
+  height: auto;
+}
+
+.limit__text {
+  @include text-mobile;
+  margin-top: 0;
+  margin-bottom: 80px;
+  width: 450px;
+}
+
+.limit__img:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  left: -20%;
+}
+
+@media (max-width: 460px) {
+  .limit {
+    min-height: 0;
+  }
+  .limit__title {
+    margin-bottom: 20px;
+
+    span {
+      white-space: nowrap;
+    }
+
+    span:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+  .limit__text {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .limit__col {
+    display: block;
+    width: 100%;
+    // margin-bottom: 55px;
+  }
+  .limit__col:nth-child(2) {
+    margin-bottom: 0;
+  }
+  .limit__img:nth-child(1) {
+    margin-left: 40%;
+    width: 50%;
+  }
+  .limit__img:nth-child(2) {
+    // display: none;
+    width: 30%;
+    left: 20%;
+    bottom: 0;
+  }
+  // .limit__img {
+  //   display: none;
+  // }
+  // .limit__col {
+  //   margin-bottom: 0;
+  // }
+}

@@ -1,0 +1,11 @@
+.news {
+  position: relative;
+}
+
+@media (max-width: 460px) {
+  .news {
+    .wrapper {
+      justify-content: space-between;
+    }
+  }
+}
