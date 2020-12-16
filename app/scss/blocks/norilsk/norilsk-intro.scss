@@ -1,0 +1,33 @@
+.norilsk-intro .intro__title {
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+.norilsk-intro__ready {
+  font-family: $manrope-regular;
+  font-size: 21px;
+  line-height: 150%;
+  color: $blue;
+}
+
+.norilsk-intro__img--text {
+  position: absolute;
+  top: 0;
+}
+
+.norilsk-intro__img {
+  margin-bottom: 40px;
+}
+
+.norilsk-intro__gates {
+  font-family: $manrope-semibold;
+  font-size: 47px;
+  line-height: 110%;
+  color: $blue;
+}
+
+@media (max-width: 1440px) {
+  .norilsk-intro .intro__title {
+    font-size: 40px;
+  }
+}

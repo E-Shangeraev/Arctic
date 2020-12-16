@@ -93,6 +93,29 @@
   margin: 0;
 }
 
+@media (max-width: 1440px) {
+  .feedback .row {
+    margin-bottom: 90px;
+  }
+
+  .feedback__footer.row {
+    margin-bottom: 0;
+  }
+
+  .feedback__form {
+    span,
+    input,
+    input::placeholder {
+      font-size: 12px;
+      line-height: 150%;
+    }
+  }
+  .feedback__desc {
+    font-size: 12px;
+    line-height: 150%;
+  }
+}
+
 @media (max-width: 460px) {
   .feedback {
     .row {

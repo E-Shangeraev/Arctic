@@ -13,13 +13,14 @@ export default class Tabs {
         }
         const index = e.target.closest(this.target).dataset.value;
 
-        this.openTab(index);
+        this.openTab(index, e);
       }
     });
   }
-  openTab(index) {
+  openTab(index, e) {
     document.querySelectorAll('.news__rubric').forEach((item) => {
-      item.classList.toggle('active-rubric');
+      item.classList.remove('active-rubric');
+      e.target.classList.add('active-rubric');
     });
     this.tabs
       .querySelectorAll('.active-tab')

@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (document.documentElement.clientWidth <= 460) {
-      // $.scrollify.disable();
+      $.scrollify.disable();
     }
 
     document.addEventListener('scroll', () => {

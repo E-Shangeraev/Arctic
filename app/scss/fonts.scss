@@ -41,6 +41,15 @@
 }
 
 @font-face {
+  font-family: 'Manrope Light';
+  src: local('Manrope  Light'), local('Manrope--Light'),
+    url('../fonts/Manrope-Light.otf') format('otf'),
+    url('../fonts/Manrope-Light.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Manrope Regular';
   src: local('Manrope  Regular'), local('Manrope--Regular'),
     url('../fonts/Manrope-Regular.woff2') format('woff2'),

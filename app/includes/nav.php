@@ -1,9 +1,9 @@
 <nav class="nav white">
   <ul class="nav__items">
-    <li><a href="#">Норильск</a></li>
-    <li><a href="#">Достопримечательности</a></li>
-    <li><a href="#">Центр развития туризма Норильска</a></li>
-    <li><a href="#">Туристу</a></li>
+    <li><a href="norilsk.php">Норильск</a></li>
+    <li><a href="attractions.php">Достопримечательности</a></li>
+    <li><a href="center.php">Центр развития туризма</a></li>
+    <li><a href="tourist.php">Туристу</a></li>
     <li><a href="news.php">Новости</a></li>
   </ul>
 

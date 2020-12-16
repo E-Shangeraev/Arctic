@@ -24,6 +24,12 @@
   justify-content: center;
 }
 
+@media (max-width: 1440px) {
+  .wrapper {
+    padding: 110px 110px 50px 310px;
+  }
+}
+
 @media (max-width: 460px) {
   .wrapper {
     flex-direction: column;

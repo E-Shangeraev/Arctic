@@ -1,6 +1,4 @@
-@import '../../variables.scss';
-
-.limit__title {
+.intro__title {
   span:not(:last-child) {
     display: block;
     margin-bottom: 0px;
@@ -13,45 +11,45 @@
   line-height: 100%;
 }
 
-.limit__col {
+.intro__col {
   position: relative;
   width: 50%;
   height: auto;
 }
 
-.limit__text {
+.intro__text {
   @include text-mobile;
   margin-top: 0;
   margin-bottom: 80px;
   width: 450px;
 }
 
-.limit__img:nth-child(2) {
+.intro__img:nth-child(2) {
   position: absolute;
   bottom: 0;
   left: -20%;
 }
 
 @media (max-width: 1440px) {
-  .limit__text {
+  .intro__text {
     margin-bottom: 40px;
     font-size: 12px;
     line-height: 18px;
   }
-  .limit__title {
+  .intro__title {
     margin-bottom: 40px;
   }
-  .limit__img:nth-child(2) {
+  .intro__img:nth-child(2) {
     width: 50%;
     left: -10%;
   }
 }
 
 @media (max-width: 460px) {
-  .limit {
+  .intro {
     min-height: 0;
   }
-  .limit__title {
+  .intro__title {
     margin-bottom: 20px;
 
     span {
@@ -62,22 +60,22 @@
       margin-bottom: 0;
     }
   }
-  .limit__text {
+  .intro__text {
     margin-bottom: 40px;
     width: 100%;
   }
-  .limit__col {
+  .intro__col {
     display: block;
     width: 100%;
   }
-  .limit__col:nth-child(2) {
+  .intro__col:nth-child(2) {
     margin-bottom: 0;
   }
-  .limit__img:nth-child(1) {
+  .intro__img:nth-child(1) {
     margin-left: 40%;
     width: 50%;
   }
-  .limit__img:nth-child(2) {
+  .intro__img:nth-child(2) {
     width: 30%;
     left: 20%;
     bottom: 0;

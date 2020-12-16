@@ -57,6 +57,23 @@
   display: none;
 }
 
+@media (max-width: 1440px) {
+  .documents__item {
+    span {
+      font-size: 13px;
+      line-height: 150%;
+      letter-spacing: 1px;
+    }
+    img {
+      width: 80px;
+    }
+  }
+  .documents__archive {
+    font-size: 13px;
+    line-height: 120%;
+  }
+}
+
 @media (max-width: 460px) {
   .documents__list {
     grid-template-columns: 1fr;

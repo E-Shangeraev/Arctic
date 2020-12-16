@@ -36,6 +36,19 @@
   grid-column: 1 / -1;
 }
 
+@media (max-width: 1440px) {
+  .partners__desc {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 60px;
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .partners__list {
+    row-gap: 50px;
+  }
+}
+
 @media (max-width: 460px) {
   .partners {
     .row {

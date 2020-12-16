@@ -35,6 +35,14 @@
   }
 }
 
+@media (max-width: 1440px) {
+  .button {
+    padding: 14px 38px;
+    font-size: 13px;
+    line-height: 120%;
+  }
+}
+
 @media (max-width: 460px) {
   .button {
     padding: 11px 30px;

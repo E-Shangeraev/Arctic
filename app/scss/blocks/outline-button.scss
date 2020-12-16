@@ -45,6 +45,15 @@
   display: none;
 }
 
+@media (max-width: 1440px) {
+  .outline-button {
+    align-self: center;
+    padding: 14px 38px;
+    font-size: 13px;
+    line-height: 120%;
+  }
+}
+
 @media (max-width: 460px) {
   .outline-button {
     display: none;
@@ -55,9 +64,5 @@
     font-size: 12px;
     white-space: nowrap;
     margin: 0 auto;
-    // position: absolute;
-    // bottom: 52px;
-    // right: 25%;
-    // left: 25%;
   }
 }

@@ -61,6 +61,7 @@
   bottom: 0;
 
   width: 100%;
+  // width: 45%;
 
   padding-top: 2%;
   border-top: 1px solid #cccccc;
@@ -106,7 +107,21 @@
   position: relative;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1440px) {
+  .article-preview__new {
+    font-size: 12px;
+    line-height: 150%;
+  }
+
+  .article-preview {
+    padding-top: 25px;
+  }
+
+  .article-preview__datetime {
+    font-size: 12px;
+    line-height: 150%;
+  }
+
   .article-preview__class {
     margin: 0;
     font-size: 13px;
@@ -124,11 +139,8 @@
   }
   .articles-section__list {
     display: block;
-    // overflow-y: scroll;
     flex-grow: 0;
     margin: 5vh 0;
-    // max-height: 60vh;
-    // margin-bottom: 58px;
 
     li {
       margin-bottom: 10px;

@@ -106,6 +106,24 @@
   content: url('../img/main/main-header/arrow-right.svg');
 }
 
+@media (max-width: 1440px) {
+  .slide__title {
+    left: 310px;
+    right: 100px;
+  }
+  .slide__it,
+  .slide__definition {
+    // font-family: $manrope-semibold;
+    text-transform: uppercase;
+    font-size: 52px;
+    line-height: 140%;
+    letter-spacing: 4px;
+  }
+  .slide__floating {
+    font-size: 80px;
+  }
+}
+
 @media (max-width: 460px) {
   .slide__title {
     display: block;

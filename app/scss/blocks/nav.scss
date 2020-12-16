@@ -33,7 +33,7 @@
   li {
     position: relative;
 
-    font-family: $manrope-regular;
+    font-family: $manrope;
     font-size: 16px;
     line-height: 16px;
     text-decoration: none;
@@ -91,15 +91,18 @@
   }
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1440px) {
   .nav {
-    flex-wrap: wrap;
-    padding-left: 40px;
-    padding-right: 40px;
+    left: 300px;
   }
 
   .nav__items {
-    margin-right: 100px;
+    width: 550px;
+  }
+
+  .nav a {
+    font-size: 12px !important;
+    line-height: 16px !important;
   }
 }
 

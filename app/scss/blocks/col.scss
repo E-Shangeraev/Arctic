@@ -1,0 +1,13 @@
+.col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 50%;
+  min-height: 100%;
+  // height: fit-content !important;
+}
+
+.col:not(:last-child) {
+  margin-right: 40px;
+}

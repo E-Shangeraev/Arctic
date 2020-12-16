@@ -2,6 +2,12 @@
   position: relative;
 }
 
+@media (max-width: 1440px) {
+  .articles-section__list {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 460px) {
   .news {
     .wrapper {

@@ -40,6 +40,30 @@
   margin-top: auto;
 }
 
+@media (max-width: 1440px) {
+  .attractions__card {
+    width: 100%;
+  }
+
+  .attractions__card:nth-last-child(1),
+  .attractions__card:nth-last-child(2) {
+    display: none;
+  }
+
+  .attractions__card:not(:nth-child(3)) {
+    margin-right: 20px;
+  }
+
+  .attractions__card-title {
+    font-size: 16px;
+  }
+
+  .attractions__desc {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 460px) {
   .attractions__container {
     position: relative;
