@@ -79,6 +79,7 @@
 
 .adventure__footer {
   align-items: center;
+  margin-bottom: 0;
 }
 
 .adventure__arrows {
@@ -131,5 +132,8 @@
   }
   .adventure__image {
     height: 370px;
+  }
+  .adventure__subtitle {
+    margin-bottom: 25px;
   }
 }

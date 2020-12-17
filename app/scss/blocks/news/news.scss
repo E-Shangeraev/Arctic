@@ -1,4 +1,8 @@
 .news {
+  .slick-slide {
+    margin-left: 1px;
+    overflow: hidden;
+  }
   .slick-next::before {
     content: url('../../img/news/arrows/arrow-right.svg') !important;
   }

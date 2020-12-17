@@ -19,7 +19,7 @@
 @import './blocks/socials.scss';
 @import './blocks/tabs.scss';
 @import './blocks/intro.scss';
-// @import "./blocks/tour.scss";
+@import './blocks/subtitle.scss';
 
 //header
 @import './blocks/header/header.scss';
@@ -45,35 +45,10 @@
 @import './blocks/norilsk/adventure.scss';
 @import './blocks/norilsk/monuments.scss';
 
-// //article-page
-// @import "./blocks/article-page/article.scss";
-
-// //activities-page
-// @import "./blocks/header/activities-header.scss";
-// @import "./blocks/activities-page/activities-page.scss";
-// @import "./blocks/activities-page/natural.scss";
-
-// //norilsk-page
-// @import "./blocks/header/norilsk-header.scss";
-// @import "./blocks/norilsk-page/norilsk.scss";
-// @import "./blocks/norilsk-page/about.scss";
-// @import "./blocks/norilsk-page/legend.scss";
-// @import "./blocks/norilsk-page/surprise.scss";
-// @import "./blocks/norilsk-page/tourist.scss";
-
-// //tours-page
-// @import "./blocks/header/tours-header.scss";
-// @import "./blocks/tours-page/tours-page.scss";
-// @import "./blocks/tours-page/help.scss";
-// @import "./blocks/tours-page/steps.scss";
-
-// //center-page
-// @import "./blocks/header/center-header.scss";
-// @import "./blocks/center-page/mun.scss";
-// @import "./blocks/center-page/proj.scss";
-// @import "./blocks/center-page/director.scss";
-// @import "./blocks/center-page/docs.scss";
-// @import "./blocks/center-page/help-tourist.scss";
+// center-page
+@import './blocks/center/center-intro.scss';
+@import './blocks/center/director.scss';
+@import './blocks/center/projects.scss';
 
 @import 'colors.scss';
 

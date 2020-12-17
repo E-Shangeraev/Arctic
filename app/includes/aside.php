@@ -9,6 +9,9 @@
   if ($url === '/norilsk.php') {
     $sectionCount = 7;
   }
+  if ($url === '/center.php') {
+    $sectionCount = 6;
+  }
 ?>
 
 <aside class="aside">

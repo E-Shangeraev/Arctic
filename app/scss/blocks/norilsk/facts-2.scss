@@ -3,8 +3,11 @@
 }
 
 .facts-2__title {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
+// .facts-2__title {
+//   margin-bottom: 30px;
+// }
 
 .facts-2__subtitle {
   margin: 0;
@@ -14,7 +17,7 @@
 
 .facts-2__text {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .facts-2__button {
@@ -35,6 +38,7 @@
 
 @media (max-width: 1440px) {
   .facts-2__text {
+    margin-bottom: 30px;
     font-size: 13px;
     line-height: 150%;
   }

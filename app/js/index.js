@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollIndicatorFill.style.height = `${fill * curSection}%`;
         scrollIndicatorNumber.textContent = `0${curSection}`;
 
-        if (fileName === 'index.php') {
+        if (fileName === 'index.php' || fileName === '') {
           console.log(fileName);
           setBlackBySectionNum(2, 3, 4, 5, 7);
         }
@@ -36,6 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         if (fileName === 'norilsk.php') {
           setBlackBySectionNum(2, 3, 4, 5, 6, 7);
+        }
+        if (fileName === 'center.php') {
+          setBlackBySectionNum(2, 3, 4, 5, 6);
         }
       },
     });

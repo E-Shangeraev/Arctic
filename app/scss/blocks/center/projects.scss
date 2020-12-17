@@ -1,0 +1,22 @@
+.projects .wrapper {
+  position: relative;
+  padding-bottom: 0;
+}
+
+.projects__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 150%;
+}
+.projects__image {
+  margin-top: auto;
+  width: 100%;
+  height: 100%;
+  max-height: 370px;
+}
+.projects__col {
+  justify-content: space-between;
+}
+.projects__title {
+  margin-bottom: 60px;
+}
