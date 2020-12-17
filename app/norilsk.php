@@ -104,12 +104,12 @@ if ($_POST['events']) {
           <h2 class="adventure__title title">Путешествие на крайний север</h2>
           <div class="adventure__slider">
             <div class="adventure__slide">
-              <div class="col">
-                <img class="adventure__slide-image" src="./img/norilsk/norilsk-slider/1.jpg" alt="Фотография Норильска">
+              <div class="col adventure__slide-col-1">
+                <img class="adventure__image" src="./img/norilsk/norilsk-slider/1.jpg" alt="Фотография Норильска">
               </div>
-              <div class="col">
-                <h2 class="subtitle">НОРИЛЬСК – ВОРОТА НА СЕВЕР</h2>
-                <p class="adventure__slide-description">
+              <div class="col adventure__slide-col-2">
+                <h2 class="adventure__subtitle">НОРИЛЬСК – ВОРОТА НА СЕВЕР</h2>
+                <p class="adventure__description">
                   Гул снижающегося самолета, известит Вас о приближении к уникальной северной территории. Территории первопроходцев, и точки развития мощнейшего промышленного гиганта России.<br><br>
                   Ваше северное путешествие начнется с посадки самолёта в аэропорте «Норильск (Алыкель)». Равнинно-холмистый ландшафт территории проглядывается в любое время года. Зимой – это бескрайние заснеженные просторы с застывшими озерами и реками. Коротким полярным летом – это поля иван-чая, ягод и других дикоросов в контрасте с позеленевшей тундрой.<br><br>
                   На территории представлен целый спектр природных зон: северная тайга, лесотундра, субарктическая тундра. Такого разнообразия нет ни на одной северной территории.
@@ -117,35 +117,35 @@ if ($_POST['events']) {
               </div>
             </div>
             <div class="adventure__slide">
-              <div class="col">
-                <img class="adventure__slide-image" src="./img/norilsk/norilsk-slider/2.jpg" alt="Фотография Норильска">
+              <div class="col adventure__slide-col-1">
+                <img class="adventure__image" src="./img/norilsk/norilsk-slider/2.jpg" alt="Фотография Норильска">
               </div>
-              <div class="col">
-                <h2 class="subtitle">РАЙОНЫ</h2>
-                <p class="adventure__slide-description">
+              <div class="col adventure__slide-col-2">
+                <h2 class="adventure__subtitle">РАЙОНЫ</h2>
+                <p class="adventure__description">
                   По дороге в один из самых северных городов мира, численностью >100 тыс. человек Вы будете проезжать территории города-порта Дудинка, района Кайеркан, Надеждинского металлургического завода.
                 </p>
               </div>
             </div>
             <div class="adventure__slide">
-              <div class="col">
-                <img class="adventure__slide-image" src="./img/norilsk/norilsk-slider/3.jpg" alt="Фотография Норильска">
+              <div class="col adventure__slide-col-1">
+                <img class="adventure__image" src="./img/norilsk/norilsk-slider/3.jpg" alt="Фотография Норильска">
               </div>
-              <div class="col">
-                <h2 class="subtitle">РАЙОНЫ</h2>
-                <p class="adventure__slide-description">
+              <div class="col adventure__slide-col-2">
+                <h2 class="adventure__subtitle">РАЙОНЫ</h2>
+                <p class="adventure__description">
                   Вторым после аэропорта напоминанием о присутствии человека в бескрайней тундре является заброшенный поселок Алыкель.<br>
                   До перестройки в поселке жили военные летчики. Кроме жилых домов, здесь были Дом офицеров, штаб с казармой и комендатурой, ангары для техники, клуб, котельная, баня. Сейчас, это одно из любимых мест многих любителей промышленного туризма.
                 </p>
               </div>
             </div>
             <div class="adventure__slide">
-              <div class="col">
-                <img class="adventure__slide-image" src="./img/norilsk/norilsk-slider/4.jpg" alt="Фотография Норильска">
+              <div class="col adventure__slide-col-1">
+                <img class="adventure__image" src="./img/norilsk/norilsk-slider/4.jpg" alt="Фотография Норильска">
               </div>
-              <div class="col">
-                <h2 class="subtitle">ВДОЛЬ ДОРОГИ</h2>
-                <p class="adventure__slide-description">
+              <div class="col adventure__slide-col-2">
+                <h2 class="adventure__subtitle">ВДОЛЬ ДОРОГИ</h2>
+                <p class="adventure__description">
                   Мемориальный комплекс «Первостроителям Норильска» расположен параллельно полотну дороги слева в районе железнодорожного моста через реку Амбарная.<br><br>
                   Сам мост возведен еще в 1936 году. Установленный паровоз – это памятник строительства 114-километройовой узколейки от Норильска до Дудинки.<br><br>
                   В полотно укладывали торф, валежник, хворост. Шпалы изготавливали из сухой лиственницы. Зимой на реках не строили мосты, а намораживали дамбы, которые с приходом тепла «плыли».
@@ -153,49 +153,54 @@ if ($_POST['events']) {
               </div>
             </div>
             <div class="adventure__slide">
-              <div class="col">
-                <img class="adventure__slide-image" src="./img/norilsk/norilsk-slider/5.jpg" alt="Фотография Норильска">
+              <div class="col adventure__slide-col-1">
+                <img class="adventure__image" src="./img/norilsk/norilsk-slider/5.jpg" alt="Фотография Норильска">
               </div>
-              <div class="col">
-                <h2 class="subtitle">ПОСМОТРИТЕ НАПРАВО</h2>
-                <p class="adventure__slide-description">
+              <div class="col adventure__slide-col-2">
+                <h2 class="adventure__subtitle">ПОСМОТРИТЕ НАПРАВО</h2>
+                <p class="adventure__description">
                   По правую сторону, на горизонте по пути следования, Вы увидите Зуб-гору, свое название она получила из-за формы, напоминающую зуб мамонта.
                 </p>
               </div>
             </div>
             <div class="adventure__slide">
-              <div class="col">
-                <img class="adventure__slide-image" src="./img/norilsk/norilsk-slider/6.jpg" alt="Фотография Норильска">
+              <div class="col adventure__slide-col-1">
+                <img class="adventure__image" src="./img/norilsk/norilsk-slider/6.jpg" alt="Фотография Норильска">
               </div>
-              <div class="col">
-                <h2 class="subtitle">НОРИЛЬСК-ПРОМЫШЛЕННЫЙ</h2>
-                <p class="adventure__slide-description">
+              <div class="col adventure__slide-col-2">
+                <h2 class="adventure__subtitle">НОРИЛЬСК-ПРОМЫШЛЕННЫЙ</h2>
+                <p class="adventure__description">
                   Проехав район Кайеркан, Вы обязательно заметите гигантские корпуса Надеждинского металлургического завода.<br>
                   Каждая десятая тонна никеля в мире выпущена на «Надежде».
                 </p>
               </div>
             </div>
             <div class="adventure__slide">
-              <div class="col">
-                <img class="adventure__slide-image" src="./img/norilsk/norilsk-slider/7.jpg" alt="Фотография Норильска">
+              <div class="col adventure__slide-col-1">
+                <img class="adventure__image" src="./img/norilsk/norilsk-slider/7.jpg" alt="Фотография Норильска">
               </div>
-              <div class="col">
-                <h2 class="subtitle">НОРИЛЬСК-ПРОМЫШЛЕННЫЙ</h2>
-                <p class="adventure__slide-description">
+              <div class="col adventure__slide-col-2">
+                <h2 class="adventure__subtitle">НОРИЛЬСК-ПРОМЫШЛЕННЫЙ</h2>
+                <p class="adventure__description">
                   Поклонный двенадцатиметровый крест встречает путников в районе реки Купец. Обычай ставить поклонные кресты были принесены в Сибирь первопроходцами.
                 </p>
-                <p class="adventure__slide-end">
+                <p class="adventure__end">
                   Здесь, хочется поприветствовать путешественника. Вы въезжаете в город, где начиналась великая история освоения Севера.
                 </p>
               </div>
             </div>
           </div>
           <footer class="adventure__footer row">
-            <div class="col">
-              <div class="adventure__slider-line"></div>
+            <div class="col adventure__col-1">
+              <div class="adventure__line"></div>
             </div>
-            <div class="col">
-
+            <div class="col adventure__col-2">
+              <div class="adventure__arrows"></div>
+              <p class="adventure__counter">
+                <span class="adventure__slide-current">01</span>
+                <span> - </span>
+                <span class="adventure__slide-total">07</span>
+              </p>
             </div>
           </footer>
         </div>
