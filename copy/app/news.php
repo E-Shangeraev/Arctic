@@ -38,7 +38,7 @@ if ($_POST['events']) {
     ?>
     <header class="header header__news scrollify" data-section="1">
       <div class="wrapper wrapper--column wrapper--center white">
-        <div class="row row--header">
+        <div class="row row--center">
           <h1 class="title">Новости</h1>
           <p class="header__text">В этот раздел попадают материалы, которые могут быть полезны либо интресны вам как туристу.</p>
         </div>

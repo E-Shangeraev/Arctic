@@ -44,12 +44,13 @@ $(function () {
     }
   });
 
-  $('.facts-1__slider').slick({
+  $('.facts-1__slider-block').slick({
     arrows: true,
     autoplay: false,
     speed: 1000,
     fade: true,
     pauseOnHover: false,
-    waitForAnimate: true,
+    waitForAnimate: false,
+    appendArrows: '.facts-1__arrows',
   });
 });

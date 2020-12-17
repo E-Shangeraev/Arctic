@@ -1,6 +1,6 @@
 <?php 
   $url = $_SERVER['REQUEST_URI'];
-  if ($url === '/' || $url === '/norilsk.php') {
+  if ($url === '/index.php' || $url === '/norilsk.php') {
     $limit = 4;
   }
   if ($url === '/news.php') {

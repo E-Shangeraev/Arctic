@@ -1,0 +1,23 @@
+.monuments__nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.monuments__rubric {
+  display: inline-block;
+  font-family: $manrope-regular;
+  font-size: 20px;
+  line-height: 120%;
+  cursor: pointer;
+}
+
+.monuments__rubric:not(:last-child) {
+  margin-right: 40px;
+}
+
+@media (max-width: 1440px) {
+  .monuments__rubric {
+    letter-spacing: normal;
+  }
+}

@@ -38,7 +38,7 @@ if ($_POST['events']) {
     ?>
     <header class="header header__news scrollify" data-section="1">
       <div class="wrapper wrapper--column wrapper--center white">
-        <div class="row row--header">
+        <div class="row row--center">
           <h1 class="title">Новости</h1>
           <p class="header__text">В этот раздел попадают материалы, которые могут быть полезны либо интресны вам как туристу.</p>
         </div>
@@ -51,8 +51,8 @@ if ($_POST['events']) {
         <div class="wrapper wrapper--column">
           <nav class="news__nav">
             <div class="news__nav-list">
-                <li class="title news__rubric active-rubric" data-value="tourist">Туристам</li>
-                <li class="title news__rubric" data-value="prof">Профессионалам</li>
+                <li class="title news__rubric rubric active-rubric" data-value="tourist">Туристам</li>
+                <li class="title news__rubric rubric" data-value="prof">Профессионалам</li>
             </div>
             <div class="news__arrows"></div>
           </nav>

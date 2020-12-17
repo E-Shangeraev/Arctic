@@ -1,0 +1,45 @@
+.facts-2 .wrapper {
+  padding-bottom: 0;
+}
+
+.facts-2__title {
+  margin-bottom: 60px;
+}
+
+.facts-2__subtitle {
+  margin: 0;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.facts-2__text {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.facts-2__button {
+  color: #000000;
+}
+
+.facts-2__image {
+  margin: 0;
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .facts-2__text {
+    font-size: 13px;
+    line-height: 150%;
+  }
+  .facts-2__subtitle {
+    font-size: 17px;
+    line-height: 150%;
+  }
+}

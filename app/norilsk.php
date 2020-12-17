@@ -38,7 +38,7 @@ if ($_POST['events']) {
     ?>
     <header class="header header__norilsk scrollify" data-section="1">
       <div class="wrapper wrapper--column wrapper--center white">
-        <div class="row row--header">
+        <div class="row row--center">
           <h1 class="title">Норильск</h1>
         </div>
         <div class="facts">
@@ -148,7 +148,7 @@ if ($_POST['events']) {
                 <p class="adventure__description">
                   Мемориальный комплекс «Первостроителям Норильска» расположен параллельно полотну дороги слева в районе железнодорожного моста через реку Амбарная.<br><br>
                   Сам мост возведен еще в 1936 году. Установленный паровоз – это памятник строительства 114-километройовой узколейки от Норильска до Дудинки.<br><br>
-                  В полотно укладывали торф, валежник, хворост. Шпалы изготавливали из сухой лиственницы. Зимой на реках не строили мосты, а намораживали дамбы, которые с приходом тепла «плыли».
+                  <b>В полотно укладывали торф, валежник, хворост. Шпалы изготавливали из сухой лиственницы. Зимой на реках не строили мосты, а намораживали дамбы, которые с приходом тепла «плыли».</b>
                 </p>
               </div>
             </div>
@@ -170,8 +170,8 @@ if ($_POST['events']) {
               <div class="col adventure__slide-col-2">
                 <h2 class="adventure__subtitle">НОРИЛЬСК-ПРОМЫШЛЕННЫЙ</h2>
                 <p class="adventure__description">
-                  Проехав район Кайеркан, Вы обязательно заметите гигантские корпуса Надеждинского металлургического завода.<br>
-                  Каждая десятая тонна никеля в мире выпущена на «Надежде».
+                  Проехав район Кайеркан, Вы обязательно заметите гигантские корпуса Надеждинского металлургического завода.<br><br>
+                  <b>Каждая десятая тонна никеля в мире выпущена на «Надежде».</b>
                 </p>
               </div>
             </div>
@@ -208,16 +208,16 @@ if ($_POST['events']) {
 
       <section class="monuments scrollify" data-section="4">
         <div class="wrapper wrapper--column">
-          <div class="row">
+          <div class="row row--center">
             <h2 class="title">Памятники и экскурсии</h2>
             <nav class="monuments__nav">
-              <div class="monuments__nav-list">
-                  <li class="title monuments__rubric active-rubric" data-value="inside">В черте города</li>
-                  <li class="title monuments__rubric" data-value="outside">В окрестностях</li>
-              </div>
+              <ul class="monuments__nav-list">
+                <li class="title monuments__rubric rubric active-rubric" data-value="inside">В черте города</li>
+                <li class="title monuments__rubric rubric" data-value="outside">В окрестностях</li>
+              </ul>
             </nav>
           </div>
-          <div class="tabs__container">
+          <div class="tabs tabs__container">
             <div class="monuments__inside tab tab--inside active-tab">
               <?php
                 $articles = tpl_render('articles.php', ['id' => 2]);
@@ -234,63 +234,87 @@ if ($_POST['events']) {
         </div>
       </section>
 
-      <section class="facts-1 scrollify" data-section="5">
-        <div class="wrapper">
-          <h2 class="title">Факты о Норильске</h2>
+      <section class="monuments scrollify" data-section="5">
+        <div class="wrapper wrapper--column">
+          <div class="row row--center">
+            <h2 class="title">Последнее из жизни города</h2>
+            <a class="outline-button" href="#">Все новости</a>
+          </div>
+          <?php
+            $articles = tpl_render('articles.php', ['id' => 2]);
+            print ($articles);
+          ?> 
+        </div>
+      </section>
+
+      <section class="facts-1 scrollify" data-section="6">
+        <div class="wrapper wrapper--column">
           <div class="facts-1__slider">
-            <div class="facts-1__slide">
-              <div class="col">
-                <h3 class="facts-1__slide-title">Первый дом Норильска</h3>
-                <p class="facts-1__slide-description">Первый дом Норильска был построен в 1921 году. После обнаружения в Норильском районе богатых  угольных пластов и сульфидных руд власти приняли решение построить в этих местах зимовку и далее начинать строительство города.</p>
-              </div>
-              <div class="col">
-                <p class="facts-1__slide-image">
+            <div class="facts-1__slider-block">
+              <div class="facts-1__slide">
+                <div class="col facts-1__description">
+                  <h2 class="facts-1__title title">Факты о Норильске</h2>
+                  <h3 class="facts-1__slide-title">Первый дом Норильска</h3>
+                  <p class="facts-1__text">Первый дом Норильска был построен в 1921 году. После обнаружения в Норильском районе богатых  угольных пластов и сульфидных руд власти приняли решение построить в этих местах зимовку и далее начинать строительство города.</p>
+                </div>
+                <p class="col facts-1__image">
                   <img src="./img/norilsk/facts-1-slider/1.jpg" alt="Первый дом Норильска">
                 </p>
               </div>
-            </div>
-            <div class="facts-1__slide">
-              <div class="col">
-                <h3 class="facts-1__slide-title">Lorem, ipsum dolor.</h3>
-                <p class="facts-1__slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore quia eos odio quae culpa velit saepe. Ab facere iste possimus maxime architecto pariatur, dolorem placeat aliquid fugiat veniam sint aperiam!</p>
-              </div>
-              <div class="col">
-                <p class="facts-1__slide-image">
+              <div class="facts-1__slide">
+                <div class="col facts-1__description">
+                  <h2 class="facts-1__title title">Факты о Норильске</h2>
+                  <h3 class="facts-1__slide-title">Lorem, ipsum dolor.</h3>
+                  <p class="facts-1__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore quia eos odio quae culpa velit saepe. Ab facere iste possimus maxime architecto pariatur, dolorem placeat aliquid fugiat veniam sint aperiam!</p>
+                </div>
+                <p class="col facts-1__image">
                   <img src="./img/norilsk/facts-1-slider/1.jpg" alt="Lorem, ipsum dolor.">
                 </p>
               </div>
             </div>
+            <p class="facts-1__arrows"></p>
           </div>
-          <footer class="facts-1__footer">
+          <footer class="facts facts-1__footer">
             <p class="fact">
-              <span class="fact__top">145 000 туристов</span>
+              <span class="fact__top fact__top--black">
+                145 000 
+                <span class="fact__top--low">туристов</span>
+              </span>
               <span class="fact__bottom">ежегодно посещают Норильск</span>
             </p>
             <p class="fact">
-              <span class="fact__top">98 экскурсии</span>
+              <span class="fact__top fact__top--black">
+                98 
+                <span class="fact__top--low">экскурсии</span>
+              </span>
               <span class="fact__bottom">ежедневно проводится по городу</span>
             </p>
             <p class="fact">
-              <span class="fact__top">130 рекордов</span>
+              <span class="fact__top fact__top--black">
+                130 
+                <span class="fact__top--low">рекордов</span>
+              </span>
               <span class="fact__bottom">у Норильска в книге рекордов Гиннеса</span>
             </p>
           </footer>
         </div>
       </section>
 
-      <section class="facts-2 scrollify" data-section="6">
+      <section class="facts-2 scrollify" data-section="7">
         <div class="wrapper wrapper--column">
-          <h2 class="title">Факты о Норильске</h2>
+          <h2 class="facts-2__title title">Факты о Норильске</h2>
           <div class="row">
             <div class="col">
-              <p>Как Норильск спас планету от ядерного взрыва</p>
+              <h3 class="facts-2__subtitle">Как Норильск спас планету<br> от ядерного взрыва</h3>
             </div>
             <div class="col">
-              <p>Норильск - это город, о котором существует множество легенд, одна из которых повествует о том, как Норильск предотвратил ядерный взрыв во времена Советского Союза.</p>
-              <a href="#">Подробнее</a>
+              <p class="facts-2__text">Норильск - это город, о котором существует множество легенд, одна из которых повествует о том, как Норильск предотвратил ядерный взрыв во времена Советского Союза.</p>
+              <a class="facts-2__button button" href="#">Подробнее</a>
             </div>
           </div>
-          <img src="./img/norilsk/2.png" alt="Фотография ядерного взрыва">
+          <p class="facts-2__image">
+            <img src="./img/norilsk/2.png" alt="Фотография ядерного взрыва">
+          </p>
         </div>
       </section>
     </main>
@@ -303,7 +327,7 @@ if ($_POST['events']) {
     <script src="js/index.js"></script>
     <script src="js/nav-mobile.js"></script>
     <script src="js/norilsk-slider.js"></script>
-    <!-- <script type="module" src="js/Tabs.js"></script>
-    <script type="module" src="js/news-rubrics.js"></script> -->
+    <script type="module" src="js/Tabs.js"></script>
+    <script type="module" src="js/norilsk-rubrics.js"></script>
   </body>
 </html>

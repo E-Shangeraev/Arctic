@@ -165,7 +165,7 @@ if ($_POST['events']) {
 
       <section class="attractions scrollify" data-section="4">
         <div class="wrapper wrapper--column black">
-          <div class="row">
+          <div class="row row--center">
             <h2 class="attractions__title title">Достопримечательности</h2>
             <a href="#" class="outline-button">Смотреть все</a>
           </div>
@@ -207,7 +207,7 @@ if ($_POST['events']) {
 
       <section class="news scrollify" data-section="5">
         <div class="wrapper wrapper--column">
-            <div class="row">
+            <div class="row row--center">
               <h2 class="news__title title">Новости</h2>
               <a href="#" class="outline-button">Смотреть все</a>
             </div>
@@ -221,7 +221,7 @@ if ($_POST['events']) {
 
       <section class="documents scrollify" data-section="6">
         <div class="wrapper wrapper--column white">
-            <div class="row">
+            <div class="row row--center">
               <h2 class="documents__title title">В помощь туристам</h2>
               <a href="#" class="outline-button outline-button--white">Подробнее</a>
             </div>

@@ -6,6 +6,9 @@
   if ($url === '/news.php') {
     $sectionCount = 3;
   }
+  if ($url === '/norilsk.php') {
+    $sectionCount = 7;
+  }
 ?>
 
 <aside class="aside">
