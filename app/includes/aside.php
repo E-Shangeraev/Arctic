@@ -1,6 +1,6 @@
 <?php 
   $url = $_SERVER['REQUEST_URI'];
-  if ($url === '/') {
+  if ($url === '/' || $url === '/index.php') {
     $sectionCount = 8;
   }
   if ($url === '/news.php') {
@@ -11,6 +11,15 @@
   }
   if ($url === '/center.php') {
     $sectionCount = 6;
+  }
+  if ($url === '/flora&fauna.php') {
+    $sectionCount = 3;
+  }
+  if ($url === '/tourist.php') {
+    $sectionCount = 4;
+  }
+  if ($url === '/404.php') {
+    $sectionCount = 1;
   }
 ?>
 

@@ -25,7 +25,7 @@
 @import './blocks/header/header.scss';
 @import './blocks/header/slider.scss';
 
-//main-page
+//main
 @import './blocks/main/limit.scss';
 @import './blocks/main/calendar.scss';
 @import './blocks/main/attractions.scss';
@@ -34,10 +34,10 @@
 @import './blocks/main/partners.scss';
 @import './blocks/main/feedback.scss';
 
-// news-page
+// news
 @import './blocks/news/news.scss';
 
-// norilsk-page
+// norilsk
 @import './blocks/norilsk/facts.scss';
 @import './blocks/norilsk/facts-1.scss';
 @import './blocks/norilsk/facts-2.scss';
@@ -45,10 +45,21 @@
 @import './blocks/norilsk/adventure.scss';
 @import './blocks/norilsk/monuments.scss';
 
-// center-page
+// center
 @import './blocks/center/center-intro.scss';
 @import './blocks/center/director.scss';
 @import './blocks/center/projects.scss';
+
+// flora-fauna
+@import './blocks/flora-fauna/nature.scss';
+@import './blocks/flora-fauna/facts.scss';
+
+// tourist
+@import './blocks/tourist/faq.scss';
+@import './blocks/tourist/route.scss';
+
+// article
+@import './blocks/article/article.scss';
 
 @import 'colors.scss';
 

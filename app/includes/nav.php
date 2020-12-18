@@ -1,7 +1,8 @@
 <nav class="nav white">
   <ul class="nav__items">
     <li><a href="norilsk.php">Норильск</a></li>
-    <li><a href="attractions.php">Достопримечательности</a></li>
+    <li><a href="404.php">Достопримечательности</a></li>
+    <!-- <li><a href="flora&fauna.php">Флора и фауна</a></li> -->
     <li><a href="center.php">Центр развития туризма</a></li>
     <li><a href="tourist.php">Туристу</a></li>
     <li><a href="news.php">Новости</a></li>

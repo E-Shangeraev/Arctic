@@ -40,6 +40,15 @@ document.addEventListener('DOMContentLoaded', () => {
         if (fileName === 'center.php') {
           setBlackBySectionNum(2, 3, 4, 5, 6);
         }
+        if (fileName === 'flora&fauna.php') {
+          setBlackBySectionNum(2, 3);
+        }
+        if (fileName === 'tourist.php') {
+          setBlackBySectionNum(2, 4);
+        }
+        if (fileName === 'article.php') {
+          setBlackBySectionNum(1);
+        }
       },
     });
 

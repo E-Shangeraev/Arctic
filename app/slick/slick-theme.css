@@ -183,3 +183,7 @@
   opacity: 0.75;
   color: black;
 }
+
+.slick-slide:focus {
+  outline-color: #26c9c9 !important;
+}

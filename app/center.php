@@ -21,11 +21,11 @@
           <h1 class="title">Центр развития<br>туризма Норильска</h1>
           <p class="header__text">Ваше незабываемое путешествие на крайний Север - наша работа</p>
         </div>
-        <a class="button" href="#">Подробнее</a>
+        <a class="button" href="#more">Подробнее</a>
       </div>
     </header>
     
-    <main>
+    <main id="more">
       <section class="center__intro intro tabs scrollify" data-section="2">
         <div class="wrapper wrapper--column">
           <h2 class="intro__title title">Муниципальное автономное учреждение<br> «Центр развития туризма»</h2>
@@ -43,7 +43,7 @@
           <div class="row">
             <div class="projects__col col">
               <h3 class="projects__subtitle subtitle">Проект «Красные камни»</h3>
-              <a href="#" class="button">Читать больше</a>
+              <a href="404.php" class="button">Читать больше</a>
             </div>
             <p class="projects__col col projects__text">
               В феврале 2020 года Правительством Красноярского края утверждены границы и определен режим особой охраны территории памятника природы краевого значения «Ландшафтный участок «Красные камни».<br><br>
@@ -60,7 +60,7 @@
           <div class="row">
             <div class="projects__col col">
               <h3 class="projects__subtitle subtitle">Туристско-рекреационный кластер<br>“Арктический”</h3>
-              <a href="#" class="button">Читать больше</a>
+              <a href="404.php" class="button">Читать больше</a>
             </div>
             <p class="col projects__text">
               Сегодня арктический туризм становится драйвером роста северных территорий по всему миру, количество желающих посетить Северный полюс и Русскую Арктику постоянно растет.<br><br>
@@ -77,7 +77,7 @@
           <div class="row">
             <div class="projects__col col">
               <h3 class="projects__subtitle subtitle">Международная выставка<br>”Интурмаркет”</h3>
-              <a href="#" class="button">Читать больше</a>
+              <a href="404.php" class="button">Читать больше</a>
             </div>
             <p class="col projects__text">
               Одним из важных событий, направленных на продвижение туристического потенциала Норильска, стало участие представителей города (Администрации города Норильска, МАУ «Центр развития туризма», АНО «Агентство развития Норильска» и представителей туристического сообщества) в составе делегации Красноярского края в Международной туристической выставке ИНТУРМАРКЕТ-2020, которая прошла в Москве 12-14 марта 2020 года.
@@ -88,17 +88,17 @@
       </section>
 
       <section class="director tabs scrollify" data-section="6">
-        <div class="wrapper wrapper--column">
+        <div class="wrapper wrapper--column wrapper--center">
           <div class="row">
-            <p class="col">
-              <img src="./img/center/5.jpg" alt="Фотография директора">
+            <p class="col director__photo">
+              <img src="./img/center/5.png" alt="Фотография директора">
             </p>
             <div class="col">
               <blockquote class="director__cite">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et metus nulla consectetur lacus, diam dictumst elementum. Ac senectus varius arcu ultrices. Ut urna, id parturient mi eget massa quam. Habitant a ullamcorper donec tellus, in ullamcorper scelerisque. Ut sed quis massa sed.
               </blockquote>
               <p class="director__name">
-                <b>Иванова Ольга Ивановна</b>
+                <b>Иванова Ольга Ивановна</b><br>
                 <span>Lorem ipsum dolor sit amet</span>
               </p>
             </div>

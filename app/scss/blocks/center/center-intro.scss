@@ -10,5 +10,12 @@
   line-height: 150%;
 }
 .center__intro-image {
+  margin-top: auto;
   height: 100%;
+}
+
+@media (max-width: 1440px) {
+  .center__intro-image {
+    max-height: 340px;
+  }
 }

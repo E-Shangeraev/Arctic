@@ -40,7 +40,7 @@ if ($_POST['events']) {
     <header class="header scrollify" data-section="1">
       <div class="wrapper white">
         <footer class="slider__footer">
-          <a class="button" href="#more">Подробнее</a>
+          <a class="button" href="#">Подробнее</a>
           <p class="slider__count">
             <span class="slider__count--current">01</span>
             <span>/</span>
@@ -95,7 +95,7 @@ if ($_POST['events']) {
       </div>
     </section>
   </header>
-  <main id="more">
+  <main>
   
       <section class="limit scrollify" data-section="2">
         <div class="wrapper black">
@@ -110,7 +110,7 @@ if ($_POST['events']) {
               Они живут в условиях крайнего Севера десятилетиями и смогут показать Вам места от красоты которых захватывает дух.<br><br>
               Уникальная, живописная и нетронутая природа. Современный и гостеприимный моногород Норильск. Все это, и многое другое ждет Вас.
             </p>
-            <a href="norilsk.php" class="button">О Норильске</a>
+            <a href="#" class="button">О Норильске</a>
           </div>
           <div class="limit__col">
             <img class="limit__img" src="img/main/limit/1.jpg" alt="Фотография норильчан">
@@ -167,7 +167,7 @@ if ($_POST['events']) {
         <div class="wrapper wrapper--column black">
           <div class="row row--center">
             <h2 class="attractions__title title">Достопримечательности</h2>
-            <a href="404.php" class="outline-button">Смотреть все</a>
+            <a href="#" class="outline-button">Смотреть все</a>
           </div>
           <div class="attractions__cards">
             <div class="attractions__card">
@@ -201,7 +201,7 @@ if ($_POST['events']) {
               <a href="#" class="attractions__button button">Узнать больше</a>
             </div>
           </div>
-          <a href="404.php" class="outline-button outline-button--mobile">Смотреть все</a>
+          <a href="#" class="outline-button outline-button--mobile">Смотреть все</a>
         </div>
       </section>
 
@@ -209,13 +209,13 @@ if ($_POST['events']) {
         <div class="wrapper wrapper--column">
             <div class="row row--center">
               <h2 class="news__title title">Новости</h2>
-              <a href="news.php" class="outline-button">Смотреть все</a>
+              <a href="#" class="outline-button">Смотреть все</a>
             </div>
               <?php
                 $articles = tpl_render('articles.php', ['id' => 1]);
                 print ($articles);
               ?>
-          <a href="news.php" class="outline-button outline-button--mobile">Смотреть все</a>
+          <a href="#" class="outline-button outline-button--mobile">Смотреть все</a>
         </div> 
       </section>
 
@@ -223,7 +223,7 @@ if ($_POST['events']) {
         <div class="wrapper wrapper--column white">
             <div class="row row--center">
               <h2 class="documents__title title">В помощь туристам</h2>
-              <a href="tourist.php" class="outline-button outline-button--white">Подробнее</a>
+              <a href="#" class="outline-button outline-button--white">Подробнее</a>
             </div>
             <ul class="documents__list">
               <li class="documents__item">
@@ -259,7 +259,7 @@ if ($_POST['events']) {
               </li> -->
             </ul>
             <a class="documents__archive" href="documents/Документы.zip">Скачать одним архивом</a>
-          <a href="tourist.php" 
+          <a href="#" 
             class="documents__outline-button outline-button outline-button--mobile outline-button--white">
             Подробнее
           </a>

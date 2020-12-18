@@ -20,3 +20,12 @@
 .projects__title {
   margin-bottom: 60px;
 }
+
+@media (max-width: 1440px) {
+  .projects__text {
+    font-size: 13px;
+  }
+  .projects__image {
+    max-height: 320px;
+  }
+}

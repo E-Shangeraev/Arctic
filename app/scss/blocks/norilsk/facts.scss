@@ -13,12 +13,14 @@
 
 .fact span {
   font-family: $manrope-regular;
-  line-height: 50px;
+  // line-height: 50px;
+  line-height: 130%;
   text-transform: uppercase;
 }
 
 .fact__top {
   display: block;
+  padding-bottom: 3%;
   font-size: 25px;
   border-bottom: 1px solid #ffffff;
 }
@@ -33,5 +35,6 @@
 }
 
 .fact__bottom {
+  padding-top: 5%;
   font-size: 14px;
 }

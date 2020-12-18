@@ -42,19 +42,19 @@ if ($_POST['events']) {
           <h1 class="title">Новости</h1>
           <p class="header__text">В этот раздел попадают материалы, которые могут быть полезны либо интресны вам как туристу.</p>
         </div>
-        <a class="button" href="#">Подробнее</a>
+        <a class="button" href="#more">Подробнее</a>
       </div>
     </header>
     
-    <main>
+    <main id="more">
       <section class="news tabs scrollify" data-section="2">
         <div class="wrapper wrapper--column">
           <nav class="news__nav">
             <div class="news__nav-list">
-                <li class="title news__rubric rubric active-rubric" data-value="tourist">Туристам</li>
-                <li class="title news__rubric rubric" data-value="prof">Профессионалам</li>
+                <p class="title news__rubric rubric active-rubric" data-value="tourist">Туристам</p>
+                <p class="title news__rubric rubric" data-value="prof">Профессионалам</p>
             </div>
-            <div class="news__arrows"></div>
+            <p class="news__arrows"></p>
           </nav>
 
           <div class="tabs__container">

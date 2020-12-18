@@ -6,5 +6,5 @@ document.addEventListener('DOMContentLoaded', () => {
   const newsNavs = document.querySelector('.news__nav-list');
   const newsTabs = document.querySelector('.tabs');
 
-  const tabList = new Tabs(newsNavs, newsTabs, 'li');
+  const tabList = new Tabs(newsNavs, newsTabs, 'p');
 });

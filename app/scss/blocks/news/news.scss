@@ -4,10 +4,10 @@
     overflow: hidden;
   }
   .slick-next::before {
-    content: url('../../img/news/arrows/arrow-right.svg') !important;
+    content: url('../img/arrows/arrow-right.svg') !important;
   }
   .slick-prev::before {
-    content: url('../../img/news/arrows/arrow-left.svg') !important;
+    content: url('../img/arrows/arrow-left.svg') !important;
   }
 }
 
