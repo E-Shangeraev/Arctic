@@ -190,6 +190,10 @@
     font-size: 16px;
     line-height: 30px;
   }
+  input:focus {
+    outline: none;
+    border: 2px solid $blue;
+  }
 }
 
 #Mon {
@@ -218,11 +222,6 @@
 
 #Sun {
   grid-area: Sun;
-}
-
-input:focus {
-  outline: none;
-  border: 2px solid $blue;
 }
 
 .calendar__element {

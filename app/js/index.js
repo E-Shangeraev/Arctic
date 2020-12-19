@@ -15,6 +15,18 @@ document.addEventListener('DOMContentLoaded', () => {
     let curSection = path(window.location.href)[1];
     // ==================================
 
+    if (fileName.split('?')[0] === 'article.php') {
+      aside.classList.add('aside--black');
+      nav.classList.remove('white');
+      nav.classList.add('black');
+      nav.style.cssText = `
+        position: relative;
+        padding: 20px 0;
+        margin: 0;
+      `;
+      eye.src = 'img/header/eye-black.svg';
+    }
+
     const fill = 100 / scrollIndicatorTotal.textContent;
     scrollIndicatorFill.style.height = `${fill * 1}%`;
 
@@ -46,7 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (fileName === 'tourist.php') {
           setBlackBySectionNum(2, 4);
         }
-        if (fileName === 'article.php') {
+        if (fileName.split('?')[0] === 'article.php') {
+          console.log('000');
           setBlackBySectionNum(1);
         }
       },

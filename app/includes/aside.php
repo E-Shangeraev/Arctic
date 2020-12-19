@@ -1,5 +1,6 @@
 <?php 
-  $url = $_SERVER['REQUEST_URI'];
+  $url = explode('?', $_SERVER['REQUEST_URI']);
+  $url = $url[0];
   if ($url === '/' || $url === '/index.php') {
     $sectionCount = 8;
   }
@@ -19,6 +20,9 @@
     $sectionCount = 4;
   }
   if ($url === '/404.php') {
+    $sectionCount = 1;
+  }
+  if ($url === '/article.php') {
     $sectionCount = 1;
   }
 ?>

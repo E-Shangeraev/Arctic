@@ -35,6 +35,13 @@
   }
 }
 
+.button--submit {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  background-color: inherit;
+}
+
 @media (max-width: 1440px) {
   .button {
     padding: 14px 38px;
