@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+.wrapper--norilsk {
+  padding: 200px 158px 0px 438px;
+}
+
 .wrapper--column {
   flex-direction: column;
   justify-content: start;
@@ -27,6 +31,9 @@
 @media (max-width: 1440px) {
   .wrapper {
     padding: 135px 110px 50px 310px;
+  }
+  .wrapper--norilsk {
+    // padding: 210px 110px 0px 310px;
   }
 }
 

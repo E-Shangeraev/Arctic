@@ -1,15 +1,17 @@
 @import '../../variables.scss';
 
 .attractions__cards {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-flow: column;
+  grid-column-gap: 15px;
   width: 100%;
 }
 
 .attractions__card {
   display: flex;
   flex-direction: column;
-  width: 250px;
+  // width: 250px;
 }
 
 .attractions__img {

@@ -9,6 +9,10 @@
   // height: fit-content !important;
 }
 
+.col--center {
+  justify-content: center;
+}
+
 .col:not(:last-child) {
   margin-right: 40px;
 }

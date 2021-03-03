@@ -14,6 +14,8 @@ $(function () {
   const sliderCountCurrent = document.querySelector('.slider__count--current');
   const sliderArrows = document.querySelector('.slider__arrows');
   const slideFloatings = document.querySelectorAll('.slide__floating');
+  const sliderCheckbox = document.querySelector('#more[type="checkbox"]');
+  const sliderButton = document.querySelector('.slider__footer label.button');
 
   const setCurrentSlideCount = () => {
     slideFloatings.forEach((item) => {
@@ -36,5 +38,27 @@ $(function () {
     setCurrentSlideCount();
   });
 
-  sliderArrows.addEventListener('click', setCurrentSlideCount);
+  sliderArrows.addEventListener('click', () => {
+    setCurrentSlideCount();
+    sliderCheckbox.checked = false;
+    $('.slider__block').slick('slickSetOption', { autoplay: true }, true);
+    const description = document.querySelector('.slick-current .slide__description');
+    description.classList.remove('slide__description--open');
+    sliderButton.textContent = 'Подробнее';
+  });
+
+  sliderCheckbox.addEventListener('change', () => {
+    const description = document.querySelector('.slick-current .slide__description');
+
+    if (sliderCheckbox.checked) {
+      sliderButton.textContent = 'Скрыть';
+      $('.slider__block').slick('slickSetOption', { autoplay: false }, true);
+      description.classList.add('slide__description--open');
+    } else {
+      sliderButton.textContent = 'Подробнее';
+      $('.slider__block').slick('slickSetOption', { autoplay: true }, true);
+      $('.slider__block').slick('slickNext');
+      description.classList.remove('slide__description--open');
+    }
+  });
 });

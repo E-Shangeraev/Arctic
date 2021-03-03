@@ -14,6 +14,9 @@
   text-transform: uppercase;
   white-space: nowrap;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
 
   &::before {
     position: absolute;
@@ -32,6 +35,11 @@
 
   &:hover::before {
     width: 100%;
+  }
+  &:focus {
+    border: 2px solid #2be4e4;
+    border-radius: 30px;
+    outline: inherit;
   }
 }
 

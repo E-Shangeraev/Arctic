@@ -78,7 +78,7 @@ if ($_POST['events']) {
     
     <main>
       <section class="norilsk-intro intro tabs scrollify" data-section="2">
-        <div class="wrapper black">
+        <div class="wrapper wrapper--center black">
           <div class="intro__col col">
             <h2 class="intro__title title">
               <span>Предлагаем Вам стать настоящим</span>
@@ -192,7 +192,9 @@ if ($_POST['events']) {
           </div>
           <footer class="adventure__footer row">
             <div class="col adventure__col-1">
-              <div class="adventure__line"></div>
+              <div class="adventure__line">
+                <span class="line"></span>
+              </div>
             </div>
             <div class="col adventure__col-2">
               <div class="adventure__arrows"></div>
@@ -268,7 +270,7 @@ if ($_POST['events']) {
                   <p class="facts-1__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore quia eos odio quae culpa velit saepe. Ab facere iste possimus maxime architecto pariatur, dolorem placeat aliquid fugiat veniam sint aperiam!</p>
                 </div>
                 <p class="col facts-1__image">
-                  <img src="./img/norilsk/facts-1-slider/1.jpg" alt="Lorem, ipsum dolor.">
+                  <img src="./img/blog-page/tourist/1.jpg" alt="Lorem, ipsum dolor.">
                 </p>
               </div>
             </div>

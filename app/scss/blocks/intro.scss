@@ -18,10 +18,12 @@
 }
 
 .intro__text {
-  @include text-mobile;
+  // @include text-mobile;
   margin-top: 0;
   margin-bottom: 80px;
   width: 450px;
+  font-size: 16px;
+  line-height: 150%;
 }
 
 .intro__img:nth-child(2) {

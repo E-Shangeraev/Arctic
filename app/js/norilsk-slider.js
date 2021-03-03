@@ -15,6 +15,11 @@ $(function () {
   const arrowPrev = document.querySelector('.adventure__arrows .slick-prev');
   const points = document.querySelectorAll('.adventure__line li:not(:first-child) button');
   const slideCurrent = document.querySelector('.adventure__slide-current');
+  const dots = document.querySelectorAll('.slick-dots li button');
+
+  // dots.forEach((dot) => {
+  //   dot.removeEventListener('click');
+  // });
 
   arrowNext.addEventListener('click', () => {
     const activePoint = document.querySelector(
@@ -50,7 +55,7 @@ $(function () {
     speed: 1000,
     fade: true,
     pauseOnHover: false,
-    waitForAnimate: false,
+    waitForAnimate: true,
     appendArrows: '.facts-1__arrows',
   });
 });

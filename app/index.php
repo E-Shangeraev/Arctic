@@ -40,11 +40,12 @@ if ($_POST['events']) {
     <header class="header scrollify" data-section="1">
       <div class="wrapper white">
         <footer class="slider__footer">
-          <a class="button" href="#more">Подробнее</a>
+          <label class="button" for="more">Подробнее</label>
+          <input type="checkbox" id="more" style="display: none">
           <p class="slider__count">
             <span class="slider__count--current">01</span>
             <span>/</span>
-            <span>05</span>
+            <span>07</span>
           </p>
           <p class="slider__arrows"></p>
         </footer>
@@ -54,48 +55,86 @@ if ($_POST['events']) {
       <div class="slider__block">
         <div class="slide" data-index="1">
           <p class="slide__img" style="background-image: url('img/main/main-header/1.jpg')"></p>
-          <p class="slide__floating">край горячих сердец</p>
+          <p class="slide__floating">индустриальный остров в Арктике</p>
           <div class="slide__title">
             <h3 class="slide__it">Норильск - это...</h3>
-            <h2 class="slide__definition">край горячих сердец</h2>
+            <h2 class="slide__definition">индустриальный остров <br>в Арктике</h2>
+            <p class="slide__description">Нужно побывать в Норильске, чтобы увидеть, как добывается руда в подземелье Арктики! Глубоко под слоем вечной мерзлоты находятся огромные рудники. Попадая сюда, дух захватывает!
+
+Заполярный филиал – ключевая ресурсная база промышленного гиганта «Норникеля». Здесь разрабатываются крупнейшие в мире месторождения руды, из которой производят медь, никель, кобальт, серебро и другие металлы. Увидеть и оценить эту мощь можно только в Норильске!</p>
           </div>
         </div>
         <div class="slide" data-index="2">
           <p class="slide__img" style="background-image: url('img/main/main-header/2.jpg')"></p>
-          <p class="slide__floating">северное сияние</p>
+          <p class="slide__floating">культурный шок на Крайнем Севере</p>
           <div class="slide__title">
             <h3 class="slide__it">Норильск - это...</h3>
-            <h2 class="slide__definition">северное сияние</h2>
+            <h2 class="slide__definition">культурный шок <br>на Крайнем Севере</h2>
+            <p class="slide__description">В самом северном городе Земли всё удивительно: северная экзотика, история города и достопримечательности, без которых Норильск – не Норильск! 
+
+Любители культурного отдыха оценят прогулку по Ленинскому проспекту, солнечные часы, Заполярный театр драмы имени В. Маяковского, музеи, художественную галерею, Норильскую Голгофу, впечатляющие памятники  и скульптурные композиции. Любителей развлечений ждут ночные клубы, развлекательные центры и самый северный аквапарк в мире «Тропикана». В городе проходят праздники, когда прямо по улицам можно вдоволь кататься на оленьей упряжке и угощаться в чуме северными деликатесами. А в окрестностях множество баз отдыха и живописных мест!</p>
           </div>
         </div>
         <div class="slide" data-index="3">
           <p class="slide__img" style="background-image: url('img/main/main-header/3.jpg')"></p>
-          <p class="slide__floating">сильные духом люди</p>
+          <p class="slide__floating">мир сказочной тундры и северного сияния</p>
           <div class="slide__title">
             <h3 class="slide__it">Норильск - это...</h3>
-            <h2 class="slide__definition">сильные духом люди</h2>
+            <h2 class="slide__definition">мир сказочной тундры <br>и северного сияния</h2>
+            <p class="slide__description">Вокруг Норильска – величавая бесконечность тундры. Её безмолвие на самом деле полно звуков и запахов, которые шепчут путнику: «Посмотри, какая величавая ширь просторов до самого горизонта». Здесь от восторга захватывает дух! 
+
+Приезжайте в Норильск и порадуйтесь струящемуся пушисто-искристому снегу, удивитесь полярной ночи или летним белым ночам, восхититесь сочными красками осенней тундры. Настоящие романтики обязательно оценят эту северную красоту и сделают тысячи уникальных фотографий. И уж точно никого не оставят равнодушным волшебные переливы северного сияния. Познакомьтесь с магией севера в Норильске!</p>
           </div>
         </div>
         <div class="slide" data-index="4">
           <p class="slide__img" style="background-image: url('img/main/main-header/4.jpg')"></p>
-          <p class="slide__floating">самый северный город</p>
+          <p class="slide__floating">город «горячих» сердец</p>
           <div class="slide__title">
             <h3 class="slide__it">Норильск - это...</h3>
-            <h2 class="slide__definition">самый северный город</h2>
+            <h2 class="slide__definition">город «горячих» сердец</h2>
+            <p class="slide__description">В Норильске живут более 180 тысячи человек. Это особенные, удивительные люди, которых не пугают суровые морозы и черная пурга. Они дорожат друзьями и знают, что такое взаимовыручка. Они настоящие романтики, большие оптимисты и измеряют расстояния «авиачасами», добираясь до других городов страны на самолетах. 
+
+Здесь живут сильные люди, которые добывают руду и плавят металл. Здесь много творческих талантов и интеллигентных людей. А еще норильчане очень гостеприимны. Они готовы делиться своим опытом арктической жизни, рассказывать о любимом городе и радушно встречать туристов.
+</p>
           </div>
         </div>
         <div class="slide" data-index="5">
           <p class="slide__img" style="background-image: url('img/main/main-header/5.jpg')"></p>
-          <p class="slide__floating">культурный шок</p>
+          <p class="slide__floating">мечта для любителей зимних развлечений</p>
           <div class="slide__title">
             <h3 class="slide__it">Норильск - это...</h3>
-            <h2 class="slide__definition">культурный шок</h2>
+            <h2 class="slide__definition">мечта для любителей <br>зимних развлечений</h2>
+            <p class="slide__description">Если вы любите активный отдых, зимние виды спорта и нескучные идеи, Норильск для вас! Весной или даже в начале лета только здесь вы сможете ощутить драйв от спуска по горнолыжной трассе и покататься на снегоходе. А какой рыбак откажется познать все тонкости рыбалки на Крайнем Севере! 
+⠀
+Интересно и с пользой можно отдохнуть на горнолыжном комплексе «Гора Отдельная», лыжной базе Оль-Гуль или выбрать любую из турбаз и баз отдыха, которых вокруг Норильска множество! Они объединили в себе комфортное проживание и экзотику севера. Спортсмены, экстремалы и семьи с детьми найдут занятие по душе!</p>
+          </div>
+        </div>
+        <div class="slide" data-index="6">
+          <p class="slide__img" style="background-image: url('img/main/main-header/6.jpg')"></p>
+          <p class="slide__floating">начало пути в заповедные места</p>
+          <div class="slide__title">
+            <h3 class="slide__it">Норильск - это...</h3>
+            <h2 class="slide__definition">начало пути в заповедные места плато Путорана и озера Лама</h2>
+            <p class="slide__description">Всего в 120 км от Норильска находится фантастическое творение природы – озеро Лама. Прозрачная вода, зрелищные водопады, каньоны и атмосфера загадочности притягивает сюда туристов. Озеро Лама называют местом великой силы и говорят, что здесь можно ощутить неповторимую бесконечность тишины и нереальность окружения.
+
+Озеро расположено в северо-западной части Плато Путорана. Дальше путь в заповедный мир древнего горного массива гораздо менее доступен. Отправляются туда самые отчаянные путешественники и любители приключений, покоренные девственной красотой Путоран. Это край горных рек и озер, огромных водопадов, вершин и дикой первозданной природы. </p>
+          </div>
+        </div>
+        <div class="slide" data-index="7">
+          <p class="slide__img" style="background-image: url('img/main/main-header/7.jpg')"></p>
+          <p class="slide__floating">место, откуда легко попасть к этностойбищу</p>
+          <div class="slide__title">
+            <h3 class="slide__it">Норильск - это...</h3>
+            <h2 class="slide__definition">место, откуда легко попасть <br>к этностойбищу</h2>
+            <p class="slide__description">Если вы увлечены этническим туризмом, из Норильска легко попадете в соседний Таймырский Долгано-Ненецкий муниципальный район. Здесь живут и бережно хранят традиции пять коренных северных этносов: долганы, ненцы, нганасаны, энцы и эвенки. Дорога в Дудинку на автомобиле займет около двух часов или чуть больше, если ехать на рейсовом автобусе.
+
+В Таймырском Доме народного творчества можно познакомиться с культурой северных народов, увидеть танец шамана, послушать горловое пение, звучание баргана и пройти посвящение в таймырцы. На открытой площадке этностойбища «Таймырская Ойкумена» можно посетить чумы, пройти обряд имянаречения и посмотреть обряд кормления огня. Летом из Дудинки на теплоходе организован круиз выходного дня к этностойбищу «Легенды тундры». Северные национальные игры, рыбалка, знакомство с бытом коренных этносов Таймыра, северные угощения и незабываемые впечатления обеспечены!</p>
           </div>
         </div>
       </div>
     </section>
   </header>
-  <main id="more">
+  <main>
   
       <section class="limit scrollify" data-section="2">
         <div class="wrapper black">
@@ -166,39 +205,33 @@ if ($_POST['events']) {
       <section class="attractions scrollify" data-section="4">
         <div class="wrapper wrapper--column black">
           <div class="row row--center">
-            <h2 class="attractions__title title">Достопримечательности</h2>
+            <h2 class="attractions__title title">Места без которых Норильск не Норильск</h2>
             <a href="404.php" class="outline-button">Смотреть все</a>
           </div>
           <div class="attractions__cards">
-            <div class="attractions__card">
-              <p class="attractions__img" style="background-image: url('./img/main/attractions/1.jpg')"></p>
-              <h4 class="attractions__card-title">Плато Путорана</h4>
-              <p class="attractions__desc">Неизвестная загадочная страна. Хрустальные воды рек, мириады водопадов, падающие со склонов, “столовых” гор, яркие краски северных цветов на фоне камней и снега.</p>
-              <a href="#" class="attractions__button button">Узнать больше</a>
+            <div class="attractions__card" id="card-1">
+              <p class="attractions__img" style="background-image: url('./img/main/attractions/1/1.jpg')"></p>
+              <h4 class="attractions__card-title">Норильский горно-металлургический комбинат имени А.П.Завенягина</h4>
+              <p class="attractions__desc">Судьба Норильска неразрывно связана с градообразующим предприятием. Это –героическая летопись освоения богатейшей по своим природным запасам территории.</p>
+              <button class="attractions__button button">Узнать больше</button>
+            </div>
+            <div class="attractions__card" id="card-2">
+              <p class="attractions__img" style="background-image: url('./img/main/attractions/1/2.jpg')"></p>
+              <h4 class="attractions__card-title">Ленинский проспект</h4>
+              <p class="attractions__desc">Если хотите почувствовать атмосферу Норильска и прикоснуться к его удивительной истории, совершите прогулку по Ленинскому проспекту! Восхититесь красивым центром города – миниатюрной копией Питерского Невского.</p>
+              <button class="attractions__button button">Узнать больше</button>
             </div>
             <div class="attractions__card">
-              <p class="attractions__img" style="background-image: url('./img/main/attractions/2.jpg')"></p>
-              <h4 class="attractions__card-title">Северное Сияние</h4>
-              <p class="attractions__desc">В Норильске можно увидеть фантастические сполохи северного сияния. Каждую зиму над городом возникают мерцающие полосы самых невероятных оттенков.</p>
-              <a href="#" class="attractions__button button">Узнать больше</a>
+              <p class="attractions__img" style="background-image: url('./img/main/attractions/1/3.jpg')"></p>
+              <h4 class="attractions__card-title">Норильский Заполярный театр драмы имени Владимира Маяковского</h4>
+              <p class="attractions__desc">Норильский театр драмы, самый северный в мире, в силу своей истории призван дарить надежду и веру в лучшее. У его истоков стояла целая плеяда репрессированных артистов и деятелей искусства. Сегодня в память о них тема жизни и борьбы с разными проявлениями несвободы в театре звучит ярко и страстно.</p>
+              <button class="attractions__button button">Узнать больше</button>
             </div>
             <div class="attractions__card">
-              <p class="attractions__img" style="background-image: url('./img/main/attractions/3.jpg')"></p>
-              <h4 class="attractions__card-title">Норильский Никель</h4>
-              <p class="attractions__desc">Норильский Никель - крупнейший в мире производитель никеля и палладия, лидер горно-металлургической промышленности России.</p>
-              <a href="#" class="attractions__button button">Узнать больше</a>
-            </div>
-            <div class="attractions__card">
-              <p class="attractions__img" style="background-image: url('./img/main/attractions/2.jpg')"></p>
-              <h4 class="attractions__card-title">Северное Сияние</h4>
-              <p class="attractions__desc">В Норильске можно увидеть фантастические сполохи северного сияния. Каждую зиму над городом возникают мерцающие полосы самых невероятных оттенков.</p>
-              <a href="#" class="attractions__button button">Узнать больше</a>
-            </div>
-            <div class="attractions__card">
-              <p class="attractions__img" style="background-image: url('./img/main/attractions/1.jpg')"></p>
-              <h4 class="attractions__card-title">Плато Путорана</h4>
-              <p class="attractions__desc">Неизвестная загадочная страна. Хрустальные воды рек, мириады водопадов, падающие со склонов, “столовых” гор, яркие краски северных цветов на фоне камней и снега.</p>
-              <a href="#" class="attractions__button button">Узнать больше</a>
+              <p class="attractions__img" style="background-image: url('./img/main/attractions/1/4.jpg')"></p>
+              <h4 class="attractions__card-title">Мемориальный комплекс «Норильская Голгофа»</h4>
+              <p class="attractions__desc">Место памяти и скорби Норильская Голгофа находится в черте Старого города у подножия горы Шмидта. Здесь в 1935-1956 годах массово хоронили заключенных Норильлага. Спустя десятилетия сюда возвращаются норильчане, и приходят туристы, чтобы почтить память тысяч безвинно пострадавших в годы репрессий людей.</p>
+              <button class="attractions__button button">Узнать больше</button>
             </div>
           </div>
           <a href="404.php" class="outline-button outline-button--mobile">Смотреть все</a>
@@ -358,5 +391,6 @@ if ($_POST['events']) {
     <script src="js/nav-mobile.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/calendar.js"></script>
+    <script src="js/attractions.js"></script>
   </body>
 </html>

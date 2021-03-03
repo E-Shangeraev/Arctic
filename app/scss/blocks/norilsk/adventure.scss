@@ -75,6 +75,14 @@
       z-index: 200;
     }
   }
+
+  .line {
+    position: absolute;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    z-index: 1000;
+  }
 }
 
 .adventure__footer {

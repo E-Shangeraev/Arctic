@@ -49,9 +49,21 @@
   margin-bottom: 20px;
 }
 
+.facts-1__image {
+  img {
+    max-height: 340px;
+  }
+}
+
 @media (max-width: 1440px) {
   .facts-1__text {
     font-size: 13px;
     line-height: 150%;
+  }
+
+  .facts-1__image {
+    img {
+      max-height: 260px;
+    }
   }
 }
