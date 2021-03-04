@@ -36,11 +36,15 @@ document.addEventListener('DOMContentLoaded', () => {
       after: function () {
         curSection = $.scrollify.current().data('section');
         scrollIndicatorFill.style.height = `${fill * curSection}%`;
-        scrollIndicatorNumber.textContent = `0${curSection}`;
+        if (curSection < 10) {
+          scrollIndicatorNumber.textContent = `0${curSection}`;
+        } else {
+          scrollIndicatorNumber.textContent = `${curSection}`;
+        }
 
         if (fileName === 'index.php' || fileName === '') {
           console.log(fileName);
-          setBlackBySectionNum(2, 3, 4, 5, 7);
+          setBlackBySectionNum(2, 3, 4, 5, 6, 7, 8, 10);
         }
         if (fileName === 'news.php') {
           console.log(fileName);

@@ -2,7 +2,7 @@
   $url = explode('?', $_SERVER['REQUEST_URI']);
   $url = $url[0];
   if ($url === '/' || $url === '/index.php') {
-    $sectionCount = 8;
+    $sectionCount = 11;
   }
   if ($url === '/news.php') {
     $sectionCount = 3;
@@ -49,7 +49,7 @@
     <span class="scroll-indicator__line">
       <span class="scroll-indicator__line--fill"></span>
     </span>
-    <span class="scroll-indicator__number scroll-indicator__number--total"><?= '0' . $sectionCount ?></span>
+    <span class="scroll-indicator__number scroll-indicator__number--total"><?= $sectionCount ?></span>
   </p>
   <p class="aside__socials socials">
     <a href="">Fb</a>

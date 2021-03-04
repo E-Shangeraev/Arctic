@@ -1,17 +1,60 @@
-const cards = document.querySelectorAll('.attractions__card');
+function attractions(section) {
+  const cards = document.querySelectorAll(`${section} .attractions__card`);
+  const checkbox = document.querySelectorAll(`${section} input[type="checkbox"]`);
+  const attractionsMoreText = document.querySelectorAll(`${section} .attractions__text`);
 
-cards.forEach((card) => {
-  card.addEventListener('click', function (e) {
-    if (!e.target.closest('.attractions__button')) {
-      card.style.display = 'none';
-      return;
-    }
+  checkbox.forEach((cb) => {
+    cb.addEventListener('change', function (e) {
+      if (!e.target.closest(`${section} input[type="checkbox"]`)) return;
 
-    if (!e.target.closest('.attractions__card')) {
-      card.style.display = 'none';
-    }
-    card.classList.add('card--animate');
-    // card
-    console.log(this.getAttribute('id'));
+      const label = this.previousElementSibling;
+      const card = this.parentElement;
+
+      if (!this.checked) {
+        label.textContent = 'Скрыть';
+        card.classList.add('attractions__card--opened');
+        hideCards();
+      } else {
+        label.textContent = 'Узнать больше';
+        showCards();
+      }
+    });
   });
-});
+
+  function hideCards() {
+    cards.forEach((card) => {
+      if (!card.classList.contains('attractions__card--opened')) {
+        card.classList.add('attractions__card--animate');
+      } else {
+        showMoreText(card);
+      }
+    });
+  }
+
+  function showCards() {
+    cards.forEach((card) => {
+      card.classList.remove('attractions__card--opened');
+      card.classList.remove('attractions__card--animate');
+      hideMoreText();
+    });
+  }
+
+  function showMoreText(card) {
+    attractionsMoreText.forEach((text) => {
+      if (card.id === text.dataset.textId) {
+        text.style.display = 'block';
+      }
+    });
+  }
+
+  function hideMoreText() {
+    attractionsMoreText.forEach((text) => {
+      text.style.display = 'none';
+    });
+  }
+}
+
+attractions('.attractions--places');
+attractions('.attractions--museums');
+attractions('.attractions--reserves');
+attractions('.attractions--unusuals');

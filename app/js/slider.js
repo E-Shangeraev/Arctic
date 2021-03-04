@@ -43,22 +43,27 @@ $(function () {
     sliderCheckbox.checked = false;
     $('.slider__block').slick('slickSetOption', { autoplay: true }, true);
     const description = document.querySelector('.slick-current .slide__description');
+    const title = document.querySelector('.slick-current .slide__title');
     description.classList.remove('slide__description--open');
+    title.classList.remove('slide__title--highlight');
     sliderButton.textContent = 'Подробнее';
   });
 
   sliderCheckbox.addEventListener('change', () => {
     const description = document.querySelector('.slick-current .slide__description');
+    const title = document.querySelector('.slick-current .slide__title');
 
     if (sliderCheckbox.checked) {
       sliderButton.textContent = 'Скрыть';
       $('.slider__block').slick('slickSetOption', { autoplay: false }, true);
       description.classList.add('slide__description--open');
+      title.classList.add('slide__title--highlight');
     } else {
       sliderButton.textContent = 'Подробнее';
       $('.slider__block').slick('slickSetOption', { autoplay: true }, true);
       $('.slider__block').slick('slickNext');
       description.classList.remove('slide__description--open');
+      title.classList.remove('slide__title--highlight');
     }
   });
 });
