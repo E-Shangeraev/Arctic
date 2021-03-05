@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const fill = 100 / scrollIndicatorTotal.textContent;
     scrollIndicatorFill.style.height = `${fill * 1}%`;
 
+    console.log(document.body.clientWidth);
+
     $.scrollify({
       section: '.scrollify',
       scrollSpeed: 50,
@@ -43,11 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (fileName === 'index.php' || fileName === '') {
-          console.log(fileName);
           setBlackBySectionNum(2, 3, 4, 5, 6, 7, 8, 10);
         }
         if (fileName === 'news.php') {
-          console.log(fileName);
           setBlackBySectionNum(2, 3);
         }
         if (fileName === 'norilsk.php') {
@@ -68,6 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       },
     });
+
+    if (document.body.clientWidth <= 768) {
+      $.scrollify.disable();
+    }
 
     function setBlackBySectionNum(...sectionNum) {
       for (let num of sectionNum) {
@@ -114,21 +118,21 @@ document.addEventListener('DOMContentLoaded', () => {
       $.scrollify.disable();
     }
 
-    document.addEventListener('scroll', () => {
-      if (document.documentElement.clientWidth <= 460) {
-        sections.forEach((section) => {
-          if (elementInViewport(section)) {
-            const dif = window.pageYOffset - section.offsetTop;
-            if (dif > 50) {
-              aside.classList.add('aside--out');
-              aside.style.opacity = 0;
-            } else {
-              aside.classList.remove('aside--out');
-              aside.style.opacity = 1;
-            }
-          }
-        });
-      }
-    });
+    // document.addEventListener('scroll', () => {
+    //   if (document.documentElement.clientWidth <= 460) {
+    //     sections.forEach((section) => {
+    //       if (elementInViewport(section)) {
+    //         const dif = window.pageYOffset - section.offsetTop;
+    //         if (dif > 50) {
+    //           aside.classList.add('aside--out');
+    //           aside.style.opacity = 0;
+    //         } else {
+    //           aside.classList.remove('aside--out');
+    //           aside.style.opacity = 1;
+    //         }
+    //       }
+    //     });
+    //   }
+    // });
   });
 });

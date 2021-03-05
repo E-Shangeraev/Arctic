@@ -115,8 +115,7 @@
     line-height: 150%;
   }
 }
-
-@media (max-width: 460px) {
+@media (max-width: 768px) {
   .feedback {
     .row {
       margin-bottom: 20px;
@@ -131,7 +130,6 @@
     flex-direction: column;
     justify-content: start;
     height: auto;
-    flex-grow: 1;
 
     span,
     input,
@@ -157,5 +155,10 @@
   }
   .feedback__button {
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 460px) {
+  .feedback__form {
+    flex-grow: 1;
   }
 }

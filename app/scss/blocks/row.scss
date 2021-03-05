@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .row--center {
@@ -18,7 +18,11 @@
     margin-bottom: 40px;
   }
 }
-
+@media (max-width: 1366px) {
+  .row {
+    margin-bottom: 30px;
+  }
+}
 @media (max-width: 460px) {
   .row {
     margin-bottom: 0;

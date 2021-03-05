@@ -50,6 +50,12 @@
   background-color: inherit;
 }
 
+@media (max-width: 1600px) {
+  .button {
+    padding: 14px 38px;
+    font-size: 14px;
+  }
+}
 @media (max-width: 1440px) {
   .button {
     padding: 14px 38px;
@@ -57,7 +63,13 @@
     line-height: 120%;
   }
 }
-
+@media (max-width: 1366px) {
+  .button {
+    padding: 10px 30px;
+    font-size: 12px;
+    line-height: 110%;
+  }
+}
 @media (max-width: 460px) {
   .button {
     padding: 11px 30px;

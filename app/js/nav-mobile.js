@@ -20,3 +20,17 @@ close.addEventListener('click', () => {
   document.body.style.overflowY = '';
   document.body.style.position = '';
 });
+
+const aside = document.querySelector('.aside');
+let scrollPrev = 0;
+
+$(window).scroll(function () {
+  var scrolled = $(window).scrollTop();
+
+  if (scrolled > 100 && scrolled > scrollPrev) {
+    aside.classList.add('aside--out');
+  } else {
+    aside.classList.remove('aside--out');
+  }
+  scrollPrev = scrolled;
+});

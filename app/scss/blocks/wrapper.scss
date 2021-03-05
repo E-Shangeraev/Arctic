@@ -8,7 +8,8 @@
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  padding: 150px 158px 50px 438px;
+  padding: 100px 158px 95px 440px;
+  padding: 100px 150px 95px 350px;
 
   z-index: 100;
 
@@ -16,7 +17,7 @@
 }
 
 .wrapper--norilsk {
-  padding: 200px 158px 0px 438px;
+  padding: 200px 158px 0px 440px;
 }
 
 .wrapper--column {
@@ -28,19 +29,38 @@
   justify-content: center;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1600px) {
   .wrapper {
-    padding: 135px 110px 50px 310px;
-  }
-  .wrapper--norilsk {
-    // padding: 210px 110px 0px 310px;
+    padding: 100px 125px 95px 325px;
   }
 }
-
+@media (max-width: 1440px) {
+  .wrapper {
+    padding: 100px 110px 70px 310px;
+  }
+}
+@media (max-width: 1366px) {
+  .wrapper {
+    padding: 100px 110px 70px 310px;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 100px 50px 50px 200px;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    justify-content: center;
+    padding: 52px 16px;
+  }
+}
 @media (max-width: 460px) {
   .wrapper {
     flex-direction: column;
     justify-content: space-between;
+    justify-content: flex-start;
     padding: 52px 16px;
+    padding-top: 0;
   }
 }

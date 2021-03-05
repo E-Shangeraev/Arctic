@@ -1,4 +1,5 @@
 function attractions(section) {
+  const attractionCards = document.querySelector(`${section} .attractions__cards`);
   const cards = document.querySelectorAll(`${section} .attractions__card`);
   const checkbox = document.querySelectorAll(`${section} input[type="checkbox"]`);
   const attractionsMoreText = document.querySelectorAll(`${section} .attractions__text`);
@@ -22,9 +23,10 @@ function attractions(section) {
   });
 
   function hideCards() {
+    attractionCards.classList.add('attractions__cards--opened');
     cards.forEach((card) => {
       if (!card.classList.contains('attractions__card--opened')) {
-        card.classList.add('attractions__card--animate');
+        card.classList.add('attractions__card--hide');
       } else {
         showMoreText(card);
       }
@@ -32,9 +34,10 @@ function attractions(section) {
   }
 
   function showCards() {
+    attractionCards.classList.remove('attractions__cards--opened');
     cards.forEach((card) => {
       card.classList.remove('attractions__card--opened');
-      card.classList.remove('attractions__card--animate');
+      card.classList.remove('attractions__card--hide');
       hideMoreText();
     });
   }

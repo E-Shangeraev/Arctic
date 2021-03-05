@@ -280,24 +280,22 @@
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 768px) {
   .calendar__top-item span {
     @include text-mobile;
   }
-  .calendar {
-    height: fit-content !important;
-    .wrapper {
-      height: fit-content;
-      justify-content: start;
-    }
-  }
+  // .calendar {
+  //   height: fit-content !important;
+  //   .wrapper {
+  //     height: fit-content;
+  //     justify-content: start;
+  //   }
+  // }
   .calendar__container {
     padding: 0;
     flex-direction: column-reverse;
     justify-content: flex-end;
-    // justify-content: center;
-    height: fit-content;
-    // flex-grow: 1;
+    // height: fit-content;
   }
   .calendar__main {
     margin-top: 20px;
@@ -355,5 +353,20 @@
     li {
       @include text-mobile;
     }
+  }
+}
+@media (max-width: 460px) {
+  .calendar {
+    height: fit-content !important;
+    .wrapper {
+      height: fit-content;
+      justify-content: start;
+    }
+  }
+  .calendar__container {
+    // padding: 0;
+    // flex-direction: column-reverse;
+    // justify-content: flex-end;
+    height: fit-content;
   }
 }

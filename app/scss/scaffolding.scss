@@ -37,11 +37,22 @@ section {
   overflow-x: hidden;
   width: 100%;
   position: relative;
-  // min-height: 1009px;
   min-height: 100vh !important;
-  // background-color: #ffffff;
+}
+
+@media (max-width: 460px) {
+  section {
+    height: fit-content !important;
+    min-height: 0 !important;
+  }
 }
 
 figure {
   margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

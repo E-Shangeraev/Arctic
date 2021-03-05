@@ -40,7 +40,7 @@ if ($_POST['events']) {
     <header class="header scrollify" data-section="1">
       <div class="wrapper white">
         <footer class="slider__footer">
-          <label class="button" for="more">Подробнее</label>
+          <label class="button slider__button" for="more">Подробнее</label>
           <input type="checkbox" id="more" style="display: none">
           <p class="slider__count">
             <span class="slider__count--current">01</span>
@@ -124,7 +124,7 @@ if ($_POST['events']) {
           <p class="slide__floating">место, откуда легко попасть к этностойбищу</p>
           <div class="slide__title">
             <h3 class="slide__it">Норильск - это...</h3>
-            <h2 class="slide__definition">место, откуда легко попасть <br>к этностойбищу</h2>
+            <h2 class="slide__definition">место, откуда легко попасть к этностойбищу</h2>
             <p class="slide__description">
               Если вы увлечены этническим туризмом, из Норильска легко попадете в соседний Таймырский Долгано-Ненецкий муниципальный район. Здесь живут и бережно хранят традиции пять коренных северных этносов: долганы, ненцы, нганасаны, энцы и эвенки. Дорога в Дудинку на автомобиле займет около двух часов или чуть больше, если ехать на рейсовом автобусе.<br><br>
               В Таймырском Доме народного творчества можно познакомиться с культурой северных народов, увидеть танец шамана, послушать горловое пение, звучание баргана и пройти посвящение в таймырцы. На открытой площадке этностойбища «Таймырская Ойкумена» можно посетить чумы, пройти обряд имянаречения и посмотреть обряд кормления огня. Летом из Дудинки на теплоходе организован круиз выходного дня к этностойбищу «Легенды тундры». Северные национальные игры, рыбалка, знакомство с бытом коренных этносов Таймыра, северные угощения и незабываемые впечатления обеспечены!</p>
@@ -204,7 +204,7 @@ if ($_POST['events']) {
       <section class="attractions attractions--places scrollify" data-section="4">
         <div class="wrapper wrapper--column black">
           <div class="row row--center">
-            <h2 class="attractions__title title">Места без которых Норильск не Норильск</h2>
+            <h2 class="attractions__title title">Места, без которых Норильск — не Норильск</h2>
             <a href="404.php" class="outline-button">Смотреть все</a>
           </div>
           <div class="attractions__wrapper">
@@ -426,7 +426,7 @@ if ($_POST['events']) {
       <section class="attractions attractions--unusuals scrollify" data-section="7">
         <div class="wrapper wrapper--column black">
           <div class="row row--center">
-            <h2 class="attractions__title title">Необычные места</h2>
+            <h2 class="attractions__title title">Храмы</h2>
             <a href="404.php" class="outline-button">Смотреть все</a>
           </div>
           <div class="attractions__wrapper">

@@ -2,72 +2,55 @@
 
 .nav {
   position: fixed;
-  left: 438px;
+  left: 0;
   margin: 20px 0;
-  display: flex;
-  align-self: start;
-  justify-content: space-between;
   width: 100%;
-  width: 68vw;
   z-index: 999;
 }
-
-.nav-mobile {
-  display: none;
-  z-index: 1000;
+.nav__container {
+  // padding-left: 440px;
+  padding-left: 350px;
+  // padding-right: 105px;
+  padding-right: 150px;
 }
+.nav__items {
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-flow: column;
 
-.nav__items,
-.nav__lang,
-.nav__phone,
-.nav__col {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 0;
-
-  list-style: none;
-
-  a:nth-child(n),
-  li {
+  a {
     position: relative;
-
+    text-decoration: none;
+  }
+  li {
+    padding: 10px 0;
     font-family: $manrope;
     font-size: 16px;
     line-height: 16px;
-    text-decoration: none;
   }
-}
-
-.eye {
-  margin-right: 20px;
-}
-
-.nav__items {
-  width: 770px;
-
-  li {
+  li:not(.nav__lang) {
     a::after {
       position: absolute;
       content: '';
-      bottom: -1px;
+      bottom: -4px;
       left: 0;
 
       width: 100%;
-      height: 2px;
+      height: 3px;
       background-color: $blue;
 
       transform: scaleX(0);
       transition: 0.2s;
     }
-
     a:hover::after {
       transform: scaleX(1);
     }
   }
 }
-
+.nav-mobile {
+  display: none;
+  z-index: 1000;
+}
 .nav__lang {
   width: 80px;
 
@@ -75,32 +58,40 @@
     opacity: 0.5;
     transition: 0.2s;
   }
-
   a:hover {
     opacity: 1;
   }
-
   a.active {
     opacity: 1;
   }
 }
 
+@media (max-width: 1600px) {
+  .nav__container {
+    padding-left: 325px;
+    padding-right: 125px;
+  }
+}
 @media (max-width: 1440px) {
-  .nav {
-    left: 300px;
+  .nav__container {
+    padding-left: 310px;
+    padding-right: 110px;
   }
-
-  .nav__items {
-    width: 550px;
-  }
-
   .nav a {
-    font-size: 12px !important;
+    font-size: 14px !important;
     line-height: 16px !important;
   }
 }
-
-@media (max-width: 460px) {
+@media (max-width: 1024px) {
+  .nav__container {
+    padding-left: 200px;
+    padding-right: 50px;
+  }
+  .nav a {
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 768px) {
   .nav {
     margin: 0;
     padding: 0;
@@ -152,6 +143,9 @@
         background-color: #000000;
         transform: rotate(-90deg);
       }
+    }
+    .nav-mobile.out {
+      transform: translateY(-100%);
     }
     .nav__items {
       display: block;

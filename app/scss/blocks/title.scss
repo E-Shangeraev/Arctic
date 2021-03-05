@@ -2,22 +2,35 @@
   margin: 0;
   font-family: $bebas-thin;
   font-size: 72px;
-  line-height: 150%;
+  line-height: 110%;
 }
 
+@media (max-width: 1600px) {
+  .title {
+    font-size: 64px;
+  }
+}
 @media (max-width: 1440px) {
   .title {
     font-size: 48px;
-    line-height: 140%;
-    letter-spacing: 4px;
   }
 }
-
+@media (max-width: 1440px) {
+  .title {
+    font-size: 42px;
+  }
+}
+@media (max-width: 1200px) {
+  .title {
+    font-size: 38px;
+  }
+}
 @media (max-width: 460px) {
   .title {
     margin: 20px 0;
+    // margin: 0;
     font-size: 34px;
-    line-height: 120%;
+    line-height: 100%;
     letter-spacing: 2px;
   }
 }

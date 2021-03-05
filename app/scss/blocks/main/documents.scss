@@ -74,12 +74,12 @@
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 768px) {
   .documents__list {
     grid-template-columns: 1fr;
     row-gap: 1ch;
-    height: 100%;
     padding: 0;
+    margin: 0;
   }
   .documents__item {
     @include text-mobile;
@@ -109,9 +109,5 @@
     left: 60%;
     font-size: 12px;
     line-height: 120%;
-  }
-  .documents__outline-button {
-    // left: 16px;
-    // right: auto;
   }
 }
