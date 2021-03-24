@@ -2,7 +2,7 @@ $(function () {
   $('.slider__block').slick({
     arrows: true,
     appendArrows: $('.slider__arrows'),
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 8000,
     infinite: true,
     speed: 1400,

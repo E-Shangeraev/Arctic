@@ -25,6 +25,9 @@
 @import './blocks/header/header.scss';
 @import './blocks/header/slider.scss';
 
+//footer
+@import './blocks/footer.scss';
+
 //main
 @import './blocks/main/limit.scss';
 @import './blocks/main/calendar.scss';
@@ -58,6 +61,9 @@
 @import './blocks/tourist/faq.scss';
 @import './blocks/tourist/route.scss';
 
+// events
+@import './blocks/events.scss';
+
 // article
 @import './blocks/article/article.scss';
 
@@ -68,8 +74,9 @@
 }
 
 .slick-track {
-  display: flex;
+  display: flex !important;
 }
+
 .slick-list {
   overflow: hidden;
 }

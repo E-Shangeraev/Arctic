@@ -37,7 +37,7 @@ if ($_POST['events']) {
       require_once 'includes/nav-mobile.php';
     ?>
     <header class="header header__norilsk scrollify" data-section="1">
-      <div class="wrapper wrapper--column wrapper--center white">
+      <div class="wrapper wrapper--column wrapper--center wrapper--header white">
         <div class="row row--center">
           <h1 class="title">Норильск</h1>
         </div>
@@ -82,7 +82,7 @@ if ($_POST['events']) {
           <div class="intro__col col">
             <h2 class="intro__title title">
               <span>Предлагаем Вам стать настоящим</span>
-              <span>первопроходцем и прочувствовать</span>
+              <span>первопроходцем и&nbsp;прочувствовать</span>
               <span>всю мощь северной природы</span>
             </h2>
             <p class="intro__text">
@@ -94,7 +94,7 @@ if ($_POST['events']) {
           <div class="intro__col col">
             <img class="norilsk-intro__img intro__img" src="img/norilsk/1.jpg" alt="Фотография Норильска">
             <img class="norilsk-intro__img--text" src="./img/norilsk/1.1.svg" alt="Норильск">
-            <span class="norilsk-intro__gates">ВОРОТА<br> НА СЕВЕР</span>
+            <span class="norilsk-intro__gates">ВОРОТА НА СЕВЕР</span>
           </div>
         </div>
       </section>

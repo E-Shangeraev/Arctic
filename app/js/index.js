@@ -15,7 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let curSection = path(window.location.href)[1];
     // ==================================
 
-    if (fileName.split('?')[0] === 'article.php') {
+    if (
+      fileName.split('?')[0] === 'article.php' ||
+      fileName.split('?')[0] === 'article_event.php'
+    ) {
       aside.classList.add('aside--black');
       nav.classList.remove('white');
       nav.classList.add('black');
@@ -27,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
       eye.src = 'img/header/eye-black.svg';
     }
 
-    const fill = 100 / scrollIndicatorTotal.textContent;
+    const fill = 100 / +scrollIndicatorTotal.textContent;
     scrollIndicatorFill.style.height = `${fill * 1}%`;
 
     console.log(document.body.clientWidth);
@@ -45,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (fileName === 'index.php' || fileName === '') {
-          setBlackBySectionNum(2, 3, 4, 5, 6, 7, 8, 10);
+          setBlackBySectionNum(2, 3, 4, 5, 6);
         }
         if (fileName === 'news.php') {
           setBlackBySectionNum(2, 3);
@@ -63,8 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
           setBlackBySectionNum(2, 4);
         }
         if (fileName.split('?')[0] === 'article.php') {
-          console.log('000');
           setBlackBySectionNum(1);
+        }
+        if (fileName === 'events.php') {
+          setBlackBySectionNum(2);
         }
       },
     });

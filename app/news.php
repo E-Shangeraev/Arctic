@@ -40,7 +40,8 @@ if ($_POST['events']) {
       <div class="wrapper wrapper--column wrapper--center white">
         <div class="row row--center h-100">
           <h1 class="title">Новости</h1>
-          <p class="header__text">В этот раздел попадают материалы, которые могут быть полезны либо интресны вам как туристу.</p>
+          <p class="header__text">В этом разделе вы найдете самые интересные новости для туристов и профессионалов
+          туриндустрии</p>
         </div>
         <a class="button" href="#more">Подробнее</a>
       </div>
@@ -72,7 +73,7 @@ if ($_POST['events']) {
             <div class="news__prof tab tab--prof">
               <div class="news__slider--prof">
                 <?php
-                  $articles = tpl_render('articles.php', ['id' => 1]);
+                  $articles = tpl_render('articles.php', ['id' => 3]);
                   print ($articles);
                 ?>
               </div>

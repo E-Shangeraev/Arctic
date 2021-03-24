@@ -27,6 +27,7 @@ function attractions(section) {
     cards.forEach((card) => {
       if (!card.classList.contains('attractions__card--opened')) {
         card.classList.add('attractions__card--hide');
+        card.style.display = 'none';
       } else {
         showMoreText(card);
       }
@@ -38,6 +39,7 @@ function attractions(section) {
     cards.forEach((card) => {
       card.classList.remove('attractions__card--opened');
       card.classList.remove('attractions__card--hide');
+      card.style.display = 'flex';
       hideMoreText();
     });
   }
@@ -61,3 +63,4 @@ attractions('.attractions--places');
 attractions('.attractions--museums');
 attractions('.attractions--reserves');
 attractions('.attractions--unusuals');
+attractions('.attractions--nature');

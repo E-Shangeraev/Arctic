@@ -20,10 +20,10 @@
                 <?php
                     $art_cat = false;
                     foreach( $categories as $cat) {
-                    if ( $cat['id'] == $art['categorie_id'] ) {
-                        $art_cat = $cat;
-                        break;
-                    }
+                        if ( $cat['id'] == $art['categorie_id'] ) {
+                            $art_cat = $cat;
+                            break;
+                        }
                     }
                 ?>
                 <img src="./img/blog-page/<?= $art['image']; ?>" alt="<?= $art_cat['title']; ?>">

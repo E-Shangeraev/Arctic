@@ -13,7 +13,6 @@
 
 .fact span {
   font-family: $manrope-regular;
-  // line-height: 50px;
   line-height: 130%;
   text-transform: uppercase;
 }
@@ -37,4 +36,41 @@
 .fact__bottom {
   padding-top: 5%;
   font-size: 14px;
+}
+
+@media (max-width: 1440px) {
+  .fact__top {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1200px) {
+  .fact__top {
+    font-size: 20px;
+  }
+  .fact__top--low {
+    font-size: 14px;
+  }
+  .fact__bottom {
+    font-size: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .facts {
+    grid-template-columns: 1fr;
+    row-gap: 7%;
+  }
+  .fact {
+    margin: 0;
+  }
+  .fact__top {
+    padding-bottom: 2%;
+    font-size: 16px;
+  }
+  .fact__top--low {
+    font-size: 12px;
+  }
+  .fact__bottom {
+    padding-top: 2%;
+    font-size: 12px;
+  }
 }

@@ -355,7 +355,7 @@
     }
   }
 }
-@media (max-width: 460px) {
+@media (max-width: 768px) {
   .calendar {
     height: fit-content !important;
     .wrapper {
@@ -363,6 +363,10 @@
       justify-content: start;
     }
   }
+  // .calendar__main {
+  //   column-gap: 5%;
+  //   row-gap: 10%;
+  // }
   .calendar__container {
     // padding: 0;
     // flex-direction: column-reverse;

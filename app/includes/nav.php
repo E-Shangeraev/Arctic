@@ -6,6 +6,7 @@
       <li><a href="center.php">Центр развития туризма</a></li>
       <li><a href="tourist.php">Туристу</a></li>
       <li><a href="news.php">Новости</a></li>
+      <li><a href="events.php">События</a></li>
       <li><a class="eye" href="#"><img src="img/header/eye.svg" alt="" /></a></li>
       <li class="nav__lang">
         <a href="#" class="active">RUS</a>

@@ -3,6 +3,7 @@
   font-family: $bebas-thin;
   font-size: 72px;
   line-height: 110%;
+  flex-shrink: 0;
 }
 
 @media (max-width: 1600px) {
@@ -23,6 +24,7 @@
 @media (max-width: 1200px) {
   .title {
     font-size: 38px;
+    letter-spacing: 2px;
   }
 }
 @media (max-width: 460px) {

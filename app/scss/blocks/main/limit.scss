@@ -1,16 +1,14 @@
 @import '../../variables.scss';
 
 .limit__title {
-  span:not(:last-child) {
+  margin-bottom: 60px;
+  width: 100%;
+  line-height: 100%;
+
+  span {
     display: block;
     margin-bottom: 0px;
   }
-
-  span:nth-child(2) {
-    color: $blue;
-  }
-  margin-bottom: 60px;
-  line-height: 100%;
 }
 
 .limit__col {
@@ -28,11 +26,20 @@
 
 .limit__img:nth-child(2) {
   position: absolute;
-  bottom: 0;
+  top: 50%;
   left: -20%;
 }
 
+@media (max-width: 1600px) {
+  .limit__img:nth-child(2) {
+    width: 50%;
+    left: -20%;
+  }
+}
 @media (max-width: 1440px) {
+  .limit__title {
+    width: 50%;
+  }
   .limit__text {
     margin-bottom: 40px;
     font-size: 12px;
@@ -41,10 +48,11 @@
   .limit__title {
     margin-bottom: 40px;
   }
-  .limit__img:nth-child(2) {
-    width: 50%;
-    left: -10%;
-  }
+  // .limit__img:nth-child(2) {
+  //   width: 50%;
+  //   left: -20%;
+  //   bottom: 5%;
+  // }
 }
 @media (max-width: 1366px) {
   .limit__text {
@@ -53,32 +61,37 @@
   }
   .limit__title {
     margin-bottom: 40px;
+    width: 80%;
   }
   .limit__img:nth-child(2) {
     width: 50%;
     left: -10%;
+    // bottom: 0;
   }
 }
 @media (max-width: 1200px) {
+  .limit__title {
+    width: 80%;
+  }
   .limit__img:nth-child(2) {
-    bottom: 20%;
+    // bottom: 20%;
     left: -20%;
   }
 }
 @media (max-width: 1024px) {
   .limit__img:nth-child(2) {
-    bottom: 10%;
+    // bottom: 10%;
     left: -20%;
   }
 }
+// @media (max-width: 768px) {
+//   .limit__col {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//   }
+// }
 @media (max-width: 768px) {
-  .limit__col {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-@media (max-width: 460px) {
   .limit {
     min-height: 0;
   }
@@ -86,7 +99,8 @@
     margin-bottom: 20px;
 
     span {
-      white-space: nowrap;
+      // white-space: nowrap;
+      display: inline-block;
     }
 
     span:not(:last-child) {
@@ -112,6 +126,6 @@
   .limit__img:nth-child(2) {
     width: 30%;
     left: 20%;
-    bottom: 0;
+    // bottom: 0;
   }
 }
