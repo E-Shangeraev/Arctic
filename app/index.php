@@ -146,7 +146,6 @@ if ($_POST['events']) {
                 <img class="attractions__img" src="./img/main/attractions/1/1.jpg" alt="Норильский горно-металлургический комбинат имени А.П.Завенягина">
                 <figcaption>
                   <h4 class="attractions__card-title">Норильский горно-металлургический комбинат имени А.П.Завенягина</h4>
-                  <p class="attractions__desc">Судьба Норильска неразрывно связана с градообразующим предприятием. Это –героическая летопись освоения богатейшей по своим природным запасам территории.</p>
                 </figcaption>
                 <label class="attractions__button button" for="attractions-places-more-1">Узнать больше</label>
                 <input type="checkbox" id="attractions-places-more-1" checked style="display: none">
@@ -155,7 +154,6 @@ if ($_POST['events']) {
               <img class="attractions__img" src="./img/main/attractions/1/2.jpg" alt="Ленинский проспект">
               <figcaption>
                 <h4 class="attractions__card-title">Ленинский проспект</h4>
-                <p class="attractions__desc">Если хотите почувствовать атмосферу Норильска и прикоснуться к его удивительной истории, совершите прогулку по Ленинскому проспекту! Восхититесь красивым центром города – миниатюрной копией Питерского Невского.</p>
               </figcaption>
               <label class="attractions__button button" for="attractions-places-more-2">Узнать больше</label>
               <input type="checkbox" id="attractions-places-more-2" checked style="display: none">
@@ -164,7 +162,6 @@ if ($_POST['events']) {
               <img class="attractions__img" src="./img/main/attractions/1/3.jpg" alt="Норильский Заполярный театр драмы имени Владимира Маяковского">
               <figcaption>
                 <h4 class="attractions__card-title">Норильский Заполярный театр драмы имени Владимира Маяковского</h4>
-                <p class="attractions__desc">Норильский театр драмы, самый северный в мире, в силу своей истории призван дарить надежду и веру в лучшее. У его истоков стояла целая плеяда репрессированных артистов и деятелей искусства. Сегодня в память о них тема жизни и борьбы с разными проявлениями несвободы в театре звучит ярко и страстно.</p>
               </figcaption>
               <label class="attractions__button button" for="attractions-places-more-3">Узнать больше</label>
               <input type="checkbox" id="attractions-places-more-3" checked style="display: none">
@@ -173,7 +170,6 @@ if ($_POST['events']) {
               <img class="attractions__img" src="./img/main/attractions/1/4.jpg" alt="Мемориальный комплекс «Норильская Голгофа»">
               <figcaption>
                 <h4 class="attractions__card-title">Мемориальный комплекс «Норильская Голгофа»</h4>
-                <p class="attractions__desc">Место памяти и скорби Норильская Голгофа находится в черте Старого города у подножия горы Шмидта. Здесь в 1935-1956 годах массово хоронили заключенных Норильлага. Спустя десятилетия сюда возвращаются норильчане, и приходят туристы, чтобы почтить память тысяч безвинно пострадавших в годы репрессий людей.</p>
               </figcaption>
               <label class="attractions__button button" for="attractions-places-more-4">Узнать больше</label>
               <input type="checkbox" id="attractions-places-more-4" checked style="display: none">
@@ -246,7 +242,6 @@ if ($_POST['events']) {
                 <img class="attractions__img" src="./img/main/attractions/2/1.jpg" alt="Памятник девушке-геологу">
                 <figcaption>
                   <h4 class="attractions__card-title">Памятник девушке-геологу</h4>
-                  <p class="attractions__desc">Бронзовая скульптура девушки на берегу озера Долгое – самый загадочный памятник в Норильске. В память о героико-романтическом прошлом северного города скульптура из бронзы установлена на месте похожей гипсовой фигуры, которая долгие годы была источником множества легенд.</p>
                 </figcaption>
                 <label class="attractions__button button" for="attractions-museums-more-1">Узнать больше</label>
                 <input type="checkbox" id="attractions-museums-more-1" checked style="display: none">
@@ -255,7 +250,6 @@ if ($_POST['events']) {
               <img class="attractions__img" src="./img/main/attractions/2/2.jpg" alt="Памятник «Жертвам Норильлага»">
               <figcaption>
                 <h4 class="attractions__card-title">Памятник «Жертвам Норильлага»</h4>
-                <p class="attractions__desc">На территории музейного комплекса, в сквере у дома № 14, находится памятник, напоминающий изломанную фигуру. Она словно вросла в каменную кладку, которая опоясана венком из сплетенных рук. На памятнике надпись: «Жертвам Норильлага».</p>
               </figcaption>
               <label class="attractions__button button" for="attractions-museums-more-2">Узнать больше</label>
               <input type="checkbox" id="attractions-museums-more-2" checked style="display: none">
@@ -264,7 +258,6 @@ if ($_POST['events']) {
               <img class="attractions__img" src="./img/main/attractions/2/3.jpg" alt="Дом-музей «Первый дом Норильска»">
               <figcaption>
                 <h4 class="attractions__card-title">Дом-музей «Первый дом Норильска»</h4>
-                <p class="attractions__desc">В уютном музейном сквере есть бревенчатый дом-музей, рядом с которым возникают самые невероятные ощущения. Словно попадаешь в далекое историческое прошлое.</p>
               </figcaption>
               <label class="attractions__button button" for="attractions-museums-more-3">Узнать больше</label>
               <input type="checkbox" id="attractions-museums-more-3" checked style="display: none">
@@ -299,7 +292,7 @@ if ($_POST['events']) {
       </div>
     </section>
 
-    <section class="attractions attractions--nature scrollify" data-section="3">
+    <section class="attractions attractions--nature scrollify" data-section="4">
       <div class="wrapper wrapper--column black">
         <div class="row row--center">
           <h2 class="attractions__title title">Природа</h2>
@@ -364,7 +357,7 @@ if ($_POST['events']) {
       </div>
     </section>
 
-    <section class="attractions attractions--reserves scrollify" data-section="4">
+    <section class="attractions attractions--reserves scrollify" data-section="5">
       <div class="wrapper wrapper--column black">
         <div class="row row--center">
           <h2 class="attractions__title title">Заповедники</h2>
@@ -376,7 +369,6 @@ if ($_POST['events']) {
                 <img class="attractions__img" src="./img/main/attractions/3/1.jpg" alt='Государственный природный заповедник "Путоранский"'>
                 <figcaption>
                   <h4 class="attractions__card-title">Государственный природный заповедник "Путоранский"</h4>
-                  <p class="attractions__desc">Недалеко от Норильска, на плато Путорана, есть уникальный природный заповедник "Путоранский". Здесь все поражает воображение: первозданная природа, горы без конца и края, огромные озера, водопады и даже климат, близкий к верхнечетвертичному периоду!</p>
                 </figcaption>
                 <label class="attractions__button button" for="attractions-reserves-more-1">Узнать больше</label>
                 <input type="checkbox" id="attractions-reserves-more-1" checked style="display: none">
@@ -385,7 +377,6 @@ if ($_POST['events']) {
               <img class="attractions__img" src="./img/main/attractions/3/2.jpg" alt='Государственный природный биосферный заповедник "Таймырский"'>
               <figcaption>
                 <h4 class="attractions__card-title">Государственный природный биосферный заповедник "Таймырский"</h4>
-                <p class="attractions__desc">Таймырский заповедник входит в состав ФГБУ "Заповедники Таймыра", администрация которого расположена в Норильске. Город является стартовой площадкой для посещения его отдаленных территорий.</p>
               </figcaption>
               <label class="attractions__button button" for="attractions-reserves-more-2">Узнать больше</label>
               <input type="checkbox" id="attractions-reserves-more-2" checked style="display: none">
@@ -439,7 +430,7 @@ if ($_POST['events']) {
       </div>
     </section>
 
-    <section class="attractions attractions--unusuals scrollify" data-section="5">
+    <section class="attractions attractions--unusuals scrollify" data-section="6">
       <div class="wrapper wrapper--column black">
         <div class="row row--center">
           <h2 class="attractions__title title">Храмы</h2>
@@ -451,7 +442,6 @@ if ($_POST['events']) {
                 <img class="attractions__img" src="./img/main/attractions/4/1.jpg" alt="Кафедральный собор в честь иконы Божией Матери «Всех скорбящих Радость»">
                 <figcaption>
                   <h4 class="attractions__card-title">Кафедральный собор в честь иконы Божией Матери «Всех скорбящих Радость»</h4>
-                  <p class="attractions__desc">В Норильске по улице Пушкина, 11 есть невероятно красивый Кафедральный собор с удивительной историей. Это знаковое место освещено молитвами репрессированных священнослужителей, ведь в годы Норильлага рядом с ним находились бараки заключенных.</p>
                 </figcaption>
                 <label class="attractions__button button" for="attractions-unusuals-more-1">Узнать больше</label>
                 <input type="checkbox" id="attractions-unusuals-more-1" checked style="display: none">
@@ -460,7 +450,6 @@ if ($_POST['events']) {
               <img class="attractions__img" src="./img/main/attractions/4/2.jpg" alt="Храм Святой Троицы">
               <figcaption>
                 <h4 class="attractions__card-title">Храм Святой Троицы</h4>
-                <p class="attractions__desc">Знакомство с районом Талнах города Норильска для любого туриста начинается с Храма Святой Троицы. Возведенный по канонам русского деревянного зодчества, храм словно пропитан духом вековых традиций Руси, отличается совершенством, логичностью конструкций и вдохновляющей красотой.</p>
               </figcaption>
               <label class="attractions__button button" for="attractions-unusuals-more-2">Узнать больше</label>
               <input type="checkbox" id="attractions-unusuals-more-2" checked style="display: none">
@@ -469,7 +458,6 @@ if ($_POST['events']) {
               <img class="attractions__img" src="./img/main/attractions/4/3.jpg" alt="Храмы Архангела Гавриила и Архангела Михаила">
               <figcaption>
                 <h4 class="attractions__card-title">Храмы Архангела Гавриила и Архангела Михаила</h4>
-                <p class="attractions__desc">В районе Кайеркан города Норильска находится небольшой и удивительно светлый храм Архангела Гавриила. Побывавшие здесь туристы всегда отмечают его великолепное внутреннее убранство.</p>
               </figcaption>
               <label class="attractions__button button" for="attractions-unusuals-more-3">Узнать больше</label>
               <input type="checkbox" id="attractions-unusuals-more-3" checked style="display: none">
@@ -504,21 +492,21 @@ if ($_POST['events']) {
       </div>
     </section>
 
-    <section class="news scrollify" data-section="6">
+    <section class="news scrollify" data-section="7">
       <div class="wrapper wrapper--column">
           <div class="row row--center">
             <h2 class="news__title title">Новости</h2>
             <a href="news.php" class="outline-button">Смотреть все</a>
           </div>
             <?php
-              $articles = tpl_render('articles.php', ['id' => 1]);
+              $articles = tpl_render('news.php', ['id' => 3]);
               print ($articles);
             ?>
         <a href="news.php" class="outline-button outline-button--mobile">Смотреть все</a>
       </div> 
     </section>
 
-    <section class="feedback scrollify" data-section="7">
+    <section class="feedback scrollify" data-section="8">
       <div class="wrapper feedback__wrapper white">
           <div>
             <h2 class="title feedback__title">У вас остались вопросы?</h2>
@@ -542,7 +530,7 @@ if ($_POST['events']) {
     </section>
   </main>
 
-  <footer class="footer scrollify" data-section="8">
+  <footer class="footer scrollify" data-section="9">
     <div class="wrapper footer__wrapper">
       <nav class="footer__nav">
         <ul class="footer__list">

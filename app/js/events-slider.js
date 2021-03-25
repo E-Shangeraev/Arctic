@@ -2,7 +2,7 @@ $(function () {
   $('.events__slider').slick({
     arrows: true,
     autoplay: false,
-    slidesToShow: 3,
+    slidesToShow: 4,
     speed: 800,
     cssEase: 'ease-in-out',
     pauseOnHover: false,

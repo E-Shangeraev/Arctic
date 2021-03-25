@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const nav = document.querySelector('nav');
     const eye = document.querySelector('.eye img');
+    const logo = document.querySelector('.logo img');
 
     // Определение имени текущей страницы
     const path = (pathName) => pathName.split('/').pop().split('#');
@@ -17,7 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (
       fileName.split('?')[0] === 'article.php' ||
-      fileName.split('?')[0] === 'article_event.php'
+      fileName.split('?')[0] === 'article_event.php' ||
+      fileName.split('?')[0] === 'category.php' ||
+      fileName.split('?')[0] === 'article_useful.php'
     ) {
       aside.classList.add('aside--black');
       nav.classList.remove('white');
@@ -28,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         margin: 0;
       `;
       eye.src = 'img/header/eye-black.svg';
+      logo.src = 'img/header/logo-dark.png';
     }
 
     const fill = 100 / +scrollIndicatorTotal.textContent;
@@ -48,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (fileName === 'index.php' || fileName === '') {
-          setBlackBySectionNum(2, 3, 4, 5, 6);
+          setBlackBySectionNum(2, 3, 4, 5, 6, 7);
         }
         if (fileName === 'news.php') {
           setBlackBySectionNum(2, 3);
@@ -56,8 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (fileName === 'norilsk.php') {
           setBlackBySectionNum(2, 3, 4, 5, 6, 7);
         }
-        if (fileName === 'center.php') {
-          setBlackBySectionNum(2, 3, 4, 5, 6);
+        if (fileName === 'contacts.php') {
+          setBlackBySectionNum(2, 3, 4, 5, 6, 7, 8);
         }
         if (fileName === 'flora&fauna.php') {
           setBlackBySectionNum(2, 3);
@@ -65,11 +69,15 @@ document.addEventListener('DOMContentLoaded', () => {
         if (fileName === 'tourist.php') {
           setBlackBySectionNum(2, 4);
         }
-        if (fileName.split('?')[0] === 'article.php') {
-          setBlackBySectionNum(1);
-        }
+        // if (fileName.split('?')[0] === 'article.php') {
+        //   setBlackBySectionNum(1);
+        // }
         if (fileName === 'events.php') {
           setBlackBySectionNum(2);
+        }
+        if (fileName.split('?')[0] === 'category.php') {
+          console.log(strval(fileName.split('?')[0]));
+          setBlackBySectionNum(1);
         }
       },
     });
@@ -86,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
             nav.classList.remove('white');
             nav.classList.add('black');
             eye.src = 'img/header/eye-black.svg';
+            logo.src = 'img/header/logo-dark.png';
           }, 300);
           return;
         } else {
@@ -94,6 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
             nav.classList.add('white');
             nav.classList.remove('black');
             eye.src = 'img/header/eye.svg';
+            logo.src = 'img/header/logo.png';
           }, 300);
         }
       }

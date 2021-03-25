@@ -1,0 +1,58 @@
+.crt {
+  background-image: url('../img/contacts/bg-gray.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.crt__logo {
+  width: 50%;
+}
+
+.crt__description {
+  h4,
+  p {
+    margin: 0;
+  }
+  h4 {
+    margin-bottom: 7px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  p:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    transition: ease-in-out 0.15s;
+  }
+  a:hover {
+    color: $blue;
+  }
+}
+
+.crt__title {
+  margin-bottom: 30px;
+}
+
+.crt__document {
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 15px;
+  }
+  a {
+    font-size: 18px;
+    line-height: 150%;
+    text-decoration-line: underline;
+  }
+}
+
+@media (max-width: 1440px) {
+  .crt__cite {
+    font-size: 17px;
+  }
+}

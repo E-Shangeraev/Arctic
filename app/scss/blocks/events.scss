@@ -2,6 +2,9 @@
   .row {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   }
+  .slick-track {
+    padding: 5px !important;
+  }
   .slick-arrow {
     width: 57px;
     height: 57px;
@@ -17,18 +20,21 @@
 .events__slider {
   a {
     margin-right: 15px;
-    width: 100%;
+    max-width: 25%;
     height: inherit !important;
     color: #000;
     text-decoration: none;
-    overflow: hidden;
+    // overflow: hidden;
+    // box-shadow: 0 2px 5px 1px #000;
   }
 }
 
 .events__preview {
   padding: 15px 25px;
   height: 100%;
-  border: 2px solid $blue;
+  // border: 2px solid $blue;
+  box-shadow: 0 2px 5px 1px #b4b4b4;
+
   box-sizing: border-box;
 
   img {

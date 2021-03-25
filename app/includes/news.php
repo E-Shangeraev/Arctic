@@ -1,19 +1,9 @@
-<?php 
-  $url = $_SERVER['REQUEST_URI'];
-  if ($url === '/index.php' || $url === '/' || $url === '/norilsk.php') {
-    $limit = 4;
-  }
-  if ($url === '/news.php') {
-    $limit = 100;
-  }
-?>
-
-<ul class="articles-section__list blog__articles-list">
+<ul class="news__list">
     <?php
         require 'config/config.php';
             
         $categories = mysqli_query($connection, "SELECT * FROM `article_categories`");
-        $articles = mysqli_query($connection, "SELECT * FROM `articles` WHERE `categorie_id` = $id ORDER BY `id` DESC LIMIT $limit");
+        $articles = mysqli_query($connection, "SELECT * FROM `articles` WHERE `categorie_id` = $id ORDER BY `id` DESC LIMIT 4");
         while( $art = mysqli_fetch_assoc($articles) ): ?>
         <li>
             <a href="article.php?id=<?= $art['id']; ?>" class="article-preview article-preview--list">

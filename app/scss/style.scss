@@ -48,17 +48,19 @@
 @import './blocks/norilsk/adventure.scss';
 @import './blocks/norilsk/monuments.scss';
 
-// center
-@import './blocks/center/center-intro.scss';
-@import './blocks/center/director.scss';
-@import './blocks/center/projects.scss';
+// contacts
+@import './blocks/contacts/center-intro.scss';
+@import './blocks/contacts/crt.scss';
+@import './blocks/contacts/projects.scss';
+@import './blocks/contacts/operators.scss';
+@import './blocks/contacts/emergency.scss';
 
 // flora-fauna
 @import './blocks/flora-fauna/nature.scss';
 @import './blocks/flora-fauna/facts.scss';
 
 // tourist
-@import './blocks/tourist/faq.scss';
+@import './blocks/tourist/useful.scss';
 @import './blocks/tourist/route.scss';
 
 // events

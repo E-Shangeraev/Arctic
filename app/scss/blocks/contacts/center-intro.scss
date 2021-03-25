@@ -1,7 +1,7 @@
-.center__intro .wrapper {
+.contacts__intro .wrapper {
   padding-bottom: 0;
 }
-.center__intro-text {
+.contacts__intro-text {
   width: 100%;
   margin-bottom: 100px;
   column-count: 2;
@@ -9,13 +9,14 @@
   font-size: 16px;
   line-height: 150%;
 }
-.center__intro-image {
+.contacts__intro-image {
   margin-top: auto;
-  height: 100%;
+  height: auto;
+  max-height: 430px;
 }
 
 @media (max-width: 1440px) {
-  .center__intro-image {
+  .contacts__intro-image {
     max-height: 340px;
   }
 }

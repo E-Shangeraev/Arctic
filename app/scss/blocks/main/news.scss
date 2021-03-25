@@ -1,5 +1,17 @@
 .news {
   position: relative;
+
+  .slick-list,
+  .slick-track,
+  .slick-slide {
+    width: 100% !important;
+  }
+}
+
+.news__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
 }
 
 @media (max-width: 460px) {

@@ -1,0 +1,42 @@
+.operators__list {
+  width: 50%;
+  margin-right: 40px;
+}
+
+.operators__name {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.operators__contacts {
+  margin-bottom: 30px;
+}
+
+.operators__item {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: ease-in-out 0.15s;
+
+  &--active,
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.operators__desc {
+  a {
+    text-decoration: none;
+    color: #000;
+    transition: ease-in-out 0.15s;
+  }
+  a:hover {
+    color: $blue;
+  }
+}

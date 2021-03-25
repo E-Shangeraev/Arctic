@@ -10,7 +10,7 @@
 
   float: left;
 
-  // padding-top: 37px;
+  padding-top: 15px;
   padding-bottom: 95px;
   width: 280px;
   width: 200px;
@@ -20,6 +20,10 @@
   border-right: 2px solid rgba(#ffffff, 0.4);
 
   z-index: 999;
+
+  .logo {
+    width: 80%;
+  }
 }
 
 .aside--black {

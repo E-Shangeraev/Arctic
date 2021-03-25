@@ -83,3 +83,7 @@
 <?php if ($url === '/events.php'): ?>
   <script src="js/events-slider.js"></script>
 <?php endif; ?>
+
+<?php if ($url === '/contacts.php'): ?>
+  <script src="js/operators.js"></script>
+<?php endif; ?>

@@ -59,6 +59,19 @@ function attractions(section) {
   }
 }
 
+// $('.attractions__cards').slick({
+//   arrows: true,
+//   // appendArrows: $('.slider__arrows'),
+//   // autoplay: true,
+//   // autoplaySpeed: 8000,
+//   slidesToShow: 2,
+//   infinite: true,
+//   speed: 800,
+//   cssEase: 'ease-in-out',
+//   pauseOnHover: false,
+//   waitForAnimate: true,
+// });
+
 attractions('.attractions--places');
 attractions('.attractions--museums');
 attractions('.attractions--reserves');

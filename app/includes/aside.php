@@ -2,7 +2,7 @@
   $url = explode('?', $_SERVER['REQUEST_URI']);
   $url = $url[0];
   if ($url === '/' || $url === '/index.php') {
-    $sectionCount = '08';
+    $sectionCount = '09';
   }
   if ($url === '/news.php') {
     $sectionCount = '03';
@@ -10,8 +10,8 @@
   if ($url === '/norilsk.php') {
     $sectionCount = '07';
   }
-  if ($url === '/center.php') {
-    $sectionCount = '06';
+  if ($url === '/contacts.php') {
+    $sectionCount = 10;
   }
   if ($url === '/flora&fauna.php') {
     $sectionCount = '03';
@@ -30,6 +30,9 @@
   }
   if ($url === '/events.php') {
     $sectionCount = '03';
+  }
+  if ($url === '/category.php') {
+    $sectionCount = '01';
   }
 ?>
 
