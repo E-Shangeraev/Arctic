@@ -8,6 +8,6 @@ $(function () {
     infinite: false,
     pauseOnHover: false,
     waitForAnimate: true,
-    appendArrows: '.tours__arrows',
+    appendArrows: '.arrows',
   });
 });

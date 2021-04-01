@@ -19,6 +19,9 @@
   if ($url === '/tourist.php') {
     $sectionCount = '04';
   }
+  if ($url === '/tours.php') {
+    $sectionCount = '05';
+  }
   if ($url === '/404.php') {
     $sectionCount = '01';
   }
@@ -26,6 +29,9 @@
     $sectionCount = '01';
   }
   if ($url === '/article_event.php') {
+    $sectionCount = '01';
+  }
+  if ($url === '/article_tours.php') {
     $sectionCount = '01';
   }
   if ($url === '/events.php') {

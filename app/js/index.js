@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
       fileName.split('?')[0] === 'article.php' ||
       fileName.split('?')[0] === 'article_event.php' ||
       fileName.split('?')[0] === 'category.php' ||
-      fileName.split('?')[0] === 'article_useful.php'
+      fileName.split('?')[0] === 'article_useful.php' ||
+      fileName.split('?')[0] === 'article_tours.php'
     ) {
       aside.classList.add('aside--black');
       nav.classList.remove('white');
@@ -69,9 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (fileName === 'tourist.php') {
           setBlackBySectionNum(2, 4);
         }
-        // if (fileName.split('?')[0] === 'article.php') {
-        //   setBlackBySectionNum(1);
-        // }
+        if (fileName === 'tours.php') {
+          setBlackBySectionNum(2, 3, 4, 5);
+        }
         if (fileName === 'events.php') {
           setBlackBySectionNum(2);
         }

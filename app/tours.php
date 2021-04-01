@@ -55,9 +55,43 @@ if ($_POST['events']) {
           </div>
 
           <?php
-            $articles = tpl_render('tours.php', []);
+            $articles = tpl_render('tours.php', ['table' => 'tours']);
             print ($articles);
           ?>
+        </div>
+      </section>
+
+      <section class="excursion scrollify" data-section="3">
+        <div class="wrapper wrapper--column">
+          <div class="row row--slider">
+            <h2 class="title">Экскурсии</h2>
+            <p class="excursion__arrows arrows"></p>
+          </div>
+
+          <?php
+            $articles = tpl_render('tours.php', ['table' => 'excursion']);
+            print ($articles);
+          ?>
+        </div>
+      </section>
+
+      <section class="cluster scrollify" data-section="4">
+        <div class="wrapper wrapper--column">
+          <div class="row">
+            <h2 class="title">Туристско-рекреационный кластер «Арктический»</h2>
+          </div>
+          <div class="cluster__container">
+            <div class="col">
+              <img src="./img/tours/cluster/1.png" alt="Туристско-рекреационный кластер «Арктический»">
+            </div>
+            <div class="col">
+              <p class="cluster__text">
+                Туристско-рекреационный кластер «Арктический» – это новый центр притяжения Арктического туризма, включающий культурно-познавательный, экологический, промышленный, этнический, круизный туризм. Это сильная команда, готовая оказывать качественные туристические услуги на Крайнем Севере, показывать самые интересные локации, дарить невероятно яркие впечатления и самый комфортный отдых не только российским, но и зарубежным туристам.
+              </p>
+              <button class="more">Узнать больше</button>
+            </div>
+          </div>
+          <a href="#" class="button">Перейти на платформу</a>
         </div>
       </section>
     </main>

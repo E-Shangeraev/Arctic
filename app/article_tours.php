@@ -14,10 +14,13 @@
       require_once 'includes/aside.php';
       require_once 'includes/nav.php';
       require_once 'includes/nav-mobile.php';
+
+      $article = mysqli_query($connection, "SELECT * FROM ". $_GET['table'] ." WHERE `id` = ". (int) $_GET['id']);
+      $art = mysqli_fetch_assoc($article);
     ?>
 
   <main class="article-page">
-    <section class="article scrollify" data-section="1">
+    <div class="article">
       <div class="article__wrapper wrapper">
         <div class="article__container">
           <div class="article__column-1">
@@ -28,11 +31,6 @@
               </svg>
               <span class="link-back__text">Назад</span>
             </a>
-            <?php
-              $article = mysqli_query($connection, "SELECT * FROM `tours` WHERE `id` = " . (int) $_GET['id']);
-              $art = mysqli_fetch_assoc($article);
-            ?>
-            
             <div class="operator">
               <h3 class="operator__name"><?= $art['operator_name'] ?></h3>
               <p class="operator__info"><?= $art['operator_info'] ?></p>
@@ -79,7 +77,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </main>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>

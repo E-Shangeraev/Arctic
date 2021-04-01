@@ -1,0 +1,17 @@
+.more {
+  width: fit-content;
+  font-family: $manrope-semibold;
+  font-size: 18px;
+  line-height: 200%;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: ease-in-out 0.25s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
