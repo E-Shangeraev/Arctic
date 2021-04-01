@@ -36,29 +36,29 @@ if ($_POST['events']) {
       require_once 'includes/nav.php';
       require_once 'includes/nav-mobile.php';
     ?>
-    <header class="header header__news scrollify" data-section="1">
+    <header class="header header__tours scrollify" data-section="1">
       <div class="wrapper wrapper--column wrapper--center white">
         <div class="row row--center h-100">
-          <h1 class="title">Новости</h1>
-          <p class="header__text">В этом разделе вы найдете самые интересные новости для туристов и профессионалов
-          туриндустрии</p>
+          <h1 class="title">Туры</h1>
+          <p class="header__text">В этом разделе вы можете познакомиться с турами и экскурсионными програмами, которые сделают ваше прибывание в г. Норильск интересным, разнообразным и богатым на эмоции</p>
         </div>
         <a class="button" href="#more">Подробнее</a>
       </div>
     </header>
-     
+    
     <main id="more">
-      <section class="news scrollify" data-section="2">
+      <section class="tours scrollify" data-section="2">
         <div class="wrapper wrapper--column">
           <div class="row row--slider">
-            <h2 class="news__title title">Новости</h2>
-            <p class="news__arrows arrows"></p>
+            <h2 class="title">Туры</h2>
+            <p class="tours__arrows arrows"></p>
           </div>
+
           <?php
-            $articles = tpl_render('articles.php', ['limit' => 100]);
+            $articles = tpl_render('tours.php', []);
             print ($articles);
           ?>
-        </div> 
+        </div>
       </section>
     </main>
 
@@ -69,6 +69,7 @@ if ($_POST['events']) {
 
     <script src="js/index.js"></script>
     <script src="js/nav-mobile.js"></script>
-    <script src="js/news-slider.js"></script>
+    <!-- <script src="js/faq-animation.js"></script> -->
+    <script src="js/tours-slider.js"></script>
   </body>
 </html>

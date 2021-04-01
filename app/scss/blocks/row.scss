@@ -9,6 +9,28 @@
   align-items: center;
 }
 
+.row--slider {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  // margin-bottom: 0;
+
+  .slick-arrow {
+    width: 57px;
+    height: 57px;
+  }
+  .slick-next::before {
+    content: url('../img/arrows/arrow-right.svg') !important;
+  }
+  .slick-prev::before {
+    content: url('../img/arrows/arrow-left.svg') !important;
+  }
+  .slick-prev {
+    left: -15%;
+  }
+  .arrows {
+    display: flex;
+  }
+}
+
 .h-100 {
   height: 100%;
 }

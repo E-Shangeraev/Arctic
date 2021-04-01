@@ -56,8 +56,8 @@
 @import './blocks/contacts/emergency.scss';
 
 // flora-fauna
-@import './blocks/flora-fauna/nature.scss';
-@import './blocks/flora-fauna/facts.scss';
+// @import './blocks/flora-fauna/nature.scss';
+// @import './blocks/flora-fauna/facts.scss';
 
 // tourist
 @import './blocks/tourist/useful.scss';
@@ -68,6 +68,9 @@
 
 // article
 @import './blocks/article/article.scss';
+
+// tours
+@import './blocks/tours/operator.scss';
 
 @import 'colors.scss';
 

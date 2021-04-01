@@ -76,10 +76,6 @@
   <script src="js/attractions.js"></script>
 <?php endif; ?>
 
-<?php if ($url === '/tourist.php'): ?>
-  <script src="js/calendar.js"></script>
-<?php endif; ?>
-
 <?php if ($url === '/events.php'): ?>
   <script src="js/events-slider.js"></script>
 <?php endif; ?>

@@ -3,7 +3,7 @@
         require 'config/config.php';
             
         $categories = mysqli_query($connection, "SELECT * FROM `article_categories`");
-        $articles = mysqli_query($connection, "SELECT * FROM `articles` WHERE `categorie_id` = $id ORDER BY `id` DESC LIMIT 4");
+        $articles = mysqli_query($connection, "SELECT * FROM `articles` ORDER BY `id` DESC LIMIT $limit");
         while( $art = mysqli_fetch_assoc($articles) ): ?>
         <li>
             <a href="article.php?id=<?= $art['id']; ?>" class="article-preview article-preview--list">
@@ -19,7 +19,7 @@
                     $date = strtotime($art['pubdate']);
                     $dateFormat = date('d.m.Y', $date);
                 ?>
-                <img src="./img/blog-page/<?= $art['image']; ?>" alt="<?= $art_cat['title']; ?>">
+                <img src="data:image/png;base64, <?= base64_encode($art["image"]) ?>" alt="<?= $art["title"] ?>">
                 <div class="article-preview__text">
                     
                     

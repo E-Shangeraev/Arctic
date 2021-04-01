@@ -499,7 +499,7 @@ if ($_POST['events']) {
             <a href="news.php" class="outline-button">Смотреть все</a>
           </div>
             <?php
-              $articles = tpl_render('news.php', ['id' => 3]);
+              $articles = tpl_render('news.php', ['limit' => 4]);
               print ($articles);
             ?>
         <a href="news.php" class="outline-button outline-button--mobile">Смотреть все</a>

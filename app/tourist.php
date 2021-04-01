@@ -48,16 +48,16 @@ if ($_POST['events']) {
     
     <main id="more">
         <section class="useful scrollify" data-section="2">
-            <div class="wrapper wrapper--column">
-                <h2 class="useful__title title">Полезное</h2>
-                <p class="useful__description">
-                В этом разделе можно найти всю необходимую информацию для туриста
-                </p>
-                <?php
-                  $usefuls = tpl_render('useful.php', []);
-                  print ($usefuls);
-                ?>
-            </div>
+          <div class="wrapper wrapper--column">
+            <h2 class="useful__title title">Полезное</h2>
+            <p class="useful__description">
+            В этом разделе можно найти всю необходимую информацию для туриста
+            </p>
+            <?php
+              $usefuls = tpl_render('useful.php', []);
+              print ($usefuls);
+            ?>
+          </div>
         </section>
 
       <section class="documents scrollify" data-section="3">
