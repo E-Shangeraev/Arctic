@@ -54,7 +54,7 @@ if ($_POST['events']) {
             В этом разделе можно найти всю необходимую информацию для туриста
             </p>
             <?php
-              $usefuls = tpl_render('useful.php', []);
+              $usefuls = tpl_render('useful.php', ['categories' => [1, 2, 3, 4, 5]]);
               print ($usefuls);
             ?>
           </div>
@@ -67,10 +67,18 @@ if ($_POST['events']) {
             </div>
             <ul class="documents__list">
               <li class="documents__item">
-                <a href="documents/Паспорт безопасности туриста.pdf"
+                <a href="documents/Безопасность туриста.docx"
                   target="_blank">
-                  <img src="./img/main/documents/2.svg" alt="Паспорт безопасности туриста">
-                  <span>Паспорт безопасности туриста</span>
+                  <img src="./img/main/documents/2.svg" alt="Безопасность туриста">
+                  <span>Безопасность туриста</span>
+                </a>
+              </li>
+              <li class="documents__item">
+                <a href="documents/Памятка о правах потребителей экскурсионных услуг.docx"
+                  target="_blank">
+                  <img src="./img/main/documents/2.svg" 
+                      alt="Памятка о правах потребителей экскурсионных услуг">
+                  <span>Памятка о правах потребителей экскурсионных услуг</span>
                 </a>
               </li>
               <li class="documents__item">
@@ -82,11 +90,11 @@ if ($_POST['events']) {
                 </a>
               </li>
               <li class="documents__item">
-                <a href="documents/Унифицированный туристский паспорт муниципального образования город Норильск.pdf"
+                <a href="documents/Порядок оформления разрешения на въезд.docx"
                   target="_blank">
                   <img src="./img/main/documents/2.svg" 
-                      alt="Унифицированный туристский паспорт муниципального образования город Норильск">
-                  <span>Унифицированный туристский паспорт муниципального образования город Норильск</span>
+                      alt="Порядок оформления разрешения на въезд">
+                  <span>Порядок оформления разрешения на въезд</span>
                 </a>
               </li>
             </ul>
@@ -101,44 +109,20 @@ if ($_POST['events']) {
       <section class="route scrollify" data-section="4">
         <div class="wrapper wrapper--column">
           <div class="row">
-            <h2 class="title">Маршрут</h2>
+            <h2 class="title">Карта города</h2>
           </div>
-          <div class="row route__container">
-            <p class="col route__text">
-              Норильск -  город с развитой инфраструктурой. Отправляясь в путешествие в Норильск, Вы можете быть уверены, что найдете здесь все необходимое, чтобы Ваш тур прошел комфортно и Вам было о чем вспомнить в будущем.
-            </p>
-            <ul class="route__buttons">
-              <li>
-                <button class="wow" id="eat" data-wow-offset="500"></button>
-                <label for="eat" class="tourist__label wow"><span>Поесть</span></label>
-              </li>
-              <li>
-                <button class="wow" id="housing" data-wow-offset="500"></button>
-                <label for="housing" class="tourist__label wow"><span>Жить</span></label>
-              </li>
-              <li>
-                <button class="wow" id="health" data-wow-offset="500"></button>
-                <label for="health" class="tourist__label wow"><span>Здоровье</span></label>
-              </li>
-              <li>
-                <button class="wow" id="other" data-wow-offset="500"></button>
-                <label for="other" class="tourist__label wow"><span>Прочее</span></label>
-              </li>
-            </ul>
-          </div>
-          <img class="route__map" src="./img/tourist/2.png" alt="Карта туриста">
+          <p class="route__text">
+            Норильск - город с развитой инфраструктурой. Отправляясь в путешествие в Норильск, Вы можете быть уверены, что найдете здесь все необходимое, чтобы Ваш тур прошел комфортно и Вам было о чем вспомнить в будущем.
+          </p>
+          <iframe class="route__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A505ba0646d603551f706003ad1da2785f12e57b6545b622dae307e9b6d4c1035&amp;source=constructor" width="500" height="600" frameborder="0"></iframe>
+          
         </div>
       </section>
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="./js/jquery.scrollify.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-
-    <script src="js/index.js"></script>
-    <script src="js/nav-mobile.js"></script>
-    <script src="js/tourist.js"></script>
-    <script src="js/faq-animation.js"></script>
+    <?php
+      $footer = tpl_render('footer.php', ['dataSection' => 5]);
+      print ($footer);
+    ?>
   </body>
 </html>

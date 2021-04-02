@@ -68,7 +68,7 @@
                                 <time class="article__datetime" datetime="<?= $art['pubdate']; ?>">
                                     <?= $date; ?>
                                 </time>
-                                <div class="article__image" style="background-image: url('./img/blog-page/<?= $art['image']; ?>')"></div>
+                                <img class="article__image" src="data:image/png;base64, <?= base64_encode($art["image"]) ?>" class="article__image" alt="<?= $art['title']; ?>"/>
                                 <p class="article__text"><?= $art['text']; ?></p>
                             <?php endif; ?>
                         </article>

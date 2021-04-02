@@ -7,110 +7,13 @@
   justify-content: space-between;
 }
 
-.route__column-1 {
-  width: 40%;
-}
-
-.route__description {
-  margin: 0;
-}
-
-.route__buttons {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  padding-left: 100px;
-  margin: 0;
+.route__text {
   width: 50%;
-
-  list-style: none;
-
-  li {
-    display: inline-block;
-    text-align: center;
-  }
-
-  button {
-    display: inline-block;
-    width: 68px;
-    height: 68px;
-    border: none;
-    border-radius: 50%;
-    margin-bottom: 26px;
-
-    cursor: pointer;
-    transition: ease-in 0.08s;
-  }
-
-  button:hover {
-    transform: scale(1.08);
-    box-shadow: inset 0 -10px 20px 0.15px rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  button:focus {
-    outline: none;
-  }
-
-  button:active {
-    box-shadow: inset 0 8px 10px 5px rgba(0, 0, 0, 0.2);
-  }
-
-  label {
-    display: block;
-  }
-}
-
-#eat {
-  background: #ff8a49;
-  background-image: url('../img/tourist/buttons/1.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-
-  animation: bounceIn 1.5s;
-}
-
-#housing {
-  background: #f4b922;
-  background-image: url('../img/tourist/buttons/2.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-
-  animation: bounceIn 1.5s;
-}
-
-#health {
-  background: #01988f;
-  background-image: url('../img/tourist/buttons/3.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-
-  animation: bounceIn 1.5s;
-}
-
-#other {
-  background: #4394ff;
-  background-image: url('../img/tourist/buttons/4.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-
-  animation: bounceIn 1.5s;
-}
-
-.route__container {
-  margin-bottom: 8%;
-}
-
-.route__description {
-  animation: fadeInLeft 1.5s;
-}
-
-.route__label {
-  animation: fadeIn 3.5s;
 }
 
 .route__map {
   margin-top: auto;
-  height: 100%;
+  width: 100%;
 }
 
 @media (max-width: 1440px) {

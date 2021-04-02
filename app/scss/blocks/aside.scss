@@ -19,7 +19,7 @@
 
   border-right: 2px solid rgba(#ffffff, 0.4);
 
-  z-index: 999;
+  z-index: 9999;
 
   .logo {
     width: 80%;
@@ -148,8 +148,10 @@
       left: 0;
     }
   }
-  .logo svg {
-    width: 50px;
+  .logo {
+    display: flex;
+    align-items: center;
+    max-width: 120px;
   }
   .aside--black {
     border-bottom: 1px solid rgba(36, 36, 36, 0.2);

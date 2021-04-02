@@ -71,7 +71,6 @@
 <script src="js/nav-mobile.js"></script>
 
 <?php if ($url === '/index.php' || $url === '/'): ?>
-  <script src="js/events-slider.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/attractions.js"></script>
 <?php endif; ?>
@@ -82,4 +81,12 @@
 
 <?php if ($url === '/contacts.php'): ?>
   <script src="js/operators.js"></script>
+<?php endif; ?>
+
+<?php if ($url === '/tours.php'): ?>
+  <script src="js/tours-slider.js"></script>
+<?php endif; ?>
+
+<?php if ($url === '/news.php'): ?>
+  <script src="js/news-slider.js"></script>
 <?php endif; ?>

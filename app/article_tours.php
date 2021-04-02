@@ -34,7 +34,9 @@
             <div class="operator">
               <h3 class="operator__name"><?= $art['operator_name'] ?></h3>
               <p class="operator__info"><?= $art['operator_info'] ?></p>
-              <img src="data:image/png;base64, <?= base64_encode($art["operator_logo"]) ?>" class="operator__logo" alt="<?= $art['operator_name']; ?>"/>
+              <?php if ($art["operator_logo"]): ?>
+                <img src="data:image/png;base64, <?= base64_encode($art["operator_logo"]) ?>" class="operator__logo" alt="<?= $art['operator_name']; ?>"/>
+              <?php endif; ?>
             </div>
           </div>
 

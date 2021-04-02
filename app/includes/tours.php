@@ -1,4 +1,4 @@
-<div class="tours__list">
+<div class="tours__list" id="<?= $table ?>">
     <?php
       require 'config/config.php';
           

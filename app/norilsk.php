@@ -166,16 +166,36 @@ if ($_POST['events']) {
     </header>
     
     <main>
-      
+      <section class="useful scrollify" data-section="2">
+        <div class="wrapper wrapper--column">
+          <h2 class="useful__title title">Достопримечательности</h2>
+          <p class="useful__description">
+          Норильск — круговорот впечатлений
+          </p>
+          <?php
+            $usefuls = tpl_render('useful.php', ['categories' => [6, 7, 8, 9]]);
+            print ($usefuls);
+          ?>
+        </div>
+      </section>
+
+      <section class="useful scrollify" data-section="3">
+        <div class="wrapper wrapper--column">
+          <h2 class="useful__title title">Места отдыха и развлечений</h2>
+          <p class="useful__description">
+          Развлечения и досуг за Полярным кругом
+          </p>
+          <?php
+            $usefuls = tpl_render('useful.php', ['categories' => [10, 11, 12, 13]]);
+            print ($usefuls);
+          ?>
+        </div>
+      </section>
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="./js/jquery.scrollify.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-
-    <script src="js/slider.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/nav-mobile.js"></script>
+    <?php
+      $footer = tpl_render('footer.php', ['dataSection' => 4]);
+      print ($footer);
+    ?>
   </body>
 </html>

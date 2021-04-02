@@ -49,7 +49,7 @@ $(function () {
     const slideFloating = document.querySelector('.slick-current .slide__floating');
 
     if (!description) {
-      sliderCheckbox.style.visibility = 'hidden';
+      sliderButton.style.visibility = 'hidden';
     }
 
     const title = document.querySelector('.slick-current .slide__title');

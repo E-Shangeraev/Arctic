@@ -8,7 +8,7 @@
     $sectionCount = '03';
   }
   if ($url === '/norilsk.php') {
-    $sectionCount = '07';
+    $sectionCount = '04';
   }
   if ($url === '/contacts.php') {
     $sectionCount = 10;
@@ -17,7 +17,7 @@
     $sectionCount = '03';
   }
   if ($url === '/tourist.php') {
-    $sectionCount = '04';
+    $sectionCount = '05';
   }
   if ($url === '/tours.php') {
     $sectionCount = '05';

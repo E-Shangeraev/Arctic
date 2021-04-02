@@ -2,13 +2,14 @@
   <?php
     require 'config/config.php';
 
+    $categories = implode(',', $categories);
     $useful_items = mysqli_query($connection, "SELECT * FROM `useful_items`");
-    $usefuls = mysqli_query($connection, "SELECT * FROM `useful`");
+    $usefuls = mysqli_query($connection, "SELECT * FROM `useful` WHERE `category_id` IN ($categories)");
     while( $uf = mysqli_fetch_assoc($usefuls) ): ?>
     <li>
       <?php
         $art_id = false;
-        if ($uf['id'] == 1 || $uf['id'] == 5) {
+        if ($uf['id'] == 1 || $uf['id'] == 5 || $uf['id'] == 10 || $uf['id'] == 11 || $uf['id'] == 12 || $uf['id'] == 13 || $uf['id'] == 14) {
           foreach( $useful_items as $item) {
             if ( $item['category_id'] == $uf['id'] ) {
                 $art_id = $item['id'];

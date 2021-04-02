@@ -1,15 +1,7 @@
 <?php
-  $title = '';
-
-  if ($id === '2') {
-    $title = 'Где остановиться';
-  }
-  if ($id === '3') {
-    $title = 'Где поесть';
-  }
-  if ($id === '4') {
-    $title = 'Здоровье';
-  }
+  require 'config/config.php';
+  $titles = mysqli_query($connection, "SELECT `category_name` FROM `useful` WHERE `category_id` = $id");
+  $title = mysqli_fetch_assoc($titles)['category_name'];
 ?>
 
 <h2 class="useful__title title"><?= $title ?></h2>
@@ -23,8 +15,6 @@
 
 <ul class="useful__container">
   <?php
-    require 'config/config.php';
-        
     $usefuls = mysqli_query($connection, "SELECT * FROM `useful_items` WHERE `category_id` = $id");
     while( $uf = mysqli_fetch_assoc($usefuls) ): ?>
     <li>

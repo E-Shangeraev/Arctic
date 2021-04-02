@@ -56,10 +56,10 @@ document.addEventListener('DOMContentLoaded', () => {
           setBlackBySectionNum(2, 3, 4, 5, 6, 7);
         }
         if (fileName === 'news.php') {
-          setBlackBySectionNum(2, 3);
+          setBlackBySectionNum(2);
         }
         if (fileName === 'norilsk.php') {
-          setBlackBySectionNum(2, 3, 4, 5, 6, 7);
+          setBlackBySectionNum(2, 3);
         }
         if (fileName === 'contacts.php') {
           setBlackBySectionNum(2, 3, 4, 5, 6, 7, 8);
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
           setBlackBySectionNum(2, 4);
         }
         if (fileName === 'tours.php') {
-          setBlackBySectionNum(2, 3, 4, 5);
+          setBlackBySectionNum(2, 3, 4);
         }
         if (fileName === 'events.php') {
           setBlackBySectionNum(2);
